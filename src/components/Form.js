@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {Redirect} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 class Form extends Component {
   
@@ -10,7 +10,6 @@ class Form extends Component {
       amount: 1,
       select: 200,
       grams: 200,
-      toImpact: false,
     };
   }
   
@@ -21,38 +20,24 @@ handleChange = event => {
   this.setState({
     ...this.state,[name]: value
   })
+  
 }
 
   handleCalculation = event => {
     const grams = this.state.amount*this.state.select;
     this.setState({grams: grams});
-    this.setState({toImpact: true});
+    this.props.history.push({
+        pathname: '/impact',
+        state: {
+          amount: this.state.amount,
+          select: this.state.select,
+          grams: grams,
+        }  
+      });
   }
 
   
    render() {
-
-    if (this.state.toImpact === true) {
-      return <Redirect to={{ pathname: "/impact", state: {amount: 100} }} />
-      // return <Redirect to='/impact' />
-
-    // this.context.router.push({
-    //   pathname: '/impact',
-      // state: {email: this.state.email}  
-  // })
-
-    //   return <Redirect 
-    //     push
-    //     to={{
-    //           pathname: "/impact",
-    //           state: {
-    //             amount: 100,
-    //             select: this.state.select,
-    //             grams: this.state.grams,
-    //           }
-    //         }}
-    //   />
-    }
       return (
           <form onSubmit={e => { e.preventDefault(); }}>
 
@@ -82,4 +67,4 @@ handleChange = event => {
 }
 
 
-export default Form;
+export default withRouter (Form);

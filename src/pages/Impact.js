@@ -6,15 +6,16 @@ import Grams from '../components/Grams';
 import CO2 from '../components/CO2';
 import Land from '../components/Land';
 import Water from '../components/Water';
+import {withRouter} from 'react-router-dom';
 
 class Impact extends Component {
   
   constructor (props) {
     super(props);   
     this.state = {
-      amount: 1,
-      select: 200,
-      grams: 200,
+      amount: this.props.location.state.amount,
+      select: this.props.location.state.select,
+      grams: this.props.location.state.grams,
     };
   }
   
@@ -83,4 +84,4 @@ handleChange = event => {
 }
 
 
-export default Impact;
+export default withRouter(Impact);
