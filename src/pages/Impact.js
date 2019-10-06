@@ -31,7 +31,7 @@ handleChange = event => {
   handleCalculation = event => {
     const grams = this.state.amount*this.state.select;
     this.setState({grams: grams});
-    this.props.history.push({
+    this.props.history.replace({
       pathname: '/impact',
       state: {
         amount: this.state.amount,
@@ -41,7 +41,6 @@ handleChange = event => {
     });
   }
 
-  
    render() {
       return (
           <div>
