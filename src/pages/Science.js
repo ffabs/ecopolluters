@@ -16,7 +16,9 @@ class Science extends Component {
             </div>
     
         );
+        
     }
-    }
+
+}
 
 export default Science;

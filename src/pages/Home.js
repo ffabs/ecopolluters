@@ -1,24 +1,34 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Form from '../components/Form';
+import Footer from '../components/Footer';
   
 class Home extends Component {
 
-    render() {
-    
-        return (        
+  constructor (props) {
+    super(props);   
+    this.state = {
+      amount: 1,
+      select: 200,
+      grams: 200,
+    };
+  }
 
-            <div>
-                <Header />
-                <h1> Home page</h1>
-                <Form />
-                <Footer />
-            </div>
-    
-        );
-    }
-    }
+  render() {
+  
+    return (        
+
+      <div>
+          <Header />
+          <Form />
+          <Footer />
+      </div>
+
+    );
+
+  }
+
+}
 
 export default Home;

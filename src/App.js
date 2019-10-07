@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Home from './pages/Home';
-import Impact from './pages/Impact';
 import Science from './pages/Science';
 import About from './pages/About';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
@@ -12,9 +11,6 @@ class App extends Component {
         <Switch>
           <Route exact={true} path='/' render={() => (
             <Home />
-          )}/>
-          <Route exact={true} path='/impact' render={() => (
-            <Impact />
           )}/>
           <Route exact={true} path='/science' render={() => (
             <Science />
