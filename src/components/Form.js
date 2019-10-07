@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-//to be moved the imports below, as soon as this compoenent is refactored creating a new impact component
-import Grams from '../components/Grams';
-import CO2 from '../components/CO2';
-import Land from '../components/Land';
-import Water from '../components/Water';
+import Impact from '../components/Impact';
 
 
 class Form extends Component {
@@ -98,13 +94,7 @@ class Form extends Component {
                 </button> 
 
             </form>      
-                <Grams grams={this.state.grams}/>
-                <hr></hr>
-                <CO2 CO2={this.state.grams*0.09948}/>
-                <hr></hr>
-                <Land land={this.state.grams*0.32621}/>
-                <hr></hr>
-                <Water water={this.state.grams*1.4512}/>
+            <Impact grams={this.state.grams}/>
           </div>
 
       )
