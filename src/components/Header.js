@@ -7,9 +7,9 @@ class Header extends Component {
 
     return (        
 
-        <div>
+        <div class="header">
           <div><a href="/">Home</a></div>
-          <div><a href="/science">What science says</a></div>
+          <div><a href="/science">Scientific sources</a></div>
           <div><a href="/about">About us</a></div>
           <hr></hr>
         </div>

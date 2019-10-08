@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Intro from '../components/Intro';
 import Impact from '../components/Impact';
 
 
@@ -39,9 +40,16 @@ class Form extends Component {
     return (
 
       <div>
-        <h1>Home page</h1>
-        <form onSubmit={e => { e.preventDefault(); }}>
 
+        {this.state.impact === false &&
+          <Intro />
+        }
+        {this.state.impact === true &&  
+          <h1>Calculate your impact</h1>
+        }
+
+        <form onSubmit={e => { e.preventDefault(); }}>
+          When you eat
             <input type="number" 
                     name="amount"
                     defaultValue={this.state.amount}
@@ -55,7 +63,7 @@ class Form extends Component {
                   <option value="1"> g </option>
             </select>
 
-            of beef
+            of beef, this is your impact:
 
             <button type="button" onClick={this.handleCalculation}>
               Calculate impact
@@ -67,6 +75,7 @@ class Form extends Component {
           <Impact grams={this.state.grams}/>
         }
 
+        <p><a href="/science">Check where we get all the data</a></p>
       </div>
 
     )

@@ -9,7 +9,7 @@ class Footer extends Component {
 
         <div>
           <hr></hr>
-          <h3> Footer</h3>
+          <p>Ecopolluters N.G.O. - All Rights Reserved</p>
         </div>
 
     );
