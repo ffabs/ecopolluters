@@ -35,71 +35,42 @@ class Form extends Component {
 
   
   render() {
+    
+    return (
 
-    if (this.state.impact === false){
-      return (
+      <div>
+        <h1>Home page</h1>
+        <form onSubmit={e => { e.preventDefault(); }}>
 
-        <div>
-          <h1>Home page</h1>
-          <form onSubmit={e => { e.preventDefault(); }}>
+            <input type="number" 
+                    name="amount"
+                    defaultValue={this.state.amount}
+                    min="1"
+                    onChange={this.handleChange} 
+            />
 
-              <input type="number" 
-                     name="amount"
-                     defaultValue={this.state.amount}
-                     min="1"
-                     onChange={this.handleChange} 
-              />
+            <select name="select" defaultValue={this.state.select} onChange={this.handleChange}>
+                  <option value="200"> hamburger (200 g) </option>
+                  <option value="225"> steak (225 g) </option>
+                  <option value="1"> g </option>
+            </select>
 
-              <select name="select" defaultValue={this.state.select} onChange={this.handleChange}>
-                   <option value="200"> hamburger (200 g) </option>
-                   <option value="225"> steak (225 g) </option>
-                   <option value="1"> g </option>
-              </select>
+            of beef
 
-              of beef
+            <button type="button" onClick={this.handleCalculation}>
+              Calculate impact
+            </button> 
 
-              <button type="button" onClick={this.handleCalculation}>
-                Calculate impact
-              </button> 
+        </form> 
 
-          </form> 
+        {this.state.impact === true &&
+          <Impact grams={this.state.grams}/>
+        }
 
-        </div>
+      </div>
 
-      )
-    } else {
-      return (
-
-        <div>
-            <h1>Impact page</h1>
-            <form onSubmit={e => { e.preventDefault(); }}>
-
-                <input type="number" 
-                        name="amount"
-                        defaultValue={this.state.amount}
-                        min="1"
-                        onChange={this.handleChange} 
-                />
-
-                <select name="select" defaultValue={this.state.select} onChange={this.handleChange}>
-                    <option value="200"> hamburger (200 g) </option>
-                    <option value="225"> steak (225 g) </option>
-                    <option value="1"> g </option>
-                </select>
-
-                of beef
-
-                <button type="button" onClick={this.handleCalculation}>
-                    Calculate impact
-                </button> 
-
-            </form>      
-            <Impact grams={this.state.grams}/>
-          </div>
-
-      )
-    }
-
+    )
+    
   }
 
 }
