@@ -7,7 +7,7 @@ class Footer extends Component {
 
     return (        
 
-        <div>
+        <div className="header">
           <hr></hr>
           <p>Ecopolluters N.G.O. - All Rights Reserved</p>
         </div>

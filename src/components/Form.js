@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Intro from '../components/Intro';
 import Impact from '../components/Impact';
+import logo from '../logo.svg';
 
 
 class Form extends Component {
@@ -49,6 +50,15 @@ class Form extends Component {
         }
 
         <form onSubmit={e => { e.preventDefault(); }}>
+
+          {this.state.impact === false &&  
+            <div>
+              <h1>What is your impact?</h1>
+              <p>We preparred kick-ass algorithm to tell you how bad you are</p>
+              <img src={logo} className="greta" alt="logo" />
+            </div>
+          }
+
           When you eat
             <input type="number" 
                     name="amount"
@@ -69,11 +79,10 @@ class Form extends Component {
               Calculate impact
             </button> 
 
+          {this.state.impact === true &&
+            <Impact grams={this.state.grams}/>
+          }
         </form> 
-
-        {this.state.impact === true &&
-          <Impact grams={this.state.grams}/>
-        }
 
         <p><a href="/science">Check where we get all the data</a></p>
       </div>

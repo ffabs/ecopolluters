@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
 body {
   background-color:#FFFFFF;
   min-height: 100vh;
@@ -8,33 +11,48 @@ body {
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: black;
+  font-family: Open Sans;
 }
 
 .header {
   background-color: #E5E5E5;
-  color: black;
-  font-family: Open Sans;
-  font-style: normal;
+  color: #4F4F4F;
+}
+
+.domain {
+  color: #828282;
+  font-family: Mansalva;
+  font-size: 2em;
+  padding: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #4F4F4F;
+  font-weight: normal;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  color: #4F4F4F;
   font-weight: bold;
-  text-decoration-line: underline;
 }
 
-h1 {
-  font-family: Open Sans;
-  font-style: normal;
-  color: #333333;
+.intro {
+  width: 25em;
 }
 
-h2 {
-  font-family: Open Sans;
-  font-style: normal;
-}
-
-form, .impact {
+form {
   background: linear-gradient(43.45deg, #D98484 14.32%, rgba(217, 132, 132, 0.79) 88.44%);
   box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   color: white;
+}
+
+.greta {
+  border-radius: 50%;
+  width: 15em;
 }
 
 input {
