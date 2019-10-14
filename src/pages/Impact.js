@@ -42,6 +42,7 @@ handleChange = event => {
       return (
           <div>
             <Header />
+
             <h1>Calculate your impact</h1>
             <form onSubmit={e => { e.preventDefault(); }}>
 
@@ -64,7 +65,8 @@ handleChange = event => {
                     Calculate impact
                 </button> 
 
-            </form>      
+            </form>
+
             <Pollution grams={this.state.grams} />
             <Footer />
           </div>

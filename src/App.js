@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 import Home from './pages/Home';
 import Impact from './pages/Impact';
+import Calculate from './pages/Calculate';
 import Science from './pages/Science';
 import About from './pages/About';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 class App extends Component {
-
-  // constructor (props) {
-  //   super(props);   
-    // this.state = {
-    //   amount: 1,
-    //   select: 200,
-    //   grams: 200,
-    // };
-  // }
 
   render() {
     return (
@@ -25,6 +17,9 @@ class App extends Component {
           )}/>
           <Route exact={true} path='/impact' render={() => (
             <Impact />
+          )}/>
+          <Route exact={true} path='/calculate' render={() => (
+            <Calculate />
           )}/>
           <Route exact={true} path='/science' render={() => (
             <Science />
