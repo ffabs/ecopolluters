@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Intro from '../components/Intro';
-import Impact from '../components/Impact';
+import {withRouter} from 'react-router-dom';
 import logo from '../logo.svg';
-
 
 class Form extends Component {
   
@@ -13,85 +11,69 @@ class Form extends Component {
       amount: 1,
       select: 200,
       grams: 200,
-      impact: false,
     };
   }
   
-  handleChange = event => {
-    const name = event.target.name;
-    const value = event.target.value;
-    
-    this.setState({
-      ...this.state,[name]: value
-    })
-    
-  }
+handleChange = event => {
+  const name = event.target.name;
+  const value = event.target.value;
+  
+  this.setState({
+    ...this.state,[name]: value
+  })
+  
+}
 
   handleCalculation = event => {
     const grams = this.state.amount*this.state.select;
-    this.setState({
-      grams: grams,
-      impact: true,
-    });
+    this.setState({grams: grams});
+    this.props.history.replace({
+        pathname: '/impact',
+        state: {
+          amount: this.state.amount,
+          select: this.state.select,
+          grams: grams,
+        }  
+      });
   }
 
   
-  render() {
-    
-    return (
+   render() {
+      return (
+          <form onSubmit={e => { e.preventDefault(); }}>
 
-      <div>
-
-        {this.state.impact === false &&
-          <Intro />
-        }
-        {this.state.impact === true &&  
-          <h1>Calculate your impact</h1>
-        }
-
-        <form onSubmit={e => { e.preventDefault(); }}>
-
-          {this.state.impact === false &&  
             <div>
               <h1>What is your impact?</h1>
               <p>We preparred kick-ass algorithm to tell you how bad you are</p>
               <img src={logo} className="greta" alt="logo" />
             </div>
-          }
 
-          When you eat
-            <input type="number" 
-                    name="amount"
-                    defaultValue={this.state.amount}
-                    min="1"
-                    onChange={this.handleChange} 
-            />
+            When you eat
 
-            <select name="select" defaultValue={this.state.select} onChange={this.handleChange}>
-                  <option value="200"> hamburger (200 g) </option>
-                  <option value="225"> steak (225 g) </option>
-                  <option value="1"> g </option>
-            </select>
+              <input type="number" 
+                     name="amount"
+                     defaultValue={this.state.amount}
+                     min="1"
+                     onChange={this.handleChange} 
+              />
 
-            of beef, this is your impact:
+              <select name="select" defaultValue={this.state.select} onChange={this.handleChange}>
+                   <option value="200"> hamburger (200 g) </option>
+                   <option value="225"> steak (225 g) </option>
+                   <option value="1"> g </option>
+              </select>
 
-            <button type="button" onClick={this.handleCalculation}>
-              Calculate impact
-            </button> 
+              of beef, this is your impact:
 
-          {this.state.impact === true &&
-            <Impact grams={this.state.grams}/>
-          }
-        </form> 
+              <button type="button" onClick={this.handleCalculation}>
+                Calculate impact
+              </button> 
 
-        <p><a href="/science">Check where we get all the data</a></p>
-      </div>
-
-    )
-    
+          </form> 
+      );
   }
 
 }
 
 
-export default Form;
+export default withRouter (Form);

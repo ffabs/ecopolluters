@@ -7,7 +7,7 @@ class Header extends Component {
 
     return (        
 
-        <div class="header">
+        <div className="header">
           <div className="domain">Ecopolluters</div>
           <div><a href="/">Home</a></div>
           <div><a href="/science">Scientific sources</a></div>

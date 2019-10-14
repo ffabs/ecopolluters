@@ -6,7 +6,7 @@ import Land from '../components/Land';
 import Water from '../components/Water';
 
 
-class Impact extends Component {
+class Pollution extends Component {
   
     render() {
 
@@ -29,4 +29,4 @@ class Impact extends Component {
 }
 
 
-export default Impact;
+export default Pollution;

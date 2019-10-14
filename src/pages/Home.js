@@ -3,17 +3,9 @@ import '../App.css';
 import Header from '../components/Header';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
-  
-class Home extends Component {
+import Intro from '../components/Intro';
 
-  constructor (props) {
-    super(props);   
-    this.state = {
-      amount: 1,
-      select: 200,
-      grams: 200,
-    };
-  }
+class Home extends Component {
 
   render() {
   
@@ -21,7 +13,9 @@ class Home extends Component {
 
       <div>
           <Header />
+          <Intro />
           <Form />
+          <p><a href="/science">Check where we get all the data</a></p>
           <Footer />
       </div>
 
