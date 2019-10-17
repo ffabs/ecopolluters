@@ -16,6 +16,7 @@ class App extends Component {
       amount: 1,
       select: 200,
       grams: 200,
+      calculation: false,
       tempAmount: 1,
       tempSelect: 200,
       tempGrams: 200,
@@ -38,6 +39,7 @@ class App extends Component {
       amount: this.state.tempAmount,
       select: this.state.tempSelect,
       grams: grams,
+      calculation: true,
     });
   }
 
@@ -52,6 +54,7 @@ class App extends Component {
                 amount={this.state.amount}
                 select={this.state.select}
                 grams={this.state.grams}
+                calculation={this.state.calculation}
                 handleAmount={this.handleAmount}
                 handleSelect={this.handleSelect}
                 handleCalculation={this.handleCalculation}
@@ -62,6 +65,7 @@ class App extends Component {
                 amount={this.state.amount}
                 select={this.state.select}
                 grams={this.state.grams}
+                calculation={this.state.calculation}
                 handleAmount={this.handleAmount}
                 handleSelect={this.handleSelect}
                 handleCalculation={this.handleCalculation}
