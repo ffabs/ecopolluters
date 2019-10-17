@@ -17,7 +17,13 @@ class Intro extends Component {
             <p>56 kg of Co2 is released in the air</p>
             <p>78 l of water is wasted and polluted</p>
             <p>28 mq of land is used to farm the cow</p>
-          </div>
+
+            <div>
+              <h1>What is your impact?</h1>
+              <p>We preparred kick-ass algorithm to tell you how bad you are</p>
+              <img src={logo} className="greta" alt="logo" />
+            </div>
+        </div>
 
     );
     
