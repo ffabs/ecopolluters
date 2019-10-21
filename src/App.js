@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Impact from './pages/Impact';
 import Science from './pages/Science';
 import About from './pages/About';
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
 
 class App extends Component {
@@ -45,7 +45,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop>
           <Header />
           <Switch>
@@ -83,7 +83,7 @@ class App extends Component {
           </Switch>
           <Footer />
         </ScrollToTop>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
