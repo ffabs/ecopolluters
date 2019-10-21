@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
-  ReactGA.pageview('/Impact');
+  ReactGA.pageview('/impact');
 }
 
 class Impact extends Component {

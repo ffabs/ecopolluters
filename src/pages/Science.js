@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 function initializeReactGA() {
     ReactGA.initialize('UA-150607597-1');
-    ReactGA.pageview('/Science');
+    ReactGA.pageview('/science');
   }
 
 class Science extends Component {

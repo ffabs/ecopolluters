@@ -4,7 +4,7 @@ import ReactGA from 'react-ga';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
-  ReactGA.pageview('/About');
+  ReactGA.pageview('/about');
 }
   
 class About extends Component {
