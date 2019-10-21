@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import '../App.css';
 import Form from '../components/Form';
 import Pollution from '../components/Pollution';
+import ReactGA from 'react-ga';
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-150607597-1');
+  ReactGA.pageview('/Impact');
+}
 
 class Impact extends Component {
 
