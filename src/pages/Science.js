@@ -10,6 +10,7 @@ function initializeReactGA() {
 class Science extends Component {
     
     render() {
+        initializeReactGA()
     
         return (        
 

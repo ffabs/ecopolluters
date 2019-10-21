@@ -12,6 +12,8 @@ function initializeReactGA() {
 class Impact extends Component {
 
    render() {
+      initializeReactGA()
+      
       return (
           <div>
             <h1>Calculate your impact</h1>

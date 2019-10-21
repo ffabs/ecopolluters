@@ -10,6 +10,7 @@ function initializeReactGA() {
 class About extends Component {
 
     render() {
+        initializeReactGA()
     
         return (        
 

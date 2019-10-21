@@ -13,6 +13,7 @@ function initializeReactGA() {
 class Home extends Component {
 
   render() {
+    initializeReactGA()
   
     return (        
 
