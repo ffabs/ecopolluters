@@ -13,7 +13,9 @@ class Home extends Component {
       <div>
           <Intro />
           <Form {...this.props}/>
-          <Link to="/science"><p>Check where we get all the data</p></Link>
+          <Link to="/science">
+            <p>Check where we get all the data</p>
+          </Link>
       </div>
 
     );
