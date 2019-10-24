@@ -15,7 +15,11 @@ class About extends Component {
         return (        
 
             <div>
-                <h1> About us page</h1>
+                <h3>Our mission is to connect individuals with the environment by fighting ignorance</h3>
+                <p>We believe in freedom of choice and accountability</p>
+                <p>We believe in science over mith and fake news</p>
+                <p>We believe in the power of awareness</p>
+                <p>We stand for the beauty of nature</p>
             </div>
     
         );
