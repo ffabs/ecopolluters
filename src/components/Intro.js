@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import logo from '../logo.svg';
+import hamburgerImpact from '../hamburgerImpact.png';
+import Greta from '../Greta.png';
 
 class Intro extends Component {
   
@@ -11,7 +12,7 @@ class Intro extends Component {
         <div> 
             <h1>Eat beef?</h1>
             <h4>Find out how beef is destroying the world</h4>
-            <img src={logo} className="intro" alt="logo" />
+            <img src={hamburgerImpact} className="intro" alt="hamburgerImpact"/>
             <h3>This is what an hamburg causes</h3>
             <p>A cow dies for you</p>
             <p>56 kg of Co2 is released in the air</p>
@@ -21,7 +22,7 @@ class Intro extends Component {
             <div>
               <h1>What is your impact?</h1>
               <p>We preparred kick-ass algorithm to tell you how bad you are</p>
-              <img src={logo} className="greta" alt="logo" />
+              <img src={Greta} className="greta" alt="Greta" />
             </div>
         </div>
 
