@@ -1,27 +1,50 @@
 import React, { Component } from 'react';
 import '../App.css';
+import HamburgerMenu from 'react-hamburger-menu';
 import {Link} from 'react-router-dom';
+import Nav from '../components/Nav';
 
 class Header extends Component {
+  constructor() {
+		super();
+		this.state = {
+			open: false
+		};
+  }
+	handleClick() {
+    this.setState({
+        open: !this.state.open
+    });
+  }
   
   render() {
 
     return (        
 
         <div className="header">
-          <div className="domain">Ecopolluters</div>
-          <Link to="/">
-            <div>Home</div>
-          </Link>
-          <Link to="/impact">
-            <div>Calculate your impact</div>
-          </Link>
-          <Link to="/science">
-            <div>Scientific sources</div>
-          </Link>
-          <Link to="/about">
-            <div>About us</div>
-          </Link>
+          <div>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <div className="domain">Ecopolluters</div>
+            </Link>
+          </div>
+          <div className="hamburger">
+            <HamburgerMenu
+              isOpen={this.state.open}
+              menuClicked={this.handleClick.bind(this)}
+              // width={18}
+              // height={15}
+              // strokeWidth={1}
+              // rotate={0}
+              // color='black'
+              // borderRadius={0}
+              // animationDuration={0.3}
+            />
+          </div>
+          
+          {this.state.open === true &&
+            <Nav />
+          }
+
           <hr></hr>
         </div>
 

@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap'); */
 
+
 body {
   background-color:#FFFFFF;
   min-height: 100vh;
@@ -17,6 +18,11 @@ body {
 .header {
   background-color: #E5E5E5;
   color: #4F4F4F;
+}
+
+.hamburger {
+  float: right;
+  cursor: pointer;
 }
 
 .domain {
@@ -36,7 +42,7 @@ a:link, a:visited {
 a:hover, a:active {
   text-decoration: underline;
   color: #4F4F4F;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .intro {
