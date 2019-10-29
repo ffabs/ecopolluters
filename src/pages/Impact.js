@@ -3,6 +3,7 @@ import '../App.css';
 import Form from '../components/Form';
 import Pollution from '../components/Pollution';
 import ReactGA from 'react-ga';
+import Header from '../components/Header';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -16,6 +17,7 @@ class Impact extends Component {
       
       return (
           <div>
+          <Header />
             <h1>Calculate your impact</h1>
             <Form {...this.props}/>
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Impact from './pages/Impact';
@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <HashRouter>
         <ScrollToTop>
-          <Header />
+          {/* <Header /> */}
           <Switch>
             <Route exact={true} path='/' render={() => (
               <Home 

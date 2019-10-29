@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Header from '../components/Header';
 import Form from '../components/Form';
 import Intro from '../components/Intro';
 import {Link} from 'react-router-dom';
@@ -18,11 +19,12 @@ class Home extends Component {
     return (        
 
       <div>
-          <Intro />
-          <Form {...this.props}/>
-          <Link to="/science">
-            <p>Check where we get all the data</p>
-          </Link>
+        <Header />
+        <Intro />
+        <Form {...this.props}/>
+        <Link to="/science">
+          <p>Check where we get all the data</p>
+        </Link>
       </div>
 
     );

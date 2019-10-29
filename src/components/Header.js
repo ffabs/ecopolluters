@@ -22,23 +22,25 @@ class Header extends Component {
     return (        
 
         <div className="header">
-          <div>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <div className="domain">Ecopolluters</div>
-            </Link>
-          </div>
-          <div className="hamburger">
-            <HamburgerMenu
-              isOpen={this.state.open}
-              menuClicked={this.handleClick.bind(this)}
-              // width={18}
-              // height={15}
-              // strokeWidth={1}
-              // rotate={0}
-              // color='black'
-              // borderRadius={0}
-              // animationDuration={0.3}
-            />
+          <div className="menu">
+            <div className="logo">
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                Ecopolluters
+              </Link>
+            </div>
+            <div className="hamburger">
+              <HamburgerMenu
+                isOpen={this.state.open}
+                menuClicked={this.handleClick.bind(this)}
+                // width={18}
+                // height={15}
+                // strokeWidth={1}
+                // rotate={0}
+                // color='black'
+                // borderRadius={0}
+                // animationDuration={0.3}
+              />
+            </div>
           </div>
           
           {this.state.open === true &&
