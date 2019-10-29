@@ -17,9 +17,9 @@ class Pollution extends Component {
                 <hr></hr>
                 <CO2 CO2={this.props.grams*0.09948}/>
                 <hr></hr>
-                <Land land={this.props.grams*0.32621}/>
-                <hr></hr>
                 <Water water={this.props.grams*1.4512}/>
+                <hr></hr>
+                <Land land={this.props.grams*0.32621}/>
             </div>
 
         )
