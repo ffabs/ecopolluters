@@ -21,7 +21,7 @@ class Intro extends Component {
 
             <div>
               <h1>What is your impact?</h1>
-              <p>We preparred kick-ass algorithm to tell you how bad you are</p>
+              <p>We have prepared kick-ass algorithm to tell you how bad you are</p>
               <img src={Greta} className="greta" alt="Greta" />
             </div>
         </div>
