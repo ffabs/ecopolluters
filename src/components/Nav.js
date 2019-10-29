@@ -15,15 +15,16 @@ class Nav extends Component {
                   <div>Home</div>
                 </Link>
                 <Link to="/impact">
-                  <div>Calculate your impact</div>
+                  <div>Impact</div>
                 </Link>
                 <Link to="/science">
-                  <div>Scientific sources</div>
+                  <div>Science</div>
                 </Link>
                 <Link to="/about">
-                  <div>About us</div>
+                  <div>About</div>
                 </Link>
               </div>
+
         </div>
   
       );

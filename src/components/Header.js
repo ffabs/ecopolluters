@@ -28,6 +28,12 @@ class Header extends Component {
                 Ecopolluters
               </Link>
             </div>
+            <ul className="desktop">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/impact">Impact</Link></li>
+              <li><Link to="/science">Science</Link></li>
+              <li><Link to="/about">About</Link></li>
+            </ul>
             <div className="hamburger">
               <HamburgerMenu
                 isOpen={this.state.open}
@@ -44,7 +50,9 @@ class Header extends Component {
           </div>
           
           {this.state.open === true &&
-            <Nav />
+            <div className="mobile"> 
+              <Nav />
+            </div>
           }
 
           <hr></hr>
