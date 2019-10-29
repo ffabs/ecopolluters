@@ -43,13 +43,13 @@ body {
   /* margin-bottom: 0.5em; */
 }
 
-a:link, a:visited {
+a:link, a:visited, a:active {
   text-decoration: none;
   color: #4F4F4F;
   font-weight: normal;
 }
 
-a:hover, a:active {
+a:hover {
   text-decoration: underline;
   color: #4F4F4F;
   /* font-weight: bold; */
