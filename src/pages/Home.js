@@ -19,7 +19,7 @@ class Home extends Component {
     return (        
 
       <div>
-        <Header />
+        <Header page={'Home'} />
         <Intro />
         <Form {...this.props}/>
         <Link to="/science">

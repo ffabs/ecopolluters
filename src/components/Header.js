@@ -18,6 +18,7 @@ class Header extends Component {
   }
   
   render() {
+    console.log(this.props.page);
 
     return (        
 
@@ -30,6 +31,9 @@ class Header extends Component {
             </div>
             <ul className="desktop">
               <li><Link to="/">Home</Link></li>
+              {/* {this.props.page === 'Impact' &&             
+              <Link to="/"><li className="current">Home</li></Link>
+              } */}
               <li><Link to="/impact">Impact</Link></li>
               <li><Link to="/science">Science</Link></li>
               <li><Link to="/about">About</Link></li>

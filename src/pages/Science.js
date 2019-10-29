@@ -16,8 +16,10 @@ class Science extends Component {
         return (        
 
             <div>
-            <Header />
-                <h1> Science page</h1>
+            <Header page={'Science'}/>
+                <p>Main scientific article:</p>
+                <p>"Reducing food’s environmental impacts through producers and consumers"</p>
+                <p>By J. Poore and T. Nemecek</p>
             </div>
     
         );

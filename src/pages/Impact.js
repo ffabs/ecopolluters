@@ -17,7 +17,7 @@ class Impact extends Component {
       
       return (
           <div>
-          <Header />
+          <Header page={'Impact'} />
             <h1>Calculate your impact</h1>
             <Form {...this.props}/>
 
