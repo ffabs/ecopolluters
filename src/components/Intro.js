@@ -15,9 +15,9 @@ class Intro extends Component {
             <img src={hamburgerImpact} className="intro" alt="hamburgerImpact"/>
             <h3>This is what an hamburg causes</h3>
             <p>A cow dies for you</p>
-            <p>56 kg of Co2 is released in the air</p>
-            <p>78 l of water is wasted and polluted</p>
-            <p>28 mq of land is used to farm the cow</p>
+            <p>19.90 kg of Co2 is released in the air</p>
+            <p>290.24 l of water is wasted and polluted</p>
+            <p>65.24 mq of land is used to farm the cow</p>
 
             <div>
               <h1>What is your impact?</h1>

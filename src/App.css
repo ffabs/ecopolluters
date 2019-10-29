@@ -42,12 +42,9 @@ body {
 }
 
 .desktop {
-  margin-right: 1em;
-}
-
-ul {
   list-style-type: none;
   display: flex;
+  margin-right: 1em;
 }
 
 li {
@@ -101,7 +98,10 @@ a:link, a:visited, a:active {
 a:hover {
   text-decoration: underline;
   color: #4F4F4F;
-  /* font-weight: bold; */
+}
+
+.current{
+  font-weight: bold;
 }
 
 .intro {

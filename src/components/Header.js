@@ -48,7 +48,6 @@ class Header extends Component {
               />
             </div>
           </div>
-          
           {this.state.open === true &&
             <div className="mobile"> 
               <Nav />
