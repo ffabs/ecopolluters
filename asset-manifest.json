@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.57f1de7e.chunk.css",
+    "main.css": "/static/css/main.0e433546.chunk.css",
     "main.js": "/static/js/main.fbd63beb.chunk.js",
     "main.js.map": "/static/js/main.fbd63beb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec654a98.js",
@@ -8,9 +8,9 @@
     "static/js/2.30a13fab.chunk.js": "/static/js/2.30a13fab.chunk.js",
     "static/js/2.30a13fab.chunk.js.map": "/static/js/2.30a13fab.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.27efc4ce51d18fe8e719937756331ca3.js": "/precache-manifest.27efc4ce51d18fe8e719937756331ca3.js",
+    "precache-manifest.c37412bf947d6aba56ffe9c9ca129814.js": "/precache-manifest.c37412bf947d6aba56ffe9c9ca129814.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.57f1de7e.chunk.css.map": "/static/css/main.57f1de7e.chunk.css.map",
+    "static/css/main.0e433546.chunk.css.map": "/static/css/main.0e433546.chunk.css.map",
     "static/media/Greta.png": "/static/media/Greta.f6b174f9.png",
     "static/media/hamburgerImpact.png": "/static/media/hamburgerImpact.a004b6aa.png"
   }
