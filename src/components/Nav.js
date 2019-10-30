@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom';
 class Nav extends Component {
     
     render() {
-      let home = '';
-      let impact = '';
-      let science = '';
-      let about= '';
+      let home = 'page';
+      let impact = 'page';
+      let science = 'page';
+      let about= 'page';
       switch(this.props.page) {
         case "Home":
           home += ' current';
