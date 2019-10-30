@@ -5,23 +5,40 @@ import {Link} from 'react-router-dom';
 class Nav extends Component {
     
     render() {
-  
+      let home = '';
+      let impact = '';
+      let science = '';
+      let about= '';
+      switch(this.props.page) {
+        case "Home":
+          home += ' current';
+          break;
+        case "Impact":
+          impact += ' current';
+          break;
+        case "Science":
+          science += ' current';
+          break;
+        case "About":
+          about += ' current';
+      }
+
       return (        
   
           <div className="header">
             
               <div className="nav">
                 <Link to="/">
-                  <div>Home</div>
+                  <div className={home}>Home</div>
                 </Link>
                 <Link to="/impact">
-                  <div>Impact</div>
+                  <div className={impact}>Impact</div>
                 </Link>
                 <Link to="/science">
-                  <div>Science</div>
+                  <div className={science}>Science</div>
                 </Link>
                 <Link to="/about">
-                  <div>About</div>
+                  <div className={about}>About</div>
                 </Link>
               </div>
 

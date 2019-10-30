@@ -18,7 +18,23 @@ class Header extends Component {
   }
   
   render() {
-    console.log(this.props.page);
+    let home = '';
+    let impact = '';
+    let science = '';
+    let about= '';
+    switch(this.props.page) {
+      case "Home":
+        home += ' current';
+        break;
+      case "Impact":
+        impact += ' current';
+        break;
+      case "Science":
+        science += ' current';
+        break;
+      case "About":
+        about += ' current';
+    }
 
     return (        
 
@@ -30,13 +46,10 @@ class Header extends Component {
               </Link>
             </div>
             <ul className="desktop">
-              <li><Link to="/">Home</Link></li>
-              {/* {this.props.page === 'Impact' &&             
-              <Link to="/"><li className="current">Home</li></Link>
-              } */}
-              <li><Link to="/impact">Impact</Link></li>
-              <li><Link to="/science">Science</Link></li>
-              <li><Link to="/about">About</Link></li>
+              <Link to="/"><li className={home}>Home</li></Link>
+              <Link to="/impact"><li className={impact}>Impact</li></Link>
+              <Link to="/science"><li className={science}>Science</li></Link>
+              <Link to="/about"><li className={about}>About</li></Link>
             </ul>
             <div className="hamburger">
               <HamburgerMenu
@@ -54,7 +67,7 @@ class Header extends Component {
           </div>
           {this.state.open === true &&
             <div className="mobile"> 
-              <Nav />
+              <Nav {...this.props}/>
             </div>
           }
 
