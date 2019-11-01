@@ -42,7 +42,7 @@ class Header extends Component {
           <div className="menu">
             <div className="logo">
               <Link to="/" style={{ textDecoration: 'none' }}>
-                Ecopolluters
+                ecopolluters
               </Link>
             </div>
             <ul className="desktop">
