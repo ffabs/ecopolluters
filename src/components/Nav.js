@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class Nav extends Component {
     
     render() {
-      let home = 'page';
+      let home = 'page hide';
       let impact = 'page';
       let science = 'page';
       let about= 'page';
@@ -21,6 +21,8 @@ class Nav extends Component {
           break;
         case "About":
           about += ' current';
+        case "Footer":
+          home -= ' hide';
       }
 
       return (        
@@ -29,16 +31,16 @@ class Nav extends Component {
             
               <div className="nav">
                 <Link to="/">
-                  <div className={home}>Home</div>
+                  <div className={home}>HOME</div>
                 </Link>
                 <Link to="/impact">
-                  <div className={impact}>Impact</div>
+                  <div className={impact}>CALCULATE YOUR IMPACT</div>
                 </Link>
                 <Link to="/science">
-                  <div className={science}>Science</div>
+                  <div className={science}>SCIENTIFICAL SOURCES</div>
                 </Link>
                 <Link to="/about">
-                  <div className={about}>About</div>
+                  <div className={about}>ABOUT US</div>
                 </Link>
               </div>
 

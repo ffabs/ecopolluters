@@ -7,16 +7,28 @@ body {
   display: flex;
   flex-direction: column;
   /* align-items: center;   */
-  text-align: center;
+  /* text-align: center; */
   /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: black;
   font-family: Open Sans;
 }
 
+.impact-button {
+  cursor: pointer;
+  font-family: Open Sans;
+  font-weight: bold;
+  color: white;
+  background: #BB6BD9;
+  border: 3px dotted #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
 .header {
-  background-color: #E5E5E5;
   color: #4F4F4F;
+  display: flex;
+  justify-content: center;
 }
 
   .menu {
@@ -24,6 +36,10 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: baseline;
+    box-shadow: 0px 2px 24px;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #FFFFFF;
+    min-width: 700px;
   }
 
     .logo {
@@ -31,9 +47,9 @@ body {
       font-family: Mansalva;
       font-size: 1.5em;
       padding: 0.3em;
-      position: absolute; 
+      /* position: absolute; 
       top:0; 
-      left:0;
+      left:0; */
     }
 
     a:link, a:visited, a:active {
@@ -66,16 +82,22 @@ body {
       }
 
         .nav {
-          font-size: 1.3em;
+          font-family: Open Sans;
+          font-size: 14px;
+          line-height: 40px;
         }
 
-        .page {
+        /* .page {
           padding: 0.3em;
-        }
+        } */
 
       @media only screen and (max-width: 768px) {
 
-        .desktop{
+        body {
+          font-size: calc(10px + 2vmin);
+        }
+
+        .desktop {
           display: none;
         }
 
@@ -85,6 +107,7 @@ body {
 
         .menu {
           justify-content: center;
+          width: 100%;
         }
 
         .logo {
@@ -105,15 +128,113 @@ body {
         
       }
 
-.intro {
-  width: 20em;
+/* Intro section */
+
+.cover {
+  background-color: #2FE2ED;
 }
 
-.footer {
-  margin-top: 5em;
-  padding: 2em;
+.cover-image {
+  width: 100%;
+  margin-bottom: -13px;
+}
+
+.catchy {
+  float: left;
+}
+
+.cover-title {
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 82px;
+}
+
+.cover-support {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 35px;
 }
 
 .icon {
   margin: 1em;
+}
+
+.section-title {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+}
+
+.impact-button-intro {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 3px 7px 3px 7px;
+}
+
+.item1 { grid-area: cow; }
+.item2 { grid-area: co2; }
+.item3 { grid-area: water; }
+.item4 { grid-area: land; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'cow co2'
+    'water land';
+  grid-gap: 100px;
+  padding: 100px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.algorithm-support {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* form  */
+.impact-form {
+  background: #F2F2F2;
+  border-radius: 20px;
+}
+
+.impact-button-form {
+  font-size: 24px;
+  line-height: 32px;
+  padding: 15px 45px 15px 45px;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 5em;
+  padding: 2em;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fb-share-button {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.rights {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
 }

@@ -3,6 +3,7 @@ import '../App.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import {Link} from 'react-router-dom';
 import Nav from '../components/Nav';
+import ecopolluters from '../images/ecopolluters.svg';
 
 class Header extends Component {
   constructor() {
@@ -18,14 +19,10 @@ class Header extends Component {
   }
   
   render() {
-    let home = '';
-    let impact = '';
+    let impact = 'impact-button';
     let science = '';
     let about= '';
     switch(this.props.page) {
-      case "Home":
-        home += ' current';
-        break;
       case "Impact":
         impact += ' current';
         break;
@@ -41,15 +38,14 @@ class Header extends Component {
         <div className="header">
           <div className="menu">
             <div className="logo">
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                ecopolluters
+              <Link to="/">
+                <img src={ecopolluters} alt="ecopolluters"/>
               </Link>
             </div>
             <ul className="desktop">
-              <Link to="/"><li className={home}>Home</li></Link>
-              <Link to="/impact"><li className={impact}>Impact</li></Link>
-              <Link to="/science"><li className={science}>Science</li></Link>
-              <Link to="/about"><li className={about}>About</li></Link>
+              <Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link>
+              <Link to="/science"><li className={science}>SCIENTIFICAL SOURCES</li></Link>
+              <Link to="/about"><li className={about}>ABOUT US</li></Link>
             </ul>
             <div className="hamburger">
               <HamburgerMenu
