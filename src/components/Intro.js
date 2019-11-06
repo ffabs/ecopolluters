@@ -26,7 +26,7 @@ class Intro extends Component {
             </div>
             <img className="cover-image" src={cover} alt="hamburgerImpact"/>
           </div>
-            <p className="section-title">When you eat beef</p>
+            <p className="section-title intro-title">When you eat beef</p>
             <div className="grid-container">
               <div className="item1 intro">
                 <div>

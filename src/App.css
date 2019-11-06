@@ -23,6 +23,7 @@ body {
   border: 3px dotted #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  font-family: Open Sans;
 }
 
 .header {
@@ -35,11 +36,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: center;
     box-shadow: 0px 2px 24px;
     border-radius: 0px 0px 8px 8px;
     background-color: #FFFFFF;
-    min-width: 700px;
+    padding-left: 150px;
+    padding-right: 150px;
+    /* min-width: 750px; */
   }
 
     .logo {
@@ -73,8 +76,16 @@ body {
         margin-right: 1em;
       }
 
+        .impact-button-menu {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 24px;
+        }
+
         li {
           margin-left: 1em;
+          list-style-type: none;
         }
 
       .hamburger, .mobile {
@@ -141,6 +152,7 @@ body {
 
 .catchy {
   float: left;
+  margin-left: 200px;
 }
 
 .cover-title {
@@ -168,6 +180,10 @@ body {
   line-height: 24px;
 }
 
+.intro-title {
+  margin-left: 200px;
+}
+
 .impact-button-intro {
   font-size: 14px;
   line-height: 24px;
@@ -186,6 +202,8 @@ body {
     'water land';
   grid-gap: 100px;
   padding: 100px;
+
+  margin-left: 200px;
 }
 
 .intro {
@@ -193,23 +211,69 @@ body {
   align-items: center;
 }
 
+/* form  */
+.impact-form {
+  margin-left: 325px;
+  margin-right: 325px;
+  background: #F2F2F2;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.algorithm-title {
+  margin-left: 10px;
+}
+
 .algorithm-support {
   font-family: Open Sans;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 10px;
 }
 
-/* form  */
-.impact-form {
-  background: #F2F2F2;
-  border-radius: 20px;
+.impact-form-visual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.impact-input-form {
+  font-family: Open Sans;
+  font-weight: bold;
+  border: 3px dotted #BB6BD9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 10px;
+}
+
+  .impact-number-form {
+    width: 75px;
+    text-align: center;
+    padding-left: 15px;
+  }
+
+  .impact-select-form {
+    appearance: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 .impact-button-form {
   font-size: 24px;
   line-height: 32px;
-  padding: 15px 45px 15px 45px;
+  padding: 15px 60px 15px 60px;
+  margin: 10px;
+}
+
+.beef-image {
+  width: 250px;
+  margin-left: 75px;
 }
 
 /* footer */

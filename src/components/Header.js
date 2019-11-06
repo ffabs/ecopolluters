@@ -4,6 +4,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import {Link} from 'react-router-dom';
 import Nav from '../components/Nav';
 import ecopolluters from '../images/ecopolluters.svg';
+import logoicon from '../images/logoicon.svg';
 
 class Header extends Component {
   constructor() {
@@ -19,7 +20,7 @@ class Header extends Component {
   }
   
   render() {
-    let impact = 'impact-button';
+    let impact = 'impact-button impact-button-menu';
     let science = '';
     let about= '';
     switch(this.props.page) {
@@ -39,14 +40,13 @@ class Header extends Component {
           <div className="menu">
             <div className="logo">
               <Link to="/">
+                <img src={logoicon} alt="ecopolluters-icon"/>
                 <img src={ecopolluters} alt="ecopolluters"/>
               </Link>
-            </div>
-            <ul className="desktop">
-              <Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link>
-              <Link to="/science"><li className={science}>SCIENTIFICAL SOURCES</li></Link>
-              <Link to="/about"><li className={about}>ABOUT US</li></Link>
-            </ul>
+            </div>            
+              <div className="desktop"><Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link></div>
+              <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFICAL SOURCES</li></Link></div>
+              <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>
             <div className="hamburger">
               <HamburgerMenu
                 isOpen={this.state.open}
