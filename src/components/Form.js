@@ -24,9 +24,9 @@ class Form extends Component {
                     onChange={this.props.handleAmount}
                   />
                   <select className="impact-input-form impact-select-form" name="select" defaultValue={this.props.select} onChange={this.props.handleSelect}>
-                        <option value="200"> hamburger (200 g) </option>
-                        <option value="225"> steak (225 g) </option>
-                        <option value="1"> g </option>
+                        <option value="200"> 🍔 hamburger (200 g) </option>
+                        <option value="225"> 🥩 steak (225 g) </option>
+                        <option value="1"> ⚖️ grams </option>
                   </select>
                 </div>
                 <Link to="/impact">

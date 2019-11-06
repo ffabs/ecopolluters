@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 body {
   background-color:#FFFFFF;
@@ -22,8 +22,12 @@ body {
   background: #BB6BD9;
   border: 3px dotted #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 8px;
   font-family: Open Sans;
+}
+
+button:hover {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .header {
@@ -37,12 +41,12 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0px 2px 24px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 8px 8px;
     background-color: #FFFFFF;
     padding-left: 150px;
     padding-right: 150px;
-    /* min-width: 750px; */
+    max-width: 900px;
   }
 
     .logo {
@@ -147,12 +151,15 @@ body {
 
 .cover-image {
   width: 100%;
+  margin-top: 50px;
   margin-bottom: -13px;
 }
 
 .catchy {
   float: left;
-  margin-left: 200px;
+  max-width: 900px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .cover-title {
@@ -160,6 +167,7 @@ body {
   font-weight: 800;
   font-size: 60px;
   line-height: 82px;
+  margin-top: 40px;
 }
 
 .cover-support {
@@ -181,13 +189,16 @@ body {
 }
 
 .intro-title {
-  margin-left: 200px;
+  max-width: 900px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.impact-button-intro {
+.impact-button-cover {
   font-size: 14px;
   line-height: 24px;
   padding: 3px 7px 3px 7px;
+  margin-top: 20px;
 }
 
 .item1 { grid-area: cow; }
@@ -202,8 +213,7 @@ body {
     'water land';
   grid-gap: 100px;
   padding: 100px;
-
-  margin-left: 200px;
+  max-width: 900px;
 }
 
 .intro {
@@ -213,8 +223,9 @@ body {
 
 /* form  */
 .impact-form {
-  margin-left: 325px;
-  margin-right: 325px;
+  max-width: 900px;
+  margin-right: 20px;
+  margin-left: 20px;
   background: #F2F2F2;
   border-radius: 20px;
   padding: 10px;
@@ -241,15 +252,21 @@ body {
 .impact-input-form {
   font-family: Open Sans;
   font-weight: bold;
-  border: 3px dotted #BB6BD9;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border: 3px dotted #BDBDBD;
+  border-radius: 8px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 40px;
   margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input:focus, select:focus {
+  border-color: #BB6BD9;
+  outline: none;
 }
 
   .impact-number-form {
@@ -260,8 +277,7 @@ body {
 
   .impact-select-form {
     appearance: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px;
   }
 
 .impact-button-form {
