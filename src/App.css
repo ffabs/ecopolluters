@@ -24,6 +24,7 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   font-family: Open Sans;
+  outline: none;
 }
 
 button:hover {
@@ -34,6 +35,9 @@ button:hover {
   color: #4F4F4F;
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
+  /* align-content: center; */
+  /* background-color: white; */
 }
 
   .menu {
@@ -50,13 +54,7 @@ button:hover {
   }
 
     .logo {
-      color: #828282;
-      font-family: Mansalva;
-      font-size: 1.5em;
-      padding: 0.3em;
-      /* position: absolute; 
-      top:0; 
-      left:0; */
+      padding: 10px;
     }
 
     a:link, a:visited, a:active {
@@ -102,14 +100,25 @@ button:hover {
           line-height: 40px;
         }
 
-        /* .page {
-          padding: 0.3em;
+      @media only screen and (max-width: 1000px) {
+
+        /* body {
+          font-size: calc(10px + 2vmin);
         } */
 
-      @media only screen and (max-width: 768px) {
+        .header {
+          color: #4F4F4F;
+          display: flex;
+          /* justify-content: center; */
+          flex-direction: column;
+          /* align-content: center; */
+          background-color: white;
+          text-align: center;
+          /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); */
+        }
 
-        body {
-          font-size: calc(10px + 2vmin);
+        .nav {
+          color: #4F4F4F;
         }
 
         .desktop {
@@ -121,15 +130,19 @@ button:hover {
         }
 
         .menu {
-          justify-content: center;
+          /* justify-content: center; */
           width: 100%;
+          display: flex;
+          justify-content: flex-start;
         }
 
         .logo {
-          font-size: 2em;
-          padding: 0.3em;
-          position: relative;
+          padding: 10px;
+          /* position: absolute; 
+          top:0; 
+          left:0; */
         }
+
           
         .hamburger {
           display: block;
@@ -142,6 +155,14 @@ button:hover {
         }
         
       }
+/* home */
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
 
 /* Intro section */
 
@@ -189,9 +210,10 @@ button:hover {
 }
 
 .intro-title {
-  max-width: 900px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .impact-button-cover {
@@ -201,19 +223,41 @@ button:hover {
   margin-top: 20px;
 }
 
-.item1 { grid-area: cow; }
-.item2 { grid-area: co2; }
-.item3 { grid-area: water; }
-.item4 { grid-area: land; }
+.item-intro {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  width: 325px;
+  height: 80px;
+  margin: 20px;
+}
+
+.item-intro-title {
+  font-weight: bold;
+}
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    'cow co2'
-    'water land';
-  grid-gap: 100px;
-  padding: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
   max-width: 900px;
+  margin-right: 20px;
+  margin-left: 20px;
+  /* background: #F2F2F2; */
+  /* border-radius: 20px; */
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .intro {
@@ -221,7 +265,12 @@ button:hover {
   align-items: center;
 }
 
+.intro-image {
+  padding-right: 20px;
+}
+
 /* form  */
+
 .impact-form {
   max-width: 900px;
   margin-right: 20px;
@@ -233,6 +282,8 @@ button:hover {
 
 .algorithm-title {
   margin-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .algorithm-support {
@@ -241,6 +292,8 @@ button:hover {
   font-size: 16px;
   line-height: 24px;
   margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .impact-form-visual {
@@ -257,7 +310,9 @@ button:hover {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  background-color: #FFFFFF;
+  /* font-size: 30px; */
+  font-size: 24px;
   line-height: 40px;
   margin: 10px;
   padding-top: 10px;
@@ -283,7 +338,8 @@ input:focus, select:focus {
 .impact-button-form {
   font-size: 24px;
   line-height: 32px;
-  padding: 15px 60px 15px 60px;
+  /* padding: 15px 60px 15px 60px; */
+  padding: 15px 78px 15px 78px;
   margin: 10px;
 }
 

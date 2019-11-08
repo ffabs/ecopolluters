@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Form from '../components/Form';
 import Intro from '../components/Intro';
-import {Link} from 'react-router-dom';
+import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
 
 function initializeReactGA() {
@@ -17,7 +17,8 @@ class Home extends Component {
   
     return (        
 
-      <div>
+      <div className="home">
+        <Cover />
         <Intro />
         <Form {...this.props}/>
       </div>

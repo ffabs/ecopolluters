@@ -47,7 +47,6 @@ class App extends Component {
     return (
       <HashRouter>
         <ScrollToTop>
-          {/* <Header /> */}
           <Switch>
             <Route exact={true} path='/' render={() => (
               <Home 
