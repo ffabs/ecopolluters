@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8a0520f.chunk.css",
-    "main.js": "/static/js/main.8a774994.chunk.js",
-    "main.js.map": "/static/js/main.8a774994.chunk.js.map",
+    "main.css": "/static/css/main.4e6da2c9.chunk.css",
+    "main.js": "/static/js/main.59bf73df.chunk.js",
+    "main.js.map": "/static/js/main.59bf73df.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec654a98.js",
     "runtime-main.js.map": "/static/js/runtime-main.ec654a98.js.map",
-    "static/js/2.e5172cc4.chunk.js": "/static/js/2.e5172cc4.chunk.js",
-    "static/js/2.e5172cc4.chunk.js.map": "/static/js/2.e5172cc4.chunk.js.map",
+    "static/js/2.c6a34a98.chunk.js": "/static/js/2.c6a34a98.chunk.js",
+    "static/js/2.c6a34a98.chunk.js.map": "/static/js/2.c6a34a98.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5cfab0c27fdeb4a5d6c37cceb5482165.js": "/precache-manifest.5cfab0c27fdeb4a5d6c37cceb5482165.js",
+    "precache-manifest.e1e7598d6b821cfa85495e481702162c.js": "/precache-manifest.e1e7598d6b821cfa85495e481702162c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e8a0520f.chunk.css.map": "/static/css/main.e8a0520f.chunk.css.map",
-    "static/media/Greta.png": "/static/media/Greta.f6b174f9.png",
-    "static/media/hamburgerImpact.png": "/static/media/hamburgerImpact.a004b6aa.png"
+    "static/css/main.4e6da2c9.chunk.css.map": "/static/css/main.4e6da2c9.chunk.css.map",
+    "static/media/beef.svg": "/static/media/beef.cfa981c5.svg",
+    "static/media/co2.svg": "/static/media/co2.1675cbd9.svg",
+    "static/media/cover.svg": "/static/media/cover.f9a22949.svg",
+    "static/media/cow.svg": "/static/media/cow.cea02c7c.svg",
+    "static/media/ecopolluters.svg": "/static/media/ecopolluters.a6fc8e23.svg",
+    "static/media/land.svg": "/static/media/land.d7af5675.svg",
+    "static/media/logoicon.svg": "/static/media/logoicon.c2e6a1bd.svg",
+    "static/media/water.svg": "/static/media/water.f8a4135d.svg"
   }
 }
