@@ -22,8 +22,8 @@ class Intro extends Component {
                 <img className="intro-image" src={cow} alt="cowImpact"/>
               </div>
               <div>
-                <div className="item-intro-title">A cow</div>
-                <div>dies for you</div>
+                <div className="item-intro-title">Cows are killed</div>
+                <div>More than 300 million cows are killed a year to cope with the increasing demand for beef.</div>
               </div>
             </div>
             <div className="item-intro">
@@ -31,8 +31,8 @@ class Intro extends Component {
               <img className="intro-image" src={co2} alt="co2Impact"/>
               </div>
               <div>
-                <div className="item-intro-title">Co2</div>
-                <div>from the digestion, breathing and farts of the cow</div> 
+                <div className="item-intro-title">CO2 is released</div>
+                <div>N2O and NOx released during cows' digestion and crops fertilisers contribute to the green house effect.</div> 
               </div>
             </div>
           </div>
@@ -43,8 +43,8 @@ class Intro extends Component {
               <img className="intro-image" src={water} alt="waterImpact"/>
               </div>
               <div>
-                <div className="item-intro-title">Water</div>
-                <div>to make the cow grow up</div>
+                <div className="item-intro-title">Water is consumed</div>
+                <div>Pastures and crops consumed by cows are irrigated and cows themselves drink water.</div>
               </div>
             </div>
             <div className="item-intro">
@@ -52,8 +52,9 @@ class Intro extends Component {
               <img className="intro-image" src={land} alt="landImpact"/>
               </div>
               <div>
-                <div className="item-intro-title">Land</div>
-                <div>is reserved for the cow</div> 
+                <div className="item-intro-title">Land is occupied</div>
+                <div>Crops are cultivated to feed cows and cows themselves occupy pastures.</div>
+                {/* <div>This impact is aggravated when deforestation is caused as a result of the growing demand on beef.</div>  */}
               </div>
             </div>
           </div>
