@@ -21,6 +21,7 @@ class Nav extends Component {
           break;
         case "About":
           about += ' current';
+          break;
         case "Footer":
           home -= ' hide';
       }

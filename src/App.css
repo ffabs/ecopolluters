@@ -131,9 +131,10 @@ button:hover {
 
         .menu {
           /* justify-content: center; */
-          width: 100%;
+          /* width: 100%; */
           display: flex;
           justify-content: flex-start;
+          padding: 0px;
         }
 
         .logo {
@@ -179,8 +180,8 @@ button:hover {
 .catchy {
   float: left;
   max-width: 900px;
-  margin-right: 20px;
-  margin-left: 20px;
+  /* margin-right: 20px; */
+  /* margin-left: 20px; */
 }
 
 .cover-title {
@@ -231,7 +232,7 @@ button:hover {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  width: 325px;
+  width: 200px;
   height: 80px;
   margin: 20px;
 }
@@ -241,15 +242,11 @@ button:hover {
 }
 
 .grid-container {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 30px 10px 50px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
   max-width: 900px;
-  margin-right: 20px;
-  margin-left: 20px;
   /* background: #F2F2F2; */
   /* border-radius: 20px; */
   padding: 10px;
