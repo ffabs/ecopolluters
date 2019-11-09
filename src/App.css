@@ -144,7 +144,6 @@ button:hover {
           left:0; */
         }
 
-          
         .hamburger {
           display: block;
           float: right;
@@ -162,7 +161,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 /* Intro section */
@@ -232,7 +230,7 @@ button:hover {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  width: 200px;
+  width: 370px;
   height: 80px;
   margin: 20px;
 }
@@ -244,12 +242,14 @@ button:hover {
 .grid-container {
   margin: 30px 10px 50px 10px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  /* align-items: center; */
   max-width: 900px;
-  /* background: #F2F2F2; */
-  /* border-radius: 20px; */
-  padding: 10px;
+  /* background: #F2F2F2;
+  border-radius: 20px; */
+  /* padding: 10px; */
 }
 
 .row {
