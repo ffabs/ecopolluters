@@ -326,6 +326,11 @@ input:focus, select:focus {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   width: 300px; */
+  margin-bottom: 30px;
+}
+
+.socials {
+  margin-bottom: 30px;
 }
 
 .rights {
@@ -335,6 +340,8 @@ input:focus, select:focus {
   font-size: 18px;
   line-height: 40px;
   color: #4F4F4F;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 
