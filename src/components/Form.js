@@ -6,6 +6,7 @@ import beef from '../images/beef.svg';
 class Form extends Component {
   
    render() {
+    console.log(this.props.page);
       return (
         <form className="impact-form" onSubmit={e => { e.preventDefault(); }}>
           <div>
@@ -38,9 +39,11 @@ class Form extends Component {
                 </button>
               </Link>
             </div>
-            <div>
-              <img className="beef-image" src={beef} alt="beef"/>
-            </div>
+            {this.props.page === 'home' &&
+              <div>
+                <img className="beef-image" src={beef} alt="beef"/>
+              </div>
+            }
           </div>
         </form>
       );

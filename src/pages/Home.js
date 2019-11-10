@@ -20,7 +20,7 @@ class Home extends Component {
       <div className="home">
         <Cover />
         <Intro />
-        <Form {...this.props}/>
+        <Form page={'home'} {...this.props}/>
       </div>
 
     );
