@@ -305,7 +305,7 @@ input:focus, select:focus {
 /* footer */
 
 .footer {
-  margin-top: 5em;
+  margin-top: 50px;
   padding: 2em;
   text-align: center;
 }
@@ -334,6 +334,7 @@ input:focus, select:focus {
   font-weight: 300;
   font-size: 18px;
   line-height: 40px;
+  color: #4F4F4F;
 }
 
 
