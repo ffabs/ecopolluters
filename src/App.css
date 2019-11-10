@@ -215,6 +215,8 @@ button:hover {
 
 .intro-image {
   padding-right: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 /* form  */
