@@ -6,25 +6,34 @@ import beef from '../images/beef.svg';
 class Form extends Component {
   
    render() {
-    console.log(this.props.page);
+    let classform = '';
+    switch(this.props.page) {
+      case "Impact":
+        classform += 'form-impact';
+        break;
+      default:
+        classform = 'form-home';
+    }
+
+
       return (
-        <form className="impact-form" onSubmit={e => { e.preventDefault(); }}>
+        <form className={classform} onSubmit={e => { e.preventDefault(); }}>
           <div>
-            <div className="section-title algorithm-title">Calculate your impact</div>
-            <div className="algorithm-support" >We have preparred a kick-ass algorithm to help you understand your impact and give you ideas for what you can do</div>
+            <div className="section-title form-title">Calculate your impact</div>
+            <div className="form-support" >We have preparred a kick-ass algorithm to help you understand your impact and give you ideas for what you can do</div>
           </div>
-          <div className="impact-form-visual">
+          <div className="form-input-section">
             <div>
               <div>
                 <input  
-                  className="impact-input-form impact-number-form" 
+                  className="form-input form-number" 
                   type="number" 
                   name="amount"
                   defaultValue={this.props.amount}
                   min="1"
                   onChange={this.props.handleAmount}
                 />
-                <select className="impact-input-form impact-select-form" name="select" defaultValue={this.props.select} onChange={this.props.handleSelect}>
+                <select className="form-input form-select" name="select" defaultValue={this.props.select} onChange={this.props.handleSelect}>
                       <option value="200"> 🍔 hamburger (200 g) </option>
                       <option value="225"> 🥩 steak (225 g) </option>
                       <option value="1"> ⚖️ grams </option>
@@ -32,7 +41,7 @@ class Form extends Component {
               </div>
               <Link to="/impact">
                 <button 
-                  className="impact-button impact-button-form" 
+                  className="impact-button form-button" 
                   type="button" 
                   onClick={this.props.handleCalculation}>
                   CALCULATE IMPACT
@@ -41,7 +50,7 @@ class Form extends Component {
             </div>
             {this.props.page === 'home' &&
               <div>
-                <img className="beef-image" src={beef} alt="beef"/>
+                <img className="form-image" src={beef} alt="beef"/>
               </div>
             }
           </div>

@@ -20,7 +20,7 @@ class Header extends Component {
   }
   
   render() {
-    let impact = 'impact-button impact-button-menu';
+    let impact = 'impact-button menu-impact-button';
     let science = '';
     let about= '';
     switch(this.props.page) {
@@ -32,6 +32,9 @@ class Header extends Component {
         break;
       case "About":
         about += ' current';
+        break;
+      default:
+        impact = 'impact-button menu-impact-button';
     }
 
     return (        

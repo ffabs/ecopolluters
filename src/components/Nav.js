@@ -10,9 +10,6 @@ class Nav extends Component {
       let science = '';
       let about= '';
       switch(this.props.page) {
-        case "Home":
-          home += ' current';
-          break;
         case "Impact":
           impact += ' current';
           break;
@@ -24,6 +21,9 @@ class Nav extends Component {
           break;
         case "Footer":
           home -= ' hide';
+          break;
+        default:
+          home = 'hide';
       }
 
       return (        

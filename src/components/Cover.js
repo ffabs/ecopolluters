@@ -13,10 +13,10 @@ class Cover extends Component {
             <Header page={'Home'} />
             {/* <div className="cover-container">  */}
               <div className="catchy">
-                  <div className="cover-title">Eat beef?</div>
+                  <div className="page-title">Eat beef?</div>
                   <div className="cover-support">Find out your impact on the environment and what you can do</div>
                   <Link to="/impact">
-                  <button className="impact-button impact-button-cover">CALCULATE YOUR IMPACT</button>
+                  <button className="impact-button cover-impact-button">CALCULATE YOUR IMPACT</button>
                   </Link>
               </div>
             {/* </div> */}

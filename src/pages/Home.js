@@ -17,7 +17,7 @@ class Home extends Component {
   
     return (        
 
-      <div className="home">
+      <div className="page">
         <Cover />
         <Intro />
         <Form page={'home'} {...this.props}/>

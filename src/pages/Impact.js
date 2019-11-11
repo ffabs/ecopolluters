@@ -16,12 +16,14 @@ class Impact extends Component {
       initializeReactGA()
       
       return (
-          <div>
-            <Header/>
-            <Form {...this.props}/>
-            {this.props.calculation === true &&
-              <Pollution grams={this.props.grams} />
-            }
+          <div className="page">
+            <div className="impact-cover">
+              <Header page={'Impact'}/>
+              <Form page={'Impact'} {...this.props}/>
+              {this.props.calculation === true &&
+                <Pollution grams={this.props.grams} />
+              }
+            </div>
           </div>
       );
   }
