@@ -457,5 +457,9 @@ a:hover {
       margin-top: 10px;
       margin-left: 40px;
     }
+
+  .rights {
+    font-size: 12px;
+  }
   
 }
