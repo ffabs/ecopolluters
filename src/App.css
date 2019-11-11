@@ -395,3 +395,54 @@ a:hover {
   }
   
 }
+
+
+
+@media only screen and (max-width: 450px) {
+
+  .logo {
+    padding: 0px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .intro-item {
+    padding: 0px;
+    width: 300px;
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+
+  .form-home {
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #F2F2F2;
+    padding: 10px;
+    width: 300px;
+  }
+
+    .form-input {
+      border: 3px dotted #BDBDBD;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 5px;
+      margin-left:10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .form-button {
+      font-size: 15px;
+    }
+
+    .form-image {
+      width: 200px;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+  
+}
