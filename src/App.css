@@ -373,10 +373,6 @@ a:hover {
     width: 100%;
   }
 
-  .logo {
-    padding: 10px;
-  }
-
   .hamburger {
     display: block;
     float: right;
@@ -409,7 +405,8 @@ a:hover {
 @media only screen and (max-width: 450px) {
 
   .logo {
-    padding: 0px;
+    padding: 5px;
+    margin-right: 100px;
   }
 
   .section-title {
