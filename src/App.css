@@ -322,9 +322,17 @@ a:hover {
   width: 300px; */
 }
 
-.socials {
-  margin-bottom: 30px;
-}
+  .social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+    .social {
+      margin: 15px;
+      text-align: center;
+    }
 
 .rights {
   font-family: Open Sans;
@@ -435,9 +443,17 @@ a:hover {
       padding-bottom: 5px;
     }
 
-    .form-button {
-      font-size: 15px;
-    }
+      .form-number {
+        width: 40px;
+        text-align: center;
+        padding-left: 8px;
+      }
+
+      .form-button {
+        font-size: 15px;
+        padding: 10px 59px 10px 59px;
+        margin: 10px;
+      }
 
     .form-image {
       width: 200px;
