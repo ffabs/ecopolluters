@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
 }
 
   .page-title {
@@ -122,12 +123,6 @@ a:hover {
 
 /* cover */
 
-.cover-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .cover {
   background-color: #2FE2ED;
 }
@@ -138,27 +133,34 @@ a:hover {
   margin-bottom: -13px;
 }
 
-.catchy {
-  float: left;
+/* .cover-container {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  align-items: center;
+} */
 
-  .cover-support {
-    font-family: Open Sans;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 35px;
+  .catchy {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* width: 900px; */
   }
 
-  .cover-impact-button {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 3px 7px 3px 7px;
-    margin-top: 20px;
-  }
+    .cover-support {
+      font-family: Open Sans;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 35px;
+    }
+
+    .cover-impact-button {
+      font-size: 14px;
+      line-height: 24px;
+      padding: 3px 7px 3px 7px;
+      margin-top: 20px;
+    }
 
 .impact-cover {
   width: 100%;
@@ -292,6 +294,7 @@ a:hover {
     line-height: 32px;
     padding: 15px 78px 15px 78px;
     margin: 10px;
+    margin-bottom: 20px;
   }
 
 .form-image {
@@ -324,7 +327,6 @@ a:hover {
 
   .social-section {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 30px;
   }
@@ -386,6 +388,10 @@ a:hover {
   .nav {
     color: #4F4F4F;
   }
+
+  /* .catchy {
+    width: auto;
+  } */
 
   .item-intro {
     display: flex;
