@@ -21,7 +21,7 @@ class Impact extends Component {
               <Header page={'Impact'}/>
               <Form page={'Impact'} {...this.props}/>
               {this.props.calculation === true &&
-                <Pollution grams={this.props.grams} />
+                <Pollution grams={this.props.grams}/>
               }
             </div>
           </div>

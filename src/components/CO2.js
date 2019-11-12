@@ -8,9 +8,9 @@ class CO2 extends Component {
     return (        
 
         <div>
-          <h3> Green house gases: {this.props.CO2.toFixed(2)} kg CO2eq </h3>
-          <p>Driving an average petrol car (5 liters per 100km) for {(this.props.CO2/0.12).toFixed(0)} km</p>
-          <p>A person taking a plane for {(this.props.CO2/1.5).toFixed(0)} minutes</p>
+          <div className="section-title"> Green house gases: {this.props.CO2.toFixed(2)} kg CO2eq </div>
+          <div className="comparison">Driving an average petrol car for {(this.props.CO2/0.12).toFixed(0)} km (5 liters per 100km)</div>
+          <div className="comparison">Taking a {(this.props.CO2/1.5).toFixed(0)} minutes flight</div>
         </div>
 
     );

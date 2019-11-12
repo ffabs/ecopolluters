@@ -8,9 +8,9 @@ class Water extends Component {
     return (        
 
         <div>
-          <h3> Water: {this.props.water.toFixed(2)} liters </h3>
-          <p>Oktoberfest beers: {this.props.water.toFixed(0)}</p>
-          <p>Average American showers: {(this.props.water/65.1).toFixed(0)} </p>
+          <div className="section-title"> Water: {this.props.water.toFixed(2)} liters </div>
+          <div className="comparison">Drinking for {(this.props.water/2.56).toFixed(0)} days (2.56 liters per day)</div>
+          <div className="comparison">Showering {(this.props.water/55.573).toFixed(0)} times (for 7 minutes each time)</div>
         </div>
 
     );
