@@ -7,12 +7,15 @@ class Form extends Component {
   
    render() {
     let classform = '';
+    let impact = 'impact-button form-button';
     switch(this.props.page) {
       case "Impact":
         classform += 'form-impact';
+        impact += ' impact-button-impactpage';
         break;
       default:
         classform = 'form-home';
+        impact = 'impact-button form-button';
     }
 
 
@@ -41,7 +44,7 @@ class Form extends Component {
               </div>
               <Link to="/impact">
                 <button 
-                  className="impact-button form-button" 
+                  className={impact} 
                   type="button" 
                   onClick={this.props.handleCalculation}>
                   CALCULATE IMPACT

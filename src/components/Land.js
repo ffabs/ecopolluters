@@ -9,7 +9,7 @@ class Land extends Component {
 
         <div>
           <h3> Land usage: {this.props.land.toFixed(2)} square meters</h3>
-          <p>Parking lots: {(this.props.land/25).toFixed(2)} </p>
+          <p>Chemical toilets: {(this.props.land/1.42).toFixed(2)} </p>
           <p>Average 1 person flat in the world: {(this.props.land/52.6).toFixed(2)}</p>
         </div>
 

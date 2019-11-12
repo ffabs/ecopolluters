@@ -25,7 +25,7 @@ class Header extends Component {
     let about= '';
     switch(this.props.page) {
       case "Impact":
-        impact += ' current';
+        impact += ' impact-button-impactpage';
         break;
       case "Science":
         science += ' current';
