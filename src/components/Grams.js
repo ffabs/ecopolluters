@@ -8,7 +8,7 @@ class Grams extends Component {
     return (        
 
         <div>
-          <div className="section-title"> This is what {this.props.grams} grams of beef produce:</div>
+          <div className="grams"> This is what {this.props.grams} grams of beef produce:</div>
         </div>
 
     );

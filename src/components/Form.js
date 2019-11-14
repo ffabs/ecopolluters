@@ -10,18 +10,21 @@ class Form extends Component {
     let impact = 'impact-button form-button';
     let title = 'section-title form-title';
     let support = 'form-support';
+    let formimpactsection = "form-input-section";
     switch(this.props.page) {
       case "Impact":
         classform += 'form-impact';
         impact += ' impact-button-impactpage';
         title = 'page-title';
         support = 'hide';
+        formimpactsection = 'form-input-section-impactpage';
         break;
       default:
         classform = 'form-home';
         impact = 'impact-button form-button';
         title = 'section-title form-title';
         support = 'form-support';
+        formimpactsection = "form-input-section";
     }
 
 
@@ -31,7 +34,7 @@ class Form extends Component {
             <div className={title}>Calculate your impact</div>
             <div className={support} >We have preparred a kick-ass algorithm to help you understand your impact and give you ideas for what you can do</div>
           </div>
-          <div className="form-input-section">
+          <div className={formimpactsection}>
             <div>
               <div>
                 <input  
