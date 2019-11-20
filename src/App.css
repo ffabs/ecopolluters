@@ -80,7 +80,10 @@ a:hover {
 
   .desktop {
     display: flex;
-    margin-right: 1em;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+    /* margin-right: 1em; */
     list-style-type: none;
   }
 
@@ -143,11 +146,17 @@ a:hover {
   margin-bottom: -13px;
 }
 
-/* .cover-container {
+/* .cover-container { */
+  /* margin: 30px 10px 50px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-} */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 900px; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+/* } */
 
   .catchy {
     float: left;
@@ -207,7 +216,7 @@ a:hover {
       align-items: center;
       font-family: 'Open Sans';
       font-style: normal;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 24px;
       width: 370px;
       height: 80px;
@@ -222,6 +231,8 @@ a:hover {
 
       .intro-item-title {
         font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 6px;
       }
 
 
@@ -233,7 +244,7 @@ a:hover {
   margin-left: 20px;
   background: #F2F2F2;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .form-impact {
@@ -245,7 +256,6 @@ a:hover {
 }
 
 .form-title {
-  margin-left: 10px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
@@ -255,8 +265,6 @@ a:hover {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
   padding-top: 10px;
   padding-bottom: 30px;
 }
@@ -337,7 +345,13 @@ a:hover {
   font-weight: normal;
   font-size: 25px;
   line-height: 40px;
+  display: flex;
 }
+
+  .grams-variable {
+    font-style: italic;
+    margin: 0px 10px 0px 10px;
+  }
 
 .comparison {
   font-family: 'Open Sans';
@@ -449,6 +463,10 @@ a:hover {
     line-height: 24px;
     width: auto;
   }
+
+  .form-home {
+    margin: 0px;
+  }
   
 }
 
@@ -463,23 +481,18 @@ a:hover {
 
   .section-title {
     font-size: 28px;
-    margin-left: 10px;
+  }
+
+  .intro-container {
+    margin: 30px 0px 50px 0px;
   }
 
   .intro-item {
     padding: 0px;
-    width: 300px;
+    width: auto;
     margin-top: 50px;
-    margin-right: 0px;
+    margin-right: 20px;
     margin-bottom: 50px;
-  }
-
-  .form-home {
-    margin-right: 10px;
-    margin-left: 10px;
-    background: #F2F2F2;
-    padding: 10px;
-    width: 300px;
   }
 
     .form-input {
@@ -500,8 +513,8 @@ a:hover {
 
       .form-button {
         font-size: 15px;
-        padding: 10px 59px 10px 59px;
-        margin: 10px;
+        width: 100%;
+        margin: 0px;
       }
 
     .form-image {

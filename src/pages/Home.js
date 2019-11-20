@@ -6,7 +6,7 @@ import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
 
 function initializeReactGA() {
-  ReactGA.initialize('UA-150607597-1');
+  ReactGA.initialize('UA-150607597-1', { 'optimize_id': 'GTM-TVPWRD7'});
   ReactGA.pageview('/homepage');
 }
 

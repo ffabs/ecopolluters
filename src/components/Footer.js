@@ -34,7 +34,7 @@ class Footer extends Component {
             <Nav page={'Footer'}/>
           </div>
           <div>
-            <div className="rights">ecopolluters N.G.O. - All Rights Reserved</div>
+            <div className="rights">All Rights Reserved</div>
           </div>
           <Link to="/">
                 <img src={ecopolluters} alt="ecopolluters"/>
