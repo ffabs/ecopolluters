@@ -4,7 +4,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import {Link} from 'react-router-dom';
 import Nav from '../components/Nav';
 import ecopolluters from '../images/ecopolluters.svg';
-import logoicon from '../images/logoicon.svg';
+import logoicon from '../images/logoicon2x.png';
 
 class Header extends Component {
   constructor() {
@@ -43,7 +43,7 @@ class Header extends Component {
           <div className="menu">
             <div className="logo">
               <Link to="/">
-                <img src={logoicon} alt="ecopolluters-icon"/>
+                <img className="logoicon" src={logoicon} alt="ecopolluters-icon"/>
                 <img src={ecopolluters} alt="ecopolluters"/>
               </Link>
             </div>            

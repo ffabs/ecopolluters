@@ -106,8 +106,14 @@ a:hover {
       display: flex;
       justify-content: flex-start;
       padding: 10px;
-      margin-right: 220px;
+      margin-right: 210px;
     }
+
+      .logoicon {
+        height: 44px;
+        width: 44px;
+        margin-right: 10px;
+      }
 
     .menu-impact-button {
       font-style: normal;
