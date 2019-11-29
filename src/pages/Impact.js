@@ -20,10 +20,10 @@ class Impact extends Component {
             <div className="impact-cover">
               <Header page={'Impact'}/>
               <Form page={'Impact'} {...this.props}/>
+            </div>
               {this.props.calculation === true &&
                 <Pollution grams={this.props.grams}/>
               }
-            </div>
           </div>
       );
   }
