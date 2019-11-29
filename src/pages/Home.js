@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Form from '../components/Form';
+import FBShare from '../components/FBShare';
 import Intro from '../components/Intro';
 import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
@@ -22,6 +23,7 @@ class Home extends Component {
         <Cover />
         <Intro />
         <Form page={'home'} {...this.props}/>
+        <FBShare />
       </div>
 
     );

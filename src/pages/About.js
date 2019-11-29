@@ -17,11 +17,12 @@ class About extends Component {
 
             <div>
             <Header page={'About'}/>
-                <h3>Our mission is to connect individuals with the environment by fighting ignorance</h3>
-                <p>We believe in freedom of choice and accountability</p>
-                <p>We believe in science over myths and fake news</p>
-                <p>We believe in the power of awareness</p>
-                <p>We stand for the beauty of nature</p>
+
+                <div className="vision">Our vision is to make human society sustainable by enpowering individual behavioural change</div>
+                <div>We believe in freedom of choice and accountability</div>
+                <div>We believe in science over myths and fake news</div>
+                <div>We believe in the power of awareness</div>
+                <div>We stand for the beauty of nature</div>
             </div>
     
         );

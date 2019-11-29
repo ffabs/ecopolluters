@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:bold,normal');
+
 
 body {
   background-color:#FFFFFF;
@@ -22,7 +23,6 @@ body {
     font-size: 60px;
     line-height: 82px;
     margin-top: 40px;
-    font-weight: 800;
     /* text-align: center; */
   }
 
@@ -80,10 +80,8 @@ a:hover {
 
   .desktop {
     display: flex;
-    font-weight: bold;
     font-size: 14px;
     margin-right: 25px;
-    /* margin-right: 1em; */
     list-style-type: none;
   }
 
@@ -106,7 +104,7 @@ a:hover {
       display: flex;
       justify-content: flex-start;
       padding: 10px;
-      margin-right: 210px;
+      margin-right: 200px;
     }
 
       .logoicon {
@@ -123,7 +121,7 @@ a:hover {
     }
 
     .current{
-      font-weight: bold;
+      text-shadow: 0 0 .65px #333, 0 0 .65px #333;
     }
 
 
@@ -329,11 +327,21 @@ a:hover {
     margin-bottom: 20px;
   }
 
+  .form-button-position-home {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-button-position-impact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 .form-image {
   width: 250px;
   margin-left: 75px;
 }
-
 
 /* pollutions */
 
@@ -368,6 +376,42 @@ a:hover {
   margin-bottom: 30px;
 }
 
+/* FBShare */
+
+.fb-share-button {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
+  margin-top: 130px;
+  color: white;
+  background-color: #2F80ED;
+  border: 3px dotted #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 225px;
+}
+
+  .fb-share-text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+/* 
+  .fb-share-text:hover, .fb-share-text:link, .fb-share-text:visited, .fb-share-text:active {
+    text-decoration: none;
+    color: #4F4F4F;
+  } */
+
+/* about-us page  */
+
+.vision {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  margin: 20px;
+}
 
 /* footer */
 
@@ -377,24 +421,18 @@ a:hover {
   text-align: center;
 }
 
-.fb-share-button {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 40px;
-  margin-bottom: 30px;
-  /* color: white;
-  background-color: #2F80ED;
-  border: 3px dashed #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  width: 300px; */
-}
+  .findUs {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+  }
 
   .social-section {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
     .social {
