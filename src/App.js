@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Impact from './pages/Impact';
@@ -20,6 +19,7 @@ class App extends Component {
       tempAmount: 1,
       tempSelect: 200,
       tempGrams: 200,
+      // loading: true,
     };
   }
 
@@ -40,8 +40,15 @@ class App extends Component {
       select: this.state.tempSelect,
       grams: grams,
       calculation: true,
+      // loading: true,
     });
   }
+
+  // handleLoading = event => {
+  //   this.setState({
+  //     loading: false,
+  //   });
+  // }
 
   render() {
     return (
@@ -65,9 +72,11 @@ class App extends Component {
                 select={this.state.select}
                 grams={this.state.grams}
                 calculation={this.state.calculation}
+                // loading={this.state.loading}
                 handleAmount={this.handleAmount}
                 handleSelect={this.handleSelect}
                 handleCalculation={this.handleCalculation}
+                // handleLoading={this.handleLoading}
               />
             )}/>
             <Route exact={true} path='/science' render={() => (

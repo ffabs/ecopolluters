@@ -15,7 +15,7 @@ class Form extends Component {
     switch(this.props.page) {
       case "Impact":
         classform += 'form-impact';
-        impact += ' impact-button-impactpage';
+        impact += ' impact-button-impactpage impact-button-impactpage-form';
         title = 'page-title';
         support = 'hide';
         formimpactsection = 'form-input-section-impactpage';
@@ -23,7 +23,7 @@ class Form extends Component {
         break;
       default:
         classform = 'form-home';
-        impact = 'impact-button form-button';
+        impact = 'impact-button form-button impact-button-homepage-form';
         title = 'section-title form-title';
         support = 'form-support';
         formimpactsection = "form-input-section";
@@ -35,7 +35,7 @@ class Form extends Component {
         <form className={classform} onSubmit={e => { e.preventDefault(); }}>
           <div>
             <div className={title}>Calculate your impact</div>
-            <div className={support} >We have preparred a kick-ass algorithm to help you understand your impact and give you ideas for what you can do</div>
+            <div className={support}>We have preparred a kick-ass algorithm to help you understand your impact and give you ideas for what you can do</div>
           </div>
           <div className={formimpactsection}>
             <div className={buttonposition}>
@@ -55,14 +55,14 @@ class Form extends Component {
                 </select>
               </div>
               <div>
-              <Link to="/impact">
-                <button 
-                  className={impact} 
-                  type="button" 
-                  onClick={this.props.handleCalculation}>
-                  CALCULATE IMPACT
-                </button>
-              </Link>
+                <Link to="/impact">
+                  <button 
+                    className={impact} 
+                    type="button" 
+                    onClick={this.props.handleCalculation}>
+                    CALCULATE IMPACT
+                  </button>
+                </Link>
               </div>
             </div>
             {this.props.page === 'home' &&

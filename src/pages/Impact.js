@@ -22,7 +22,7 @@ class Impact extends Component {
               <Form page={'Impact'} {...this.props}/>
             </div>
               {this.props.calculation === true &&
-                <Pollution grams={this.props.grams}/>
+                <Pollution grams={this.props.grams} loading={this.props.loading} />
               }
           </div>
       );
