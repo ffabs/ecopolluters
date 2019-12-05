@@ -350,6 +350,7 @@ a:hover {
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 25px;
+    justify-content: space-around;
   }
 
 .form-image {
@@ -534,15 +535,9 @@ a:hover {
     width: auto;
   } */
 
-  .item-intro {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-size: 18px;
-    line-height: 24px;
-    width: auto;
+  .intro-item {
+    padding: 0px;
+    margin: 30px 20px 30px 20px;
   }
 
   .form-home {
@@ -555,7 +550,24 @@ a:hover {
 
 } */
 
+@media only screen and (max-width: 887px) {
+  
+  .impact-button-impactpage-form {
+    margin-left: 10px;
+    width: 100%;
+  }
 
+}
+
+@media only screen and (max-width: 839px) {
+
+  .intro-item {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+  }
+
+}
 
 @media only screen and (max-width: 460px) {
 
@@ -575,9 +587,9 @@ a:hover {
   .intro-item {
     padding: 0px;
     width: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
     .form-input {
