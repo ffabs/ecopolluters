@@ -59,7 +59,8 @@ body {
     }
   
   .impact-button-homepage-form {
-    margin: 10px;
+    /* margin: 10px; */
+    width: 100%;
   }
 
 button:hover {
@@ -285,7 +286,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* flex-direction: column; */
+  justify-content: center;
 }
 
   .form-input-section-impactpage {
@@ -317,7 +318,6 @@ a:hover {
     }
 
   .form-number {
-    margin-left: 10px;
     margin-right: 5px;
     width: 75px;
     text-align: center;
@@ -341,7 +341,6 @@ a:hover {
   .form-button-position-home {
     display: flex;
     flex-direction: column;
-    /* align-items: stretch; */
   }
   
   .form-button-position-impact {
@@ -354,8 +353,10 @@ a:hover {
   }
 
 .form-image {
-  width: 250px;
-  margin-left: 75px;
+  /* width: 250px;
+  margin-left: 75px; */
+  width: 100%;
+  height: 120px;
 }
 
 /* pollutions */
@@ -545,28 +546,11 @@ a:hover {
   }
   
 }
-/* 
-@media only screen and (max-width: 780px) {
 
-} */
-
-@media only screen and (max-width: 887px) {
-  
+@media only screen and (max-width: 877px) {
   .impact-button-impactpage-form {
-    margin-left: 10px;
-    width: 100%;
+    margin-left: 0px;
   }
-
-}
-
-@media only screen and (max-width: 839px) {
-
-  .intro-item {
-    padding: 20px;
-    margin: 20px;
-    width: 100%;
-  }
-
 }
 
 @media only screen and (max-width: 460px) {
@@ -577,7 +561,11 @@ a:hover {
   }
 
   .section-title {
-    font-size: 28px;
+    font-size: 25px;
+  }
+
+  .intro-item-title {
+    font-size: 16px;
   }
 
   .intro-container {
@@ -590,6 +578,11 @@ a:hover {
     margin-top: 60px;
     margin-right: 20px;
     margin-bottom: 60px;
+  }
+
+  .form-impact {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
     .form-input {
@@ -606,29 +599,26 @@ a:hover {
 
       .form-number {
         /* width: 40px; */
-        width: 21%;
-        margin-right: 20px;
+        margin-right: 5px;
         text-align: center;
-        padding-left: 8px;
+        padding-left: 4px;
       }
 
       .form-select {
-        width: 66%;
+        /* width: 66%; */
         text-align: center;
       }
 
       .form-button {
         font-size: 15px;
         width: 100%;
-        margin: 0px;
+        margin: 0px 0px 20px 0px;
         padding: 15px;
       }
 
-    .form-image {
-      width: 200px;
-      margin-top: 10px;
-      margin-left: 40px;
-    }
+      .form-button-position-impact {
+        flex-direction: column;
+      }
 
   .rights {
     font-size: 12px;
