@@ -363,34 +363,65 @@ a:hover {
 
 .pollutions {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .pollution {
-  margin: 50px 0px 30px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .grams {
-  margin: 30px 0px 50px 0px;
-  font-style: normal;
-  font-weight: normal;
+  margin: 50px 0px 0px 0px;
   font-size: 25px;
   line-height: 40px;
-  display: flex;
 }
 
-  .grams-variable {
-    font-style: italic;
-    margin: 0px 10px 0px 10px;
+.impact-image {
+  /* width: 50%; */
+  margin-top: 60px;
+  height: 250px;
+}
+
+.same-as {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 20px 0px 10px 0px;
+}
+
+.comparison-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+  .comparison-element {
+    display: flex;
+    align-items: center;
   }
 
-.comparison {
-  font-family: 'Open Sans';
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+    .comparison-image {
+      /* width: 50%; */
+      height: 100px;
+    }
+
+    .comparison-text {
+      margin-left: 10px;
+    }
+
+      .comparison {
+        font-family: 'Open Sans';
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      .comparison-support {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 26px;
+        color: #828282;
+      }
 
 /* FBShare */
 
@@ -544,13 +575,35 @@ a:hover {
   .form-home {
     margin: 0px;
   }
+
+  .impact-image {
+    width: 100%;
+    height: auto;
+  }
   
 }
 
 @media only screen and (max-width: 877px) {
+
   .impact-button-impactpage-form {
     margin-left: 0px;
   }
+
+  .comparison-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    .comparison-element {
+      margin-bottom: 10px;
+    }
+
+      .comparison-image {
+        /* width: 50%; */
+        height: 70px;
+      }
+
 }
 
 @media only screen and (max-width: 460px) {
