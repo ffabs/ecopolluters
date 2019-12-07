@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import waterimpact from '../images/water-impact.png';
+import landimpact from '../images/land-impact.png';
+import toilets from '../images/toilets.png';
 import shower from '../images/shower.png';
 
 class Land extends Component {
@@ -10,13 +11,13 @@ class Land extends Component {
     return (        
 
         <div>
-          <img className="impact-image" src={waterimpact} alt="waterImpact"/>
+          <img className="impact-image" src={landimpact} alt="landImpact"/>
           <div className="section-title pollution">{this.props.land.toFixed(2)} sqm of land</div>
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">
               <div>
-                <img className="comparison-image" src={shower} alt="showerComparison"/>
+                <img className="comparison-image" src={toilets} alt="toiletsComparison"/>
               </div>
               <div className="comparison-text">
                 <div className="comparison">{(this.props.land/1.42).toFixed(0)} chemical toilets</div>
