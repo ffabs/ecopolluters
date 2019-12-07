@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10a311bb444d09856f843470b2f36a98",
+    "revision": "70c9b0da60d0b3a7ebc027f07b292128",
     "url": "/index.html"
   },
   {
-    "revision": "4f8ba2f2279996dd0336",
-    "url": "/static/css/main.b72f011f.chunk.css"
+    "revision": "d1a8d5126400471f0eb1",
+    "url": "/static/css/main.44bbd05a.chunk.css"
   },
   {
-    "revision": "54c566134f4c4eb8fce8",
-    "url": "/static/js/2.e13b2550.chunk.js"
+    "revision": "0343a1249dfe5c424097",
+    "url": "/static/js/2.27a96c40.chunk.js"
   },
   {
-    "revision": "4f8ba2f2279996dd0336",
-    "url": "/static/js/main.5a329c37.chunk.js"
+    "revision": "d1a8d5126400471f0eb1",
+    "url": "/static/js/main.b0ae644e.chunk.js"
   },
   {
     "revision": "d290c809d3d16a4760cc",
@@ -22,6 +22,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cfa981c5116d3e4ab8214745ed56ddc3",
     "url": "/static/media/beef.cfa981c5.svg"
+  },
+  {
+    "revision": "f25b39406ee50d67334e38b1aba68b8a",
+    "url": "/static/media/car.f25b3940.png"
+  },
+  {
+    "revision": "05ccd5b62db2544b7fb447fb59c8ce2d",
+    "url": "/static/media/co2-impact.05ccd5b6.png"
   },
   {
     "revision": "1675cbd9b7d55bcf8b55eac827b5428c",
@@ -40,8 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ecopolluters.a6fc8e23.svg"
   },
   {
+    "revision": "494c3d62eb8c3972658abe2ce96ed8c0",
+    "url": "/static/media/flight.494c3d62.png"
+  },
+  {
     "revision": "d7af5675798b0d8a85c3e3b8b2c0ca36",
     "url": "/static/media/land.d7af5675.svg"
+  },
+  {
+    "revision": "8a97a581adcc7af023f759a9ae02e046",
+    "url": "/static/media/shower.8a97a581.png"
+  },
+  {
+    "revision": "cfc49674a277d25bd50d3254e24f0400",
+    "url": "/static/media/water-impact.cfc49674.png"
   },
   {
     "revision": "f8a4135da60bc9ff4b73eaad9e1bdf9e",
