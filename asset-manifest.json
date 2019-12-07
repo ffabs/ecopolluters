@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.b72f011f.chunk.css",
-    "main.js": "/static/js/main.5603aa9f.chunk.js",
-    "main.js.map": "/static/js/main.5603aa9f.chunk.js.map",
+    "main.js": "/static/js/main.5a329c37.chunk.js",
+    "main.js.map": "/static/js/main.5a329c37.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec654a98.js",
     "runtime-main.js.map": "/static/js/runtime-main.ec654a98.js.map",
     "static/js/2.e13b2550.chunk.js": "/static/js/2.e13b2550.chunk.js",
     "static/js/2.e13b2550.chunk.js.map": "/static/js/2.e13b2550.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a3d7999b1a1231af39c0f98af8377c7b.js": "/precache-manifest.a3d7999b1a1231af39c0f98af8377c7b.js",
+    "precache-manifest.b2f6c7008706095a20b67962ca256699.js": "/precache-manifest.b2f6c7008706095a20b67962ca256699.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.b72f011f.chunk.css.map": "/static/css/main.b72f011f.chunk.css.map",
     "static/media/beef.svg": "/static/media/beef.cfa981c5.svg",
