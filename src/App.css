@@ -398,6 +398,7 @@ a:hover {
   .comparison-element {
     display: flex;
     align-items: center;
+    width: 350px;
   }
 
     .comparison-image {
