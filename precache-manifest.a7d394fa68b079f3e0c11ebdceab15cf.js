@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e8ea96abd39a2c9d53f638021247403",
+    "revision": "8a0b1570cc738a6fbb74b1cb41706e66",
     "url": "/index.html"
   },
   {
-    "revision": "e5e3095963f4c6c69c9c",
+    "revision": "c08fc3ed9cbee2a57d5e",
     "url": "/static/css/main.337fd32d.chunk.css"
   },
   {
-    "revision": "0343a1249dfe5c424097",
-    "url": "/static/js/2.27a96c40.chunk.js"
+    "revision": "490f65038f0780702c72",
+    "url": "/static/js/2.2cc6b3e3.chunk.js"
   },
   {
-    "revision": "e5e3095963f4c6c69c9c",
-    "url": "/static/js/main.b0ae644e.chunk.js"
+    "revision": "c08fc3ed9cbee2a57d5e",
+    "url": "/static/js/main.3d89f974.chunk.js"
   },
   {
     "revision": "d290c809d3d16a4760cc",
@@ -52,12 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/flight.494c3d62.png"
   },
   {
+    "revision": "53780ead85a35d40a3ea895618313ddd",
+    "url": "/static/media/land-impact.53780ead.png"
+  },
+  {
     "revision": "d7af5675798b0d8a85c3e3b8b2c0ca36",
     "url": "/static/media/land.d7af5675.svg"
   },
   {
     "revision": "8a97a581adcc7af023f759a9ae02e046",
     "url": "/static/media/shower.8a97a581.png"
+  },
+  {
+    "revision": "f6a46ea4157d2018bb43c22a54e8cf4b",
+    "url": "/static/media/toilets.f6a46ea4.png"
   },
   {
     "revision": "cfc49674a277d25bd50d3254e24f0400",
