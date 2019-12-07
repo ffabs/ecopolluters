@@ -21,7 +21,7 @@ class Water extends Component {
               </div>
               <div className="comparison-text">
                 <div className="comparison">Drinking for {(this.props.water/2.56).toFixed(0)} days</div>
-                <div className="comparison-support">2.5 liters per day</div>
+                <div className="comparison-support">2.6 liters per day</div>
               </div>
             </div>
             <div className="comparison-element">

@@ -598,6 +598,7 @@ a:hover {
 
     .comparison-element {
       margin-bottom: 10px;
+      width: auto;
     }
 
       .comparison-image {
