@@ -23,7 +23,7 @@ class Intro extends Component {
               </div>
               <div>
                 <div className="intro-item-title">Cows are killed</div>
-                <div>More than 300 million cows are killed a year to cope with the increasing demand for beef.</div>
+                <div>More than 300 million cows are killed per year to cope with the increasing demand for beef.</div>
               </div>
             </div>
             <div className="intro-item">

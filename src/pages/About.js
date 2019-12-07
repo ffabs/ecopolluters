@@ -18,7 +18,7 @@ class About extends Component {
             <div>
             <Header page={'About'}/>
 
-                <div className="vision">Our vision is to make human society sustainable by enpowering individual behavioural change</div>
+                <div className="vision">Our vision is to make human society sustainable by empowering individual behavioural change</div>
                 <div>We believe in freedom of choice and accountability</div>
                 <div>We believe in science over myths and fake news</div>
                 <div>We believe in the power of awareness</div>
