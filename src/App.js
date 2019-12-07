@@ -6,6 +6,9 @@ import Science from './pages/Science';
 import About from './pages/About';
 import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
+import { hotjar } from 'react-hotjar';
+ 
+hotjar.initialize(1604054);
 
 class App extends Component {
   

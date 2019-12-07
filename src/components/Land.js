@@ -29,7 +29,7 @@ class Land extends Component {
               </div>
               <div className="comparison-text">
                 <div className="comparison">{(this.props.land/52.6).toFixed(0)} apartments</div>
-                <div className="comparison-support">Average 1 person flat in the world</div>
+                <div className="comparison-support">Average 1 person flat</div>
               </div>
             </div>
           </div>
