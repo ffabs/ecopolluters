@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9519278ec8baed59a16edae60d77b54c",
+    "revision": "a9cdd560a6ee375fc8ce50440e55af3e",
     "url": "/index.html"
   },
   {
-    "revision": "7b9c02ae50b96a3cccf8",
-    "url": "/static/css/main.3ea45bd5.chunk.css"
+    "revision": "35c7049bb5d10cccf9a7",
+    "url": "/static/css/main.68d497c5.chunk.css"
   },
   {
-    "revision": "2257e880c2b1950d8617",
-    "url": "/static/js/2.135d5387.chunk.js"
+    "revision": "703084a63a586760e119",
+    "url": "/static/js/2.af3e917a.chunk.js"
   },
   {
-    "revision": "7b9c02ae50b96a3cccf8",
-    "url": "/static/js/main.a3ae9976.chunk.js"
+    "revision": "35c7049bb5d10cccf9a7",
+    "url": "/static/js/main.611606da.chunk.js"
   },
   {
     "revision": "d290c809d3d16a4760cc",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d7af5675798b0d8a85c3e3b8b2c0ca36",
     "url": "/static/media/land.d7af5675.svg"
+  },
+  {
+    "revision": "aee845cc6578f9deb6af77df2e169806",
+    "url": "/static/media/napoleon_white_cow.aee845cc.png"
   },
   {
     "revision": "8a97a581adcc7af023f759a9ae02e046",
