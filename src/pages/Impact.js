@@ -4,6 +4,7 @@ import Form from '../components/Form';
 import Pollution from '../components/Pollution';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -24,6 +25,7 @@ class Impact extends Component {
               {this.props.calculation === true &&
                 <Pollution grams={this.props.grams} loading={this.props.loading} />
               }
+            <Footer />
           </div>
       );
   }

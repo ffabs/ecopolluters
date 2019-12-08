@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import Impact from './pages/Impact';
 import Science from './pages/Science';
@@ -92,7 +91,6 @@ class App extends Component {
               <Redirect to="/" />
             )}/>
           </Switch>
-          <Footer />
         </ScrollToTop>
       </HashRouter>
     );

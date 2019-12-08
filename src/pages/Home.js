@@ -5,6 +5,7 @@ import FBShare from '../components/FBShare';
 import Intro from '../components/Intro';
 import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
+import Footer from '../components/Footer';
 
 function initializeReactGA() {
   // { 'optimize_id': 'GTM-TVPWRD7'} <-- ab testing code
@@ -24,6 +25,7 @@ class Home extends Component {
         <Intro />
         <Form page={'home'} {...this.props}/>
         <FBShare />
+        <Footer />
       </div>
 
     );

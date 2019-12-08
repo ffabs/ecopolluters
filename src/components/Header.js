@@ -48,7 +48,7 @@ class Header extends Component {
               </Link>
             </div>            
               <div className="desktop"><Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link></div>
-              <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFICAL SOURCES</li></Link></div>
+              <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFIC SOURCES</li></Link></div>
               <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>
             <div className="hamburger">
               <HamburgerMenu

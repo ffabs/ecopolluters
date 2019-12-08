@@ -38,7 +38,7 @@ class Nav extends Component {
                   <div className={impact}>CALCULATE YOUR IMPACT</div>
                 </Link>
                 <Link to="/science">
-                  <div className={science}>SCIENTIFICAL SOURCES</div>
+                  <div className={science}>SCIENTIFIC SOURCES</div>
                 </Link>
                 <Link to="/about">
                   <div className={about}>ABOUT US</div>

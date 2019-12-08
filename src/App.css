@@ -23,6 +23,7 @@ body {
     font-size: 60px;
     line-height: 82px;
     margin-top: 40px;
+    color: #333333;
   }
 
   .section-title {
@@ -511,6 +512,65 @@ a:hover {
   margin-bottom: 10px;
 }
 
+/* science page */
+.science-background {
+  background: #F2F2F2;
+}
+
+.science-alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.science-page-title {
+  margin: 40px 20px 20px 20px;
+  width: 900px;
+}
+
+.science-section-title {
+  font-size: 25px;
+  line-height: 40px;
+  color: #333333;
+  margin: 30px 20px 0px 20px;
+  width: 900px;
+}
+
+.science-article {
+  background: white;
+  width: 840px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+  .science-article:hover {
+    border: 3px dotted #BB6BD9;
+    /* outline: none; */
+  }
+
+  .science-article-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  .science-article-support { 
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  .science-article-date {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    color: #828282;
+  }
+
 @media only screen and (max-width: 1425px) {
   
   .title-responsive {
@@ -584,6 +644,18 @@ a:hover {
     width: 100%;
     height: auto;
   }
+
+  .science-page-title {
+    width: 800px;
+  }
+  
+  .science-section-title {
+    width: 800px;
+  }
+
+  .science-article {
+    width: 800px;
+  }
   
 }
 
@@ -613,9 +685,70 @@ a:hover {
         height: 70px;
       }
 
+  .science-page-title {
+    width: 700px;
+  }
+  
+  .science-section-title {
+    width: 700px;
+  }
+
+  .science-article {
+    width: 700px;
+  }
+
+}
+
+@media only screen and (max-width: 790px) {
+
+  .science-page-title {
+    width: 550px;
+  }
+
+  .science-section-title {
+    width: 550px;
+  }
+
+  .science-article {
+    width: 550px;
+  }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+  .page-title {
+    font-size: 48px;
+  }
+
+  .science-alignment {
+    align-items: flex-start;
+  }
+
+  .science-page-title {
+    width: auto;
+  }
+  
+  .science-section-title {
+    width: auto;
+    font-size: 25px;
+  }
+
+  .science-article {
+    width: auto;
+  }
+
 }
 
 @media only screen and (max-width: 460px) {
+
+  .page-title {
+    font-size: 35px;
+  }
+
+  .science-section-title {
+    font-size: 18px;
+  }
 
   .logo {
     padding: 5px;
@@ -686,4 +819,12 @@ a:hover {
     font-size: 12px;
   }
   
+}
+
+@media only screen and (max-width: 350px) {
+
+  .page-title {
+    font-size: 32px;
+  }
+
 }
