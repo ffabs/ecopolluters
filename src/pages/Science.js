@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
-import {Link} from 'react-router-dom';
 
 function initializeReactGA() {
     ReactGA.initialize('UA-150607597-1');
@@ -23,9 +22,11 @@ class Science extends Component {
                 <div>Publication: Science</div>
                 <div>Publisher: The American Association for the Advancement of Science</div>
                 <div>Date: Jun 1, 2018</div>
-                <Link to="https://science.sciencemag.org/content/360/6392/987">
-                    <div>Read the article here</div>
-                </Link>
+                <div>
+                    <a style={{display: "table-cell"}} href="https://science.sciencemag.org/content/360/6392/987" target="_blank">
+                        Read the article here
+                    </a>
+                </div>
             </div>
     
         );
