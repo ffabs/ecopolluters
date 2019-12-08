@@ -1,1 +1,1 @@
-Ecopolluters is a non-profit organisation that aims at connecting individuals with the environment by fighting ignorance.
+ecopolluters aims at making human society sustainable by empowering individual behavioural change.
