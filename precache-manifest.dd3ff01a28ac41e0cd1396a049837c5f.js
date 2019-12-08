@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b478c7458dadce71d4a3119f6d0378e",
+    "revision": "1859acc444baab3c55b856404013fd94",
     "url": "/index.html"
   },
   {
-    "revision": "abf4891ad4bb38c04fa2",
+    "revision": "057195cf763af1d2ae51",
     "url": "/static/css/main.77c5f0a1.chunk.css"
   },
   {
-    "revision": "d6dbc96f54bbb04adc11",
-    "url": "/static/js/2.f5f7d3ad.chunk.js"
+    "revision": "2a3f8a657c76fbcb4114",
+    "url": "/static/js/2.72c28337.chunk.js"
   },
   {
-    "revision": "abf4891ad4bb38c04fa2",
-    "url": "/static/js/main.e65b510e.chunk.js"
+    "revision": "057195cf763af1d2ae51",
+    "url": "/static/js/main.51ce0826.chunk.js"
   },
   {
     "revision": "d290c809d3d16a4760cc",
@@ -44,8 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cow.cea02c7c.svg"
   },
   {
+    "revision": "5134f345ae0062db84018295b29d32f9",
+    "url": "/static/media/drink.5134f345.png"
+  },
+  {
     "revision": "a6fc8e237291494600462050f31b0d99",
     "url": "/static/media/ecopolluters.a6fc8e23.svg"
+  },
+  {
+    "revision": "ad13421274ced5dfe3b53e6cad0ce3c0",
+    "url": "/static/media/flat.ad134212.png"
   },
   {
     "revision": "494c3d62eb8c3972658abe2ce96ed8c0",
@@ -68,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/toilets.f6a46ea4.png"
   },
   {
-    "revision": "cfc49674a277d25bd50d3254e24f0400",
-    "url": "/static/media/water-impact.cfc49674.png"
+    "revision": "a8cab347905210e39a7422be054ccb40",
+    "url": "/static/media/water-impact.a8cab347.png"
   },
   {
     "revision": "f8a4135da60bc9ff4b73eaad9e1bdf9e",

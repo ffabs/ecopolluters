@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.77c5f0a1.chunk.css",
-    "main.js": "/static/js/main.e65b510e.chunk.js",
-    "main.js.map": "/static/js/main.e65b510e.chunk.js.map",
+    "main.js": "/static/js/main.51ce0826.chunk.js",
+    "main.js.map": "/static/js/main.51ce0826.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec654a98.js",
     "runtime-main.js.map": "/static/js/runtime-main.ec654a98.js.map",
-    "static/js/2.f5f7d3ad.chunk.js": "/static/js/2.f5f7d3ad.chunk.js",
-    "static/js/2.f5f7d3ad.chunk.js.map": "/static/js/2.f5f7d3ad.chunk.js.map",
+    "static/js/2.72c28337.chunk.js": "/static/js/2.72c28337.chunk.js",
+    "static/js/2.72c28337.chunk.js.map": "/static/js/2.72c28337.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7219e91079ba52573b220f355b3edd91.js": "/precache-manifest.7219e91079ba52573b220f355b3edd91.js",
+    "precache-manifest.dd3ff01a28ac41e0cd1396a049837c5f.js": "/precache-manifest.dd3ff01a28ac41e0cd1396a049837c5f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.77c5f0a1.chunk.css.map": "/static/css/main.77c5f0a1.chunk.css.map",
     "static/media/beef.svg": "/static/media/beef.cfa981c5.svg",
@@ -17,13 +17,15 @@
     "static/media/co2.svg": "/static/media/co2.1675cbd9.svg",
     "static/media/cover.svg": "/static/media/cover.f9a22949.svg",
     "static/media/cow.svg": "/static/media/cow.cea02c7c.svg",
+    "static/media/drink.png": "/static/media/drink.5134f345.png",
     "static/media/ecopolluters.svg": "/static/media/ecopolluters.a6fc8e23.svg",
+    "static/media/flat.png": "/static/media/flat.ad134212.png",
     "static/media/flight.png": "/static/media/flight.494c3d62.png",
     "static/media/land-impact.png": "/static/media/land-impact.53780ead.png",
     "static/media/land.svg": "/static/media/land.d7af5675.svg",
     "static/media/shower.png": "/static/media/shower.8a97a581.png",
     "static/media/toilets.png": "/static/media/toilets.f6a46ea4.png",
-    "static/media/water-impact.png": "/static/media/water-impact.cfc49674.png",
+    "static/media/water-impact.png": "/static/media/water-impact.a8cab347.png",
     "static/media/water.svg": "/static/media/water.f8a4135d.svg"
   }
 }
