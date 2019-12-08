@@ -23,7 +23,6 @@ body {
     font-size: 60px;
     line-height: 82px;
     margin-top: 40px;
-    /* text-align: center; */
   }
 
   .section-title {
@@ -163,10 +162,12 @@ a:hover {
     float: left;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-    /* width: 900px; */
   }
+
+    .title-responsive {
+      margin-left: 20%;
+      margin-right: 20px;
+    }
 
     .cover-support {
       font-family: 'Open Sans';
@@ -510,9 +511,27 @@ a:hover {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1425px) {
+  
+  .title-responsive {
+    margin-left: 18%;
+  }
 
+}
+
+@media only screen and (max-width: 1350px) {
+  
+  .title-responsive {
+    margin-left: 14%;
+  }
+
+}
 
 @media only screen and (max-width: 1000px) {
+  
+  .title-responsive {
+    margin-left: 8%;
+  }
 
   .desktop {
     display: none;
@@ -552,10 +571,6 @@ a:hover {
     color: #4F4F4F;
   }
 
-  /* .catchy {
-    width: auto;
-  } */
-
   .intro-item {
     padding: 0px;
     margin: 30px 20px 30px 20px;
@@ -573,6 +588,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 877px) {
+
+  .title-responsive {
+    margin-left: 20px;
+  }
 
   .impact-button-impactpage-form {
     margin-left: 0px;

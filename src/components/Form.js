@@ -16,7 +16,7 @@ class Form extends Component {
       case "Impact":
         classform += 'form-impact';
         impact += ' impact-button-impactpage impact-button-impactpage-form';
-        title = 'page-title';
+        title = 'page-title title-responsive';
         support = 'hide';
         formimpactsection = 'form-input-section-impactpage';
         buttonposition  = "form-button-position-impact";
