@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import waterimpact from '../images/water-impact.png';
+import drink from '../images/drink.png';
 import shower from '../images/shower.png';
 
 
@@ -17,7 +18,7 @@ class Water extends Component {
           <div className="comparison-section">
             <div className="comparison-element">
               <div>
-                <img className="comparison-image" src={shower} alt="showerComparison"/>
+                <img className="comparison-image" src={drink} alt="drinkComparison"/>
               </div>
               <div className="comparison-text">
                 <div className="comparison">Drinking for {(this.props.water/2.56).toFixed(0)} days</div>

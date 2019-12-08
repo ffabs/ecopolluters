@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import landimpact from '../images/land-impact.png';
 import toilets from '../images/toilets.png';
-import shower from '../images/shower.png';
+import flat from '../images/flat.png';
 
 class Land extends Component {
   
@@ -25,7 +25,7 @@ class Land extends Component {
             </div>
             <div className="comparison-element">
               <div>
-                <img className="comparison-image" src={shower} alt="showerComparison"/>
+                <img className="comparison-image" src={flat} alt="flatComparison"/>
               </div>
               <div className="comparison-text">
                 <div className="comparison">{(this.props.land/52.6).toFixed(0)} apartments</div>
