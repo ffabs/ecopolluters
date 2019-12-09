@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9cdd560a6ee375fc8ce50440e55af3e",
+    "revision": "45864708ead92167b59b006967d0b102",
     "url": "/index.html"
   },
   {
-    "revision": "35c7049bb5d10cccf9a7",
-    "url": "/static/css/main.68d497c5.chunk.css"
+    "revision": "89677050507bf491fb84",
+    "url": "/static/css/main.72afc732.chunk.css"
   },
   {
-    "revision": "703084a63a586760e119",
-    "url": "/static/js/2.af3e917a.chunk.js"
+    "revision": "49c6e17a0e66a5cdb5ac",
+    "url": "/static/js/2.41b1265a.chunk.js"
   },
   {
-    "revision": "35c7049bb5d10cccf9a7",
-    "url": "/static/js/main.611606da.chunk.js"
+    "revision": "89677050507bf491fb84",
+    "url": "/static/js/main.00dd3acf.chunk.js"
   },
   {
     "revision": "d290c809d3d16a4760cc",
@@ -44,12 +44,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cow.cea02c7c.svg"
   },
   {
+    "revision": "76b0ed1a133a9908c9f3c18bd2703181",
+    "url": "/static/media/diego.76b0ed1a.png"
+  },
+  {
     "revision": "5134f345ae0062db84018295b29d32f9",
     "url": "/static/media/drink.5134f345.png"
   },
   {
     "revision": "a6fc8e237291494600462050f31b0d99",
     "url": "/static/media/ecopolluters.a6fc8e23.svg"
+  },
+  {
+    "revision": "f9d6efdd083483f485df9e8c587cd6f1",
+    "url": "/static/media/fabio.f9d6efdd.png"
+  },
+  {
+    "revision": "3169c2016c0247a78830d31d3189a13d",
+    "url": "/static/media/filippo.3169c201.png"
   },
   {
     "revision": "ad13421274ced5dfe3b53e6cad0ce3c0",
