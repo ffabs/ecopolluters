@@ -47,17 +47,17 @@ class About extends Component {
                             <div>
                                 <img className="team-image" src={diego} alt="Diego"/>
                                 <div className="team-member">Diego Gomez</div>
-                                <div className="team-role">Marketing Focus</div>
+                                <div className="team-role">Product & Marketing Focus</div>
                             </div>
                             <div>
                                 <img className="team-image" src={fabio} alt="Fabio"/>
                                 <div className="team-member">Fabio Ferrari</div>
-                                <div className="team-role">Development Focus</div>
+                                <div className="team-role">Product & Development Focus</div>
                             </div>
                             <div>
                                 <img className="team-image" src={filippo} alt="Filippo"/>
                                 <div className="team-member">Filippo Anzivino</div>
-                                <div className="team-role">Design Focus</div>
+                                <div className="team-role">Product & Design Focus</div>
                             </div>
                         </div>
 
