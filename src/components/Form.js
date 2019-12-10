@@ -12,14 +12,17 @@ class Form extends Component {
     let support = 'form-support';
     let formimpactsection = "form-input-section";
     let buttonposition  = "form-button-position-home";
+    let alignment = "";
     switch(this.props.page) {
       case "Impact":
         classform += 'form-impact';
         impact += ' impact-button-impactpage impact-button-impactpage-form';
-        title = 'page-title title-responsive';
+        // title = 'page-title title-responsive';
+        title = 'page-title science-page-title';
         support = 'hide';
         formimpactsection = 'form-input-section-impactpage';
         buttonposition  = "form-button-position-impact";
+        alignment = 'science-alignment';
         break;
       default:
         classform = 'form-home';
@@ -28,12 +31,13 @@ class Form extends Component {
         support = 'form-support';
         formimpactsection = "form-input-section";
         buttonposition  = "form-button-position-home";
+        alignment = '';
     }
 
 
       return (
         <form className={classform} onSubmit={e => { e.preventDefault(); }}>
-          <div>
+          <div className={alignment}>
             <div className={title}>Calculate your impact</div>
             <div className={support}>We have preparred a kick-ass algorithm to help you understand your impact</div>
           </div>

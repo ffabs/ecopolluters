@@ -159,17 +159,6 @@ a:hover {
   margin-bottom: -13px;
 }
 
-  .catchy {
-    float: left;
-    display: flex;
-    flex-direction: column;
-  }
-
-    .title-responsive {
-      margin-left: 20%;
-      margin-right: 20px;
-    }
-
     .cover-support {
       font-family: 'Open Sans';
       font-weight: normal;
@@ -602,7 +591,7 @@ a:hover {
   font-size: 25px;
   line-height: 40px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 .team-alignment {
@@ -632,27 +621,9 @@ a:hover {
     margin-bottom: 20px;
   }
 
-@media only screen and (max-width: 1425px) {
-  
-  .title-responsive {
-    margin-left: 18%;
-  }
 
-}
-
-@media only screen and (max-width: 1350px) {
-  
-  .title-responsive {
-    margin-left: 14%;
-  }
-
-}
 
 @media only screen and (max-width: 1000px) {
-  
-  .title-responsive {
-    margin-left: 8%;
-  }
 
   .desktop {
     display: none;
@@ -721,10 +692,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 877px) {
-
-  .title-responsive {
-    margin-left: 20px;
-  }
 
   .impact-button-impactpage-form {
     margin-left: 0px;

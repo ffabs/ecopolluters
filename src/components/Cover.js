@@ -11,7 +11,9 @@ class Cover extends Component {
     return (        
         <div className="cover">
             <Header page={'Home'} />
-            <div className="catchy title-responsive">
+            {/* <div className="catchy title-responsive"> */}
+            <div className="science-alignment">
+              <div className="science-page-title">
                 <div className="page-title">Eat beef?</div>
                 <div className="cover-support">Find out your impact on the environment</div>
                  <div>
@@ -19,6 +21,7 @@ class Cover extends Component {
                   <button className="impact-button cover-impact-button">CALCULATE YOUR IMPACT</button>
                   </Link>
                 </div>
+              </div>
             </div>
             <img className="cover-image" src={cover} alt="hamburgerImpact"/>
         </div>
