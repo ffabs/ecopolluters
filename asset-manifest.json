@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2b30332.chunk.css",
+    "main.css": "/static/css/main.38a92a5c.chunk.css",
     "main.js": "/static/js/main.78c06504.chunk.js",
     "main.js.map": "/static/js/main.78c06504.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec654a98.js",
@@ -8,9 +8,9 @@
     "static/js/2.21fadfea.chunk.js": "/static/js/2.21fadfea.chunk.js",
     "static/js/2.21fadfea.chunk.js.map": "/static/js/2.21fadfea.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e4bacd63a710ea8ce3abe01eec355748.js": "/precache-manifest.e4bacd63a710ea8ce3abe01eec355748.js",
+    "precache-manifest.f38b58d0bbc3b485230308ee5a3bb2ad.js": "/precache-manifest.f38b58d0bbc3b485230308ee5a3bb2ad.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a2b30332.chunk.css.map": "/static/css/main.a2b30332.chunk.css.map",
+    "static/css/main.38a92a5c.chunk.css.map": "/static/css/main.38a92a5c.chunk.css.map",
     "static/media/beef.svg": "/static/media/beef.cfa981c5.svg",
     "static/media/co2-impact.png": "/static/media/co2-impact.0f2834b3.png",
     "static/media/co2.svg": "/static/media/co2.1675cbd9.svg",
