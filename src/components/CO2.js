@@ -12,7 +12,7 @@ class CO2 extends Component {
 
         <div>
           <img className="impact-image" src={co2impact} alt="co2Impact"/>
-          <div className="section-title pollution"> {this.props.CO2.toFixed(2)} kg CO2 </div>
+          <div className="section-title pollution"> {this.props.CO2.toFixed(2)} kg of CO2 produced</div>
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">

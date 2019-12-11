@@ -13,7 +13,7 @@ class Water extends Component {
 
         <div>
           <img className="impact-image" src={waterimpact} alt="waterImpact"/>
-          <div className="section-title pollution">{this.props.water.toFixed(2)} liters of water</div>
+          <div className="section-title pollution">{this.props.water.toFixed(2)} liters of water consumed</div>
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">

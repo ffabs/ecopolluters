@@ -9,7 +9,7 @@ class Grams extends Component {
 
         <div>
           <div className="grams"> 
-            <div>This is what {this.props.grams} grams of beef produce:</div>
+            <div>This is the effect of {this.props.grams} grams of beef on the environment:</div>
           </div>
         </div>
 
