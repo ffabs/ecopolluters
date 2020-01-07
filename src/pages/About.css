@@ -1,0 +1,99 @@
+.about-background {
+    background: #F3ECE1;
+  }
+  
+  .about-alignment {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+    .napoleon-image {
+      height: 330px;
+      margin: 40px;
+    }
+  
+    .about-vision {
+      display: flex;
+      flex-direction: column;
+      width: 430px;
+      margin: 40px;
+    }
+  
+      .vision {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 10px;
+      }
+  
+      .vision-support {
+        font-size: 16px;
+        line-height: 35px;
+      }
+  
+  .team-title {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 130px;
+  }
+  
+  .team-alignment {
+    display: flex;
+    margin: 20px 20px 100px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+    .team-image {
+      height: 180px;
+      margin: 30px 50px 20px 50px;
+    }
+  
+    .team-member {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  
+    .team-role {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+
+@media only screen and (max-width: 877px) {
+    
+    .about-alignment {
+        margin-top: 70px;
+    }
+    
+}
+
+@media only screen and (max-width: 460px) {
+  
+    .napoleon-image {
+      height: 250px;
+      margin: 20px;
+    }
+
+    .about-vision {
+        width: 300px;
+        margin: 20px;
+    }
+
+        .vision {
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+    
+}

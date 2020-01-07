@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Footer.css';
 import Nav from '../components/Nav';
 import { SocialIcon } from 'react-social-icons';
 import ecopolluters from '../images/ecopolluters.svg';

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Header.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import {Link} from 'react-router-dom';
 import Nav from '../components/Nav';

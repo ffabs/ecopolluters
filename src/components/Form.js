@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Form.css';
 import {Link} from 'react-router-dom';
 import beef from '../images/beef.svg';
 
@@ -17,12 +18,11 @@ class Form extends Component {
       case "Impact":
         classform += 'form-impact';
         impact += ' impact-button-impactpage impact-button-impactpage-form';
-        // title = 'page-title title-responsive';
-        title = 'page-title science-page-title';
+        title = 'page-title';
         support = 'hide';
         formimpactsection = 'form-input-section-impactpage';
         buttonposition  = "form-button-position-impact";
-        alignment = 'science-alignment';
+        alignment = 'page';
         break;
       default:
         classform = 'form-home';

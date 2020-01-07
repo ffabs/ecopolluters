@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 50px;
+    padding: 2em;
+    text-align: center;
+  }
+  
+    .findUs {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 40px;
+    }
+  
+    .social-section {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  
+      .social {
+        margin: 15px;
+        text-align: center;
+      }
+  
+  .rights {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    color: #4F4F4F;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+@media only screen and (max-width: 460px) {
+
+    .rights {
+        font-size: 12px;
+    }
+
+}

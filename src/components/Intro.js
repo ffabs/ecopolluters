@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Intro.css';
 import cow from '../images/cow.svg';
 import co2 from '../images/co2.svg';
 import water from '../images/water.svg';

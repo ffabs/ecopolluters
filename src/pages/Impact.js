@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Impact.css';
 import Form from '../components/Form';
 import Pollution from '../components/Pollution';
 import ReactGA from 'react-ga';

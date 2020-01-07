@@ -1,0 +1,107 @@
+.science-background {
+    background: #F2F2F2;
+}
+
+.science-section-title {
+    font-size: 25px;
+    line-height: 40px;
+    color: #333333;
+    margin: 30px 20px 0px 20px;
+    width: 900px;   
+}
+
+.science-article {
+    background: white;
+    width: 840px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 3px dotted white;
+}
+
+    .science-article:hover {
+        border: 3px dotted #BB6BD9;
+    }
+
+    .science-article-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+    }
+
+    .science-article-support { 
+        font-style: italic;
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+    }
+
+    .science-article-date {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 24px;
+        color: #828282;
+    }
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .science-section-title {
+        width: 800px;
+    }
+    
+    .science-article {
+        width: 800px;
+    }
+      
+}
+
+@media only screen and (max-width: 877px) {
+    
+    .science-section-title {
+        width: 700px;
+    }
+    
+    .science-article {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+
+    .science-section-title {
+        width: 550px;
+    }
+    
+    .science-article {
+        width: 550px;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .science-page {
+        align-items: flex-start;
+    }
+
+    .science-section-title {
+        width: auto;
+        font-size: 25px;
+    }
+
+    .science-article {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .science-section-title {
+        font-size: 18px;
+    }
+    
+}

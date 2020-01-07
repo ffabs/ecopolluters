@@ -1,0 +1,171 @@
+.impact-button-impactpage-form {
+    margin-left: 30px;
+} 
+  
+.impact-button-homepage-form {
+    width: 100%;
+}
+
+.form-home {
+    max-width: 900px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px;
+}
+  
+.form-impact {
+    margin-right: 20px;
+    margin-left: 20px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 10px;
+}
+  
+.form-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.form-support {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.form-input-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+    .form-input-section-impactpage {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-input {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        border: 3px dotted #BDBDBD;
+        border-radius: 8px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        background-color: #FFFFFF;
+        font-size: 24px;
+        line-height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+  
+      input:focus, select:focus {
+        border-color: #BB6BD9;
+        outline: none;
+      }
+  
+    .form-number {
+      margin-right: 5px;
+      width: 75px;
+      text-align: center;
+      padding-left: 15px;
+    }
+  
+    .form-select {
+      margin-left: 25px;
+      appearance: none;
+      padding: 10px;
+    }
+  
+    .form-button {
+      font-size: 24px;
+      line-height: 32px;
+      padding: 15px 78px 15px 78px;
+      margin-bottom: 20px;
+    }
+  
+    .form-button-position-home {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form-button-position-impact {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      justify-content: space-around;
+    }
+  
+  .form-image {
+    width: 100%;
+    height: 120px;
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+
+    .form-home {
+        margin: 0px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 877px) {
+
+    .impact-button-impactpage-form {
+      margin-left: 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 460px) {
+
+    .form-impact {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    
+    .form-input {
+        border: 3px dotted #BDBDBD;
+        border-radius: 8px;
+        font-size: 16px;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .form-number {
+        margin-right: 5px;
+        text-align: center;
+        padding-left: 4px;
+    }
+
+    .form-select {
+        text-align: center;
+    }
+
+    .form-button {
+        font-size: 15px;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding: 15px;
+    }
+
+    .form-button-position-impact {
+        flex-direction: column;
+    }
+
+}

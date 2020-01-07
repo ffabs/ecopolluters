@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Science.css';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -19,9 +20,9 @@ class Science extends Component {
             <div className="science-background">
                 <Header page={'Science'}/>
 
-                <div className="science-alignment"> 
+                <div className="page science-page"> 
                     
-                    <div className="page-title science-page-title">Scientific sources</div>
+                    <div className="page-title">Scientific sources</div>
 
                     <div className="science-section-title">Main research article</div>
                     

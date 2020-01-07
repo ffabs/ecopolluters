@@ -1,0 +1,28 @@
+/* FBShare */
+
+.fb-share-button {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 130px;
+    color: white;
+    background-color: #2F80ED;
+    border: 3px dotted #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 280px;
+  }
+  
+    .fb-share-text {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+    /* 
+    .fb-share-text:hover, .fb-share-text:link, .fb-share-text:visited, .fb-share-text:active {
+      text-decoration: none;
+      color: #4F4F4F;
+    } 
+    */
+  
