@@ -1,5 +1,3 @@
-/* FBShare */
-
 .fb-share-button {
     font-family: 'Open Sans';
     font-weight: bold;
@@ -19,10 +17,3 @@
       font-weight: bold;
       text-align: center;
     }
-    /* 
-    .fb-share-text:hover, .fb-share-text:link, .fb-share-text:visited, .fb-share-text:active {
-      text-decoration: none;
-      color: #4F4F4F;
-    } 
-    */
-  

@@ -21,7 +21,6 @@ class App extends Component {
       tempAmount: 1,
       tempSelect: 200,
       tempGrams: 200,
-      // loading: true,
     };
   }
 
@@ -42,15 +41,8 @@ class App extends Component {
       select: this.state.tempSelect,
       grams: grams,
       calculation: true,
-      // loading: true,
     });
   }
-
-  // handleLoading = event => {
-  //   this.setState({
-  //     loading: false,
-  //   });
-  // }
 
   render() {
     return (
