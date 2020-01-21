@@ -33,7 +33,7 @@ class Form extends Component {
         buttonposition  = "form-button-position-home";
         alignment = '';
     }
-    if (this.props.newCalculation) {
+    if (this.props.newCalculation || this.props.calculation==false) {
       impact += ' form-button-new-calculation';
     } else {
       impact += ' form-button-old-calculation';
