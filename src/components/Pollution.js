@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Pollution.css';
 import Grams from '../components/Grams';
 import CO2 from '../components/CO2';
 import Land from '../components/Land';
@@ -10,9 +11,9 @@ import Data from '../impact-data.json';
 class Pollution extends Component {
 
     render() {
-        let pollutions = '';
+        let pollutions = 'pollutions';
         if (this.props.newCalculation == false) {
-            pollutions += ' pollutions'
+            pollutions += ' pollutions-animation'
         }
 
         return (
