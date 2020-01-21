@@ -21,17 +21,24 @@ class App extends Component {
       tempAmount: 1,
       tempSelect: 200,
       tempGrams: 200,
+      newCalculation: false,
     };
   }
 
   handleAmount = event => {
     const tempAmount = event.target.value;
-    this.setState({tempAmount: tempAmount});
+    this.setState({
+      tempAmount: tempAmount,
+      newCalculation: true
+    });
   }
 
   handleSelect = event => {
     const tempSelect = event.target.value;
-    this.setState({tempSelect: tempSelect});
+    this.setState({
+      tempSelect: tempSelect,
+      newCalculation: true
+    });
   }
 
   handleCalculation = event => {
@@ -41,6 +48,7 @@ class App extends Component {
       select: this.state.tempSelect,
       grams: grams,
       calculation: true,
+      newCalculation: false
     });
   }
 
@@ -66,11 +74,10 @@ class App extends Component {
                 select={this.state.select}
                 grams={this.state.grams}
                 calculation={this.state.calculation}
-                // loading={this.state.loading}
+                newCalculation={this.state.newCalculation}
                 handleAmount={this.handleAmount}
                 handleSelect={this.handleSelect}
                 handleCalculation={this.handleCalculation}
-                // handleLoading={this.handleLoading}
               />
             )}/>
             <Route exact={true} path='/science' render={() => (

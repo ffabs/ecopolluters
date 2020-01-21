@@ -26,13 +26,18 @@ class Form extends Component {
         break;
       default:
         classform = 'form-home';
-        impact = 'impact-button form-button impact-button-homepage-form';
+        impact = 'impact-button form-button impact-button-homepage-form form-button-new-calculation';
         title = 'section-title form-title';
         support = 'form-support';
         formimpactsection = "form-input-section";
         buttonposition  = "form-button-position-home";
         alignment = '';
     }
+    if (this.props.newCalculation) {
+      impact += ' form-button-new-calculation';
+    } else {
+      impact += ' form-button-old-calculation';
+    };
 
 
       return (

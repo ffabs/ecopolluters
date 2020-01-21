@@ -26,7 +26,7 @@ class Impact extends Component {
               <Form page={'Impact'} {...this.props}/>
             </div>
               {this.props.calculation === true &&
-                <Pollution grams={this.props.grams} loading={this.props.loading} />
+                <Pollution grams={this.props.grams} newCalculation={this.props.newCalculation} />
               }
               {this.props.calculation === false &&
                 <img className="default-impact-image" src={defaultimpact} alt="defaultimpact"/>

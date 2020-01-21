@@ -10,10 +10,14 @@ import Data from '../impact-data.json';
 class Pollution extends Component {
 
     render() {
+        let pollutions = '';
+        if (this.props.newCalculation == false) {
+            pollutions += ' pollutions'
+        }
 
         return (
 
-            <div className="pollutions">
+            <div className={pollutions}>
 
                 <Grams grams={this.props.grams}/>
                 <CO2 CO2={this.props.grams*Data.beef.co2}/>

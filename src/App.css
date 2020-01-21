@@ -61,6 +61,7 @@ body {
   border-radius: 8px;
   font-family: 'Open Sans';
   outline: none;
+  transition: 0.2s;
 }
 
   .impact-button-impactpage {
@@ -93,6 +94,13 @@ a:hover {
 .pollutions {
   margin-left: 20px;
   margin-right: 20px;
+  animation: moveFromBottom 0.75s ease-in-out;
+}
+
+@keyframes moveFromBottom {
+  0% { transform: translateY(2000px); opacity: 0%; }
+  80% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); opacity: 100%; }
 }
 
 .pollution {
