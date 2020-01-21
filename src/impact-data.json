@@ -4,9 +4,9 @@
         "water": 1.4512,
         "land": 0.32621
     },
-    "random food": {
-        "co2": 1,
-        "water": 2,
-        "land": 3
+    "lamb": {
+        "co2": 0.03972,
+        "water": 1.8028,
+        "land": 0.36981
     }
 }

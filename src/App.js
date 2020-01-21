@@ -17,6 +17,7 @@ class App extends Component {
       amount: 1,
       select: 200,
       grams: 200,
+      type: 'beef',
       calculation: false,
       tempAmount: 1,
       tempSelect: 200,
@@ -73,6 +74,7 @@ class App extends Component {
                 amount={this.state.amount}
                 select={this.state.select}
                 grams={this.state.grams}
+                type={this.state.type}
                 calculation={this.state.calculation}
                 newCalculation={this.state.newCalculation}
                 handleAmount={this.handleAmount}

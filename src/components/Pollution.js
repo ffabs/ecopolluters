@@ -16,14 +16,16 @@ class Pollution extends Component {
             pollutions += ' pollutions-animation'
         }
 
+        let type = Data[this.props.type];
+        
         return (
 
             <div className={pollutions}>
 
                 <Grams grams={this.props.grams}/>
-                <CO2 CO2={this.props.grams*Data.beef.co2}/>
-                <Water water={this.props.grams*Data.beef.water}/>
-                <Land land={this.props.grams*Data.beef.land}/>
+                <CO2 CO2={this.props.grams*type.co2}/>
+                <Water water={this.props.grams*type.water}/>
+                <Land land={this.props.grams*type.land}/>
 
             </div>
 
