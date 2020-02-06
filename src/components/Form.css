@@ -92,7 +92,7 @@
       margin: 10px;
       -moz-appearance:none; /* Firefox */
       -webkit-appearance:none; /* Safari and Chrome */
-      background: url(../images/arrow.svg) no-repeat right white;
+      /* background: url(../images/arrow.svg) no-repeat right white; */
       appearance:none;
       padding: 10px;
       text-align-last:center;
