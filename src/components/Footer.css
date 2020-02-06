@@ -22,12 +22,20 @@
         margin: 15px;
         text-align: center;
       }
+
+        .fc {
+          margin-left: 0px;
+        }
+
+        .insta {
+          margin-right: 0px;
+        }
   
   .rights {
     font-family: 'Open Sans';
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 40px;
     color: #4F4F4F;
     margin-top: 50px;
@@ -38,6 +46,11 @@
 
     .rights {
         font-size: 12px;
+    }
+
+    .social {
+      margin: 7px;
+      text-align: center;
     }
 
 }

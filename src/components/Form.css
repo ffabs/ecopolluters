@@ -1,13 +1,21 @@
-.impact-button-impactpage-form {
+/* .impact-button-impacttform {
     margin-left: 30px;
-} 
+}  */
+.form-3level {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  justify-content: space-around;
+}
   
 .impact-button-homepage-form {
     width: 100%;
 }
 
 .form-home {
-    max-width: 900px;
+    max-width: 840px;
     margin-right: 20px;
     margin-left: 20px;
     background: #F2F2F2;
@@ -37,18 +45,24 @@
     padding-bottom: 30px;
 }
 
-.form-input-section {
+/* .form-input-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
+} */
 
     .form-input-section-impactpage {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         flex-direction: column;
+    }
+
+    .form-amountandunit {
+      /* border: 3px dotted #BDBDBD; */
+      border-radius: 8px;
+      background-color: #E0E0E0;
     }
 
     .form-input {
@@ -64,7 +78,7 @@
         line-height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
         cursor: pointer;
     }
   
@@ -72,18 +86,41 @@
         border-color: #BB6BD9;
         outline: none;
       }
+    
+    .form-type {
+      width: 830px;
+      margin: 10px;
+      -moz-appearance:none; /* Firefox */
+      -webkit-appearance:none; /* Safari and Chrome */
+      background: url(../images/arrow.svg) no-repeat right white;
+      appearance:none;
+      padding: 10px;
+      text-align-last:center;
+    }
   
     .form-number {
+      width: 260px;
       margin-right: 5px;
-      width: 75px;
-      text-align: center;
+      text-align: right;
       padding-left: 15px;
+      border-radius: 8px 0px 0px 8px;
     }
   
     .form-select {
-      margin-left: 25px;
+      margin: 0px 25px 0px 25px;
       appearance: none;
-      padding: 10px;
+      /* background-color: #F2F2F2; */
+      /* color: #4F4F4F; */
+      font-family: 'Open Sans';
+      font-weight: bold;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      /* margin-bottom: 15px; */
     }
   
     .form-button {
@@ -92,20 +129,15 @@
       padding: 15px 78px 15px 78px;
       margin-bottom: 20px;
     }
-  
-    .form-button-position-home {
-      display: flex;
-      flex-direction: column;
-    }
     
-    .form-button-position-impact {
+    /* .form-button-position-impact {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin-top: 20px;
       margin-bottom: 25px;
       justify-content: space-around;
-    }
+    } */
 
     .form-button-old-calculation {
       color: #4F4F4F;
@@ -133,17 +165,111 @@
 
   }
 
+  @media only screen and (max-width: 900px) {
 
-  @media only screen and (max-width: 877px) {
+    .form-type {
+      max-width: 750px;
+    }
+
+    .form-number {
+      width: 200px;
+    }
 
     .impact-button-impactpage-form {
-      margin-left: 0px;
+      width: 400px;
+      font-size: 22px;
     }
 
 }
 
 
-@media only screen and (max-width: 460px) {
+  @media only screen and (max-width: 877px) {
+
+    .impact-button-impactpage-form {
+      /* margin-left: 0px; */
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+  .form-type {
+    max-width: 630px;
+  }
+
+  .form-number {
+    width: 110px;
+  }
+
+  .impact-button-impactpage-form {
+    width: 350px;
+    font-size: 19px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+.form-3level {
+  display: block;
+}
+
+  .form-type {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .form-number {
+    width: 60%;
+  }
+
+  .form-select {
+    margin: 0px 25px 0px 25px;
+  }
+
+  .form-amountandunit {
+    /* width: 100%; */
+  }
+
+  .impact-button-impactpage-form {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 19px;
+  }
+
+  .form-button {
+    padding: 15px 20px 15px 20px;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  
+  .form-number {
+    width: 50%;
+  }
+
+  /* .form-button {
+    padding: 15px 50px 15px 50px;
+  } */
+
+}
+
+@media only screen and (max-width: 360px) {
+  
+  .form-number {
+    width: 40%;
+  }
+
+}
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 460px) {
 
     .form-impact {
         margin-right: 10px;
@@ -168,6 +294,7 @@
 
     .form-select {
         text-align: center;
+        font-size: 16px;
     }
 
     .form-button {
@@ -181,4 +308,4 @@
         flex-direction: column;
     }
 
-}
+} */
