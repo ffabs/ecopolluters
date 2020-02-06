@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Form from '../components/Form';
+import Categories from '../components/Categories'
 import FBShare from '../components/FBShare';
 import Intro from '../components/Intro';
 import Cover from '../components/Cover';
@@ -23,7 +23,7 @@ class Home extends Component {
       <div className="page">
         <Cover />
         <Intro />
-        <Form page={'home'} {...this.props}/>
+        <Categories page={'home'} {...this.props}/>
         <FBShare />
         <Footer />
       </div>

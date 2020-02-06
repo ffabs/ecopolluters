@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './Impact.css';
+import Categories from '../components/Categories'
 import Form from '../components/Form';
 import Pollution from '../components/Pollution';
 import ReactGA from 'react-ga';
@@ -23,14 +24,15 @@ class Impact extends Component {
           <div className="page">
             <div className="impact-cover">
               <Header page={'Impact'}/>
-              <Form page={'Impact'} {...this.props}/>
+              <Categories page={'Impact'} {...this.props}/>
+              <Form {...this.props}/>
             </div>
-              {this.props.calculation === true &&
+            {this.props.calculation === true &&
                 <Pollution {...this.props} />
-              }
-              {this.props.calculation === false &&
+            }
+            {this.props.calculation === false &&
                 <img className="default-impact-image" src={defaultimpact} alt="defaultimpact"/>
-              }
+            }
             <FBShare />
             <Footer />
           </div>

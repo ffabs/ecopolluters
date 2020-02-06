@@ -1,12 +1,395 @@
-{ 
-    "beef": {
-        "co2": 0.09948,
-        "water": 1.4512,
-        "land": 0.32621
+{
+    "animal": {
+
+        "beef": {
+            "co2": 0.09948,
+            "water": 1.45120,
+            "land": 0.32621,
+            "defaultAmount": 200,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "lamb": {
+            "co2": 0.03972,
+            "water": 1.80280,
+            "land": 0.36981,
+            "defaultAmount": 200,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "crustaceans": {
+            "co2": 0.02687,
+            "water": 3.51540,
+            "land": 0.00297,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "cheese": {
+            "co2": 0.02388,
+            "water": 5.60520,
+            "land": 0.08779,
+            "defaultAmount": 43,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "fish": {
+            "co2": 0.01363,
+            "water": 3.69130,
+            "land": 0.00841,
+            "defaultAmount": 225,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "pork": {
+            "co2": 0.01231,
+            "water": 1.79580,
+            "land": 0.01736,
+            "defaultAmount": 200,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "chicken": {
+            "co2": 0.00987,
+            "water": 0.66000,
+            "land": 0.01222,
+            "defaultAmount": 200,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "eggs": {
+            "co2": 0.00467,
+            "water": 0.57770,
+            "land": 0.00627,
+            "defaultAmount": 2,
+            "unit": 53,
+            "measure": "item"
+        },
+
+        "milk": {
+            "co2": 3.15000,
+            "water": 628.20000,
+            "land": 8.95000,
+            "defaultAmount": 0.5,
+            "unit": 1,
+            "measure": "liters"
+        }
+        
     },
-    "lamb": {
-        "co2": 0.03972,
-        "water": 1.8028,
-        "land": 0.36981
+
+    "fruits": {
+        
+        "tomatoes": {
+            "co2": 0.00209,
+            "water": 0.36980,
+            "land": 0.00080,
+            "defaultAmount": 1,
+            "unit": 142,
+            "measure": "item"
+        },
+
+        "onions": {
+            "co2": 0.00050,
+            "water": 0.01430,
+            "land": 0.00039,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "nuts": {
+            "co2": 0.00043,
+            "water": 4.13380,
+            "land": 0.01296,
+            "defaultAmount": 30,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "groundnuts": {
+            "co2": 0.00323,
+            "water": 1.85230,
+            "land": 0.00911,
+            "defaultAmount": 30,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "root vegetables": {
+            "co2": 0.00043,
+            "water": 0.02840,
+            "land": 0.00033,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "potatoes": {
+            "co2": 0.00046,
+            "water": 0.05910,
+            "land": 0.00088,
+            "defaultAmount": 180,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "cassava": {
+            "co2": 0.00132,
+            "water": 0.00000,
+            "land": 0.00181,
+            "defaultAmount": 200,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "brassicas": {
+            "co2": 0.00051,
+            "water": 0.11940,
+            "land": 0.00055,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "other vegetables": {
+            "co2": 0.00053,
+            "water": 0.10250,
+            "land": 0.00038,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "citrus fruit": {
+            "co2": 0.00039,
+            "water": 0.08270,
+            "land": 0.00086,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "bananas": {
+            "co2": 0.00086,
+            "water": 0.11450,
+            "land": 0.00193,
+            "defaultAmount": 1,
+            "unit": 120,
+            "measure": "item"
+        },
+
+        "apples": {
+            "co2": 0.00043,
+            "water": 0.18010,
+            "land": 0.00063,
+            "defaultAmount": 1,
+            "unit": 170,
+            "measure": "item"
+        },
+
+        "berries and grapes": {
+            "co2": 0.00153,
+            "water": 0.41960,
+            "land": 0.00241,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "other fruits": {
+            "co2": 0.00105,
+            "water": 0.15350,
+            "land": 0.00089,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        }
+
+    },
+
+    "grains": {
+
+        "bread": {
+            "co2": 0.00157,
+            "water": 0.64750,
+            "land": 0.00385,
+            "defaultAmount": 90,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "maize meal": {
+            "co2": 0.00170,
+            "water": 0.21570,
+            "land": 0.00294,
+            "defaultAmount": 90,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "beer": {
+            "co2": 0.00118,
+            "water": 0.01710,
+            "land": 0.00111,
+            "defaultAmount": 90,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "oatmeal": {
+            "co2": 0.00248,
+            "water": 0.48240,
+            "land": 0.00760,
+            "defaultAmount": 90,
+            "unit": 1,
+            "measure": "grams"
+        },
+        
+        "rice": {
+            "co2": 0.00445,
+            "water": 2.24840,
+            "land": 0.00280,
+            "defaultAmount": 90,
+            "unit": 1,
+            "measure": "grams"
+        },
+        
+        "other legumes": {
+            "co2": 0.00179,
+            "water": 0.43570,
+            "land": 0.01557,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams"
+        },
+
+        "peas": {
+            "co2": 0.00098,
+            "water": 0.39660,
+            "land": 0.00746,
+            "defaultAmount": 85,
+            "unit": 1,
+            "measure": "grams"
+        }
+
+    },
+
+    "otherfood": {
+        
+        "tofu": {
+            "co2": 0.00316,
+            "water": 0.14860,
+            "land": 0.00352,
+            "defaultAmount": 150,
+            "unit": 1,
+            "measure": "grams"
+        },
+        
+        "soymilk": {
+            "co2": 0.98000,
+            "water": 27.80000,
+            "land": 0.66000,
+            "defaultAmount": 0.5,
+            "unit": 1,
+            "measure": "liters"
+        },
+        
+        "cane sugar": {
+            "co2": 0.00320,
+            "water": 0.62010,
+            "land": 0.00204,
+            "defaultAmount": 38,
+            "unit": 1,
+            "measure": "grams"
+        },
+        
+        "beet sugar": {
+            "co2": 0.00181,
+            "water": 0.21770,
+            "land": 0.00183,
+            "defaultAmount": 38,
+            "unit": 1,
+            "measure": "grams"
+        },
+        
+        "soybean oil": {
+            "co2": 6.32000,
+            "water": 414.60000,
+            "land": 10.52000,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "liters"
+        },
+        
+        "palm oil": {
+            "co2": 7.32000,
+            "water": 6.40000,
+            "land": 2.42000,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "liters"
+        },
+        
+        "sunflower oil": {
+            "co2": 3.60000,
+            "water": 1007.90000,
+            "land": 17.66000,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "liters"
+        },
+        
+        "rapeseed oil": {
+            "co2": 3.77000,
+            "water": 237.70000,
+            "land": 10.63000,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "liters"
+        },
+        
+        "olive oil": {
+            "co2": 5.42000,
+            "water": 2141.80000,
+            "land": 26.31000,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "liters"
+        },
+        
+        "wine": {
+            "co2": 1.79000,
+            "water": 78.90000,
+            "land": 1.78000,
+            "defaultAmount": 1,
+            "unit": 0.15,
+            "measure": "liters"
+        },
+        
+        "coffee": {
+            "co2": 0.02853,
+            "water": 0.02590,
+            "land": 0.02162,
+            "defaultAmount": 1,
+            "unit": 8.3,
+            "measure": "item"
+        },
+        
+        "dark chocolate": {
+            "co2": 0.04665,
+            "water": 0.54060,
+            "land": 0.06896,
+            "defaultAmount": 101,
+            "unit": 1,
+            "measure": "grams"
+        }
     }
+
 }
