@@ -216,7 +216,7 @@
 
     "grains": {
 
-        "bread": {
+        "wheat flour": {
             "co2": 0.00157,
             "water": 0.64750,
             "land": 0.00385,
