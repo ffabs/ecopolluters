@@ -15,6 +15,7 @@ class Form extends Component {
     };
     
     let defaultAmount = this.props.tempAmount;
+    console.log(defaultAmount);
 
     let measure = Data[this.props.tempCategory][this.props.tempType].measure;
 

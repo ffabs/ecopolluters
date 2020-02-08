@@ -55,13 +55,11 @@ class App extends Component {
       tempAmount: tempAmount,
       newCalculation: true
     });
-    // document.getElementById("form-impact-id").reset();
   }
 
   handleCalculation = event => {
     let unit = Data[this.state.tempCategory][this.state.tempType].unit;
     let measure = Data[this.state.tempCategory][this.state.tempType].measure;
-    // const grams = this.state.tempAmount*this.state.tempSelect;
     const grams = this.state.tempAmount*unit;
     const type = this.state.tempType;
     const category = this.state.tempCategory;
@@ -80,16 +78,11 @@ class App extends Component {
 
   handleCategory = event => {
     const tempCategory = event.target.value;
-    // if (tempCategory !== this.state.category) {
-    //   document.getElementById("form-impact-id").reset();
-    // }
     switch(tempCategory) {
       case "animal":
         this.setState({
           tempCategory: 'animal',
           tempType: 'beef',
-          tempAmount: 200,
-          tempSelect: 1,
           newCalculation: true,
           tempAmount: Data[tempCategory].beef.defaultAmount
         });
@@ -98,8 +91,6 @@ class App extends Component {
         this.setState({
           tempCategory: 'fruits',
           tempType: 'tomatoes',
-          tempAmount: 200,
-          tempSelect: 1,
           newCalculation: true,
           tempAmount: Data[tempCategory].tomatoes.defaultAmount
         });
@@ -108,27 +99,26 @@ class App extends Component {
         this.setState({
           tempCategory: 'grains',
           tempType: 'wheat flour',
-          tempAmount: 100,
-          tempSelect: 1,
           newCalculation: true,
-          tempAmount: Data[tempCategory].rice.defaultAmount
+          tempAmount: Data[tempCategory]['wheat flour'].defaultAmount
         });
       break;
       case "otherfood":
         this.setState({
           tempCategory: 'otherfood',
           tempType: 'soymilk',
-          tempAmount: 200,
-          tempSelect: 1,
           newCalculation: true,
           tempAmount: Data[tempCategory].soymilk.defaultAmount
         });
       break;
-      // default:
-      //   console.log ("null category");
-      //   this.setState({
-      //     newCalculation: true
-      //   });
+      default:
+        console.log ("null category");
+        this.setState({
+          tempCategory: 'animal',
+          tempType: 'beef',
+          newCalculation: true,
+          tempAmount: Data[tempCategory].beef.defaultAmount
+        });
     }
   }
 
