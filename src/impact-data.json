@@ -234,7 +234,7 @@
             "measure": "grams"
         },
 
-        "beer": {
+        "barley": {
             "co2": 0.00118,
             "water": 0.01710,
             "land": 0.00111,

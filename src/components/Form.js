@@ -59,7 +59,7 @@ class Form extends Component {
                 <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>
                       <option value="wheat flour"> 🥖 Wheat flour </option>
                       <option value="corn flour"> 🌽 Corn flour </option>
-                      <option value="beer"> 🍺 Beer </option>
+                      <option value="barley"> 🍺 Barley </option>
                       <option value="oatmeal"> 🥣 Oatmeal </option>
                       <option value="rice"> 🍚 Rice </option>
                       <option value="other legumes"> 🍲 Other legumes </option>
