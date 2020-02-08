@@ -107,8 +107,8 @@ class App extends Component {
       case "grains":
         this.setState({
           tempCategory: 'grains',
-          tempType: 'bread',
-          tempAmount: 200,
+          tempType: 'wheat flour',
+          tempAmount: 100,
           tempSelect: 1,
           newCalculation: true,
           tempAmount: Data[tempCategory].rice.defaultAmount
