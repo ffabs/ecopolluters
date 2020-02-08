@@ -12,7 +12,7 @@ class Pollution extends Component {
 
     render() {
         let pollutions = 'pollutions';
-        if (this.props.newCalculation == false) {
+        if (this.props.newCalculation === false) {
             pollutions += ' pollutions-animation'
         }
 

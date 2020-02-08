@@ -18,7 +18,7 @@ class Categories extends Component {
     let twocategories = '';
     let categoryimg = '';
 
-    if (this.props.page == "Impact"){
+    if (this.props.page === "Impact"){
       categoryimg = "category-image-impact";
       animal += ' category-impact';
       fruits += ' category-impact';
@@ -94,7 +94,7 @@ class Categories extends Component {
     }
 
     
-    if (this.props.newCalculation || this.props.calculation==false) {
+    if (this.props.newCalculation || this.props.calculation === false) {
       impact += ' form-button-new-calculation';
     } else {
       impact += ' form-button-old-calculation';
@@ -107,7 +107,6 @@ class Categories extends Component {
             <div className={support}>We have preparred a kick-ass algorithm to help you understand your impact!</div>
           </div>
           <div className={formimpactsection}>
-            {/* <div className={buttonposition}> */}
             <div className="categories">
                 <Link to="/impact">
                 <div className={twocategories}>

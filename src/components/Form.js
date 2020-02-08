@@ -8,14 +8,13 @@ class Form extends Component {
    render() {
     
     let impact = 'impact-button form-button impact-button-impactpage impact-button-impactpage-form';
-    if (this.props.newCalculation || this.props.calculation==false) {
+    if (this.props.newCalculation || this.props.calculation === false) {
       impact += ' form-button-new-calculation';
     } else {
       impact += ' form-button-old-calculation';
     };
     
     let defaultAmount = this.props.tempAmount;
-    console.log(defaultAmount);
 
     let measure = Data[this.props.tempCategory][this.props.tempType].measure;
 
