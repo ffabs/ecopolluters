@@ -368,8 +368,8 @@
             "co2": 1.79000,
             "water": 78.90000,
             "land": 1.78000,
-            "defaultAmount": 1,
-            "unit": 0.15,
+            "defaultAmount": 0.15,
+            "unit": 1,
             "measure": "liters"
         },
         
@@ -386,7 +386,7 @@
             "co2": 0.04665,
             "water": 0.54060,
             "land": 0.06896,
-            "defaultAmount": 101,
+            "defaultAmount": 100,
             "unit": 1,
             "measure": "grams"
         }
