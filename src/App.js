@@ -21,7 +21,7 @@ class App extends Component {
       newCalculation: false,
       tempCategory: 'animal',
       tempType: 'beef',
-      tempAmount: '23',
+      tempAmount: '200',
       tempSelect: '1',
       category: '',
       type: '',
@@ -90,25 +90,25 @@ class App extends Component {
       case "fruits":
         this.setState({
           tempCategory: 'fruits',
-          tempType: 'tomatoes',
+          tempType: 'groundnuts',
           newCalculation: true,
-          tempAmount: Data[tempCategory].tomatoes.defaultAmount
+          tempAmount: Data[tempCategory].groundnuts.defaultAmount
         });
       break;
       case "grains":
         this.setState({
           tempCategory: 'grains',
-          tempType: 'wheat flour',
+          tempType: 'rice',
           newCalculation: true,
-          tempAmount: Data[tempCategory]['wheat flour'].defaultAmount
+          tempAmount: Data[tempCategory].rice.defaultAmount
         });
       break;
       case "otherfood":
         this.setState({
           tempCategory: 'otherfood',
-          tempType: 'soymilk',
+          tempType: 'dark chocolate',
           newCalculation: true,
-          tempAmount: Data[tempCategory].soymilk.defaultAmount
+          tempAmount: Data[tempCategory]['dark chocolate'].defaultAmount
         });
       break;
       default:

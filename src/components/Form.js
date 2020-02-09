@@ -38,47 +38,47 @@ class Form extends Component {
               }
               {this.props.tempCategory === 'fruits' &&
                 <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>
-                      <option value="tomatoes"> 🍅 Tomatoes </option>
-                      <option value="onions"> ⚪ Onions </option>
-                      <option value="nuts"> 🌰 Nuts </option>
                       <option value="groundnuts"> 🥜 Groundnuts </option>
-                      <option value="root vegetables"> 🥕 Root vegetables </option>
-                      <option value="potatoes"> 🥔 Potatoes </option>
-                      <option value="cassava"> 🍠 Cassava </option>
-                      <option value="brassicas"> 🥦 Brassicas </option>
-                      <option value="other vegetables"> 🥗 Other vegetables </option>
-                      <option value="citrus fruit"> 🍋 Citrus fruit </option>
-                      <option value="bananas"> 🍌 Bananas </option>
-                      <option value="apples"> 🍏 Apples </option>
+                      <option value="tomatoes"> 🍅 Tomatoes </option>
                       <option value="berries and grapes"> 🍇 Berries and grapes </option>
+                      <option value="cassavas"> 🍠 Cassavas </option>
+                      <option value="bananas"> 🍌 Bananas </option>
+                      <option value="brassicas"> 🥦 Brassicas </option>
+                      <option value="onions"> ⚪ Onions </option>
+                      <option value="potatoes"> 🥔 Potatoes </option>
+                      <option value="root vegetables"> 🥕 Root vegetables </option>
+                      <option value="nuts"> 🌰 Nuts </option>
+                      <option value="apples"> 🍏 Apples </option>
+                      <option value="citrus fruits"> 🍋 Citrus fruits </option>
                       <option value="other fruits"> 🍓 Other fruits </option>
+                      <option value="other vegetables"> 🥗 Other vegetables </option>
                 </select>
               }
               {this.props.tempCategory === 'grains' &&
-                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>
-                      <option value="wheat flour"> 🥖 Wheat flour </option>
-                      <option value="corn flour"> 🌽 Corn flour </option>
-                      <option value="barley"> 🍺 Barley </option>
-                      <option value="oatmeal"> 🥣 Oatmeal </option>
+                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>   
                       <option value="rice"> 🍚 Rice </option>
+                      <option value="oatmeal"> 🥣 Oatmeal </option>
                       <option value="other legumes"> 🍲 Other legumes </option>
+                      <option value="corn flour"> 🌽 Corn flour </option>
+                      <option value="wheat flour"> 🥖 Wheat flour </option>
+                      <option value="barley"> 🍺 Barley </option>
                       <option value="peas"> 🌱 Peas </option>
                 </select>
               }
               {this.props.tempCategory === 'otherfood' &&
-                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>
-                      <option value="soymilk"> 🥛 Soymilk </option>
+                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>      
+                      <option value="dark chocolate"> 🍫 Dark chocolate </option> 
+                      <option value="coffee"> ☕ Coffee </option> 
+                      <option value="palm oil"> 🌴 Palm oil </option> 
+                      <option value="soybean oil"> 🌿 Soybean oil </option> 
+                      <option value="olive oil"> 🌱 Olive oil </option> 
+                      <option value="rapeseed oil"> 🌼 Rapeseed oil </option> 
+                      <option value="sunflower oil"> 🌻 Sunflower oil </option> 
                       <option value="tofu"> 🍢 Tofu </option>
                       <option value="cane sugar"> 🍬 Cane sugar </option> 
                       <option value="beet sugar"> 🍬 Beet sugar </option>
-                      <option value="soybean oil"> 🌿 Soybean oil </option> 
-                      <option value="palm oil"> 🌴 Palm oil </option> 
-                      <option value="sunflower oil"> 🌻 Sunflower oil </option> 
-                      <option value="rapeseed oil"> 🌼 Rapeseed oil </option> 
-                      <option value="olive oil"> 🌱 Olive oil </option> 
                       <option value="wine"> 🍷 Wine </option> 
-                      <option value="coffee"> ☕ Coffee </option> 
-                      <option value="dark chocolate"> 🍫 Dark chocolate </option> 
+                      <option value="soymilk"> 🥛 Soymilk </option>
                 </select>
               }
 
@@ -115,14 +115,13 @@ class Form extends Component {
                       <option value="1"> ⚖️ grams </option>
                 </select> */}
               </div>
-              {/* <div> */}
+
                 <button 
                   className={impact} 
                   type="button" 
                   onClick={this.props.handleCalculation}>
                   CALCULATE IMPACT
                 </button>
-              {/* </div> */}
 
           </div>
 

@@ -32,7 +32,7 @@
             "co2": 0.02388,
             "water": 5.60520,
             "land": 0.08779,
-            "defaultAmount": 43,
+            "defaultAmount": 50,
             "unit": 1,
             "measure": "grams"
         },
@@ -41,7 +41,7 @@
             "co2": 0.01363,
             "water": 3.69130,
             "land": 0.00841,
-            "defaultAmount": 225,
+            "defaultAmount": 200,
             "unit": 1,
             "measure": "grams"
         },
@@ -140,7 +140,7 @@
             "measure": "grams"
         },
 
-        "cassava": {
+        "cassavas": {
             "co2": 0.00132,
             "water": 0.00000,
             "land": 0.00181,
@@ -167,7 +167,7 @@
             "measure": "grams"
         },
 
-        "citrus fruit": {
+        "citrus fruits": {
             "co2": 0.00039,
             "water": 0.08270,
             "land": 0.00086,
@@ -238,7 +238,7 @@
             "co2": 0.00118,
             "water": 0.01710,
             "land": 0.00111,
-            "defaultAmount": 90,
+            "defaultAmount": 100,
             "unit": 1,
             "measure": "grams"
         },
@@ -247,7 +247,7 @@
             "co2": 0.00248,
             "water": 0.48240,
             "land": 0.00760,
-            "defaultAmount": 90,
+            "defaultAmount": 100,
             "unit": 1,
             "measure": "grams"
         },
@@ -256,7 +256,7 @@
             "co2": 0.00445,
             "water": 2.24840,
             "land": 0.00280,
-            "defaultAmount": 90,
+            "defaultAmount": 100,
             "unit": 1,
             "measure": "grams"
         },
@@ -274,7 +274,7 @@
             "co2": 0.00098,
             "water": 0.39660,
             "land": 0.00746,
-            "defaultAmount": 85,
+            "defaultAmount": 100,
             "unit": 1,
             "measure": "grams"
         }
@@ -305,7 +305,7 @@
             "co2": 0.00320,
             "water": 0.62010,
             "land": 0.00204,
-            "defaultAmount": 38,
+            "defaultAmount": 50,
             "unit": 1,
             "measure": "grams"
         },
@@ -314,7 +314,7 @@
             "co2": 0.00181,
             "water": 0.21770,
             "land": 0.00183,
-            "defaultAmount": 38,
+            "defaultAmount": 50,
             "unit": 1,
             "measure": "grams"
         },
