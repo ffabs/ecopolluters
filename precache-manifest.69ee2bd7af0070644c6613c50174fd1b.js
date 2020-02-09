@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1497534bb053ddf37fa06ba7d438453c",
+    "revision": "cfb5d56bef30bc3f912fd87894c96f85",
     "url": "/index.html"
   },
   {
-    "revision": "df18eda10b37e8dd76b9",
-    "url": "/static/css/main.bca03694.chunk.css"
+    "revision": "abe924fdc6afaa822d57",
+    "url": "/static/css/main.84f6e740.chunk.css"
   },
   {
-    "revision": "e71eecf6972fdb027d62",
-    "url": "/static/js/2.0eca371e.chunk.js"
+    "revision": "f10c94cbf7d2f2c221a9",
+    "url": "/static/js/2.9cce297d.chunk.js"
   },
   {
-    "revision": "df18eda10b37e8dd76b9",
-    "url": "/static/js/main.232aa2cc.chunk.js"
+    "revision": "4cbe2726fb66bcef66051a0d56105b42",
+    "url": "/static/js/2.9cce297d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d290c809d3d16a4760cc",
-    "url": "/static/js/runtime-main.ec654a98.js"
+    "revision": "abe924fdc6afaa822d57",
+    "url": "/static/js/main.389f8235.chunk.js"
   },
   {
-    "revision": "cfa981c5116d3e4ab8214745ed56ddc3",
-    "url": "/static/media/beef.cfa981c5.svg"
+    "revision": "335164574068ec67ef11",
+    "url": "/static/js/runtime-main.e14bb263.js"
   },
   {
-    "revision": "0f2834b31238d27c207c1049562db97f",
-    "url": "/static/media/co2-impact.0f2834b3.png"
+    "revision": "2b3abf3d05bedfa24ea60605ba3939bf",
+    "url": "/static/media/animal.2b3abf3d.png"
+  },
+  {
+    "revision": "a652c61c430b32a3e5f3399c65bf4c4f",
+    "url": "/static/media/arrow.a652c61c.svg"
+  },
+  {
+    "revision": "4525979c35648e372966bb06fc825e44",
+    "url": "/static/media/co2-impact.4525979c.png"
   },
   {
     "revision": "1675cbd9b7d55bcf8b55eac827b5428c",
@@ -64,8 +72,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/flat.4c6270aa.png"
   },
   {
-    "revision": "a2bba83a889d96b7e4c7483da4c217f2",
-    "url": "/static/media/impact-empty-state.a2bba83a.png"
+    "revision": "70fa5b65f72eb11aeac45107c5359a53",
+    "url": "/static/media/fruits.70fa5b65.png"
+  },
+  {
+    "revision": "74f69abd54ae7ed7f77446bca5a44a37",
+    "url": "/static/media/grains.74f69abd.png"
+  },
+  {
+    "revision": "bfc6970494c4bc6f09a81b19efb4527b",
+    "url": "/static/media/impact-empty-state.bfc69704.png"
   },
   {
     "revision": "a19612d62a17bc9f8bd47f8ef6613d50",
@@ -78,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f2bce955f03cc34869ddc48fce966203",
     "url": "/static/media/napoleon_white_cow.f2bce955.png"
+  },
+  {
+    "revision": "f9c7ab3b3743dd7d04b0b8fa3ba208fb",
+    "url": "/static/media/otherfood.f9c7ab3b.png"
   },
   {
     "revision": "adaf2f37d525e111d2801409e9472617",
