@@ -24,7 +24,7 @@ class Form extends Component {
         <div className="form-input-section-impactpage">
             <div>
               {this.props.tempCategory === 'animal' &&
-                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>
+                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
                       <option value="beef"> 🐄 Beef </option>
                       <option value="lamb"> 🐑 Lamb </option>
                       <option value="crustaceans"> 🦀 Crustaceans </option>
@@ -37,7 +37,7 @@ class Form extends Component {
                 </select>
               }
               {this.props.tempCategory === 'fruits' &&
-                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>
+                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
                       <option value="groundnuts"> 🥜 Groundnuts </option>
                       <option value="tomatoes"> 🍅 Tomatoes </option>
                       <option value="berries and grapes"> 🍇 Berries and grapes </option>
@@ -55,7 +55,7 @@ class Form extends Component {
                 </select>
               }
               {this.props.tempCategory === 'grains' &&
-                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>   
+                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>   
                       <option value="rice"> 🍚 Rice </option>
                       <option value="oatmeal"> 🥣 Oatmeal </option>
                       <option value="other legumes"> 🍲 Other legumes </option>
@@ -66,7 +66,7 @@ class Form extends Component {
                 </select>
               }
               {this.props.tempCategory === 'otherfood' &&
-                <select className="form-input form-type" name="type" defaultValue={this.props.tempType} onChange={this.props.handleType}>      
+                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>      
                       <option value="dark chocolate"> 🍫 Dark chocolate </option> 
                       <option value="coffee"> ☕ Coffee </option> 
                       <option value="palm oil"> 🌴 Palm oil </option> 
