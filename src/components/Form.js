@@ -58,11 +58,11 @@ class Form extends Component {
                 <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>   
                       <option value="rice"> 🍚 Rice </option>
                       <option value="oatmeal"> 🥣 Oatmeal </option>
-                      <option value="other legumes"> 🍲 Other legumes </option>
                       <option value="corn flour"> 🌽 Corn flour </option>
                       <option value="wheat flour"> 🥖 Wheat flour </option>
                       <option value="barley"> 🍺 Barley </option>
                       <option value="peas"> 🌱 Peas </option>
+                      <option value="other legumes"> 🍲 Other legumes </option>
                 </select>
               }
               {this.props.tempCategory === 'otherfood' &&
@@ -93,7 +93,6 @@ class Form extends Component {
                   type="number" 
                   name="amount"
                   value={defaultAmount}
-                  // defaultValue={defaultAmount}
                   min="1"
                   onChange={this.props.handleAmount}
                 />
