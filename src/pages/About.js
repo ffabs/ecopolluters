@@ -33,11 +33,11 @@ class About extends Component {
 
                             <div className="about-vision">
 
-                                <div className="vision">Our vision is to make society sustainable by empowering individual behavioural change</div>
-                                <div className="vision-support">☝️We believe in freedom of choice and accountability</div>
-                                <div className="vision-support">🔬We believe in science over myths and fake news</div>
-                                <div className="vision-support">👁️We believe in the power of awareness</div>
-                                <div className="vision-support">🌳We stand for the beauty of nature</div>
+                                <div className="vision">Our vision is to make human society sustainable by empowering individual behavioural change</div>
+                                <div className="vision-support">☝️ We believe in freedom of choice and accountability</div>
+                                <div className="vision-support">🔬 We believe in science over myths and fake news</div>
+                                <div className="vision-support">👁️ We believe in the power of awareness</div>
+                                <div className="vision-support">🌳 We stand for the beauty of nature</div>
 
                             </div>
                         </div>
