@@ -76,6 +76,35 @@ class App extends Component {
     });
   }
 
+  handleSolution = event => {
+    const alternative = event.target.name;
+    let category = Data[this.state.category][this.state.type][alternative].category;
+    let type = Data[this.state.category][this.state.type][alternative].name;
+    let alternativeUnit = Data[category][type].unit;
+    let unit = Data[category][type].unit;
+    let measure = Data[category][type].measure;
+    let amount = +(this.state.amount * Data[this.state.category][this.state.type][alternative].amount / alternativeUnit).toFixed(1);
+    if(measure !== "liters"){
+      amount = amount.toFixed(0);
+    }
+    this.setState({
+      category: category,
+      type: type,
+      amount: amount,
+      tempCategory: category,
+      tempType: type,
+      tempAmount: amount,
+      // select: this.state.tempSelect,
+      // grams: grams,
+      calculation: true,
+      newCalculation: false,
+      // calculation: false,
+      // newCalculation: true,
+      unit: unit,
+      measure: measure
+    });
+  }
+
   handleCategory = event => {
     const tempCategory = event.target.value;
     switch(tempCategory) {
@@ -120,6 +149,7 @@ class App extends Component {
           tempAmount: Data[tempCategory].beef.defaultAmount
         });
     }
+
   }
 
 
@@ -164,6 +194,7 @@ class App extends Component {
                 handleType={this.handleType}
                 handleCalculation={this.handleCalculation}
                 handleCategory={this.handleCategory}
+                handleSolution={this.handleSolution}
               />
             )}/>
             <Route exact={true} path='/science' render={() => (

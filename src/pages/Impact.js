@@ -4,6 +4,7 @@ import './Impact.css';
 import Categories from '../components/Categories'
 import Form from '../components/Form';
 import Pollution from '../components/Pollution';
+import Solution from '../components/Solution';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -28,7 +29,10 @@ class Impact extends Component {
               <Form {...this.props}/>
             </div>
             {this.props.calculation === true &&
+              <div> 
                 <Pollution {...this.props} />
+                <Solution {...this.props} />
+              </div>
             }
             {this.props.calculation === false &&
                 <img className="default-impact-image" src={defaultimpact} alt="defaultimpact"/>
