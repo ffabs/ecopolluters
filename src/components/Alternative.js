@@ -13,14 +13,15 @@ class Alternative extends Component {
 
             <div className="alternative">
                 <Icon icon={this.props.alternativename}/>
-                - {this.props.alternativeamountneeded+" "} 
-
-                {this.props.alternativemeasure === "grams" &&
-                  <div> grams </div>
-                }
-                {this.props.alternativemeasure === "liters" &&
-                  <div> liters </div>
-                }
+                <div className="alternative-amount">
+                    - {this.props.alternativeamountneeded+" "} 
+                    {this.props.alternativemeasure === "grams" &&
+                        <div className="alternative-amount"> g </div>
+                    }
+                    {this.props.alternativemeasure === "liters" &&
+                        <div className="alternative-amount"> l </div>
+                    }
+                </div>
 
                 <div className="alternative-impact">
                 
@@ -49,9 +50,10 @@ class Alternative extends Component {
                 
                 <Link to={"/impact#" + this.props.alternativename}>
                     <button  
+                        className="solution-calculation"
                         name={this.props.alternative}
                         onClick={this.props.handleSolution}>
-                        calculate this food
+                        Calculate {this.props.alternativename} impact →
                     </button>
                 </Link>
 

@@ -14,6 +14,14 @@
     display: inline;
   }
 
+    .solution-title-bold {
+      font-weight: bold;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
   .alternatives {
     font-style: normal;
     font-weight: bold;
@@ -40,7 +48,7 @@
         padding: 20px;
         background-color: #9B51E0;
         border-radius: 10px;
-        cursor: pointer;
+        /* cursor: pointer; */
         color: #FFFFFF;
         font-style: normal;
         font-weight: bold;
@@ -48,13 +56,18 @@
         line-height: 40px;
     }
 
+    .alternative-amount {
+      font-weight: normal;
+      display: inline;
+    }
+
     .alternative-not-rec {
         margin-top: 20px;
     }
 
-        .alternative:hover {
+        /* .alternative:hover {
             border: 3px dotted #FFFFFF;
-        }
+        } */
 
         .alternative-impact {
             font-size: 23px;
@@ -65,4 +78,19 @@
         .warning {
           color: #F2C94C;
         }
-  
+
+        .solution-calculation {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          background-color: transparent;
+          border-color: transparent;
+          color: #FFFFFF;
+        }
+
+        .solution-calculation:hover {
+          box-shadow: none;
+          text-decoration: underline;
+          cursor: pointer;
+        }

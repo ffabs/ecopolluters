@@ -142,17 +142,25 @@ class Solution extends Component {
             <div className={solutions}>
 
                 <div className="solution-title">Alternatives to get the same amount of
-                <div>
-                    {type.optimise + " "}in {this.props.amount + " "}
-                    {this.props.measure === "grams" &&
-                        <div className="solution-title"> grams of </div>
-                    }
-                    {this.props.measure === "liters" &&
-                        <div className="solution-title"> liters of </div>
-                    }
-                    {this.props.type}:
+                    <div className="solution-title-bold">
+                        {type.optimise + " "} 
+                        <div className="solution-title"> in </div> 
+                        {this.props.amount + " "}
+                        {this.props.measure === "grams" &&
+                            <div className="solution-title"> 
+                                <div className="solution-title solution-title-bold"> G </div>
+                                <div className="solution-title"> of </div> 
+                            </div>
+                        }
+                        {this.props.measure === "liters" &&
+                            <div className="solution-title"> 
+                                <div className="solution-title solution-title-bold"> L </div>
+                                <div className="solution-title"> of </div> 
+                            </div>
+                        }
+                        <div className="solution-title solution-title-bold uppercase">{this.props.type}:</div>
+                    </div>
                 </div>
-            </div>
 
                 <div className="alternatives">
                     {alternative1name !== "none" && 
