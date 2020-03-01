@@ -952,24 +952,24 @@
             "measure": "liters",
             "optimise": "PROTEINS",
             "alternative1": {
-                "category": "grains",
-                "name": "barley",
-                "amount": 0.2929292929
-            },
-            "alternative2": {
-                "category": "grains",
-                "name": "oatmeal",
-                "amount": 0.29
-            },
-            "alternative3": {
-                "category": "fruits",
-                "name": "brassicas",
-                "amount": 1.035714286
-            },
-            "alternative4": {
                 "category": "",
                 "name": "none",
                 "amount": ""
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "nuts",
+                "amount": 0.1593406593
+            },
+            "alternative3": {
+                "category": "animal",
+                "name": "crustaceans",
+                "amount": 0.2132352941
+            },
+            "alternative4": {
+                "category": "fruits",
+                "name": "brassicas",
+                "amount": 103.5714286
             }
         },
         
