@@ -522,26 +522,26 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "proteins",
+            "optimise": "OTHER",
             "alternative1": {
-                "category": "otherfood",
-                "name": "tofu",
-                "amount": 3.57
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
-                "category": "grains",
-                "name": "other legumes",
-                "amount": 0.73
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 6.04
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative4": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 1.24
+                "category": "",
+                "name": "none",
+                "amount": ""
             }
         },
 
@@ -672,26 +672,26 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "proteins",
+            "optimise": "OTHER",
             "alternative1": {
-                "category": "otherfood",
-                "name": "tofu",
-                "amount": 3.57
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
-                "category": "grains",
-                "name": "other legumes",
-                "amount": 0.73
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 6.04
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative4": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 1.24
+                "category": "",
+                "name": "none",
+                "amount": ""
             }
         }
 
@@ -766,7 +766,7 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "proteins",
+            "optimise": "BEST",
             "alternative1": {
                 "category": "",
                 "name": "none",
@@ -856,26 +856,26 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "proteins",
+            "optimise": "OTHER",
             "alternative1": {
-                "category": "otherfood",
-                "name": "tofu",
-                "amount": 3.57
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
-                "category": "grains",
-                "name": "other legumes",
-                "amount": 0.73
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 6.04
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative4": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 1.24
+                "category": "",
+                "name": "none",
+                "amount": ""
             }
         },
 
