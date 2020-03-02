@@ -319,14 +319,14 @@
                 "amount": 0.2440944882
             },
             "alternative2": {
-                "category": "grains",
-                "name": "bread",
-                "amount": 0.121887287
-            },
-            "alternative3": {
                 "category": "fruits",
                 "name": "root vegetables",
                 "amount": 0.96875
+            },
+            "alternative3": {
+                "category": "grains",
+                "name": "bread",
+                "amount": 0.121887287
             },
             "alternative4": {
                 "category": "",

@@ -2,6 +2,11 @@
     font-family: Quicksand;
     color: #FFFFFF;
     margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .solution-title-section {
+    width: 900px;
   }
 
   .solution-title {
@@ -10,7 +15,6 @@
     font-size: 40px;
     line-height: 50px;
     display: inline;
-    width: 900px;
   }
 
     .solution-title-bold {
@@ -106,7 +110,7 @@
 
 @media only screen and (max-width: 1000px) {
   
-  .solution-title {
+  .solution-title-section {
     width: 750px;
   }
   
@@ -117,32 +121,120 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+  .solution-title-section {
+    width: 620px;
+  }
   
   .solution-title {
     font-size: 30px;
     line-height: 40px;
-    width: 600px;
   }
   
   .alternative {
     width: 600px;
     font-size: 28px;
-    line-height: 30px;
+  }
+
+  .alternatives {
+    font-size: 25px;
+    margin-top: 30px;
   }
   
 }
 
 @media only screen and (max-width: 700px) {
-  
+
+  .solution-title-section {
+    width: 580px;
+  }
+
   .solution-title {
-    font-size: 27px;
+    font-size: 28px;
     line-height: 35px;
-    width: 500px;
   }
   
   .alternative {
-    font-size: 26px;
+    width: 550px;
+    font-size: 25px;
+  }
+
+  .alternatives {
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 630px) {
+
+  .solution-title-section {
+    width: 520px;
+  }
+
+  .solution-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  
+  .alternative {
     width: 500px;
+    font-size: 23px;
+  }
+
+  .alternatives {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  .solution-title-section {
+    width: 450px;
+  }
+
+  .solution-title {
+    font-size: 23px;
+    line-height: 35px;
+  }
+  
+  .alternative {
+    width: 400px;
+    font-size: 23px;
+  }
+
+  .alternatives {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+
+  .solution-title-section {
+    width: 400px;
+  }
+
+  .solution-title {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  
+  .alternative {
+    width: 360px;
+    font-size: 23px;
+  }
+
+  .alternatives {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
   }
   
 }

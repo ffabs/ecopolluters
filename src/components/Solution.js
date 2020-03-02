@@ -139,24 +139,27 @@ class Solution extends Component {
 
             <div className={solutions}>
 
-                <div className="solution-title">Alternatives to get the same amount of
-                    <div className="solution-title-bold">
-                        {type.optimise + " "} 
-                        <div className="solution-title"> in </div> 
-                        {this.props.amount + " "}
-                        {this.props.measure === "grams" &&
-                            <div className="solution-title"> 
-                                <div className="solution-title solution-title-bold"> g </div>
-                                <div className="solution-title"> of </div> 
-                            </div>
-                        }
-                        {this.props.measure === "liters" &&
-                            <div className="solution-title"> 
-                                <div className="solution-title solution-title-bold"> l </div>
-                                <div className="solution-title"> of </div> 
-                            </div>
-                        }
-                        <div className="solution-title solution-title-bold uppercase">{this.props.type}:</div>
+                <div className="solution-title-section">
+                    <div className="solution-title">
+                        Alternatives to get the same amount of
+                        <div className="solution-title-bold">
+                            {type.optimise + " "} 
+                            <div className="solution-title"> in </div> 
+                            {this.props.amount + " "}
+                            {this.props.measure === "grams" &&
+                                <div className="solution-title"> 
+                                    <div className="solution-title solution-title-bold"> g </div>
+                                    <div className="solution-title"> of </div> 
+                                </div>
+                            }
+                            {this.props.measure === "liters" &&
+                                <div className="solution-title"> 
+                                    <div className="solution-title solution-title-bold"> l </div>
+                                    <div className="solution-title"> of </div> 
+                                </div>
+                            }
+                            <div className="solution-title solution-title-bold uppercase">{this.props.type}:</div>
+                        </div>
                     </div>
                 </div>
 
