@@ -3,9 +3,7 @@ import '../App.css';
 import './Pollution.css';
 import './Solution.css';
 import Data from '../impact-data.json';
-import Grams from '../components/Grams';
 import Alternative from '../components/Alternative';
-import {Link} from 'react-router-dom';
 
 class Solution extends Component {
 

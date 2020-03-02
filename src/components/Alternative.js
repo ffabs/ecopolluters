@@ -26,10 +26,10 @@ class Alternative extends Component {
                 <div className="alternative-impact">
                 
                     {this.props.alternativeco2difference.toFixed(2) > 0 &&
-                        <div>✅ save {this.props.alternativeco2difference.toFixed(2)} Kg of CO2</div>
+                        <div>✅ save {this.props.alternativeco2difference.toFixed(2)} kg of CO2</div>
                     }
                     {this.props.alternativeco2difference.toFixed(2) < 0 &&
-                        <div className="warning">⚠️ produce {-1*this.props.alternativeco2difference.toFixed(2)} Kg of CO2</div>
+                        <div className="warning">⚠️ produce {-1*this.props.alternativeco2difference.toFixed(2)} kg of CO2</div>
                     }
 
                     {this.props.alternativewaterdifference.toFixed(2) > 0 &&

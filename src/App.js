@@ -87,6 +87,7 @@ class App extends Component {
     if(measure !== "liters"){
       amount = amount.toFixed(0);
     }
+    let grams = amount*unit;
     this.setState({
       category: category,
       type: type,
@@ -95,7 +96,7 @@ class App extends Component {
       tempType: type,
       tempAmount: amount,
       // select: this.state.tempSelect,
-      // grams: grams,
+      grams: grams,
       calculation: true,
       newCalculation: false,
       // calculation: false,
