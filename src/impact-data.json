@@ -252,22 +252,22 @@
             "alternative1": {
                 "category": "otherfood",
                 "name": "soymilk",
-                "amount": 0.001319917776
+                "amount": 1.319917776
             },
             "alternative2": {
                 "category": "fruits",
                 "name": "bananas",
-                "amount": 0.6853932584
+                "amount": 685.3932584
             },
             "alternative3": {
                 "category": "grains",
                 "name": "oatmeal",
-                "amount": 0.2033333333
+                "amount": 203.3333333
             },
             "alternative4": {
                 "category": "animal",
                 "name": "eggs",
-                "amount": 0.4265734266
+                "amount": 426.5734266
             }
         }
         
@@ -959,17 +959,17 @@
             "alternative2": {
                 "category": "fruits",
                 "name": "nuts",
-                "amount": 0.1593406593
+                "amount": 159.3406593
             },
             "alternative3": {
                 "category": "animal",
                 "name": "crustaceans",
-                "amount": 0.2132352941
+                "amount": 213.2352941
             },
             "alternative4": {
                 "category": "fruits",
                 "name": "brassicas",
-                "amount": 103.5714286
+                "amount": 1035.714286
             }
         },
         
@@ -1044,22 +1044,22 @@
             "alternative1": {
                 "category": "otherfood",
                 "name": "palm oil",
-                "amount": 0.0001489627374
+                "amount": 0.1489627374
             },
             "alternative2": {
                 "category": "otherfood",
                 "name": "rapeseed oil",
-                "amount": 0.0001624462494
+                "amount": 0.1624462494
             },
             "alternative3": {
                 "category": "otherfood",
                 "name": "sunflower oil",
-                "amount": 0.0001465517241
+                "amount": 0.1465517241
             },
             "alternative4": {
                 "category": "otherfood",
                 "name": "olive oil",
-                "amount": 0.0001494505495
+                "amount": 0.1494505495
             }
         },
         
@@ -1074,7 +1074,7 @@
             "alternative1": {
                 "category": "otherfood",
                 "name": "sunflower oil",
-                "amount": 0.001077586207
+                "amount": 1.077586207
             },
             "alternative2": {
                 "category": "",
@@ -1104,12 +1104,12 @@
             "alternative1": {
                 "category": "otherfood",
                 "name": "palm oil",
-                "amount": 0.001095314246
+                "amount": 1.095314246
             },
             "alternative2": {
                 "category": "otherfood",
                 "name": "rapeseed oil",
-                "amount": 0.001194457716
+                "amount": 1.194457716
             },
             "alternative3": {
                 "category": "",
@@ -1134,12 +1134,12 @@
             "alternative1": {
                 "category": "otherfood",
                 "name": "palm oil",
-                "amount": 0.001007689106
+                "amount": 1.007689106
             },
             "alternative2": {
                 "category": "otherfood",
                 "name": "sunflower oil",
-                "amount": 0.0009913793103
+                "amount": 0.9913793103
             },
             "alternative3": {
                 "category": "",
@@ -1164,17 +1164,17 @@
             "alternative1": {
                 "category": "otherfood",
                 "name": "palm oil",
-                "amount": 0.001095314246
+                "amount": 1.095314246
             },
             "alternative2": {
                 "category": "otherfood",
                 "name": "rapeseed oil",
-                "amount": 0.001194457716
+                "amount": 1.194457716
             },
             "alternative3": {
                 "category": "otherfood",
                 "name": "sunflower oil",
-                "amount": 0.001077586207
+                "amount": 1.077586207
             },
             "alternative4": {
                 "category": "",
@@ -1194,22 +1194,22 @@
             "alternative1": {
                 "category": "fruits",
                 "name": "berries and grapes",
-                "amount": 1.23880597
+                "amount": 1238.80597
             },
             "alternative2": {
                 "category": "fruits",
                 "name": "citrus fruits",
-                "amount": 1.765957447
+                "amount": 1765.957447
             },
             "alternative3": {
                 "category": "fruits",
                 "name": "apples",
-                "amount": 1.596153846
+                "amount": 1596.153846
             },
             "alternative4": {
                 "category": "otherfood",
                 "name": "cane sugar",
-                "amount": 0.2075
+                "amount": 207.5
             }
         },
         
