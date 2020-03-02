@@ -1,7 +1,7 @@
 .solution {
     font-family: Quicksand;
     color: #FFFFFF;
-    /* padding: 50px 250px 50px 250px; */
+    margin-top: 50px;
   }
 
   .solution-title {
@@ -10,6 +10,7 @@
     font-size: 40px;
     line-height: 50px;
     display: inline;
+    width: 900px;
   }
 
     .solution-title-bold {
@@ -52,6 +53,7 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 40px;
+        width: 850px;
     }
 
     .alternative-items {
@@ -101,3 +103,46 @@
           text-decoration: underline;
           cursor: pointer;
         }
+
+@media only screen and (max-width: 1000px) {
+  
+  .solution-title {
+    width: 750px;
+  }
+  
+  .alternative {
+    width: 700px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .solution-title {
+    font-size: 30px;
+    line-height: 40px;
+    width: 600px;
+  }
+  
+  .alternative {
+    width: 600px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .solution-title {
+    font-size: 27px;
+    line-height: 35px;
+    width: 500px;
+  }
+  
+  .alternative {
+    font-size: 26px;
+    width: 500px;
+  }
+  
+}

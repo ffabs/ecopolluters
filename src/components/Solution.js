@@ -8,7 +8,7 @@ import Alternative from '../components/Alternative';
 class Solution extends Component {
 
     render() {
-        let solutions = 'solution pollutions';
+        let solutions = 'solution pollutions form-input-section-impactpage';
         if (this.props.newCalculation === false) {
             solutions += ' pollutions-animation'
         }

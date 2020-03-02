@@ -470,13 +470,13 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 0.499344692
+                "name": "corn flour",
+                "amount": 0.5219178082
             },
             "alternative3": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 0.5219178082
+                "name": "bread",
+                "amount": 0.499344692
             },
             "alternative4": {
                 "category": "grains",
@@ -957,7 +957,7 @@
                 "amount": 1
             },
             "alternative2": {
-                "category": "grains",
+                "category": "otherfood",
                 "name": "beer",
                 "amount": 0.01379310345
             },
