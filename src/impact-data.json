@@ -439,14 +439,14 @@
                 "amount": 0.3149606299
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 0.3973509934
-            },
-            "alternative3": {
                 "category": "grains",
                 "name": "corn flour",
                 "amount": 0.1643835616
+            },
+            "alternative3": {
+                "category": "fruits",
+                "name": "nuts",
+                "amount": 0.3973509934
             },
             "alternative4": {
                 "category": "grains",
@@ -932,14 +932,14 @@
                 "amount": 159.3406593
             },
             "alternative3": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 213.2352941
-            },
-            "alternative4": {
                 "category": "fruits",
                 "name": "brassicas",
                 "amount": 1035.714286
+            },
+            "alternative4": {
+                "category": "animal",
+                "name": "crustaceans",
+                "amount": 213.2352941
             }
         },
         
