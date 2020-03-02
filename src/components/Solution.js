@@ -37,14 +37,16 @@ class Solution extends Component {
             if(alternative1measure !== "liters"){
                 alternative1amountneeded = alternative1amountneeded.toFixed(0);
             }
+            // alternative1gramsneeded
+            let alternative1gramsneeded = alternative1amountneeded * alternative1unit;
             // alternative1co2difference
-            let alternative1co2 = alternative1amountneeded * alternative1.co2;
+            let alternative1co2 = alternative1gramsneeded * alternative1.co2;
             alternative1co2difference = currentc02 - alternative1co2;
             // alternative1waterdifference
-            let alternative1water = alternative1amountneeded * alternative1.water;
+            let alternative1water = alternative1gramsneeded * alternative1.water;
             alternative1waterdifference = currentwater - alternative1water;
             // alternative1landdifference
-            let alternative1land = alternative1amountneeded * alternative1.land;
+            let alternative1land = alternative1gramsneeded * alternative1.land;
             alternative1landdifference = currentland - alternative1land;
         }
 
@@ -66,14 +68,16 @@ class Solution extends Component {
             if(alternative2measure !== "liters"){
                 alternative2amountneeded = alternative2amountneeded.toFixed(0);
             }
+            // alternative2gramsneeded
+            let alternative2gramsneeded = alternative2amountneeded * alternative2unit;
             // alternative2co2difference
-            let alternative2co2 = alternative2amountneeded * alternative2.co2;
+            let alternative2co2 = alternative2gramsneeded * alternative2.co2;
             alternative2co2difference = currentc02 - alternative2co2;
             // alternative2waterdifference
-            let alternative2water = alternative2amountneeded * alternative2.water;
+            let alternative2water = alternative2gramsneeded * alternative2.water;
             alternative2waterdifference = currentwater - alternative2water;
             // alternative2landdifference
-            let alternative2land = alternative2amountneeded * alternative2.land;
+            let alternative2land = alternative2gramsneeded * alternative2.land;
             alternative2landdifference = currentland - alternative2land;
         }
 
@@ -95,14 +99,16 @@ class Solution extends Component {
             if(alternative3measure !== "liters"){
                 alternative3amountneeded = alternative3amountneeded.toFixed(0);
             }
+            // alternative3gramsneeded
+            let alternative3gramsneeded = alternative3amountneeded * alternative3unit;
             // alternative3co2difference
-            let alternative3co2 = alternative3amountneeded * alternative3.co2;
+            let alternative3co2 = alternative3gramsneeded * alternative3.co2;
             alternative3co2difference = currentc02 - alternative3co2;
             // alternative3waterdifference
-            let alternative3water = alternative3amountneeded * alternative3.water;
+            let alternative3water = alternative3gramsneeded * alternative3.water;
             alternative3waterdifference = currentwater - alternative3water;
             // alternative3landdifference
-            let alternative3land = alternative3amountneeded * alternative3.land;
+            let alternative3land = alternative3gramsneeded * alternative3.land;
             alternative3landdifference = currentland - alternative3land;
         }
 
@@ -124,14 +130,16 @@ class Solution extends Component {
             if(alternative4measure !== "liters"){
                 alternative4amountneeded = alternative4amountneeded.toFixed(0);
             }
+            // alternative4gramsneeded
+            let alternative4gramsneeded = alternative4amountneeded * alternative4unit;
             // alternative4co2difference
-            let alternative4co2 = alternative4amountneeded * alternative4.co2;
+            let alternative4co2 = alternative4gramsneeded * alternative4.co2;
             alternative4co2difference = currentc02 - alternative4co2;
             // alternative4waterdifference
-            let alternative4water = alternative4amountneeded * alternative4.water;
+            let alternative4water = alternative4gramsneeded * alternative4.water;
             alternative4waterdifference = currentwater - alternative4water;
             // alternative4landdifference
-            let alternative4land = alternative4amountneeded * alternative4.land;
+            let alternative4land = alternative4gramsneeded * alternative4.land;
             alternative4landdifference = currentland - alternative4land;
         }
         
