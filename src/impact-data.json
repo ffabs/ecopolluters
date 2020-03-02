@@ -1072,14 +1072,14 @@
             "measure": "liters",
             "optimise": "FAT",
             "alternative1": {
-                "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 1.077586207
-            },
-            "alternative2": {
                 "category": "",
                 "name": "none",
                 "amount": ""
+            },
+            "alternative2": {
+                "category": "otherfood",
+                "name": "sunflower oil",
+                "amount": 1.077586207
             },
             "alternative3": {
                 "category": "",
