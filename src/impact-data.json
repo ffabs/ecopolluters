@@ -380,8 +380,8 @@
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 1.428571429
+                "name": "brassicas",
+                "amount": 9.285714286
             },
             "alternative3": {
                 "category": "grains",
@@ -390,8 +390,8 @@
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "brassicas",
-                "amount": 9.285714286
+                "name": "nuts",
+                "amount": 1.428571429
             }
         },
 
