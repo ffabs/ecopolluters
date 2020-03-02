@@ -165,13 +165,13 @@
                 "amount": 2.1125
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "nuts",
+                "category": "grains",
+                "name": "other legumes",
                 "amount": 0.9285714286
             },
             "alternative3": {
-                "category": "grains",
-                "name": "other legumes",
+                "category": "fruits",
+                "name": "nuts",
                 "amount": 0.7347826087
             },
             "alternative4": {
@@ -522,26 +522,26 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "OTHER",
+            "optimise": "CARBS",
             "alternative1": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "cassavas",
+                "amount": 0.09448818898
             },
             "alternative2": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "grains",
+                "name": "corn flour",
+                "amount": 0.04931506849
             },
             "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "onions",
+                "amount": 0.3870967742
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "root vegetables",
+                "amount": 0.375
             }
         },
 
@@ -672,21 +672,21 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "OTHER",
+            "optimise": "CALORIES",
             "alternative1": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "bananas",
+                "amount": 0.3595505618
             },
             "alternative2": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "apples",
+                "amount": 0.6153846154
             },
             "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "citrus fruits",
+                "amount": 0.6808510638
             },
             "alternative4": {
                 "category": "",
@@ -826,26 +826,26 @@
             "defaultAmount": 100,
             "unit": 1,
             "measure": "grams",
-            "optimise": "OTHER",
+            "optimise": "PROTEIN",
             "alternative1": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "otherfood",
+                "name": "soymilk",
+                "amount": 0.007722526273
             },
             "alternative2": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "nuts",
+                "amount": 1.263736264
             },
             "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "otherfood",
+                "name": "tofu",
+                "amount": 2.875
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "brassicas",
+                "amount": 8.214285714
             }
         },
 

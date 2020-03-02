@@ -8,7 +8,7 @@ import Alternative from '../components/Alternative';
 class Solution extends Component {
 
     render() {
-        let solutions = 'solution';
+        let solutions = 'solution pollutions';
         if (this.props.newCalculation === false) {
             solutions += ' pollutions-animation'
         }
@@ -146,13 +146,13 @@ class Solution extends Component {
                         {this.props.amount + " "}
                         {this.props.measure === "grams" &&
                             <div className="solution-title"> 
-                                <div className="solution-title solution-title-bold"> G </div>
+                                <div className="solution-title solution-title-bold"> g </div>
                                 <div className="solution-title"> of </div> 
                             </div>
                         }
                         {this.props.measure === "liters" &&
                             <div className="solution-title"> 
-                                <div className="solution-title solution-title-bold"> L </div>
+                                <div className="solution-title solution-title-bold"> l </div>
                                 <div className="solution-title"> of </div> 
                             </div>
                         }
