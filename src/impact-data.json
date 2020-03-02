@@ -982,19 +982,19 @@
             "measure": "grams",
             "optimise": "CALORIES",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "fruits",
                 "name": "cassavas",
                 "amount": 2.5
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "grains",
                 "name": "bread",
                 "amount": 1.098901099
-            },
-            "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
             },
             "alternative4": {
                 "category": "",
