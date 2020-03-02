@@ -81,6 +81,7 @@
             font-size: 23px;
             line-height: 29px;
             font-size: 16px;
+            margin-top: 20px;
         }
 
         .warning {
@@ -236,5 +237,29 @@
     margin-top: 20px;
     line-height: 30px;
   }
+  
+}
+
+@media only screen and (max-width: 450px) {
+
+  /* .solution-title-section {
+    width: 350px;
+  }
+
+  .solution-title {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  
+  .alternative {
+    width: 330px;
+    font-size: 23px;
+  }
+
+  .alternatives {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  } */
   
 }

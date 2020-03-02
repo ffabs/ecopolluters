@@ -17,7 +17,7 @@ class Alternative extends Component {
                         <Icon icon={this.props.alternativename}/>
                     </div>
                     <div>
-                        <div className="alternative-amount">&nbsp;- {this.props.alternativeamountneeded+" "} </div>
+                        <div className="alternative-amount">&nbsp;• {this.props.alternativeamountneeded+" "} </div>
                         {this.props.alternativemeasure === "grams" &&
                             <div className="alternative-amount"> g </div>
                         }
