@@ -1,8 +1,7 @@
 .solution {
-    background-color: #BB6BD9;
+    /* background-color: #BB6BD9; */
     font-family: Quicksand;
     color: #FFFFFF;
-    margin-top: 100px;
     padding: 50px;
   }
 
@@ -56,6 +55,10 @@
         line-height: 40px;
     }
 
+    .alternative-items {
+        display: flex;
+    }
+
     .alternative-amount {
       font-weight: normal;
       display: inline;
@@ -77,6 +80,11 @@
 
         .warning {
           color: #F2C94C;
+        }
+
+        .same-impact {
+          font-style: normal;
+          font-weight: normal;
         }
 
         .solution-calculation {

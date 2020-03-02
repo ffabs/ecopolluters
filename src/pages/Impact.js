@@ -29,8 +29,10 @@ class Impact extends Component {
               <Form {...this.props}/>
             </div>
             {this.props.calculation === true &&
-              <div> 
-                <Pollution {...this.props} />
+              <Pollution {...this.props} />
+            }
+            {this.props.calculation === true &&
+              <div className="solution-cover">
                 <Solution {...this.props} />
               </div>
             }

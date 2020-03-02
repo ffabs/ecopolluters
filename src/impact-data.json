@@ -320,7 +320,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "wheat flour",
+                "name": "bread",
                 "amount": 0.121887287
             },
             "alternative3": {
@@ -464,14 +464,14 @@
             "measure": "grams",
             "optimise": "CARBS",
             "alternative1": {
-                "category": "grains",
-                "name": "barley",
-                "amount": 0.4903474903
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 1.261589404
+                "category": "grains",
+                "name": "bread",
+                "amount": 0.499344692
             },
             "alternative3": {
                 "category": "grains",
@@ -699,7 +699,7 @@
 
     "grains": {
 
-        "wheat flour": {
+        "bread": {
             "co2": 0.00157,
             "water": 0.64750,
             "land": 0.00385,
@@ -714,13 +714,13 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "barley",
-                "amount": 0.981981982
-            },
-            "alternative3": {
-                "category": "grains",
                 "name": "corn flour",
                 "amount": 0.01045205479
+            },
+            "alternative3": {
+                "category": "fruits",
+                "name": "root vegatebles",
+                "amount": 7.947916667
             },
             "alternative4": {
                 "category": "grains",
@@ -744,43 +744,13 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "barley",
-                "amount": 0.9395109395
-            },
-            "alternative3": {
-                "category": "grains",
-                "name": "wheat flour",
+                "name": "bread",
                 "amount": 0.9567496723
             },
-            "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
-            }
-        },
-
-        "barley": {
-            "co2": 0.00118,
-            "water": 0.01710,
-            "land": 0.00111,
-            "defaultAmount": 100,
-            "unit": 1,
-            "measure": "grams",
-            "optimise": "BEST",
-            "alternative1": {
-                "category": "",
-                "name": "none",
-                "amount": ""
-            },
-            "alternative2": {
-                "category": "",
-                "name": "none",
-                "amount": ""
-            },
             "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "root vegetables",
+                "amount": 7.604166667
             },
             "alternative4": {
                 "category": "",
@@ -804,7 +774,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "wheat flour",
+                "name": "bread",
                 "amount": 0.2883355177
             },
             "alternative3": {
@@ -844,8 +814,8 @@
             },
             "alternative4": {
                 "category": "grains",
-                "name": "barley",
-                "amount": 1.016731017
+                "name": "bread",
+                "amount": 1.035386632
             }
         },
         
@@ -980,7 +950,7 @@
             "defaultAmount": 50,
             "unit": 1,
             "measure": "grams",
-            "optimise": "CARBS",
+            "optimise": "CALORIES",
             "alternative1": {
                 "category": "otherfood",
                 "name": "beet sugar",
@@ -988,18 +958,18 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "barley",
-                "amount": 1.287001287
+                "name": "beer",
+                "amount": 0.01379310345
             },
             "alternative3": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 1.369863014
+                "name": "bread",
+                "amount": 1.098901099
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "grains",
+                "name": "corn flour",
+                "amount": "1.25"
             }
         },
         
@@ -1010,16 +980,16 @@
             "defaultAmount": 50,
             "unit": 1,
             "measure": "grams",
-            "optimise": "CARBS",
+            "optimise": "CALORIES",
             "alternative1": {
                 "category": "fruits",
                 "name": "cassavas",
-                "amount": 2.624671916
+                "amount": 2.5
             },
             "alternative2": {
                 "category": "grains",
-                "name": "barley",
-                "amount": 1.287001287
+                "name": "bread",
+                "amount": 1.098901099
             },
             "alternative3": {
                 "category": "",
@@ -1182,6 +1152,36 @@
                 "amount": ""
             }
         },
+
+        "beer": {
+            "co2": 1.18000,
+            "water": 17.10000,
+            "land": 1.11000,
+            "defaultAmount": 0.5,
+            "unit": 1,
+            "measure": "liters",
+            "optimise": "CALORIES",
+            "alternative1": {
+                "category": "otherfood",
+                "name": "wine",
+                "amount": "0.3493975904"
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "apples",
+                "amount": "557.6923077"
+            },
+            "alternative3": {
+                "category": "fruits",
+                "name": "bananas",
+                "amount": "325.8426966"
+            },
+            "alternative4": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            }
+        },
         
         "wine": {
             "co2": 1.79000,
@@ -1193,8 +1193,8 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "fruits",
-                "name": "berries and grapes",
-                "amount": 1238.80597
+                "name": "apples",
+                "amount": 1596.153846
             },
             "alternative2": {
                 "category": "fruits",
@@ -1202,9 +1202,9 @@
                 "amount": 1765.957447
             },
             "alternative3": {
-                "category": "fruits",
-                "name": "apples",
-                "amount": 1596.153846
+                "category": "otherfood",
+                "name": "beer",
+                "amount": 2.862068966
             },
             "alternative4": {
                 "category": "otherfood",
@@ -1263,8 +1263,8 @@
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "wine",
-                "amount": 0.006643047212
+                "name": "beer",
+                "amount": 0.01896551724
             },
             "alternative4": {
                 "category": "fruits",

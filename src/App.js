@@ -120,25 +120,25 @@ class App extends Component {
       case "fruits":
         this.setState({
           tempCategory: 'fruits',
-          tempType: 'groundnuts',
+          tempType: 'apples',
           newCalculation: true,
-          tempAmount: Data[tempCategory].groundnuts.defaultAmount
+          tempAmount: Data[tempCategory].apples.defaultAmount
         });
       break;
       case "grains":
         this.setState({
           tempCategory: 'grains',
-          tempType: 'rice',
+          tempType: 'bread',
           newCalculation: true,
-          tempAmount: Data[tempCategory].rice.defaultAmount
+          tempAmount: Data[tempCategory].bread.defaultAmount
         });
       break;
       case "otherfood":
         this.setState({
           tempCategory: 'otherfood',
-          tempType: 'dark chocolate',
+          tempType: 'tofu',
           newCalculation: true,
-          tempAmount: Data[tempCategory]['dark chocolate'].defaultAmount
+          tempAmount: Data[tempCategory].tofu.defaultAmount
         });
       break;
       default:

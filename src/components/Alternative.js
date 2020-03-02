@@ -12,15 +12,19 @@ class Alternative extends Component {
         return (
 
             <div className="alternative">
-                <Icon icon={this.props.alternativename}/>
-                <div className="alternative-amount">
-                    - {this.props.alternativeamountneeded+" "} 
-                    {this.props.alternativemeasure === "grams" &&
-                        <div className="alternative-amount"> g </div>
-                    }
-                    {this.props.alternativemeasure === "liters" &&
-                        <div className="alternative-amount"> l </div>
-                    }
+                <div className="alternative-items">
+                    <div>
+                        <Icon icon={this.props.alternativename}/>
+                    </div>
+                    <div>
+                        <div className="alternative-amount"> &nbsp - {this.props.alternativeamountneeded+" "} </div>
+                        {this.props.alternativemeasure === "grams" &&
+                            <div className="alternative-amount"> g </div>
+                        }
+                        {this.props.alternativemeasure === "liters" &&
+                            <div className="alternative-amount"> l </div>
+                        }
+                    </div>
                 </div>
 
                 <div className="alternative-impact">
@@ -29,22 +33,31 @@ class Alternative extends Component {
                         <div>✅ save {this.props.alternativeco2difference.toFixed(2)} kg of CO2</div>
                     }
                     {this.props.alternativeco2difference.toFixed(2) < 0 &&
-                        <div className="warning">⚠️ produce {-1*this.props.alternativeco2difference.toFixed(2)} kg of CO2</div>
+                        <div className="warning">⚠️ + {-1*this.props.alternativeco2difference.toFixed(2)} kg of CO2 produced</div>
+                    }
+                    {this.props.alternativeco2difference.toFixed(2) == 0 &&
+                        <div className="same-impact"> same kg of CO2 produced</div>
                     }
 
                     {this.props.alternativewaterdifference.toFixed(2) > 0 &&
                         <div>✅ save {this.props.alternativewaterdifference.toFixed(2)} liters of water</div>
                     }
                     {this.props.alternativewaterdifference.toFixed(2) < 0 &&
-                        <div className="warning">⚠️ consume {-1*this.props.alternativewaterdifference.toFixed(2)} liters of water</div>
+                        <div className="warning">⚠️ + {-1*this.props.alternativewaterdifference.toFixed(2)} liters of water consumed</div>
+                    }
+                    {this.props.alternativewaterdifference.toFixed(2) == 0 &&
+                        <div className="same-impact"> same liters of water consumed</div>
                     }
 
                     {this.props.alternativelanddifference.toFixed(2) > 0 &&
                         <div>✅ save {this.props.alternativelanddifference.toFixed(2)} sqm of land</div>
                     }
                     {this.props.alternativelanddifference.toFixed(2) < 0 &&
-                        <div className="warning">⚠️ occupy {-1*this.props.alternativelanddifference.toFixed(2)} sqm of land</div>
+                        <div className="warning">⚠️ + {-1*this.props.alternativelanddifference.toFixed(2)} sqm of land occupied</div>
                     }  
+                    {this.props.alternativelanddifference.toFixed(2) == 0 &&
+                        <div className="same-impact"> same sqm of land occupied</div>
+                    }
 
                 </div>
                 

@@ -163,7 +163,7 @@ class Solution extends Component {
                 <div className="alternatives">
                     {alternative1name !== "none" && 
                     <div className="alternative-recommended">
-                        <div className="alternative-recommended-text"> RECOMMENDED </div> 
+                        <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div> 
                         <Alternative
                             alternative={'alternative1'}
                             alternativename={alternative1name} 

@@ -87,11 +87,11 @@ class Icon extends Component {
                 {this.props.icon === "corn flour" &&
                     <div> 🌽 Corn flour </div>
                 }
-                {this.props.icon === "wheat flour" &&
-                    <div> 🥖 Wheat flour </div>
+                {this.props.icon === "bread" &&
+                    <div> 🥖 Bread </div>
                 }
-                {this.props.icon === "barley" &&
-                    <div> 🍺 Barley </div>
+                {this.props.icon === "beer" &&
+                    <div> 🍺 Beer </div>
                 }
                 {this.props.icon === "peas" &&
                     <div> 🌱 Peas </div>

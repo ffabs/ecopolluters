@@ -26,59 +26,59 @@ class Form extends Component {
               {this.props.tempCategory === 'animal' &&
                 <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
                       <option value="beef"> 🐄 Beef </option>
-                      <option value="lamb"> 🐑 Lamb </option>
-                      <option value="crustaceans"> 🦀 Crustaceans </option>
                       <option value="cheese"> 🧀 Cheese </option>
-                      <option value="fish"> 🐟 Fish </option>
-                      <option value="pork"> 🐖 Pork </option>
                       <option value="chicken"> 🐓 Chicken </option>
+                      <option value="crustaceans"> 🦀 Crustaceans </option>
                       <option value="eggs"> 🥚 Eggs </option>
+                      <option value="fish"> 🐟 Fish </option>
+                      <option value="lamb"> 🐑 Lamb </option>
                       <option value="milk"> 🥛 Milk </option>
+                      <option value="pork"> 🐖 Pork </option>
                 </select>
               }
               {this.props.tempCategory === 'fruits' &&
                 <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
-                      <option value="groundnuts"> 🥜 Groundnuts </option>
-                      <option value="tomatoes"> 🍅 Tomatoes </option>
-                      <option value="berries and grapes"> 🍇 Berries and grapes </option>
-                      <option value="cassavas"> 🍠 Cassavas </option>
+                      <option value="apples"> 🍏 Apples </option>
                       <option value="bananas"> 🍌 Bananas </option>
+                      <option value="berries and grapes"> 🍇 Berries and grapes </option>
                       <option value="brassicas"> 🥦 Brassicas </option>
+                      <option value="cassavas"> 🍠 Cassavas </option>
+                      <option value="citrus fruits"> 🍋 Citrus fruits </option>
+                      <option value="groundnuts"> 🥜 Groundnuts </option>
+                      <option value="nuts"> 🌰 Nuts </option>
                       <option value="onions"> ⚪ Onions </option>
                       <option value="potatoes"> 🥔 Potatoes </option>
                       <option value="root vegetables"> 🥕 Root vegetables </option>
-                      <option value="nuts"> 🌰 Nuts </option>
-                      <option value="apples"> 🍏 Apples </option>
-                      <option value="citrus fruits"> 🍋 Citrus fruits </option>
+                      <option value="tomatoes"> 🍅 Tomatoes </option>
                       <option value="other fruits"> 🍓 Other fruits </option>
                       <option value="other vegetables"> 🥗 Other vegetables </option>
                 </select>
               }
               {this.props.tempCategory === 'grains' &&
-                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>   
-                      <option value="rice"> 🍚 Rice </option>
-                      <option value="oatmeal"> 🥣 Oatmeal </option>
+                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
+                      <option value="bread"> 🥖 Bread </option>
                       <option value="corn flour"> 🌽 Corn flour </option>
-                      <option value="wheat flour"> 🥖 Wheat flour </option>
-                      <option value="barley"> 🍺 Barley </option>
-                      <option value="peas"> 🌱 Peas </option>
+                      <option value="oatmeal"> 🥣 Oatmeal </option>
                       <option value="other legumes"> 🍲 Other legumes </option>
+                      <option value="peas"> 🌱 Peas </option>
+                      <option value="rice"> 🍚 Rice </option>
                 </select>
               }
               {this.props.tempCategory === 'otherfood' &&
-                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>      
-                      <option value="dark chocolate"> 🍫 Dark chocolate </option> 
-                      <option value="coffee"> ☕ Coffee </option> 
-                      <option value="palm oil"> 🌴 Palm oil </option> 
-                      <option value="soybean oil"> 🌿 Soybean oil </option> 
-                      <option value="olive oil"> 🌱 Olive oil </option> 
-                      <option value="rapeseed oil"> 🌼 Rapeseed oil </option> 
-                      <option value="sunflower oil"> 🌻 Sunflower oil </option> 
+                <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
                       <option value="tofu"> 🍢 Tofu </option>
-                      <option value="cane sugar"> 🍬 Cane sugar </option> 
-                      <option value="beet sugar"> 🍬 Beet sugar </option>
-                      <option value="wine"> 🍷 Wine </option> 
                       <option value="soymilk"> 🥛 Soymilk </option>
+                      <option value="olive oil"> 🌱 Olive oil </option> 
+                      <option value="palm oil"> 🌴 Palm oil </option> 
+                      <option value="rapeseed oil"> 🌼 Rapeseed oil </option> 
+                      <option value="soybean oil"> 🌿 Soybean oil </option> 
+                      <option value="sunflower oil"> 🌻 Sunflower oil </option>
+                      <option value="beet sugar"> 🍬 Beet sugar </option>
+                      <option value="cane sugar"> 🍬 Cane sugar </option> 
+                      <option value="coffee"> ☕ Coffee </option> 
+                      <option value="dark chocolate"> 🍫 Dark chocolate </option>
+                      <option value="beer"> 🍺 Beer </option> 
+                      <option value="wine"> 🍷 Wine </option>  
                 </select>
               }
 
