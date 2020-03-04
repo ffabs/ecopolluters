@@ -494,24 +494,24 @@
             "measure": "grams",
             "optimise": "CARBS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "fruits",
                 "name": "onions",
                 "amount": 0.7096774194
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "grains",
                 "name": "corn flour",
                 "amount": 0.0904109589
             },
-            "alternative3": {
+            "alternative4": {
                 "category": "fruits",
                 "name": "root vegetables",
                 "amount": 0.6875
-            },
-            "alternative4": {
-                "category": "grains",
-                "name": "rice",
-                "amount": 0.0835443038
             }
         },
 
