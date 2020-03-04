@@ -247,7 +247,7 @@
   }
 
   .solution-title {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 35px;
   }
   
@@ -267,11 +267,11 @@
 @media only screen and (max-width: 400px) {
 
   .solution-title-section {
-    width: 290px;
+    width: 300px;
   }
 
   .solution-title {
-    font-size: 22px;
+    font-size: 23px;
     line-height: 35px;
   }
   
@@ -291,17 +291,17 @@
 @media only screen and (max-width: 375px) {
 
   .solution-title-section {
-    width: 260px;
+    width: 280px;
   }
 
   .solution-title {
-    font-size: 20px;
+    font-size: 21px;
     line-height: 35px;
   }
   
   .alternative {
     width: 250px;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .alternatives {
@@ -309,23 +309,28 @@
     margin-top: 20px;
     line-height: 30px;
   }
+
+  .alternative-impact {
+    font-size: 14px;
+    margin-top: 10px;
+  }
   
 }
 
 @media only screen and (max-width: 345px) {
 
   .solution-title-section {
-    width: 200px;
+    width: 230px;
   }
 
   .solution-title {
-    font-size: 20px;
+    font-size: 21px;
     line-height: 35px;
   }
   
   .alternative {
     width: 200px;
-    font-size: 23px;
+    font-size: 16px;
   }
 
   .alternatives {
@@ -339,7 +344,7 @@
   }
 
   .alternative-impact {
-    font-size: 13px;
-}
+    font-size: 12px;
+  }
   
 }
