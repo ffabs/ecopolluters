@@ -220,24 +220,24 @@
             "measure": "item",
             "optimise": "PROTEINS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "tofu",
                 "amount": 1.625
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "fruits",
                 "name": "nuts",
                 "amount": 0.7142857143
             },
-            "alternative3": {
+            "alternative4": {
                 "category": "animal",
                 "name": "chicken",
                 "amount": 0.7647058824
-            },
-            "alternative4": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 0.9558823529
             }
         },
 
