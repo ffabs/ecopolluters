@@ -927,19 +927,19 @@
                 "amount": ""
             },
             "alternative2": {
+                "category": "grains",
+                "name": "oatmeal",
+                "amount": 290
+            },
+            "alternative3": {
                 "category": "fruits",
                 "name": "nuts",
                 "amount": 159.3406593
             },
-            "alternative3": {
+            "alternative4": {
                 "category": "fruits",
                 "name": "brassicas",
                 "amount": 1035.714286
-            },
-            "alternative4": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 213.2352941
             }
         },
         
