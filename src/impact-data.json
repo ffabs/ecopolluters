@@ -1072,19 +1072,19 @@
             "measure": "liters",
             "optimise": "FAT",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "palm oil",
                 "amount": 1.095314246
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "otherfood",
                 "name": "rapeseed oil",
                 "amount": 1.194457716
-            },
-            "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
             },
             "alternative4": {
                 "category": "",
@@ -1102,19 +1102,19 @@
             "measure": "liters",
             "optimise": "FAT",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "palm oil",
                 "amount": 1.007689106
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "otherfood",
                 "name": "sunflower oil",
                 "amount": 0.9913793103
-            },
-            "alternative3": {
-                "category": "",
-                "name": "none",
-                "amount": ""
             },
             "alternative4": {
                 "category": "",
@@ -1132,24 +1132,24 @@
             "measure": "liters",
             "optimise": "FAT",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "palm oil",
                 "amount": 1.095314246
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "otherfood",
                 "name": "rapeseed oil",
                 "amount": 1.194457716
             },
-            "alternative3": {
+            "alternative4": {
                 "category": "otherfood",
                 "name": "sunflower oil",
                 "amount": 1.077586207
-            },
-            "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
             }
         },
 
