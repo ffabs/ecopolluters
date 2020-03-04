@@ -404,24 +404,24 @@
             "measure": "grams",
             "optimise": "CARBS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "fruits",
                 "name": "cassavas",
                 "amount": 0.2519685039
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "fruits",
                 "name": "potatoes",
                 "amount": 0.8
             },
-            "alternative3": {
+            "alternative4": {
                 "category": "fruits",
                 "name": "onions",
                 "amount": 1.032258065
-            },
-            "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
             }
         },
 
