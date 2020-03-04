@@ -68,6 +68,10 @@ class Form extends Component {
                 <select className="form-input form-type" name="type" value={this.props.tempType} onChange={this.props.handleType}>
                       <option value="tofu"> 🍢 Tofu </option>
                       <option value="soymilk"> 🥛 Soymilk </option>
+                      <option value="coffee"> ☕ Coffee </option> 
+                      <option value="dark chocolate"> 🍫 Dark chocolate </option>
+                      <option value="beer"> 🍺 Beer </option> 
+                      <option value="wine"> 🍷 Wine </option>  
                       <option value="olive oil"> 🌱 Olive oil </option> 
                       <option value="palm oil"> 🌴 Palm oil </option> 
                       <option value="rapeseed oil"> 🌼 Rapeseed oil </option> 
@@ -75,10 +79,6 @@ class Form extends Component {
                       <option value="sunflower oil"> 🌻 Sunflower oil </option>
                       <option value="beet sugar"> 🍬 Beet sugar </option>
                       <option value="cane sugar"> 🍬 Cane sugar </option> 
-                      <option value="coffee"> ☕ Coffee </option> 
-                      <option value="dark chocolate"> 🍫 Dark chocolate </option>
-                      <option value="beer"> 🍺 Beer </option> 
-                      <option value="wine"> 🍷 Wine </option>  
                 </select>
               }
 
