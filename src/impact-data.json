@@ -170,14 +170,14 @@
                 "amount": 0.9285714286
             },
             "alternative3": {
+                "category": "animal",
+                "name": "chicken",
+                "amount": 0.9941176471
+            },
+            "alternative4": {
                 "category": "fruits",
                 "name": "nuts",
                 "amount": 0.7347826087
-            },
-            "alternative4": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 1.242647059
             }
         },
 
