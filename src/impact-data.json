@@ -1162,19 +1162,19 @@
             "measure": "liters",
             "optimise": "CALORIES",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "wine",
                 "amount": "0.3493975904"
             },
-            "alternative2": {
-                "category": "fruits",
-                "name": "apples",
-                "amount": "557.6923077"
-            },
             "alternative3": {
-                "category": "fruits",
-                "name": "bananas",
-                "amount": "325.8426966"
+                "category": "otherfood",
+                "name": "soymilk",
+                "amount": 0.6275018933
             },
             "alternative4": {
                 "category": "",
