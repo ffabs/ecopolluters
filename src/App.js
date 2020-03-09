@@ -83,8 +83,11 @@ class App extends Component {
     let alternativeUnit = Data[category][type].unit;
     let unit = Data[category][type].unit;
     let measure = Data[category][type].measure;
-    let amount = +(this.state.amount * Data[this.state.category][this.state.type][alternative].amount / alternativeUnit).toFixed(1);
-    if(measure !== "liters"){
+    let amount = +(this.state.amount * this.state.unit * Data[this.state.category][this.state.type][alternative].amount / alternativeUnit).toFixed(1);
+    // if(measure !== "liters"){
+    //   amount = amount.toFixed(0);
+    // }
+    if(measure == "grams"){
       amount = amount.toFixed(0);
     }
     let grams = amount*unit;

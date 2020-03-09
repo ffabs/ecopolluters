@@ -34,7 +34,10 @@ class Solution extends Component {
             // alternative1amountneeded
             let alternative1amount = type.alternative1.amount;
             alternative1amountneeded = +(this.props.grams * alternative1amount / alternative1unit ).toFixed(1);
-            if(alternative1measure !== "liters"){
+            // if(alternative1measure !== "liters"){
+            //     alternative1amountneeded = alternative1amountneeded.toFixed(0);
+            // }
+            if(alternative1measure == "grams"){
                 alternative1amountneeded = alternative1amountneeded.toFixed(0);
             }
             // alternative1gramsneeded
@@ -65,7 +68,10 @@ class Solution extends Component {
             // alternative2amountneeded
             let alternative2amount = type.alternative2.amount;
             alternative2amountneeded = +(this.props.grams * alternative2amount / alternative2unit ).toFixed(1);
-            if(alternative2measure !== "liters"){
+            // if(alternative2measure !== "liters"){
+            //     alternative2amountneeded = alternative2amountneeded.toFixed(0);
+            // }
+            if(alternative2measure == "grams"){
                 alternative2amountneeded = alternative2amountneeded.toFixed(0);
             }
             // alternative2gramsneeded
@@ -96,7 +102,10 @@ class Solution extends Component {
             // alternative3amountneeded
             let alternative3amount = type.alternative3.amount;
             alternative3amountneeded = +(this.props.grams * alternative3amount / alternative3unit ).toFixed(1);
-            if(alternative3measure !== "liters"){
+            // if(alternative3measure !== "liters"){
+            //     alternative3amountneeded = alternative3amountneeded.toFixed(0);
+            // }
+            if(alternative3measure == "grams"){
                 alternative3amountneeded = alternative3amountneeded.toFixed(0);
             }
             // alternative3gramsneeded
@@ -127,7 +136,10 @@ class Solution extends Component {
             // alternative4amountneeded
             let alternative4amount = type.alternative4.amount;
             alternative4amountneeded = +(this.props.grams * alternative4amount / alternative4unit ).toFixed(1);
-            if(alternative4measure !== "liters"){
+            // if(alternative4measure !== "liters"){
+            //     alternative4amountneeded = alternative4amountneeded.toFixed(0);
+            // }
+            if(alternative4measure == "grams"){
                 alternative4amountneeded = alternative4amountneeded.toFixed(0);
             }
             // alternative4gramsneeded
