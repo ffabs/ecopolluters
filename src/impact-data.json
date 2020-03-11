@@ -1228,12 +1228,12 @@
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "dark chocolate",
+                "name": "cane sugar",
                 "amount": 5
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "cane sugar",
+                "name": "dark chocolate",
                 "amount": 5
             },
             "alternative4": {
