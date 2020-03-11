@@ -1192,14 +1192,14 @@
             "measure": "liters",
             "optimise": "CALORIES",
             "alternative1": {
-                "category": "fruits",
-                "name": "apples",
-                "amount": 1596.153846
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "citrus fruits",
-                "amount": 1765.957447
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
                 "category": "otherfood",
@@ -1207,9 +1207,9 @@
                 "amount": 2.862068966
             },
             "alternative4": {
-                "category": "otherfood",
-                "name": "cane sugar",
-                "amount": 207.5
+                "category": "",
+                "name": "none",
+                "amount": ""
             }
         },
         
