@@ -130,14 +130,14 @@
             "measure": "grams",
             "optimise": "PROTEINS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "tofu",
                 "amount": 2.5
-            },
-            "alternative2": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 1.098901099
             },
             "alternative3": {
                 "category": "grains",
