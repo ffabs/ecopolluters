@@ -50,9 +50,9 @@
                 "amount": 1
             },
             "alternative3": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 0.9340659341
+                "category": "grains",
+                "name": "other legumes",
+                "amount": 0.7391304348
             },
             "alternative4": {
                 "category": "animal",
