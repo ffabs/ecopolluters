@@ -344,19 +344,19 @@
             "measure": "grams",
             "optimise": "PROTEINS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "soymilk",
                 "amount": 0.006110868616
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "otherfood",
                 "name": "tofu",
                 "amount": 2.275
-            },
-            "alternative3": {
-                "category": "animal",
-                "name": "crustaceans",
-                "amount": 1.338235294
             },
             "alternative4": {
                 "category": "",
