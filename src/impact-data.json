@@ -1169,7 +1169,7 @@
             "alternative2": {
                 "category": "otherfood",
                 "name": "wine",
-                "amount": "0.3493975904"
+                "amount": 0.3493975904
             },
             "alternative3": {
                 "category": "otherfood",
@@ -1222,24 +1222,24 @@
             "measure": "item",
             "optimise": "CALORIES",
             "alternative1": {
-                "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.00004327599264
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
                 "category": "otherfood",
                 "name": "dark chocolate",
-                "amount": 0.003636363636
+                "amount": 5
             },
             "alternative3": {
                 "category": "otherfood",
                 "name": "cane sugar",
-                "amount": 0.005
+                "amount": 5
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "otherfood",
+                "name": "wine",
+                "amount": 0.15
             }
         },
         
