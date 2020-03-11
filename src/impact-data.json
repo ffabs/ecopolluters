@@ -644,14 +644,11 @@
             "measure": "grams",
             "optimise": "CARBS",
             "alternative1": {
-                "category": "fruits",
-                "name": "bananas",
-                "amount": 0.7456140351
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "citrus fruits",
-                "amount": 1.214285714
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
                 "category": "fruits",
@@ -659,9 +656,9 @@
                 "amount": 1.231884058
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "fruits",
+                "name": "bananas",
+                "amount": 0.7456140351
             }
         },
 
