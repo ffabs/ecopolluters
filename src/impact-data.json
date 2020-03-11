@@ -1229,17 +1229,17 @@
             "alternative2": {
                 "category": "otherfood",
                 "name": "cane sugar",
-                "amount": 5
+                "amount": 0.6024096386
             },
             "alternative3": {
                 "category": "otherfood",
                 "name": "dark chocolate",
-                "amount": 5
+                "amount": 0.6024096386
             },
             "alternative4": {
                 "category": "otherfood",
                 "name": "wine",
-                "amount": 0.15
+                "amount": 0.01807228916
             }
         },
         
