@@ -828,24 +828,24 @@
             "measure": "grams",
             "optimise": "PROTEIN",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "soymilk",
                 "amount": 0.007722526273
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "fruits",
                 "name": "nuts",
                 "amount": 1.263736264
             },
-            "alternative3": {
+            "alternative4": {
                 "category": "otherfood",
                 "name": "tofu",
                 "amount": 2.875
-            },
-            "alternative4": {
-                "category": "fruits",
-                "name": "brassicas",
-                "amount": 8.214285714
             }
         },
 
