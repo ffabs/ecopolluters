@@ -284,14 +284,14 @@
             "measure": "item",
             "optimise": "CARBS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "fruits",
                 "name": "onions",
                 "amount": 0.4193548387
-            },
-            "alternative2": {
-                "category": "grains",
-                "name": "corn flour",
-                "amount": 0.05342465753
             },
             "alternative3": {
                 "category": "fruits",
