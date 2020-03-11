@@ -374,19 +374,19 @@
             "measure": "grams",
             "optimise": "PROTEINS",
             "alternative1": {
-                "category": "otherfood",
-                "name": "tofu",
-                "amount": 3.25
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "brassicas",
-                "amount": 9.285714286
-            },
-            "alternative3": {
                 "category": "grains",
                 "name": "other legumes",
                 "amount": 1.130434783
+            },
+            "alternative3": {
+                "category": "otherfood",
+                "name": "tofu",
+                "amount": 3.25
             },
             "alternative4": {
                 "category": "fruits",
