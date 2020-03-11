@@ -644,11 +644,14 @@
             "measure": "grams",
             "optimise": "CARBS",
             "alternative1": {
-            },
-            "alternative2": {
                 "category": "",
                 "name": "none",
                 "amount": ""
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "citrus fruits",
+                "amount": 1.214285714
             },
             "alternative3": {
                 "category": "fruits",
