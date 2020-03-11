@@ -892,19 +892,19 @@
             "measure": "grams",
             "optimise": "PROTEINS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "otherfood",
                 "name": "soymilk",
                 "amount": 0.002686096095
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "fruits",
                 "name": "nuts",
                 "amount": 0.4395604396
-            },
-            "alternative3": {
-                "category": "grains",
-                "name": "other legumes",
-                "amount": 0.347826087
             },
             "alternative4": {
                 "category": "fruits",
