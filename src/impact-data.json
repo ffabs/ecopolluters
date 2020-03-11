@@ -434,19 +434,19 @@
             "measure": "grams",
             "optimise": "CARBS",
             "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
                 "category": "fruits",
                 "name": "cassavas",
                 "amount": 0.3149606299
             },
-            "alternative2": {
+            "alternative3": {
                 "category": "grains",
                 "name": "corn flour",
                 "amount": 0.1643835616
-            },
-            "alternative3": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 0.3973509934
             },
             "alternative4": {
                 "category": "grains",
