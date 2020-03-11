@@ -614,9 +614,9 @@
             "measure": "item",
             "optimise": "CARBS",
             "alternative1": {
-                "category": "fruits",
-                "name": "bananas",
-                "amount": 0.6052631579
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative2": {
                 "category": "fruits",
@@ -624,14 +624,14 @@
                 "amount": 0.9857142857
             },
             "alternative3": {
+                "category": "fruits",
+                "name": "bananas",
+                "amount": 0.6052631579
+            },
+            "alternative4": {
                 "category": "otherfood",
                 "name": "soymilk",
                 "amount": 0.003839198776
-            },
-            "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
             }
         },
 
