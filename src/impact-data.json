@@ -111,13 +111,13 @@
             },
             "alternative3": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 1.464705882
+                "name": "eggs",
+                "amount": 1.915384615
             },
             "alternative4": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 1.915384615
+                "name": "chicken",
+                "amount": 1.464705882
             }
         },
 
