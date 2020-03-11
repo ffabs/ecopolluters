@@ -76,13 +76,13 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "peas",
-                "amount": 2.518518519
+                "name": "other legumes",
+                "amount": 0.5913043478
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.5913043478
+                "name": "peas",
+                "amount": 2.518518519
             },
             "alternative4": {
                 "category": "animal",
