@@ -1077,9 +1077,9 @@
                 "amount": ""
             },
             "alternative2": {
-                "category": "otherfood",
-                "name": "palm oil",
-                "amount": 1.095314246
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
                 "category": "otherfood",
@@ -1087,9 +1087,9 @@
                 "amount": 1.194457716
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "otherfood",
+                "name": "palm oil",
+                "amount": 1.095314246
             }
         },
         
