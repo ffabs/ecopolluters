@@ -1220,7 +1220,7 @@
             "defaultAmount": 1,
             "unit": 8.3,
             "measure": "item",
-            "optimise": "CALORIES",
+            "optimise": "FUN",
             "alternative1": {
                 "category": "",
                 "name": "none",
