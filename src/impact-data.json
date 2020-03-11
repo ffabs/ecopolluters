@@ -1013,8 +1013,8 @@
             "optimise": "FAT",
             "alternative1": {
                 "category": "otherfood",
-                "name": "palm oil",
-                "amount": 0.1489627374
+                "name": "sunflower oil",
+                "amount": 0.1465517241
             },
             "alternative2": {
                 "category": "otherfood",
@@ -1023,8 +1023,8 @@
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 0.1465517241
+                "name": "palm oil",
+                "amount": 0.1489627374
             },
             "alternative4": {
                 "category": "otherfood",
@@ -1107,9 +1107,9 @@
                 "amount": ""
             },
             "alternative2": {
-                "category": "otherfood",
-                "name": "palm oil",
-                "amount": 1.007689106
+                "category": "",
+                "name": "none",
+                "amount": ""
             },
             "alternative3": {
                 "category": "otherfood",
@@ -1117,9 +1117,9 @@
                 "amount": 0.9913793103
             },
             "alternative4": {
-                "category": "",
-                "name": "none",
-                "amount": ""
+                "category": "otherfood",
+                "name": "palm oil",
+                "amount": 1.007689106
             }
         },
         
@@ -1138,8 +1138,8 @@
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "palm oil",
-                "amount": 1.095314246
+                "name": "sunflower oil",
+                "amount": 1.077586207
             },
             "alternative3": {
                 "category": "otherfood",
@@ -1148,8 +1148,8 @@
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 1.077586207
+                "name": "palm oil",
+                "amount": 1.095314246
             }
         },
 
