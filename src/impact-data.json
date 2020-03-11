@@ -195,19 +195,19 @@
                 "amount": 2.125
             },
             "alternative2": {
-                "category": "fruits",
-                "name": "nuts",
-                "amount": 0.9340659341
-            },
-            "alternative3": {
                 "category": "grains",
                 "name": "other legumes",
                 "amount": 0.7391304348
             },
+            "alternative3": {
+                "category": "fruits",
+                "name": "nuts",
+                "amount": 0.9340659341
+            },
             "alternative4": {
                 "category": "animal",
-                "name": "crustaceans",
-                "amount": 1.25
+                "name": "eggs",
+                "amount": 1.307692308
             }
         },
 
