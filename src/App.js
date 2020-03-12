@@ -87,7 +87,7 @@ class App extends Component {
     // if(measure !== "liters"){
     //   amount = amount.toFixed(0);
     // }
-    if(measure == "grams"){
+    if(measure === "grams"){
       amount = amount.toFixed(0);
     }
     let grams = amount*unit;
