@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './Grams.css';
+import './Solution.css';
+import Icon from '../components/Icon';
 
 class Grams extends Component {
 
@@ -10,23 +12,42 @@ class Grams extends Component {
 
     return (        
 
-        <div>
-          <div className="grams"> 
+      <div className="grams"> 
+
+          <div className="alternative-items"> 
+            <div className="solution-title-bold">
+              <Icon icon={this.props.type}/>
+            </div>
             <div>
-                This is the effect of {this.props.amount}
-                {measure === "grams" &&
-                  <div className="unit-text"> grams of {this.props.type} </div>
-                }
-                {measure === "liters" &&
-                  <div className="unit-text"> liters of {this.props.type} </div>
-                }
-                {measure === "item" &&
-                  <div className="unit-text"> {this.props.type} </div>
-                }
-                on the environment:
+              <div className="alternative-amount">&nbsp;• {this.props.amount+" "} </div>
+              {measure === "grams" &&
+                  <div className="alternative-amount"> g </div>
+              }
+              {measure === "liters" &&
+                  <div className="alternative-amount"> l </div>
+              }
             </div>
           </div>
-        </div>
+          <div className="nutritional-values">
+            <div className="nutritional-value">
+              <div>{this.props.amount}</div>
+              <div>Calories</div>
+            </div>
+            <div className="nutritional-value">
+              <div>{this.props.amount+" g"}</div>
+              <div>Proteins</div>
+            </div>
+            <div className="nutritional-value">
+              <div>{this.props.amount+" g"}</div>
+              <div>Carbs</div>
+            </div>
+            <div className="nutritional-value">
+              <div>{this.props.amount+" g"}</div>
+              <div>Fats</div>
+            </div>
+          </div>
+            
+      </div>
 
     );
     

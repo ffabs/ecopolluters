@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   color: black;
-  font-family: 'Open Sans';
+  font-family: 'Quicksand';
 }
 
 .page {
@@ -31,7 +31,7 @@ body {
 }
 
   .page-title {
-    font-family: 'Open Sans';
+    font-family: 'Quicksand';
     font-weight: 800;
     font-size: 60px;
     line-height: 82px;
@@ -45,7 +45,7 @@ body {
   }
 
   .section-title {
-    font-family: 'Open Sans';
+    font-family: 'Quicksand';
     font-weight: bold;
     font-size: 36px;
     line-height: 24px;
@@ -53,14 +53,14 @@ body {
 
 .impact-button {
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: 'Quicksand';
   font-weight: bold;
   color: white;
   background: #BB6BD9;
   border: 3px dotted #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  font-family: 'Open Sans';
+  font-family: 'Quicksand';
   outline: none;
   transition: 0.2s;
 }
@@ -95,13 +95,14 @@ a:hover {
 
 /* comparisons */
 
-.pollution {
+/* .pollution {
   margin: 20px 0px 0px 0px;
-}
+} */
 
 .impact-image {
-  margin-top: 60px;
-  height: 250px;
+  margin-top: 20px;
+  height: 150px;
+  width: 300px;
 }
 
 .same-as {
@@ -112,7 +113,7 @@ a:hover {
 }
 
 .comparison-section {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
 }
@@ -120,11 +121,11 @@ a:hover {
   .comparison-element {
     display: flex;
     align-items: center;
-    width: 400px;
+    width: 300px;
   }
 
     .comparison-image {
-      height: 100px;
+      height: 50px;
     }
 
     .comparison-text {
@@ -132,7 +133,7 @@ a:hover {
     }
 
       .comparison {
-        font-family: 'Open Sans';
+        font-family: 'Quicksand';
         font-weight: normal;
         font-size: 20px;
         line-height: 32px;
@@ -146,6 +147,14 @@ a:hover {
       }
 
 
+@media only screen and (max-width: 1200px) {
+
+  .impact-image {
+    width: 100%;
+    height: auto;
+  }
+
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -166,8 +175,7 @@ a:hover {
   }
 
   .impact-image {
-    width: 100%;
-    height: auto;
+    display: none;
   }
 
 }

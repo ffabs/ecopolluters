@@ -1,5 +1,30 @@
 .grams {
-    margin: 50px 0px 0px 0px;
-    font-size: 25px;
-    line-height: 40px;
+  font-size: 40px;
+  line-height: 50px;
+  padding: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.nutritional-values {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+}
+
+  .nutritional-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+@media only screen and (max-width: 1200px) {
+
+  .grams {
+      display: inline;
+  }
+    
+}

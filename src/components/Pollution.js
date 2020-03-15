@@ -24,9 +24,11 @@ class Pollution extends Component {
             <div className={pollutions}>
 
                 <Grams {...this.props}/>
-                <CO2 CO2={this.props.grams*type.co2}/>
-                <Water water={this.props.grams*type.water}/>
-                <Land land={this.props.grams*type.land}/>
+                <div className="pollution-card">
+                    <CO2 CO2={this.props.grams*type.co2}/>
+                    <Water water={this.props.grams*type.water}/>
+                    <Land land={this.props.grams*type.land}/>
+                </div>
 
             </div>
 

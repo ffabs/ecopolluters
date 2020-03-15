@@ -5,7 +5,7 @@
   }
   
     .findUs {
-      font-family: 'Open Sans';
+      font-family: 'Quicksand';
       font-style: italic;
       font-weight: normal;
       font-size: 14px;
@@ -32,8 +32,7 @@
         }
   
   .rights {
-    font-family: 'Open Sans';
-    /* font-style: italic; */
+    font-family: 'Quicksand';
     font-weight: 300;
     font-size: 15px;
     line-height: 40px;

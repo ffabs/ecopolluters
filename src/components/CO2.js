@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Pollution.css';
 import co2impact from '../images/co2-impact.png';
 import car from '../images/car.png';
 import flight from '../images/flight.png';
@@ -10,9 +11,10 @@ class CO2 extends Component {
 
     return (        
 
-        <div>
+        <div className="pollution-impact">
+          <div className="section-title pollution"> {this.props.CO2.toFixed(2)} kg</div>
+          <div className="impact-description"> of CO2 produced</div>
           <img className="impact-image" src={co2impact} alt="co2Impact"/>
-          <div className="section-title pollution"> {this.props.CO2.toFixed(2)} kg of CO2 produced</div>
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">

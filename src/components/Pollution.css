@@ -1,14 +1,39 @@
 .pollutions {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 80px 20px 0px 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
   }
   
 .pollutions-animation {
     animation: moveFromBottom 0.75s ease-in-out;
 }
 
+.pollution-impact {
+    background: #FAFAFA;
+    padding: 40px;
+    border: 1px solid  #E0E0E0;
+}
+
 @keyframes moveFromBottom {
     0% { transform: translateY(2000px); opacity: 0%; }
     80% { transform: translateY(-10px); }
     100% { transform: translateY(0px); opacity: 100%; }
+}
+
+.pollution-card {
+    display: flex;
+}
+
+.impact-description {
+    font-size: 20px;
+    line-height: 10px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .pollution-card {
+        display: inline;
+    }
+    
 }
