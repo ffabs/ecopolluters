@@ -12,8 +12,8 @@ class Water extends Component {
 
     return (        
 
-        <div className="pollution-impact">
-        <div className="section-title pollution">{this.props.water.toFixed(2)} liters</div>
+        <div className="pollution-impact pollution-border-top pollution-border-right">
+        <div className="pollution-title pollution">{this.props.water.toFixed(2)} liters</div>
         <div className="impact-description"> of water consumed</div>
           <img className="impact-image" src={waterimpact} alt="waterImpact"/>
           <div className="same-as">Same as</div>

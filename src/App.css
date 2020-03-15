@@ -101,14 +101,13 @@ a:hover {
 
 .impact-image {
   margin-top: 20px;
-  height: 150px;
-  width: 300px;
+  width: 100%;
+  max-width: 239px;
 }
 
 .same-as {
-  font-style: italic;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 21px;
   margin: 20px 0px 10px 0px;
 }
 
@@ -121,7 +120,8 @@ a:hover {
   .comparison-element {
     display: flex;
     align-items: center;
-    width: 300px;
+    max-width: 239px;
+    margin-top: 15px;
   }
 
     .comparison-image {
@@ -135,26 +135,15 @@ a:hover {
       .comparison {
         font-family: 'Quicksand';
         font-weight: normal;
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 14px;
+        line-height: 21px;
       }
 
       .comparison-support {
-        font-style: italic;
         font-size: 14px;
-        line-height: 26px;
+        line-height: 21px;
         color: #828282;
       }
-
-
-@media only screen and (max-width: 1200px) {
-
-  .impact-image {
-    width: 100%;
-    height: auto;
-  }
-
-}
 
 @media only screen and (max-width: 1000px) {
 
@@ -174,41 +163,25 @@ a:hover {
     width: 800px;
   }
 
-  .impact-image {
-    display: none;
-  }
-
 }
-
-
-@media only screen and (max-width: 877px) {
-
-  .page-title {
-    width: 700px;
-  }
-
-  .comparison-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-    .comparison-element {
-      margin-bottom: 10px;
-      width: auto;
-    }
-
-      .comparison-image {
-        height: 70px;
-      }
-
-}
-
 
 @media only screen and (max-width: 790px) {
 
   .page-title {
     width: 550px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .impact-image {
+    display: none;
+  }
+
+  .comparison-element {
+    width: 100%;
+    max-width: none;
   }
 
 }

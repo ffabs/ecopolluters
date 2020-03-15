@@ -10,8 +10,15 @@
 
 .pollution-impact {
     background: #FAFAFA;
-    padding: 40px;
-    border: 1px solid  #E0E0E0;
+    padding: 30px 30px 15px 30px;
+}
+
+.pollution-border-top {
+    border-top: 1px solid  #E0E0E0;
+}
+
+.pollution-border-right {
+    border-right: 1px solid  #E0E0E0;
 }
 
 @keyframes moveFromBottom {
@@ -24,16 +31,22 @@
     display: flex;
 }
 
-.impact-description {
-    font-size: 20px;
-    line-height: 10px;
-    margin-top: 20px;
+.pollution-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
 }
 
-@media only screen and (max-width: 1200px) {
+.impact-description {
+    font-size: 16px;
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
 
     .pollution-card {
         display: inline;
     }
-    
+
 }

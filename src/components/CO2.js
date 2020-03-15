@@ -11,8 +11,8 @@ class CO2 extends Component {
 
     return (        
 
-        <div className="pollution-impact">
-          <div className="section-title pollution"> {this.props.CO2.toFixed(2)} kg</div>
+        <div className="pollution-impact pollution-border-top pollution-border-right">
+          <div className="pollution-title pollution"> {this.props.CO2.toFixed(2)} kg</div>
           <div className="impact-description"> of CO2 produced</div>
           <img className="impact-image" src={co2impact} alt="co2Impact"/>
           <div className="same-as">Same as</div>
@@ -22,7 +22,7 @@ class CO2 extends Component {
                 <img className="comparison-image" src={car} alt="carComparison"/>
               </div>
               <div className="comparison-text">
-                <div className="comparison">Driving a car for {(this.props.CO2/0.12).toFixed(0)} km</div>
+                <div className="comparison">Driving for {(this.props.CO2/0.12).toFixed(0)} km</div>
                 <div className="comparison-support">average petrol - 5 liters per 100km</div>
               </div>
             </div>

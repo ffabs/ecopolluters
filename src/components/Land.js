@@ -11,8 +11,8 @@ class Land extends Component {
 
     return (        
 
-        <div className="pollution-impact">
-          <div className="section-title pollution">{this.props.land.toFixed(2)} sqm</div>
+        <div className="pollution-impact pollution-border-top">
+          <div className="pollution-title pollution">{this.props.land.toFixed(2)} sqm</div>
         <div className="impact-description"> of land occupied</div>
           <img className="impact-image" src={landimpact} alt="landImpact"/>
           <div className="same-as">Same as</div>
@@ -30,7 +30,7 @@ class Land extends Component {
                 <img className="comparison-image" src={flat} alt="flatComparison"/>
               </div>
               <div className="comparison-text">
-                <div className="comparison">The size of {(this.props.land/52.6).toFixed(0)} apartments</div>
+                <div className="comparison">The size of {(this.props.land/52.6).toFixed(0)} flats</div>
                 <div className="comparison-support">Average 1 person flat</div>
               </div>
             </div>
