@@ -15,10 +15,10 @@ class Grams extends Component {
     
     let grams = this.props.grams;
     
-    let calories = grams*nutritionalValues.calories.toFixed(0);
-    let proteins = grams*nutritionalValues.proteins.toFixed(0);
-    let carbs = grams*nutritionalValues.carbs.toFixed(0);
-    let fats = grams*nutritionalValues.fats.toFixed(0);
+    let calories = (grams*nutritionalValues.calories).toFixed(0);
+    let proteins = (grams*nutritionalValues.proteins).toFixed(0);
+    let carbs = (grams*nutritionalValues.carbs).toFixed(0);
+    let fats = (grams*nutritionalValues.fats).toFixed(0);
 
     return (        
 
