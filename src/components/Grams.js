@@ -3,12 +3,22 @@ import '../App.css';
 import './Grams.css';
 import './Solution.css';
 import Icon from '../components/Icon';
+import Data from '../impact-data.json';
 
 class Grams extends Component {
 
   render() {
 
     let measure = this.props.measure;
+
+    let nutritionalValues = Data[this.props.category][this.props.type]["nutritional values"];
+    
+    let grams = this.props.grams;
+    
+    let calories = grams*nutritionalValues.calories.toFixed(0);
+    let proteins = grams*nutritionalValues.proteins.toFixed(0);
+    let carbs = grams*nutritionalValues.carbs.toFixed(0);
+    let fats = grams*nutritionalValues.fats.toFixed(0);
 
     return (        
 
@@ -30,19 +40,19 @@ class Grams extends Component {
           </div>
           <div className="nutritional-values">
             <div className="nutritional-value">
-              <div>{this.props.amount}</div>
+              <div>{calories}</div>
               <div>Calories</div>
             </div>
             <div className="nutritional-value">
-              <div>{this.props.amount+" g"}</div>
+              <div>{proteins+" g"}</div>
               <div>Proteins</div>
             </div>
             <div className="nutritional-value">
-              <div>{this.props.amount+" g"}</div>
+              <div>{carbs+" g"}</div>
               <div>Carbs</div>
             </div>
             <div className="nutritional-value">
-              <div>{this.props.amount+" g"}</div>
+              <div>{fats+" g"}</div>
               <div>Fats</div>
             </div>
           </div>
