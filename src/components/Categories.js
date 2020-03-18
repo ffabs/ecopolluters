@@ -7,6 +7,7 @@ import animalpng from '../images/animal.png';
 import fruitspng from '../images/fruits.png';
 import grainspng from '../images/grains.png';
 import otherfoodpng from '../images/otherfood.png';
+import toiletpaper from '../images/toiletpaper.png';
 
 class Categories extends Component {
   
@@ -90,7 +91,7 @@ class Categories extends Component {
         support = 'form-support category-titleandsupport-home';
         formimpactsection = "form-input-section";
         buttonposition  = "form-button-position-home";
-        alignment = '';
+        alignment = 'hide';
     }
 
     
@@ -102,6 +103,10 @@ class Categories extends Component {
 
       return (
         <form className={classform} onSubmit={e => { e.preventDefault(); }}>
+          <div className={alignment}>
+            <div className={title}>Calculate your impact</div>
+            <div className={support}>We have preparred a kick-ass algorithm to help you understand your impact!</div>
+          </div>
           <div className={formimpactsection}>
             <div className="categories">
                 <Link to="/impact">
@@ -140,13 +145,13 @@ class Categories extends Component {
                     type="button" 
                     value="otherfood"
                     onClick={this.props.handleCategory}>
-                    <input type="image" className={categoryimg} src={otherfoodpng} alt="otherfood" value="otherfood" onClick={this.props.handleCategory}></input>
+                    <input type="image" className={categoryimg} src={toiletpaper} alt="otherfood" value="otherfood" onClick={this.props.handleCategory}></input>
                     <br></br>
                     Others
                   </button>
                 </div>
                 </Link>
-            </div>
+            </div>  
           </div>
         </form>
       );

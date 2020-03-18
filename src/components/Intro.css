@@ -1,5 +1,5 @@
 .intro-container {
-    margin: 30px 10px 50px 10px;
+    margin: 100px 20px 50px 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -13,10 +13,20 @@
 }
 
 .intro-title {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 60px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.intro-title-support {
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 40px;
 }
 
 .intro-item {
@@ -70,5 +80,15 @@
         .intro-item-title {
             font-size: 16px;
         }
+    
+    .intro-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .intro-title-support {
+        font-size: 20px;
+        line-height: 32px;
+    }
 
 }

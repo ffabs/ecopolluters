@@ -15,3 +15,35 @@
     width: 100%;
     background-color: #BB6BD9;
 }
+
+.corona-impact {
+    margin-left: 50%;
+    width: 300px;
+}
+
+@media only screen and (max-width: 821px) {
+    .corona-impact {
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .corona-impact {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .corona-impact {
+        margin-left: 20%;
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .corona-impact {
+        margin-left: 20%;
+        width: 200px;
+    }
+}
+

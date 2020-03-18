@@ -7,6 +7,8 @@ import Intro from '../components/Intro';
 import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
 import Footer from '../components/Footer';
+import corona from '../images/corona.png';
+import {Link} from 'react-router-dom';
 
 function initializeReactGA() {
   // { 'optimize_id': 'GTM-TVPWRD7'} <-- ab testing code
@@ -29,8 +31,14 @@ class Home extends Component {
             <div className="cover-support">Pick a food to check its impact on the environment and best alternatives</div>
           </div>
           <Categories page={'home'} {...this.props}/> 
+          <img className="corona" src={corona} alt="corona feature"/> 
         </div>
         <Intro />
+        <div className="cover-button">
+          <Link to="/impact">
+          <button className="impact-button cover-impact-button">CALCULATE YOUR IMPACT</button>
+          </Link>
+        </div>
         <FBShare />
         <Footer />
       </div>

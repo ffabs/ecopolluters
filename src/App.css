@@ -16,6 +16,12 @@
   color: #4F4F4F;
 }
 
+.corona {
+  width: 60%;
+  max-width: 400px;
+  margin-bottom: 100px;
+}
+
 .current{
   text-shadow: 0 0 .65px #333, 0 0 .65px #333;
 }
@@ -97,7 +103,7 @@ a:link, a:visited, a:active {
 }
 
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #4F4F4F;
 }
 

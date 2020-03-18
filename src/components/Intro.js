@@ -14,7 +14,8 @@ class Intro extends Component {
 
         <div className="intro-container">
           <div className="intro-row">
-            <div className="section-title intro-title">When you eat beef</div>
+            <div className="intro-title">Food production has a huge impact on the environment</div>
+            <div className="intro-title-support"> For example, when you eat beef:</div>
           </div>
           
           <div className="intro-row">

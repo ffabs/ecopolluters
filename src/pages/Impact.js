@@ -10,6 +10,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import defaultimpact from '../images/impact-empty-state.png';
 import FBShare from '../components/FBShare';
+import coronaimpact from '../images/coronaimpactpage.png';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -26,6 +27,7 @@ class Impact extends Component {
             <div className="impact-cover">
               <Header page={'Impact'}/>
               <Categories page={'Impact'} {...this.props}/>
+              <img className="corona-impact" src={coronaimpact} alt="corona feature"/> 
               <Form {...this.props}/>
             </div>
             {this.props.calculation === true &&
