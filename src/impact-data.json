@@ -1389,9 +1389,9 @@
             "unit": 1,
             "measure": "liters",
             "nutritional values": {
-                "calories": 0.29,
-                "proteins": 0.002,
-                "carbs": 0.016,
+                "calories": 290,
+                "proteins": 2,
+                "carbs": 16,
                 "fats": 0
             },
             "optimise": "CALORIES",

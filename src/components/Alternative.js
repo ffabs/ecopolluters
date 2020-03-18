@@ -4,6 +4,7 @@ import './Pollution.css';
 import './Solution.css';
 import Data from '../impact-data.json';
 import Icon from '../components/Icon';
+// import Grams from '../components/Grams';
 import {Link} from 'react-router-dom';
 
 class Alternative extends Component {
@@ -51,6 +52,7 @@ class Alternative extends Component {
         return (
 
             <div className="alternative">
+            {/* <Grams measure={alternativemeasure} category={alternativecategory} type={type} grams={alternativegramsneeded}/> */}
                 <div className="alternative-items">
                     <div>
                         <Icon icon={alternativename}/>
