@@ -4,7 +4,7 @@ import './Pollution.css';
 import './Solution.css';
 import Data from '../impact-data.json';
 import Icon from '../components/Icon';
-// import Grams from '../components/Grams';
+import Grams from '../components/Grams';
 import {Link} from 'react-router-dom';
 
 class Alternative extends Component {
@@ -25,6 +25,7 @@ class Alternative extends Component {
         let alternativewaterdifference = 1;
         let alternativelanddifference = 1;
         let alternativemeasure = 1;
+        let alternativegramsneeded = "";
         if(alternativename!=="none"){
             let alternative = Data[alternativecategory][alternativename];
             alternativemeasure = Data[alternativecategory][alternativename].measure;
@@ -36,7 +37,7 @@ class Alternative extends Component {
                 alternativeamountneeded = alternativeamountneeded.toFixed(0);
             }
             // alternativegramsneeded
-            let alternativegramsneeded = alternativeamountneeded * alternativeunit;
+            alternativegramsneeded = alternativeamountneeded * alternativeunit;
             // alternativeco2difference
             let alternativeco2 = alternativegramsneeded * alternative.co2;
             alternativeco2difference = currentc02 - alternativeco2;
@@ -52,8 +53,8 @@ class Alternative extends Component {
         return (
 
             <div className="alternative">
-            {/* <Grams measure={alternativemeasure} category={alternativecategory} type={type} grams={alternativegramsneeded}/> */}
-                <div className="alternative-items">
+            <Grams measure={alternativemeasure} category={alternativecategory} type={alternativename} grams={alternativegramsneeded} amount={alternativeamountneeded}/>
+                {/* <div className="alternative-items">
                     <div>
                         <Icon icon={alternativename}/>
                     </div>
@@ -66,7 +67,7 @@ class Alternative extends Component {
                             <div className="alternative-amount"> l </div>
                         }
                     </div>
-                </div>
+                </div> */}
 
                 <div className="alternative-impact">
                 

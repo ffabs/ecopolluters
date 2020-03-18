@@ -25,8 +25,8 @@ class Home extends Component {
         <div className="pink-cover-background">
           <Header page={'Home'} />
           <div className="page-title">
-            <div className="cover-title">Lifestyle pollution?</div>
-            <div className="cover-support">Pick an item to check its impact on the environment and best alternatives</div>
+            <div className="cover-title">Food pollution?</div>
+            <div className="cover-support">Pick a food to check its impact on the environment and best alternatives</div>
           </div>
           <Categories page={'home'} {...this.props}/> 
         </div>
