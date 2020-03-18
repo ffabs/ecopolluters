@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Header from '../components/Header';
 import Categories from '../components/Categories'
 import FBShare from '../components/FBShare';
 import Intro from '../components/Intro';
@@ -21,9 +22,15 @@ class Home extends Component {
     return (        
 
       <div className="page">
-        <Cover />
+        <div className="pink-cover-background">
+          <Header page={'Home'} />
+          <div className="page-title">
+            <div className="cover-title">Lifestyle pollution?</div>
+            <div className="cover-support">Pick an item to check its impact on the environment and best alternatives</div>
+          </div>
+          <Categories page={'home'} {...this.props}/> 
+        </div>
         <Intro />
-        <Categories page={'home'} {...this.props}/>
         <FBShare />
         <Footer />
       </div>

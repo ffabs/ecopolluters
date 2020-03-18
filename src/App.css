@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:bold,normal');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:bold,normal');
 
+.pink-cover-background {
+  background: #BB6BD9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -42,6 +50,7 @@ body {
 
   .cover-title {
     margin-top: 40px;
+    color: white;
   }
 
   .section-title {

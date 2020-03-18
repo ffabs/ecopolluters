@@ -134,7 +134,10 @@ class Icon extends Component {
                 }
                 {this.props.icon === "soymilk" &&
                     <div> 🥛 Soymilk </div>
-                }                
+                }  
+                {this.props.icon === "rolls" &&
+                    <div> 🚽 Toilet paper </div>
+                }      
             </div>
 
         )

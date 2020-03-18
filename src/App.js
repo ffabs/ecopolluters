@@ -16,12 +16,12 @@ class App extends Component {
     super(props);   
     this.state = {
       unit: 1,
-      measure: "grams",
+      measure: "item",
       calculation: false,
       newCalculation: false,
-      tempCategory: 'animal',
-      tempType: 'beef',
-      tempAmount: '200',
+      tempCategory: 'otherfood',
+      tempType: 'rolls',
+      tempAmount: '1',
       tempSelect: '1',
       category: '',
       type: '',
@@ -139,9 +139,9 @@ class App extends Component {
       case "otherfood":
         this.setState({
           tempCategory: 'otherfood',
-          tempType: 'tofu',
+          tempType: "rolls",
           newCalculation: true,
-          tempAmount: Data[tempCategory].tofu.defaultAmount
+          tempAmount: Data[tempCategory]["rolls"].defaultAmount
         });
       break;
       default:

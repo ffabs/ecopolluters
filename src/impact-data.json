@@ -1488,6 +1488,42 @@
                 "amount": 0.01807228916
             }
         },
+
+        "rolls": {
+            "co2": 0.02853,
+            "water": 0.02590,
+            "land": 0.02162,
+            "defaultAmount": 1,
+            "unit": 8.3,
+            "measure": "item",
+            "nutritional values": {
+                "calories": 0.02,
+                "proteins": 0.003,
+                "carbs": 0.002,
+                "fats": 0
+            },
+            "optimise": "FUN",
+            "alternative1": {
+                "category": "",
+                "name": "none",
+                "amount": ""
+            },
+            "alternative2": {
+                "category": "otherfood",
+                "name": "cane sugar",
+                "amount": 0.6024096386
+            },
+            "alternative3": {
+                "category": "otherfood",
+                "name": "dark chocolate",
+                "amount": 0.6024096386
+            },
+            "alternative4": {
+                "category": "otherfood",
+                "name": "wine",
+                "amount": 0.01807228916
+            }
+        },
         
         "dark chocolate": {
             "co2": 0.04665,

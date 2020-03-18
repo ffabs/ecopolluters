@@ -102,10 +102,6 @@ class Categories extends Component {
 
       return (
         <form className={classform} onSubmit={e => { e.preventDefault(); }}>
-          <div className={alignment}>
-            <div className={title}>Calculate your impact</div>
-            <div className={support}>We have preparred a kick-ass algorithm to help you understand your impact!</div>
-          </div>
           <div className={formimpactsection}>
             <div className="categories">
                 <Link to="/impact">
