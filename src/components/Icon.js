@@ -137,7 +137,13 @@ class Icon extends Component {
                 }  
                 {this.props.icon === "rolls" &&
                     <div> 🚽 Toilet paper </div>
-                }      
+                }  
+                {this.props.icon === "hand" &&
+                    <div> ✋ Your hand </div>
+                } 
+                {this.props.icon === "bidet" &&
+                    <div> 🚿 Bidet </div>
+                }     
             </div>
 
         )

@@ -1490,19 +1490,19 @@
         },
 
         "rolls": {
-            "co2": 0.02853,
-            "water": 0.02590,
-            "land": 0.02162,
+            "co2": 0.002791189427,
+            "water": 0.01667581498,
+            "land": 0.0001101321586,
             "defaultAmount": 1,
-            "unit": 8.3,
+            "unit": 227,
             "measure": "item",
             "nutritional values": {
-                "calories": 0.02,
-                "proteins": 0.003,
-                "carbs": 0.002,
+                "calories": 0,
+                "proteins": 0,
+                "carbs": 0,
                 "fats": 0
             },
-            "optimise": "FUN",
+            "optimise": "WIPES",
             "alternative1": {
                 "category": "",
                 "name": "none",
@@ -1510,18 +1510,48 @@
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "cane sugar",
-                "amount": 0.6024096386
+                "name": "bidet",
+                "amount": 0.17
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "dark chocolate",
-                "amount": 0.6024096386
+                "name": "hand",
+                "amount": 0.17
             },
             "alternative4": {
-                "category": "otherfood",
-                "name": "wine",
-                "amount": 0.01807228916
+                "category": "",
+                "name": "none",
+                "amount": ""
+            }
+        },
+
+        "hand": {
+            "co2": 0,
+            "water": 25.5,
+            "land": 0,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "item",
+            "nutritional values": {
+                "calories": 0,
+                "proteins": 0,
+                "carbs": 0,
+                "fats": 0
+            }
+        },
+
+        "bidet": {
+            "co2": 0,
+            "water": 0.473,
+            "land": 0,
+            "defaultAmount": 1,
+            "unit": 1,
+            "measure": "item",
+            "nutritional values": {
+                "calories": 0,
+                "proteins": 0,
+                "carbs": 0,
+                "fats": 0
             }
         },
         

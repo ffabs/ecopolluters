@@ -20,6 +20,11 @@ class Grams extends Component {
     let carbs = (grams*nutritionalValues.carbs).toFixed(0);
     let fats = (grams*nutritionalValues.fats).toFixed(0);
 
+    let hidenutritionalvalues = "false";
+    if(this.props.type ==="bidet" || this.props.type ==="hand"){
+      hidenutritionalvalues = "true";
+    }
+
     return (        
 
       <div className="grams"> 
@@ -38,6 +43,8 @@ class Grams extends Component {
               }
             </div>
           </div>
+
+          {hidenutritionalvalues ==="false" &&
           <div className="nutritional-values">
             <div className="nutritional-value">
               <div>{calories}</div>
@@ -56,7 +63,8 @@ class Grams extends Component {
               <div>Fats</div>
             </div>
           </div>
-            
+          }
+
       </div>
 
     );

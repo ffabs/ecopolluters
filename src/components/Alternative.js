@@ -26,7 +26,11 @@ class Alternative extends Component {
         let alternativelanddifference = 1;
         let alternativemeasure = 1;
         let alternativegramsneeded = "";
+        let hidealternativelink = "false";
         if(alternativename!=="none"){
+            if(alternativename ==="bidet" || alternativename ==="hand"){
+                hidealternativelink = "true";
+            }
             let alternative = Data[alternativecategory][alternativename];
             alternativemeasure = Data[alternativecategory][alternativename].measure;
             let alternativeunit = Data[alternativecategory][alternativename].unit;       
@@ -102,15 +106,17 @@ class Alternative extends Component {
                     }
 
                 </div>
-                
-                <Link to={"/impact#" + alternativename}>
-                    <button  
-                        className="solution-calculation"
-                        name={this.props.alternative}
-                        onClick={this.props.handleSolution}>
-                        Calculate {alternativename} impact →
-                    </button>
-                </Link>
+
+                {hidealternativelink ==="false" &&
+                    <Link to={"/impact#" + alternativename}>
+                        <button  
+                            className="solution-calculation"
+                            name={this.props.alternative}
+                            onClick={this.props.handleSolution}>
+                            Calculate {alternativename} impact →
+                        </button>
+                    </Link>
+                } 
 
             </div>
 
