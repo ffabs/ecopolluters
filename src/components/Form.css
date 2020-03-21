@@ -103,6 +103,7 @@
       margin-right: 5px;
       text-align: right;
       padding-left: 15px;
+      padding-right: 15px;
       border-radius: 8px 0px 0px 8px;
     }
   
@@ -236,6 +237,19 @@
   }
 
 }
+
+@media only screen and (max-width: 400px) {
+    
+  .form-input {
+    font-size: 16px;
+  }
+
+  .form-select {
+    font-size: 16px;
+  }
+
+}
+
 
 @media only screen and (max-width: 367px) {
   

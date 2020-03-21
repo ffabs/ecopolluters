@@ -31,3 +31,11 @@
   }
     
 }
+
+@media only screen and (max-width: 400px) {
+
+  .nutritional-values {
+    font-size: 14px;
+  }
+    
+}

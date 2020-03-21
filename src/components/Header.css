@@ -68,14 +68,18 @@
         margin-right: 1em;
     }
 
+    .logo {
+        margin-right: 0px;
+    }
+
 }
 
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 400px) {
 
     .logo {
-        padding: 5px;
-        margin-right: 100px;
+        /* padding: 5px; */
+        margin-right: 120px;
     }
 
 }

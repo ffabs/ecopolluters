@@ -2,7 +2,7 @@
     font-family: Quicksand;
     color: #FFFFFF;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 
   .solution-title-section {
@@ -30,7 +30,7 @@
     font-weight: bold;
     font-size: 32px;
     line-height: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,6 @@
     }
 
     .alternative {
-        /* padding: 20px; */
         background-color: #8C3BD9;
         border-radius: 10px;
         color: #FFFFFF;
@@ -59,7 +58,7 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 40px;
-        width: 850px;
+        width: 900px;
     }
 
     .alternative-items {
@@ -74,7 +73,7 @@
     }
 
     .alternative-not-rec {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .alternative-grams{
@@ -102,6 +101,7 @@
         }
 
         .solution-calculation {
+          font-family: "QuickSand";
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -126,7 +126,7 @@
   }
   
   .alternative {
-    width: 700px;
+    width: 750px;
   }
 
 }
@@ -166,7 +166,7 @@
 @media only screen and (max-width: 700px) {
 
   .solution-title-section {
-    width: 580px;
+    width: 550px;
   }
 
   .solution-title {
@@ -190,7 +190,7 @@
 @media only screen and (max-width: 630px) {
 
   .solution-title-section {
-    width: 520px;
+    width: 500px;
   }
 
   .solution-title {
@@ -221,9 +221,14 @@
     font-size: 23px;
     line-height: 35px;
   }
+
+  .alternative-items {
+    font-size: 23px;
+    line-height: 35px;
+  }
   
   .alternative {
-    width: 400px;
+    width: 450px;
     font-size: 23px;
   }
 
@@ -247,7 +252,7 @@
   }
   
   .alternative {
-    width: 360px;
+    width: 400px;
     font-size: 23px;
   }
 
@@ -269,9 +274,14 @@
     font-size: 26px;
     line-height: 35px;
   }
+
+  .alternative-items {
+    font-size: 20px;
+    line-height: 35px;
+  }
   
   .alternative {
-    width: 320px;
+    width: 350px;
     font-size: 23px;
   }
 
@@ -293,6 +303,11 @@
     font-size: 23px;
     line-height: 35px;
   }
+
+  .alternative-items {
+    font-size: 14px;
+    line-height: 35px;
+  }
   
   .alternative {
     width: 290px;
@@ -310,7 +325,7 @@
 @media only screen and (max-width: 375px) {
 
   .solution-title-section {
-    width: 280px;
+    width: 290px;
   }
 
   .solution-title {
@@ -319,7 +334,7 @@
   }
   
   .alternative {
-    width: 250px;
+    width: 290px;
     font-size: 20px;
   }
 
@@ -338,17 +353,12 @@
 
 @media only screen and (max-width: 345px) {
 
-  .solution-title-section {
-    width: 230px;
-  }
-
   .solution-title {
     font-size: 21px;
     line-height: 35px;
   }
   
   .alternative {
-    width: 200px;
     font-size: 16px;
   }
 
