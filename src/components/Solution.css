@@ -51,8 +51,8 @@
     }
 
     .alternative {
-        padding: 20px;
-        background-color: #9B51E0;
+        /* padding: 20px; */
+        background-color: #8C3BD9;
         border-radius: 10px;
         color: #FFFFFF;
         font-style: normal;
@@ -77,12 +77,19 @@
         margin-top: 20px;
     }
 
+    .alternative-grams{
+      background-color: #9B51E0;
+      font-style: normal;
+      font-weight: normal;
+      border-radius: 10px 10px 0px 0px;
+      padding: 30px;
+    }
+
         .alternative-impact {
-            /* background-color: #8C3BD9; */
             font-size: 23px;
             line-height: 29px;
             font-size: 16px;
-            margin-top: 20px;
+            padding: 30px 30px 15px 30px;
         }
 
         .warning {
@@ -102,6 +109,8 @@
           background-color: transparent;
           border-color: transparent;
           color: #FFFFFF;
+          padding-left: 30px;
+          padding-bottom: 30px;
         }
 
         .solution-calculation:hover {

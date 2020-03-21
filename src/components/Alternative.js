@@ -57,7 +57,9 @@ class Alternative extends Component {
         return (
 
             <div className="alternative">
-            <Grams measure={alternativemeasure} category={alternativecategory} type={alternativename} grams={alternativegramsneeded} amount={alternativeamountneeded}/>
+            <div className="alternative-grams">
+                <Grams measure={alternativemeasure} category={alternativecategory} type={alternativename} grams={alternativegramsneeded} amount={alternativeamountneeded}/>
+            </div>
                 {/* <div className="alternative-items">
                     <div>
                         <Icon icon={alternativename}/>

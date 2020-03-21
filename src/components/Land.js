@@ -11,7 +11,7 @@ class Land extends Component {
 
     return (        
 
-        <div className="pollution-impact pollution-border-top">
+        <div className="pollution-impact pollution-border-top pollution-corner-bottomright">
           <div className="pollution-title pollution">{this.props.land.toFixed(2)} sqm</div>
         <div className="impact-description"> of land occupied</div>
           <img className="impact-image" src={landimpact} alt="landImpact"/>

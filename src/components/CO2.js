@@ -11,7 +11,7 @@ class CO2 extends Component {
 
     return (        
 
-        <div className="pollution-impact pollution-border-top pollution-border-right">
+        <div className="pollution-impact pollution-border-top pollution-border-right pollution-corner-bottomleft">
           <div className="pollution-title pollution"> {this.props.CO2.toFixed(2)} kg</div>
           <div className="impact-description"> of CO2 produced</div>
           <img className="impact-image" src={co2impact} alt="co2Impact"/>

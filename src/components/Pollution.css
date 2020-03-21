@@ -8,6 +8,10 @@
     animation: moveFromBottom 0.75s ease-in-out;
 }
 
+.pollution-grams {
+    padding: 30px;
+}
+
 .pollution-impact {
     background: #FAFAFA;
     padding: 30px 30px 15px 30px;
@@ -19,6 +23,14 @@
 
 .pollution-border-right {
     border-right: 1px solid  #E0E0E0;
+}
+
+.pollution-corner-bottomleft {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.pollution-corner-bottomright {
+    border-radius: 0px 0px 10px 0px;
 }
 
 @keyframes moveFromBottom {
