@@ -163,6 +163,40 @@ class Science extends Component {
                             <div className="science-article-date">1 Mar, 2011</div>
                         </div>
                     </a>
+
+                    <div className="science-section-title">Main sources for toilet paper</div>
+                    
+                    <a style={{display: "table-cell"}} href="https://www.brondell.com/healthy-living-blog/why-toilet-paper-is-bad-for-the-environment/" target="_blank">
+                        <div className="science-article">
+                            <div className="science-article-title">Why toilet paper is bad for the environment</div>
+                            <div className="science-article-support">Brondell</div>
+                            <div className="science-article-date">Jun 5, 2018</div>
+                        </div>
+                    </a>
+
+                    <a style={{display: "table-cell"}} href="https://www.greenbiz.com/blog/2009/05/04/whats-carbon-footprint-your-toilet-paper" target="_blank">
+                        <div className="science-article">
+                            <div className="science-article-title">What's the Carbon Footprint of Your Toilet Paper?</div>
+                            <div className="science-article-support">T. Herrera - Greenbiz</div>
+                            <div className="science-article-date">May 4, 2009</div>
+                        </div>
+                    </a>
+
+                    <a style={{display: "table-cell"}} href="http://www.toiletpaperhistory.net/toilet-paper-facts/toilet-paper-fun-facts/" target="_blank">
+                        <div className="science-article">
+                            <div className="science-article-title">Toilet Paper Fun Facts</div>
+                            <div className="science-article-support">Toilet Paper History</div>
+                            <div className="science-article-date">2020</div>
+                        </div>
+                    </a>
+
+                    <a style={{display: "table-cell"}} href="https://homeguides.sfgate.com/much-space-mediumsized-tree-need-80558.html" target="_blank">
+                        <div className="science-article">
+                            <div className="science-article-title">How Much Space Does a Medium-Sized Tree Need?</div>
+                            <div className="science-article-support">J. Beal - Home Guides | SF Gate</div>
+                            <div className="science-article-date">Mar 18, 2020</div>
+                        </div>
+                    </a>
                 
                 </div>
 
