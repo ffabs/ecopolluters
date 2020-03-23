@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.61fc5469.chunk.css",
-    "main.js": "/static/js/main.f828f577.chunk.js",
-    "main.js.map": "/static/js/main.f828f577.chunk.js.map",
+    "main.css": "/static/css/main.c54ed91e.chunk.css",
+    "main.js": "/static/js/main.2022caf8.chunk.js",
+    "main.js.map": "/static/js/main.2022caf8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e14bb263.js",
     "runtime-main.js.map": "/static/js/runtime-main.e14bb263.js.map",
-    "static/js/2.7da3c73c.chunk.js": "/static/js/2.7da3c73c.chunk.js",
-    "static/js/2.7da3c73c.chunk.js.map": "/static/js/2.7da3c73c.chunk.js.map",
+    "static/js/2.1237ceca.chunk.js": "/static/js/2.1237ceca.chunk.js",
+    "static/js/2.1237ceca.chunk.js.map": "/static/js/2.1237ceca.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.76ce58329cd6d8bb0bd12b80af96b6f3.js": "/precache-manifest.76ce58329cd6d8bb0bd12b80af96b6f3.js",
+    "precache-manifest.1d10c3e5caa6bc4be280a9d4dea6a447.js": "/precache-manifest.1d10c3e5caa6bc4be280a9d4dea6a447.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.61fc5469.chunk.css.map": "/static/css/main.61fc5469.chunk.css.map",
-    "static/js/2.7da3c73c.chunk.js.LICENSE.txt": "/static/js/2.7da3c73c.chunk.js.LICENSE.txt",
+    "static/css/main.c54ed91e.chunk.css.map": "/static/css/main.c54ed91e.chunk.css.map",
+    "static/js/2.1237ceca.chunk.js.LICENSE.txt": "/static/js/2.1237ceca.chunk.js.LICENSE.txt",
     "static/media/animal.png": "/static/media/animal.2b3abf3d.png",
     "static/media/Form.css": "/static/media/arrow.a652c61c.svg",
     "static/media/co2-impact.png": "/static/media/co2-impact.4525979c.png",
@@ -31,14 +31,15 @@
     "static/media/land.svg": "/static/media/land.d7af5675.svg",
     "static/media/napoleon_white_cow.png": "/static/media/napoleon_white_cow.f2bce955.png",
     "static/media/otherfood.png": "/static/media/otherfood.f9c7ab3b.png",
+    "static/media/toiletpaper.png": "/static/media/toiletpaper.24c8aa29.png",
     "static/media/toilets.png": "/static/media/toilets.adaf2f37.png",
     "static/media/water-impact.png": "/static/media/water-impact.df8622f9.png",
     "static/media/water.svg": "/static/media/water.f8a4135d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e14bb263.js",
-    "static/js/2.7da3c73c.chunk.js",
-    "static/css/main.61fc5469.chunk.css",
-    "static/js/main.f828f577.chunk.js"
+    "static/js/2.1237ceca.chunk.js",
+    "static/css/main.c54ed91e.chunk.css",
+    "static/js/main.2022caf8.chunk.js"
   ]
 }
