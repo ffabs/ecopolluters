@@ -16,7 +16,7 @@ class Alternative extends Component {
         let currentc02 = this.props.grams*type.co2;
         let currentwater = this.props.grams*type.water;
         let currentland = this.props.grams*type.land;
-
+        
         //alternative data
         let alternativecategory = type[this.props.alternative].category;
         let alternativename = type[this.props.alternative].name;
@@ -35,8 +35,17 @@ class Alternative extends Component {
             alternativemeasure = Data[alternativecategory][alternativename].measure;
             let alternativeunit = Data[alternativecategory][alternativename].unit;       
             // alternativeamountneeded
-            let alternativeamount = type[this.props.alternative].amount;
-            alternativeamountneeded = +(this.props.grams * alternativeamount / alternativeunit ).toFixed(1);
+            if(this.props.optimise === "CALORIES" || this.props.optimise === "PROTEINS" || this.props.optimise === "CARBS" || this.props.optimise === "FAT" ) {
+                let optimise = this.props.optimise.toLowerCase();
+                let alternativeoptimise = Data[alternativecategory][alternativename]["nutritional values"][optimise];
+                //current nutritional value to optimise
+                let currentnutrvaluetoaimat = ((this.props.grams * type["nutritional values"][optimise]).toFixed(0));
+                //optimisation
+                alternativeamountneeded = +(currentnutrvaluetoaimat / alternativeoptimise / alternativeunit).toFixed(1);
+            } else {
+                let alternativeamount = type[this.props.alternative].amount;
+                alternativeamountneeded = +(this.props.grams * alternativeamount / alternativeunit ).toFixed(1);      
+            }
             if(alternativemeasure == "grams"){
                 alternativeamountneeded = alternativeamountneeded.toFixed(0);
             }
@@ -60,20 +69,6 @@ class Alternative extends Component {
             <div className="alternative-grams">
                 <Grams measure={alternativemeasure} category={alternativecategory} type={alternativename} grams={alternativegramsneeded} amount={alternativeamountneeded}/>
             </div>
-                {/* <div className="alternative-items">
-                    <div>
-                        <Icon icon={alternativename}/>
-                    </div>
-                    <div>
-                        <div className="alternative-amount">&nbsp;• {alternativeamountneeded+" "} </div>
-                        {alternativemeasure === "grams" &&
-                            <div className="alternative-amount"> g </div>
-                        }
-                        {alternativemeasure === "liters" &&
-                            <div className="alternative-amount"> l </div>
-                        }
-                    </div>
-                </div> */}
 
                 <div className="alternative-impact">
                 

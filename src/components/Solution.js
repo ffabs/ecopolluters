@@ -62,6 +62,7 @@ class Solution extends Component {
                         <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div> 
                         <Alternative
                             alternative={'alternative1'}
+                            optimise={type.optimise}
                             {...this.props}
                         />
                     </div>
@@ -71,6 +72,7 @@ class Solution extends Component {
                     <div className="alternative-not-rec">
                         <Alternative
                             alternative={'alternative2'}
+                            optimise={type.optimise}
                             {...this.props}
                         />
                     </div>
@@ -80,6 +82,7 @@ class Solution extends Component {
                     <div className="alternative-not-rec">
                         <Alternative
                             alternative={'alternative3'}
+                            optimise={type.optimise}
                             {...this.props}
                         />
                     </div>
@@ -89,6 +92,7 @@ class Solution extends Component {
                     <div className="alternative-not-rec">
                         <Alternative
                             alternative={'alternative4'}
+                            optimise={type.optimise}
                             {...this.props}
                         />
                     </div>

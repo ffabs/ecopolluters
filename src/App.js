@@ -83,10 +83,16 @@ class App extends Component {
     let alternativeUnit = Data[category][type].unit;
     let unit = Data[category][type].unit;
     let measure = Data[category][type].measure;
-    let amount = +(this.state.amount * this.state.unit * Data[this.state.category][this.state.type][alternative].amount / alternativeUnit).toFixed(1);
-    // if(measure !== "liters"){
-    //   amount = amount.toFixed(0);
-    // }
+    let optimise = Data[this.state.category][this.state.type].optimise;
+    let amount = 1;
+    if(optimise === "CALORIES" || optimise === "PROTEINS" || optimise === "CARBS" || optimise === "FAT" ) {
+      optimise = optimise.toLowerCase();
+      let alternativeoptimise = Data[category][type]["nutritional values"][optimise];
+      let currentnutrvaluetoaimat = ((this.state.grams * Data[this.state.category][this.state.type]["nutritional values"][optimise]).toFixed(0));
+      amount = +(currentnutrvaluetoaimat / alternativeoptimise / alternativeUnit).toFixed(1);
+    } else {
+      amount = +(this.state.amount * this.state.unit * Data[this.state.category][this.state.type][alternative].amount / alternativeUnit).toFixed(1);
+    }
     if(measure === "grams"){
       amount = amount.toFixed(0);
     }
