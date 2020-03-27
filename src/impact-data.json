@@ -1214,7 +1214,7 @@
                 "carbs": 0,
                 "fats": 125.12
             },
-            "optimise": "FAT",
+            "optimise": "FATS",
             "alternative1": {
                 "category": "otherfood",
                 "name": "sunflower oil",
@@ -1250,7 +1250,7 @@
                 "carbs": 0,
                 "fats": 912.98
             },
-            "optimise": "FAT",
+            "optimise": "FATS",
             "alternative1": {
                 "category": "",
                 "name": "none",
@@ -1286,7 +1286,7 @@
                 "carbs": 0,
                 "fats": 928
             },
-            "optimise": "FAT",
+            "optimise": "FATS",
             "alternative1": {
                 "category": "",
                 "name": "none",
@@ -1322,7 +1322,7 @@
                 "carbs": 0,
                 "fats": 837.2
             },
-            "optimise": "FAT",
+            "optimise": "FATS",
             "alternative1": {
                 "category": "",
                 "name": "none",
@@ -1358,7 +1358,7 @@
                 "carbs": 0,
                 "fats": 910
             },
-            "optimise": "FAT",
+            "optimise": "FATS",
             "alternative1": {
                 "category": "",
                 "name": "none",
