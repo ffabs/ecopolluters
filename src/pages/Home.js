@@ -9,6 +9,8 @@ import ReactGA from 'react-ga';
 import Footer from '../components/Footer';
 import corona from '../images/corona.png';
 import {Link} from 'react-router-dom';
+import beefvstofu from '../images/beefvstofu.png';
+import beefvstofumobile from '../images/beefvstofumobile.png';
 
 function initializeReactGA() {
   // { 'optimize_id': 'GTM-TVPWRD7'} <-- ab testing code
@@ -33,11 +35,17 @@ class Home extends Component {
           <Categories page={'home'} {...this.props}/> 
           <img className="corona" src={corona} alt="corona feature"/> 
         </div>
-        <Intro />
+        {/* <Intro /> */}
+        <img className="beefvstofu" src={beefvstofu} alt="beef vs tofu"/>
+        <img className="beefvstofumobile" src={beefvstofumobile} alt="beef vs tofu"/>
         <div className="cover-button">
           <Link to="/impact">
-          <button className="impact-button cover-impact-button">CALCULATE YOUR IMPACT</button>
+          <button className="impact-button cover-impact-button">SEE OTHER FOOD</button>
           </Link>
+        </div>
+        <div className="home-note">
+          <div className="home-note-bold">Note:&nbsp;</div>
+          <div className="home-note-content"> deciding not to eat any of both and skip a meal is the most environmental friendly choice</div>
         </div>
         <FBShare />
         <Footer />
