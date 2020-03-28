@@ -11,6 +11,9 @@ import corona from '../images/corona.png';
 import {Link} from 'react-router-dom';
 import beefvstofu from '../images/beefvstofu.png';
 import beefvstofumobile from '../images/beefvstofumobile.png';
+import foodcomparisondesktop from '../images/100grfoodcomparisondesktop.png';
+import foodcomparisonmobile from '../images/100grfoodcomparisonmobile.png';
+
 
 function initializeReactGA() {
   // { 'optimize_id': 'GTM-TVPWRD7'} <-- ab testing code
@@ -47,6 +50,8 @@ class Home extends Component {
           <div className="home-note-bold">Note:&nbsp;</div>
           <div className="home-note-content"> deciding not to eat any of both and skip a meal is the most environmental friendly choice</div>
         </div>
+        <img className="beefvstofu" src={foodcomparisondesktop} alt="food comparison"/>
+        <img className="beefvstofumobile" src={foodcomparisonmobile} alt="food comparison"/>
         <FBShare />
         <Footer />
       </div>
