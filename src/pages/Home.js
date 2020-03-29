@@ -33,7 +33,7 @@ class Home extends Component {
           <Header page={'Home'} />
           <div className="page-title">
             <div className="cover-title">Food pollution?</div>
-            <div className="cover-support">Pick a food to check its impact on the environment and best alternatives</div>
+            <div className="cover-support">Pick a food, we show you its environmental impact and best alternatives</div>
           </div>
           <Categories page={'home'} {...this.props}/> 
           <img className="corona" src={corona} alt="corona feature"/> 
@@ -50,8 +50,14 @@ class Home extends Component {
           <div className="home-note-bold">Note:&nbsp;</div>
           <div className="home-note-content"> deciding not to eat any of both and skip a meal is the most environmental friendly choice</div>
         </div>
-        <img className="beefvstofu" src={foodcomparisondesktop} alt="food comparison"/>
-        <img className="beefvstofumobile" src={foodcomparisonmobile} alt="food comparison"/>
+        <div className="red-home-background">
+          <div className="red-home-text">
+            <div className="cover-title red-home-title">Food pollution comparison</div>
+            <div className="cover-support red-home-support">Food comparison based on 100g of product</div>
+          </div>
+          <img className="beefvstofu" src={foodcomparisondesktop} alt="food comparison"/>
+          <img className="beefvstofumobile" src={foodcomparisonmobile} alt="food comparison"/>
+        </div>
         <FBShare />
         <Footer />
       </div>
