@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "396ad7124d7c30d76edaa7c6b98b8241",
+    "revision": "dacdf2d4cfd511f1cd8be0be649e00c3",
     "url": "/index.html"
   },
   {
-    "revision": "54c6b1d019dfbea6f2c7",
-    "url": "/static/css/main.70119d98.chunk.css"
+    "revision": "1be162ffc9851f912c8f",
+    "url": "/static/css/main.8fb48fc8.chunk.css"
   },
   {
-    "revision": "f44402d17fd52ee73e57",
-    "url": "/static/js/2.673dca2c.chunk.js"
+    "revision": "724141f67b773ede5181",
+    "url": "/static/js/2.717c2ef6.chunk.js"
   },
   {
     "revision": "4cbe2726fb66bcef66051a0d56105b42",
-    "url": "/static/js/2.673dca2c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.717c2ef6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "54c6b1d019dfbea6f2c7",
-    "url": "/static/js/main.80d900f0.chunk.js"
+    "revision": "1be162ffc9851f912c8f",
+    "url": "/static/js/main.ed738eca.chunk.js"
   },
   {
     "revision": "335164574068ec67ef11",
     "url": "/static/js/runtime-main.e14bb263.js"
+  },
+  {
+    "revision": "5006b2529b708af86f05ce70d9f0fb69",
+    "url": "/static/media/100grfoodcomparisondesktop.5006b252.png"
+  },
+  {
+    "revision": "69b640b1621f1b7e5e593529d95ecb64",
+    "url": "/static/media/100grfoodcomparisonmobile.69b640b1.png"
   },
   {
     "revision": "2b3abf3d05bedfa24ea60605ba3939bf",
