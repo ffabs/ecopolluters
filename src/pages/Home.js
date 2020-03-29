@@ -52,10 +52,10 @@ class Home extends Component {
         </div>
         <div className="red-home-background">
           <div className="red-home-text">
-            <div className="cover-title red-home-title">Food pollution comparison</div>
-            <div className="cover-support red-home-support">Food comparison based on 100g of product</div>
+            <div className="red-home-title">Food pollution comparison</div>
+            <div className="red-home-support">Food comparison based on 100g of product</div>
           </div>
-          <img className="beefvstofu" src={foodcomparisondesktop} alt="food comparison"/>
+          <img className="foodcomparisondesktop" src={foodcomparisondesktop} alt="food comparison"/>
           <img className="beefvstofumobile" src={foodcomparisonmobile} alt="food comparison"/>
         </div>
         <FBShare />

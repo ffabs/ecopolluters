@@ -68,7 +68,7 @@
     .form-input {
         font-family: 'Quicksand';
         font-weight: bold;
-        border: 3px dotted #BDBDBD;
+        border: 1px dotted #BDBDBD;
         border-radius: 8px;
         font-family: 'Quicksand';
         font-style: normal;
@@ -142,13 +142,13 @@
     .form-button-old-calculation {
       color: #4F4F4F;
       background: #F2F2F2;
-      border: 3px dotted #BDBDBD;
+      border: 1px dotted #BDBDBD;
     }
 
     .form-button-new-calculation {
       color: white;
       background: #BB6BD9;
-      border: 3px dotted #FFFFFF;
+      border: 1px dotted #FFFFFF;
     }
   
   .form-image {

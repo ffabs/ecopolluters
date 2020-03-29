@@ -17,11 +17,11 @@
     padding: 20px;
     margin: 20px;
     cursor: pointer;
-    border: 3px dotted white;
+    border: 1px dotted white;
 }
 
     .science-article:hover {
-        border: 3px dotted #BB6BD9;
+        border: 1px dotted #BB6BD9;
     }
 
     .science-article-title {
