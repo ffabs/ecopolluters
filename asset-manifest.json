@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.8fb48fc8.chunk.css",
-    "main.js": "/static/js/main.ed738eca.chunk.js",
-    "main.js.map": "/static/js/main.ed738eca.chunk.js.map",
+    "main.js": "/static/js/main.fd16316b.chunk.js",
+    "main.js.map": "/static/js/main.fd16316b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e14bb263.js",
     "runtime-main.js.map": "/static/js/runtime-main.e14bb263.js.map",
     "static/js/2.717c2ef6.chunk.js": "/static/js/2.717c2ef6.chunk.js",
     "static/js/2.717c2ef6.chunk.js.map": "/static/js/2.717c2ef6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c8370f6afb9e2354f2756648cd7e9db3.js": "/precache-manifest.c8370f6afb9e2354f2756648cd7e9db3.js",
+    "precache-manifest.1a254fbd5bd7fa606c6b100a159a1282.js": "/precache-manifest.1a254fbd5bd7fa606c6b100a159a1282.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8fb48fc8.chunk.css.map": "/static/css/main.8fb48fc8.chunk.css.map",
     "static/js/2.717c2ef6.chunk.js.LICENSE.txt": "/static/js/2.717c2ef6.chunk.js.LICENSE.txt",
-    "static/media/100grfoodcomparisondesktop.png": "/static/media/100grfoodcomparisondesktop.5006b252.png",
-    "static/media/100grfoodcomparisonmobile.png": "/static/media/100grfoodcomparisonmobile.69b640b1.png",
+    "static/media/100grfoodcomparisondesktop.png": "/static/media/100grfoodcomparisondesktop.9c699741.png",
+    "static/media/100grfoodcomparisonmobile.png": "/static/media/100grfoodcomparisonmobile.bb6dc9c5.png",
     "static/media/animal.png": "/static/media/animal.2b3abf3d.png",
     "static/media/Form.css": "/static/media/arrow.a652c61c.svg",
     "static/media/beefvstofu.png": "/static/media/beefvstofu.ac8874a8.png",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.e14bb263.js",
     "static/js/2.717c2ef6.chunk.js",
     "static/css/main.8fb48fc8.chunk.css",
-    "static/js/main.ed738eca.chunk.js"
+    "static/js/main.fd16316b.chunk.js"
   ]
 }

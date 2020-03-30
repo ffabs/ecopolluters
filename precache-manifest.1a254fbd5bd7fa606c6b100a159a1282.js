@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dacdf2d4cfd511f1cd8be0be649e00c3",
+    "revision": "22191b543c19f6bab21e38200c84bf3f",
     "url": "/index.html"
   },
   {
-    "revision": "1be162ffc9851f912c8f",
+    "revision": "6852af5f653ce89a7c97",
     "url": "/static/css/main.8fb48fc8.chunk.css"
   },
   {
@@ -16,20 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.717c2ef6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1be162ffc9851f912c8f",
-    "url": "/static/js/main.ed738eca.chunk.js"
+    "revision": "6852af5f653ce89a7c97",
+    "url": "/static/js/main.fd16316b.chunk.js"
   },
   {
     "revision": "335164574068ec67ef11",
     "url": "/static/js/runtime-main.e14bb263.js"
   },
   {
-    "revision": "5006b2529b708af86f05ce70d9f0fb69",
-    "url": "/static/media/100grfoodcomparisondesktop.5006b252.png"
+    "revision": "9c699741053ae309f09fae15563a5c02",
+    "url": "/static/media/100grfoodcomparisondesktop.9c699741.png"
   },
   {
-    "revision": "69b640b1621f1b7e5e593529d95ecb64",
-    "url": "/static/media/100grfoodcomparisonmobile.69b640b1.png"
+    "revision": "bb6dc9c51ee00ae1336fec093113c719",
+    "url": "/static/media/100grfoodcomparisonmobile.bb6dc9c5.png"
   },
   {
     "revision": "2b3abf3d05bedfa24ea60605ba3939bf",
