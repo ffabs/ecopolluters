@@ -1,0 +1,203 @@
+.foodprint {
+    font-family: Quicksand;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.step0-background {
+    background-color: #BB6BD9;
+}
+
+.step1-background {
+    background-color: #27AE60;
+}
+
+.step2-background {
+    background-color: #EB5757;
+}
+
+.step3-background {
+    background-color: #F2994A;
+}
+
+.step4-background {
+    background-color: #2D9CDB;
+}
+
+.closewizard {
+    height: 36px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.foodprint-alignment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodprint-intro {
+    margin-top: 30px;
+}
+
+    .foodprint-intro-title {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .progress-overview {
+        display: flex;
+    }
+
+        .progress-box {
+            width: 122px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            margin: 10px 5px 0px 0px;
+        }
+
+        .progress-box-active {
+            background-color: white;
+        }
+    
+    .step-name {
+        margin-top: 10px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+    }
+
+        .step-name-bold {
+            font-weight: bold;
+        }
+
+    .step-image {
+        margin-top: 50px;
+        height: 100px;
+    }
+
+    .foodprint-calltoaction {
+        margin-top: 20px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        width: 500px;
+    }
+
+.FoodprintForms {
+    margin-bottom: 120px;
+}
+
+.wizard-buttons {
+    width: 100%;
+    height: 74px;
+    /* background: #27AE60; */
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+}
+
+    .foodprint-back {
+        margin-top: 15px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: white;
+        border: 1px dashed #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 0px 30px 0px 30px;
+        height: 44px;
+    }
+
+        .foodprint-back-background1 {
+            background: #219653;
+        }
+
+        .foodprint-back-background2 {
+            background: #AC3E3E;
+        }
+
+        .foodprint-back-background3 {
+            background: #DE7E29;
+        }
+
+        .foodprint-back-background4 {
+            background: #2271DA;
+        }
+
+    .foodprint-next {
+        margin-top: 15px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #444444;
+        background: #FFFFFF;
+        border: 1px dashed #27AE60;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 0px 30px 0px 30px;
+        height: 44px;
+    }
+
+
+
+    
+.foodprint-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 55px;
+}
+
+.foodprint-support {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.foodprint-start {
+    width: 177px;
+    height: 64px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #444444;
+    background: #FFFFFF;
+    border: 1px dashed #BB6BD9;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 230px;
+    cursor: pointer;
+}
