@@ -11,7 +11,7 @@ import {Link, Redirect} from 'react-router-dom';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
-  ReactGA.pageview('/foodprint/step1');
+  ReactGA.pageview('/foodprint/step2');
 }
   
 class FoodprintStep2 extends Component {
@@ -63,46 +63,64 @@ class FoodprintStep2 extends Component {
 
                                 <FoodprintForm 
                                     foodForm={'beef'}
+                                    categoryForm="animal"
+                                    foodprintState={'beef'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'cheese'}
+                                    categoryForm="animal"
+                                    foodprintState={'cheese'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'chicken'}
+                                    categoryForm="animal"
+                                    foodprintState={'chicken'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'crustaceans'}
+                                    categoryForm="animal"
+                                    foodprintState={'crustaceans'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'eggs'}
+                                    categoryForm="animal"
+                                    foodprintState={'eggs'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'fish'}
+                                    categoryForm="animal"
+                                    foodprintState={'fish'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'lamb'}
+                                    categoryForm="animal"
+                                    foodprintState={'lamb'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'milk'}
+                                    categoryForm="animal"
+                                    foodprintState={'milk'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'pork'}
+                                    categoryForm="animal"
+                                    foodprintState={'pork'}
                                     {...this.props}
                                 />
 

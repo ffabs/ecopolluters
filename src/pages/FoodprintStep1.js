@@ -63,71 +63,99 @@ class FoodprintStep1 extends Component {
 
                                 <FoodprintForm 
                                     foodForm={'apples'}
+                                    categoryForm="fruits"
+                                    foodprintState={'apples'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'bananas'}
+                                    categoryForm="fruits"
+                                    foodprintState={'bananas'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'berries and grapes'}
+                                    categoryForm="fruits"
+                                    foodprintState={'berriesandgrapes'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'brassicas'}
+                                    categoryForm="fruits"
+                                    foodprintState={'brassicas'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'cassavas'}
+                                    categoryForm="fruits"
+                                    foodprintState={'cassavas'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'citrus fruits'}
+                                    categoryForm="fruits"
+                                    foodprintState={'citrusfruits'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'groundnuts'}
+                                    categoryForm="fruits"
+                                    foodprintState={'groundnuts'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'nuts'}
+                                    categoryForm="fruits"
+                                    foodprintState={'nuts'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'onions'}
+                                    categoryForm="fruits"
+                                    foodprintState={'onions'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'potatoes'}
+                                    categoryForm="fruits"
+                                    foodprintState={'potatoes'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'root vegetables'}
+                                    categoryForm="fruits"
+                                    foodprintState={'rootvegetables'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'tomatoes'}
+                                    categoryForm="fruits"
+                                    foodprintState={'tomatoes'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'other fruits'}
+                                    categoryForm="fruits"
+                                    foodprintState={'otherfruits'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'other vegetables'}
+                                    categoryForm="fruits"
+                                    foodprintState={'othervegetables'}
                                     {...this.props}
                                 />
 

@@ -11,7 +11,7 @@ import {Link, Redirect} from 'react-router-dom';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
-  ReactGA.pageview('/foodprint/step1');
+  ReactGA.pageview('/foodprint/step4');
 }
   
 class FoodprintStep4 extends Component {
@@ -63,66 +63,92 @@ class FoodprintStep4 extends Component {
 
                                 <FoodprintForm 
                                     foodForm={'tofu'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'tofu'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'soymilk'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'soymilk'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'coffee'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'coffee'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'dark chocolate'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'darkchocolate'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'beer'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'beer'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'wine'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'wine'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'olive oil'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'oliveoil'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'palm oil'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'palmoil'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'rapeseed oil'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'rapeseedoil'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'soybean oil'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'soybeanoil'}
                                     {...this.props}
                                 />
 
                                 <FoodprintForm 
                                     foodForm={'sunflower oil'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'sunfloweroil'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'beet sugar'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'beetsugar'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
                                     foodForm={'cane sugar'}
+                                    categoryForm="otherfood"
+                                    foodprintState={'canesugar'}
                                     {...this.props}
                                 />
 
