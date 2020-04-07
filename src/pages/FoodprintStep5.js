@@ -211,7 +211,7 @@ class FoodprintStep5 extends Component {
         LandArray.splice(maxLandIndex, 1);
         FoodSelectedLandArray.splice(maxLandIndex, 1);
         let secondMaxLandIndex = LandArray.indexOf(Math.max.apply(Math, LandArray));
-        let secondMaxLandValue = Number(Co2Array[secondMaxLandIndex]).toFixed(2);
+        let secondMaxLandValue = Number(LandArray[secondMaxLandIndex]).toFixed(2);
         let foodWithSecondMaxLand = FoodSelectedLandArray[secondMaxLandIndex];
 
         //third max Land
