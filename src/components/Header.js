@@ -34,6 +34,11 @@ class Header extends Component {
       case "About":
         about += ' current';
         break;
+      case "Foodprint":
+        impact += ' hide';
+        science += ' hide';
+        about += ' hide';
+        break;
       default:
         impact = 'impact-button menu-impact-button';
     }
@@ -48,6 +53,7 @@ class Header extends Component {
                 <img src={ecopolluters} alt="ecopolluters"/>
               </Link>
             </div>            
+              <div className="desktop"><Link to="/foodprint/step0"><button className={impact}>FOODPRINT</button></Link></div>
               <div className="desktop"><Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link></div>
               <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFIC SOURCES</li></Link></div>
               <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>

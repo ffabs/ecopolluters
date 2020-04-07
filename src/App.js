@@ -3,6 +3,12 @@ import Home from './pages/Home';
 import Impact from './pages/Impact';
 import Science from './pages/Science';
 import About from './pages/About';
+import FoodprintStep0 from './pages/FoodprintStep0';
+import FoodprintStep1 from './pages/FoodprintStep1';
+import FoodprintStep2 from './pages/FoodprintStep2';
+import FoodprintStep3 from './pages/FoodprintStep3';
+import FoodprintStep4 from './pages/FoodprintStep4';
+import FoodprintStep5 from './pages/FoodprintStep5';
 import Data from './impact-data.json';
 import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
@@ -28,7 +34,53 @@ class App extends Component {
       amount: '',
       select: '',
       grams: '',
+      foodprintStep: 0,
+      foodprintRefresh: false,
+      apples: '0',
+      bananas: '0',
+      berriesandgrapes: '0',
+      brassicas: '0',
+      cassavas: '0',
+      citrusfruits: '0',
+      groundnuts: '0',
+      nuts: '0',
+      onions: '0',
+      potatoes: '0',
+      rootvegetables: '0',
+      tomatoes: '0',
+      otherfruits: '0',
+      othervegetables: '0',
+      beef: '0',
+      cheese: '0',
+      chicken: '0',
+      crustaceans: '0',
+      eggs: '0',
+      fish: '0',
+      lamb: '0',
+      milk: '0',
+      pork: '0',
+      bread: '0',
+      cornflour: '0',
+      oatmeal: '0',
+      otherlegumes: '0',
+      peas: '0',
+      rice: '0',
+      tofu: '0',
+      soymilk: '0',
+      coffee: '0',
+      darkchocolate: '0',
+      beer: '0',
+      wine: '0',
+      oliveoil: '0',
+      palmoil: '0',
+      rapeseedoil: '0',
+      soybeanoil: '0',
+      sunfloweroil: '0',
+      beetsugar: '0',
+      canesugar: '0',
     };
+
+    this.handleFoodprintInput = this.handleFoodprintInput.bind(this);
   }
 
   handleAmount = event => {
@@ -159,10 +211,36 @@ class App extends Component {
           tempAmount: Data[tempCategory].beef.defaultAmount
         });
     }
-
   }
 
 
+  // wizard:
+
+  handleNext = event => {
+    let foodprintNextStep = Number(event.target.value) + 1;
+    this.setState({
+      foodprintStep: foodprintNextStep
+    });
+  }
+
+  handleBack = event => {
+    let foodprintNextStep = Number(event.target.value) - 1;
+    this.setState({
+      foodprintStep: foodprintNextStep
+    });
+  }
+
+  handleFoodprintInput(input, foodForm) {
+    if (input<0) {
+      input = 0;
+    }
+    this.setState({
+      [foodForm]: input,
+      foodprintRefresh: true,
+    });
+  }
+
+  
 
   render() {
     return (
@@ -212,6 +290,138 @@ class App extends Component {
             )}/>
             <Route exact={true} path='/about' render={() => (
               <About />
+            )}/>
+            <Route exact={true} path='/foodprint/step0' render={() => (
+              <FoodprintStep0 
+                foodprintStep={this.state.foodprintStep} 
+                handleNext={this.handleNext}
+              />
+            )}/>
+            <Route exact={true} path='/foodprint/step1' render={() => (
+              <FoodprintStep1
+                foodprintStep={this.state.foodprintStep}
+                foodprintRefresh={this.state.foodprintRefresh}
+                handleNext={this.handleNext}
+                handleBack={this.handleBack}
+                handleFoodprintInput={this.handleFoodprintInput}
+                apples={this.state.apples} 
+                bananas={this.state.bananas}
+                berriesandgrapes = {this.state.berriesandgrapes}
+                brassicas={this.state.brassicas}
+                cassavas={this.state.cassavas}
+                citrusfruits = {this.state.citrusfruits}
+                groundnuts={this.state.groundnuts}
+                nuts={this.state.nuts}
+                onions={this.state.onions}
+                potatoes={this.state.potatoes}
+                rootvegetables = {this.state.rootvegetables}
+                tomatoes={this.state.tomatoes}
+                otherfruits = {this.state.otherfruits}
+                othervegetables = {this.state.othervegetables}
+              />
+            )}/>
+            <Route exact={true} path='/foodprint/step2' render={() => (
+              <FoodprintStep2
+                foodprintStep={this.state.foodprintStep} 
+                foodprintRefresh={this.state.foodprintRefresh}
+                handleNext={this.handleNext}
+                handleBack={this.handleBack}
+                handleFoodprintInput={this.handleFoodprintInput}
+                beef={this.state.beef}
+                cheese={this.state.cheese}
+                chicken={this.state.chicken}
+                crustaceans={this.state.crustaceans}
+                eggs={this.state.eggs}
+                fish={this.state.fish}
+                lamb={this.state.lamb}
+                milk={this.state.milk}
+                pork={this.state.pork}
+              />
+            )}/>
+            <Route exact={true} path='/foodprint/step3' render={() => (
+              <FoodprintStep3
+                foodprintStep={this.state.foodprintStep} 
+                foodprintRefresh={this.state.foodprintRefresh}
+                handleNext={this.handleNext}
+                handleBack={this.handleBack}
+                handleFoodprintInput={this.handleFoodprintInput}
+                bread={this.state.bread}
+                cornflour={this.state.cornflour}
+                oatmeal={this.state.oatmeal}
+                otherlegumes={this.state.otherlegumes}
+                peas={this.state.peas}
+                rice={this.state.rice}
+              />
+            )}/>
+            <Route exact={true} path='/foodprint/step4' render={() => (
+              <FoodprintStep4
+                foodprintStep={this.state.foodprintStep} 
+                foodprintRefresh={this.state.foodprintRefresh}
+                handleNext={this.handleNext}
+                handleBack={this.handleBack}
+                handleFoodprintInput={this.handleFoodprintInput}
+                tofu={this.state.tofu}
+                soymilk={this.state.soymilk}
+                coffee={this.state.coffee}
+                darkchocolate={this.state.darkchocolate}
+                beer={this.state.beer}
+                wine={this.state.wine}
+                oliveoil={this.state.oliveoil}
+                palmoil={this.state.palmoil}
+                rapeseedoil={this.state.rapeseedoil}
+                soybeanoil={this.state.soybeanoil}
+                sunfloweroil={this.state.sunfloweroil}
+                beetsugar={this.state.beetsugar}
+                canesugar={this.state.canesugar}
+              />
+            )}/>
+            <Route exact={true} path='/foodprint/step5' render={() => (
+              <FoodprintStep5
+                foodprintStep={this.state.foodprintStep}
+                handleBack={this.handleBack}
+                apples={this.state.apples} 
+                bananas={this.state.bananas}
+                berriesandgrapes = {this.state.berriesandgrapes}
+                brassicas={this.state.brassicas}
+                cassavas={this.state.cassavas}
+                citrusfruits = {this.state.citrusfruits}
+                groundnuts={this.state.groundnuts}
+                nuts={this.state.nuts}
+                onions={this.state.onions}
+                potatoes={this.state.potatoes}
+                rootvegetables = {this.state.rootvegetables}
+                tomatoes={this.state.tomatoes}
+                otherfruits = {this.state.otherfruits}
+                othervegetables = {this.state.othervegetables}
+                beef={this.state.beef}
+                cheese={this.state.cheese}
+                chicken={this.state.chicken}
+                crustaceans={this.state.crustaceans}
+                eggs={this.state.eggs}
+                fish={this.state.fish}
+                lamb={this.state.lamb}
+                milk={this.state.milk}
+                pork={this.state.pork}
+                bread={this.state.bread}
+                cornflour={this.state.cornflour}
+                oatmeal={this.state.oatmeal}
+                otherlegumes={this.state.otherlegumes}
+                peas={this.state.peas}
+                rice={this.state.rice}
+                tofu={this.state.tofu}
+                soymilk={this.state.soymilk}
+                coffee={this.state.coffee}
+                darkchocolate={this.state.darkchocolate}
+                beer={this.state.beer}
+                wine={this.state.wine}
+                oliveoil={this.state.oliveoil}
+                palmoil={this.state.palmoil}
+                rapeseedoil={this.state.rapeseedoil}
+                soybeanoil={this.state.soybeanoil}
+                sunfloweroil={this.state.sunfloweroil}
+                beetsugar={this.state.beetsugar}
+                canesugar={this.state.canesugar}
+              />
             )}/>
             <Route render={() => (
               <Redirect to="/" />
