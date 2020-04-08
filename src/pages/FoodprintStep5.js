@@ -84,6 +84,10 @@ class FoodprintStep5 extends Component {
         let totalLand = 0;
         let LandArray = [];
         let FoodSelectedLandArray = [];
+        let totalCalories = 0;
+        let totalProteins = 0;
+        let totalCarbs = 0;
+        let totalFats = 0;
 
         //fruits
         let fruitsData = ["apples", "bananas", "berries and grapes", "brassicas", "cassavas", "citrus fruits", "groundnuts", "nuts", "onions", "potatoes", "root vegetables", "tomatoes", "other fruits", "other vegetables"];
@@ -99,6 +103,10 @@ class FoodprintStep5 extends Component {
                 totalLand += Data.fruits[fruitsData[j]].land * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
                 LandArray.push(Data.fruits[fruitsData[j]].land * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit);
                 FoodSelectedLandArray.push(fruitsData[j]);
+                totalCalories += Data.fruits[fruitsData[j]]['nutritional values'].calories * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
+                totalProteins += Data.fruits[fruitsData[j]]['nutritional values'].proteins * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
+                totalCarbs += Data.fruits[fruitsData[j]]['nutritional values'].carbs * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
+                totalFats += Data.fruits[fruitsData[j]]['nutritional values'].fats * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
             }
         }
 
@@ -116,6 +124,10 @@ class FoodprintStep5 extends Component {
                 totalLand += Data.animal[animalData[z]].land * animalFoodprint[z] * Data.animal[animalData[z]].unit;
                 LandArray.push(Data.animal[animalData[z]].land * animalFoodprint[z] * Data.animal[animalData[z]].unit);
                 FoodSelectedLandArray.push(animalData[z]);
+                totalCalories += Data.animal[animalData[z]]['nutritional values'].calories * animalFoodprint[z] * Data.animal[animalData[z]].unit;
+                totalProteins += Data.animal[animalData[z]]['nutritional values'].proteins * animalFoodprint[z] * Data.animal[animalData[z]].unit;
+                totalCarbs += Data.animal[animalData[z]]['nutritional values'].carbs * animalFoodprint[z] * Data.animal[animalData[z]].unit;
+                totalFats += Data.animal[animalData[z]]['nutritional values'].fats * animalFoodprint[z] * Data.animal[animalData[z]].unit;
             }
         }
 
@@ -133,6 +145,10 @@ class FoodprintStep5 extends Component {
                 totalLand += Data.grains[grainsData[q]].land * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
                 LandArray.push(Data.grains[grainsData[q]].land * grainsFoodprint[q] * Data.grains[grainsData[q]].unit);
                 FoodSelectedLandArray.push(grainsData[q]);
+                totalCalories += Data.grains[grainsData[q]]['nutritional values'].calories * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
+                totalProteins += Data.grains[grainsData[q]]['nutritional values'].proteins * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
+                totalCarbs += Data.grains[grainsData[q]]['nutritional values'].carbs * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
+                totalFats += Data.grains[grainsData[q]]['nutritional values'].fats * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
             }
         }
 
@@ -150,6 +166,10 @@ class FoodprintStep5 extends Component {
                 totalLand += Data.otherfood[otherfoodData[p]].land * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
                 LandArray.push(Data.otherfood[otherfoodData[p]].land * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit);
                 FoodSelectedLandArray.push(otherfoodData[p]);
+                totalCalories += Data.otherfood[otherfoodData[p]]['nutritional values'].calories * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
+                totalProteins += Data.otherfood[otherfoodData[p]]['nutritional values'].proteins * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
+                totalCarbs += Data.otherfood[otherfoodData[p]]['nutritional values'].carbs * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
+                totalFats += Data.otherfood[otherfoodData[p]]['nutritional values'].fats * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
             }
         }
 
@@ -220,6 +240,13 @@ class FoodprintStep5 extends Component {
         let thirdMaxLandIndex = LandArray.indexOf(Math.max.apply(Math, LandArray));
         let thirdMaxLandValue = Number(LandArray[thirdMaxLandIndex]).toFixed(2);
         let foodWithThirdMaxLand = FoodSelectedLandArray[thirdMaxLandIndex];
+
+        //total nutritional values
+
+        totalCalories = Number(totalCalories).toFixed(0);
+        totalProteins = Number(totalProteins).toFixed(0);
+        totalCarbs = Number(totalCarbs).toFixed(0);
+        totalFats = Number(totalFats).toFixed(0);
 
     
         return (        
@@ -572,8 +599,12 @@ class FoodprintStep5 extends Component {
                         >  
                             edit
                         </button>
-
-
+                            
+                            <div>Total Calories: {totalCalories} </div>
+                            <div>Total Proteins: {totalProteins}</div>
+                            <div>Total Carbs: {totalCarbs}</div>
+                            <div>Total Fats: {totalFats}</div>
+                            
                             <div>Total Co2: {totalCo2}</div>
                             <div>Biggest Co2 impact: {foodWithMaxCo2} with {maxCo2Value}</div>
                             <div>Second Biggest Co2 impact: {foodWithSecondMaxCo2} with {secondMaxCo2Value}</div>
