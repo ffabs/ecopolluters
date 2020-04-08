@@ -70,7 +70,7 @@ class FoodprintStep5 extends Component {
         
         let selected = 0;
         for (let i = 0; i < Foodprint.length; i++) {
-            if (Foodprint[i] !== "0") {
+            if (Foodprint[i] != "0") {
                 selected += 1;
             }
         }
