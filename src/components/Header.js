@@ -5,6 +5,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import {Link} from 'react-router-dom';
 import Nav from '../components/Nav';
 import ecopolluters from '../images/ecopolluters.svg';
+import ecopollutersWhite from '../images/ecopollutersWhite.svg';
 import logoicon from '../images/logoicon2x.png';
 
 class Header extends Component {
@@ -39,6 +40,11 @@ class Header extends Component {
         science += ' hide';
         about += ' hide';
         break;
+      case "Home":
+        // impact += ' white';
+        science += ' white';
+        about += ' white';
+        break;
       default:
         impact = 'impact-button menu-impact-button';
     }
@@ -46,17 +52,23 @@ class Header extends Component {
     return (        
 
         <div className="header">
-          <div className="menu">
             <div className="logo">
               <Link to="/">
                 <img className="logoicon" src={logoicon} alt="ecopolluters-icon"/>
-                <img src={ecopolluters} alt="ecopolluters"/>
+                {this.props.logoColor === "white" &&
+                  <img src={ecopollutersWhite} alt="ecopolluters"/>
+                }
+                {this.props.logoColor !== "white" &&
+                  <img src={ecopolluters} alt="ecopolluters"/>
+                }
               </Link>
-            </div>            
+            </div>
+            <div className="menu">
               <div className="desktop"><Link to="/foodprint/step0"><button className={impact}>FOODPRINT</button></Link></div>
               <div className="desktop"><Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link></div>
               <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFIC SOURCES</li></Link></div>
               <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>
+            </div>  
             <div className="hamburger">
               <HamburgerMenu
                 isOpen={this.state.open}
@@ -70,7 +82,7 @@ class Header extends Component {
                 // animationDuration={0.3}
               />
             </div>
-          </div>
+          
           {this.state.open === true &&
             <div className="mobile"> 
               <Nav {...this.props}/>

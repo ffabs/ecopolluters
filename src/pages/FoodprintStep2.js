@@ -28,7 +28,7 @@ class FoodprintStep2 extends Component {
                     <Redirect to={"/foodprint/step"+this.props.foodprintStep} />
                 }
 
-                    <Header page={'Foodprint'}/>
+                    <Header page={'Foodprint'} logoColor="white"/>
                     <Link to="/">
                         <img className="closewizard" src={closewizard} />
                     </Link>

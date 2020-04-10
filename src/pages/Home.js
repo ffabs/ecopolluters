@@ -30,7 +30,7 @@ class Home extends Component {
 
       <div className="page">
         <div className="pink-cover-background">
-          <Header page={'Home'} />
+          <Header page={'Home'} logoColor="white" />
           <div className="page-title">
             <div className="cover-title">Food pollution?</div>
             <div className="cover-support">Pick a food, we show you its environmental impact and best alternatives</div>

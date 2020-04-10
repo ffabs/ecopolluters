@@ -33,6 +33,24 @@
     right: 20px;
 }
 
+.foodprint-step0-alignment {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .foodprint-step0-text {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .foodprint-image {
+        height: 376px;
+        margin-left: 40px;
+      }
+
 .foodprint-alignment {
     display: flex;
     flex-direction: column;
@@ -166,8 +184,6 @@
     }
 
 
-
-    
 .foodprint-title {
     font-style: normal;
     font-weight: bold;
