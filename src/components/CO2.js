@@ -9,12 +9,19 @@ class CO2 extends Component {
   
   render() {
 
-    return (        
+    let pollutionStyle = "pollution-impact pollution-border-top pollution-border-right pollution-corner-bottomleft";
+    if (this.props.foodprint === "true") {
+      pollutionStyle = "foodprint-sameas";
+    }
 
-        <div className="pollution-impact pollution-border-top pollution-border-right pollution-corner-bottomleft">
+    return (        
+      
+       <div className={pollutionStyle}>
+          {this.props.foodprint !== "true" && <div>
           <div className="pollution-title pollution"> {this.props.CO2.toFixed(2)} kg</div>
           <div className="impact-description"> of CO2 produced</div>
           <img className="impact-image" src={co2impact} alt="co2Impact"/>
+          </div>}
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">

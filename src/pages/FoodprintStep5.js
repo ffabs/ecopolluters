@@ -9,6 +9,10 @@ import closewizard from '../images/closewizard.png';
 import {Link, Redirect} from 'react-router-dom';
 import Icon from '../components/Icon';
 import Data from '../impact-data.json';
+import FBShare from '../components/FBShare';
+import CO2 from '../components/CO2';
+import Land from '../components/Land';
+import Water from '../components/Water';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -686,7 +690,7 @@ class FoodprintStep5 extends Component {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <CO2 CO2={totalCo2} foodprint="true"/>
                         </div>    
     
 
@@ -733,7 +737,7 @@ class FoodprintStep5 extends Component {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <Water water={totalWater} foodprint="true"/>
                         </div>
 
                             
@@ -780,7 +784,7 @@ class FoodprintStep5 extends Component {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <Land land={totalLand} foodprint="true"/>
                         </div>
 
 
@@ -789,6 +793,7 @@ class FoodprintStep5 extends Component {
                             
 
 
+                        <FBShare />
 
 
 
@@ -796,6 +801,8 @@ class FoodprintStep5 extends Component {
 
 
                     </div>
+
+
 
             </div>
     

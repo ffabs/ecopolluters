@@ -10,12 +10,19 @@ class Water extends Component {
   
   render() {
 
+    let pollutionStyle = "pollution-impact pollution-border-top pollution-border-right";
+    if (this.props.foodprint === "true") {
+      pollutionStyle = "foodprint-sameas";
+    }
+
     return (        
 
-        <div className="pollution-impact pollution-border-top pollution-border-right">
-        <div className="pollution-title pollution">{this.props.water.toFixed(2)} liters</div>
-        <div className="impact-description"> of water consumed</div>
+        <div className={pollutionStyle}>
+          {this.props.foodprint !== "true" && <div>
+          <div className="pollution-title pollution">{this.props.water.toFixed(2)} liters</div>
+          <div className="impact-description"> of water consumed</div>
           <img className="impact-image" src={waterimpact} alt="waterImpact"/>
+          </div>}
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">

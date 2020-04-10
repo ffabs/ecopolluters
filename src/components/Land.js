@@ -9,12 +9,19 @@ class Land extends Component {
   
   render() {
 
+    let pollutionStyle = "pollution-impact pollution-border-top pollution-corner-bottomright";
+    if (this.props.foodprint === "true") {
+      pollutionStyle = "foodprint-sameas";
+    }
+
     return (        
 
-        <div className="pollution-impact pollution-border-top pollution-corner-bottomright">
+        <div className={pollutionStyle}>
+          {this.props.foodprint !== "true" && <div>
           <div className="pollution-title pollution">{this.props.land.toFixed(2)} sqm</div>
-        <div className="impact-description"> of land occupied</div>
+          <div className="impact-description"> of land occupied</div>
           <img className="impact-image" src={landimpact} alt="landImpact"/>
+          </div>}
           <div className="same-as">Same as</div>
           <div className="comparison-section">
             <div className="comparison-element">

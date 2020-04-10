@@ -33,6 +33,13 @@
     border-radius: 0px 0px 10px 0px;
 }
 
+.foodprint-sameas {
+    text-align: left;
+    padding: 10px 40px 20px 40px;
+    background: #FAFAFA;
+    border-radius: 0px 0px 10px 10px;
+}
+
 @keyframes moveFromBottom {
     0% { transform: translateY(2000px); opacity: 0%; }
     80% { transform: translateY(-10px); }
