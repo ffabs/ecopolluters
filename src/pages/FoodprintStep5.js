@@ -179,12 +179,7 @@ class FoodprintStep5 extends Component {
                 totalFats += Data.otherfood[otherfoodData[p]]['nutritional values'].fats * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
             }
         }
-        
 
-        // let x = foodData.indexOf("berries and grapes");       
-        // console.log(x);
-        // let y = Foodprint[x];
-        // console.log(y);
 
         //Co2
         totalCo2 = Number(totalCo2).toFixed(2);
@@ -194,6 +189,7 @@ class FoodprintStep5 extends Component {
         let maxCo2Value = Number(Co2Array[maxCo2Index]).toFixed(2);
         let foodWithMaxCo2 = FoodSelectedC02Array[maxCo2Index];
         let foodWithMaxCo2Value = Foodprint[foodData.indexOf(foodWithMaxCo2)];
+        let maxCo2Percentage = (maxCo2Value / totalCo2 * 100).toFixed(0);
         
         //second max Co2
         Co2Array.splice(maxCo2Index, 1);
@@ -202,6 +198,7 @@ class FoodprintStep5 extends Component {
         let secondMaxCo2Value = Number(Co2Array[secondMaxCo2Index]).toFixed(2);
         let foodWithSecondMaxCo2 = FoodSelectedC02Array[secondMaxCo2Index];
         let foodWithSecondMaxCo2Value = Foodprint[foodData.indexOf(foodWithSecondMaxCo2)];
+        let secondMaxCo2Percentage = (secondMaxCo2Value / totalCo2 * 100).toFixed(0);
 
         //third max Co2
         Co2Array.splice(secondMaxCo2Index, 1);
@@ -210,6 +207,7 @@ class FoodprintStep5 extends Component {
         let thirdMaxCo2Value = Number(Co2Array[thirdMaxCo2Index]).toFixed(2);
         let foodWithThirdMaxCo2 = FoodSelectedC02Array[thirdMaxCo2Index];
         let foodWithThirdMaxCo2Value = Foodprint[foodData.indexOf(foodWithThirdMaxCo2)];
+        let thirdMaxCo2Percentage = (thirdMaxCo2Value / totalCo2 * 100).toFixed(0);
 
 
         //Water
@@ -220,6 +218,7 @@ class FoodprintStep5 extends Component {
         let maxWaterValue = Number(WaterArray[maxWaterIndex]).toFixed(2);
         let foodWithMaxWater = FoodSelectedWaterArray[maxWaterIndex];
         let foodWithMaxWaterValue = Foodprint[foodData.indexOf(foodWithMaxWater)];
+        let maxWaterPercentage = (maxWaterValue / totalWater * 100).toFixed(0);
 
         //second max Water
         WaterArray.splice(maxWaterIndex, 1);
@@ -228,6 +227,7 @@ class FoodprintStep5 extends Component {
         let secondMaxWaterValue = Number(WaterArray[secondMaxWaterIndex]).toFixed(2);
         let foodWithSecondMaxWater = FoodSelectedWaterArray[secondMaxWaterIndex];
         let foodWithSecondMaxWaterValue = Foodprint[foodData.indexOf(foodWithSecondMaxWater)];
+        let secondMaxWaterPercentage = (secondMaxWaterValue / totalWater * 100).toFixed(0);
 
         //third max Water
         WaterArray.splice(secondMaxWaterIndex, 1);
@@ -236,6 +236,7 @@ class FoodprintStep5 extends Component {
         let thirdMaxWaterValue = Number(WaterArray[thirdMaxWaterIndex]).toFixed(2);
         let foodWithThirdMaxWater = FoodSelectedWaterArray[thirdMaxWaterIndex];
         let foodWithThirdMaxWaterValue = Foodprint[foodData.indexOf(foodWithThirdMaxWater)];
+        let thirdMaxWaterPercentage = (thirdMaxWaterValue / totalWater * 100).toFixed(0);
 
 
         //Land
@@ -246,6 +247,7 @@ class FoodprintStep5 extends Component {
         let maxLandValue = Number(LandArray[maxLandIndex]).toFixed(2);
         let foodWithMaxLand = FoodSelectedLandArray[maxLandIndex];
         let foodWithMaxLandValue = Foodprint[foodData.indexOf(foodWithMaxLand)];
+        let maxLandPercentage = (maxLandValue / totalLand * 100).toFixed(0);
 
         //second max Land
         LandArray.splice(maxLandIndex, 1);
@@ -254,6 +256,7 @@ class FoodprintStep5 extends Component {
         let secondMaxLandValue = Number(LandArray[secondMaxLandIndex]).toFixed(2);
         let foodWithSecondMaxLand = FoodSelectedLandArray[secondMaxLandIndex];
         let foodWithSecondMaxLandValue = Foodprint[foodData.indexOf(foodWithSecondMaxLand)];
+        let secondMaxLandPercentage = (secondMaxLandValue / totalLand * 100).toFixed(0);
 
         //third max Land
         LandArray.splice(secondMaxLandIndex, 1);
@@ -262,6 +265,7 @@ class FoodprintStep5 extends Component {
         let thirdMaxLandValue = Number(LandArray[thirdMaxLandIndex]).toFixed(2);
         let foodWithThirdMaxLand = FoodSelectedLandArray[thirdMaxLandIndex];
         let foodWithThirdMaxLandValue = Foodprint[foodData.indexOf(foodWithThirdMaxLand)];
+        let thirdMaxLandPercentage = (thirdMaxLandValue / totalLand * 100).toFixed(0);
 
 
         //total nutritional values
@@ -638,36 +642,104 @@ class FoodprintStep5 extends Component {
                         <div className="weeklyfoodprint-title">Your weekly environmental foodprint</div>
 
                         <div className="weeklyfoodprint-impactcard">
-                            <div className="impactcard-firstsection">
+                            <div className="impactcard co2-color">
                                 <div className="impactcard-title">{totalCo2} kg of CO2</div>
                                 <div className="impactcard-subtitle">Total weekly️ CO2 produced</div>
                             </div>
-                            <div className="topthree">⚠️ TOP 3</div>
+                            <div className="topthree-section">
+                                <div className="topthree-title">⚠️ TOP 3</div>        
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithMaxCo2}/> </div> 
+                                    <div>&nbsp;- {foodWithMaxCo2Value}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling co2-color" style={{width: maxCo2Percentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{maxCo2Percentage}%</div>
+                                        <div>&nbsp;- {maxCo2Value} kg of CO2</div>
+                                    </div>
+                                </div>
+
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithSecondMaxCo2}/> </div> 
+                                    <div>&nbsp;- {foodWithSecondMaxCo2Value}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling co2-color" style={{width: secondMaxCo2Percentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{secondMaxCo2Percentage}%</div>
+                                        <div>&nbsp;- {secondMaxCo2Value} kg of CO2</div>
+                                    </div>
+                                </div>
+
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithThirdMaxCo2}/> </div> 
+                                    <div>&nbsp;- {foodWithThirdMaxCo2Value}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling co2-color" style={{width: thirdMaxCo2Percentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{thirdMaxCo2Percentage}%</div>
+                                        <div>&nbsp;- {thirdMaxCo2Value} kg of CO2</div>
+                                    </div>
+                                </div>
+                            </div>
                             
-                            <div className="first-polluting">
-                                <div> <Icon icon={foodWithMaxCo2}/> </div> 
-                                <div>&nbsp;- {foodWithMaxCo2Value}</div>
-                            </div>
-                            <div className="first-polluting-impact">
-                                <div>percentage</div>
-                                <div>- {maxCo2Value} kg of CO2</div>
-                            </div>
-                            <div>Second Biggest Co2 impact: {foodWithSecondMaxCo2Value} {foodWithSecondMaxCo2} with {secondMaxCo2Value}</div>
-                            <div>Third Biggest Co2 impact: {foodWithThirdMaxCo2Value} {foodWithThirdMaxCo2} with {thirdMaxCo2Value}</div>
                         </div>    
+    
+
+                        <div className="weeklyfoodprint-impactcard">
+                            <div className="impactcard water-color">
+                                <div className="impactcard-title">{totalWater} liters of water</div>
+                                <div className="impactcard-subtitle">Total weekly️ water consumed</div>
+                            </div>
+                            <div className="topthree-section">
+                                <div className="topthree-title">⚠️ TOP 3</div>        
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithMaxWater}/> </div> 
+                                    <div>&nbsp;- {foodWithMaxWaterValue}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling water-color" style={{width: maxWaterPercentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{maxWaterPercentage}%</div>
+                                        <div>&nbsp;- {maxWaterValue} kg of CO2</div>
+                                    </div>
+                                </div>
+                                
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithSecondMaxWater}/> </div> 
+                                    <div>&nbsp;- {foodWithSecondMaxWaterValue}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling water-color" style={{width: secondMaxWaterPercentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{secondMaxWaterPercentage}%</div>
+                                        <div>&nbsp;- {secondMaxWaterValue} kg of CO2</div>
+                                    </div>
+                                </div>
+
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithThirdMaxWater}/> </div> 
+                                    <div>&nbsp;- {foodWithThirdMaxWaterValue}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling water-color" style={{width: thirdMaxWaterPercentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{thirdMaxWaterPercentage}%</div>
+                                        <div>&nbsp;- {thirdMaxWaterValue} kg of CO2</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
 
                             
                             
-
-                            <div>Total Water: {totalWater}</div>
-                            <div>Biggest Water impact: {foodWithMaxWaterValue} {foodWithMaxWater} with {maxWaterValue}</div>
-                            <div>Second Biggest Water impact: {foodWithSecondMaxWaterValue} {foodWithSecondMaxWater} with {secondMaxWaterValue}</div>
-                            <div>Third Biggest Water impact: {foodWithThirdMaxWaterValue} {foodWithThirdMaxWater} with {thirdMaxWaterValue}</div>
-
                             <div>Total Land: {totalLand}</div>
-                            <div>Biggest Land impact: {foodWithMaxLandValue} {foodWithMaxLand} with {maxLandValue}</div>
-                            <div>Second Biggest Land impact: {foodWithSecondMaxLandValue} {foodWithSecondMaxLand} with {secondMaxLandValue}</div>
-                            <div>Third Biggest Land impact: {foodWithThirdMaxLandValue} {foodWithThirdMaxLand} with {thirdMaxLandValue}</div>
+                            <div>Biggest Land impact: {foodWithMaxLandValue} {foodWithMaxLand} with {maxLandValue} {maxLandPercentage}</div>
+                            <div>Second Biggest Land impact: {foodWithSecondMaxLandValue} {foodWithSecondMaxLand} with {secondMaxLandValue} {secondMaxLandPercentage}</div>
+                            <div>Third Biggest Land impact: {foodWithThirdMaxLandValue} {foodWithThirdMaxLand} with {thirdMaxLandValue} {thirdMaxLandPercentage}</div>
                             
 
                     </div>

@@ -112,13 +112,21 @@
     border-radius: 10px;
     color:  #333333;
     text-align: center;
-    width: 350px;
+    width: 25%;
 }
 
-    .impactcard-firstsection {
+    .impactcard {
         background: #FFECB3;
         border-radius: 10px 10px 0px 0px;
         padding: 20px;
+    }
+
+    .co2-color {
+        background: #FFECB3;
+    }
+
+    .water-color {
+        background: #B2EBF2;
     }
 
         .impactcard-title {
@@ -137,7 +145,11 @@
             line-height: 17px;
         }
 
-    .topthree {
+    .topthree-section {
+        margin: 20px;
+    }
+
+    .topthree-title {
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
@@ -145,16 +157,44 @@
         line-height: 20px;
         text-align: center;
         color: #333333;
-        margin-top: 20px;
     }
 
-        .first-polluting {
+        .polluting-impact-selection {
             display: flex;
             align-items: baseline;
             padding: 20px 20px 0px 20px;
         }
 
-        .first-polluting-impact {
-            padding: 20px;
+        .polluting-impact {
+            margin: 0px 20px 0px 20px;
+            background: #FAFAFA;
+            border: 1px solid #666666;
+            box-sizing: border-box;
+            border-radius: 15px;
+            width: 90%;
+            height: 22px;
+        }
+
+            .pollution-impact-filling {
+                height: 20px;
+                /* background: #FFECB3; */
+                border-radius: 15px;
+                /* position: absolute; */
+            }
+
+        .polluting-impact-values {
             display: flex;
+            font-family: Quicksand;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #666666;
+            justify-content: center;
+            /* position: relative; */
+            /* margin-top: 2px; */
+        }
+
+        .polluting-impact-percentage {
+            font-weight: bold;
         }
