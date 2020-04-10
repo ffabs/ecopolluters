@@ -641,6 +641,8 @@ class FoodprintStep5 extends Component {
 
                         <div className="weeklyfoodprint-title">Your weekly environmental foodprint</div>
 
+                        <div className="weeklyfoodprint-cards">
+
                         <div className="weeklyfoodprint-impactcard">
                             <div className="impactcard co2-color">
                                 <div className="impactcard-title">{totalCo2} kg of CO2</div>
@@ -703,7 +705,7 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling water-color" style={{width: maxWaterPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{maxWaterPercentage}%</div>
-                                        <div>&nbsp;- {maxWaterValue} kg of CO2</div>
+                                        <div>&nbsp;- {maxWaterValue} l of water</div>
                                     </div>
                                 </div>
                                 
@@ -715,7 +717,7 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling water-color" style={{width: secondMaxWaterPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{secondMaxWaterPercentage}%</div>
-                                        <div>&nbsp;- {secondMaxWaterValue} kg of CO2</div>
+                                        <div>&nbsp;- {secondMaxWaterValue} l of water</div>
                                     </div>
                                 </div>
 
@@ -727,7 +729,7 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling water-color" style={{width: thirdMaxWaterPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{thirdMaxWaterPercentage}%</div>
-                                        <div>&nbsp;- {thirdMaxWaterValue} kg of CO2</div>
+                                        <div>&nbsp;- {thirdMaxWaterValue} l of water</div>
                                     </div>
                                 </div>
                             </div>
@@ -735,12 +737,63 @@ class FoodprintStep5 extends Component {
                         </div>
 
                             
+                        <div className="weeklyfoodprint-impactcard">
+                            <div className="impactcard land-color">
+                                <div className="impactcard-title">{totalLand} sqm</div>
+                                <div className="impactcard-subtitle">Total weekly️ land occupied</div>
+                            </div>
+                            <div className="topthree-section">
+                                <div className="topthree-title">⚠️ TOP 3</div>        
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithMaxLand}/> </div> 
+                                    <div>&nbsp;- {foodWithMaxLandValue}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling land-color" style={{width: maxLandPercentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{maxLandPercentage}%</div>
+                                        <div>&nbsp;- {maxLandValue} sqm</div>
+                                    </div>
+                                </div>
+                                
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithSecondMaxLand}/> </div> 
+                                    <div>&nbsp;- {foodWithSecondMaxLandValue}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling land-color" style={{width: secondMaxLandPercentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{secondMaxLandPercentage}%</div>
+                                        <div>&nbsp;- {secondMaxLandValue} sqm</div>
+                                    </div>
+                                </div>
+
+                                <div className="polluting-impact-selection">
+                                    <div> <Icon icon={foodWithThirdMaxLand}/> </div> 
+                                    <div>&nbsp;- {foodWithThirdMaxLandValue}</div>
+                                </div>
+                                <div className="polluting-impact">
+                                    <div className="pollution-impact-filling land-color" style={{width: thirdMaxLandPercentage+"%"}}></div>
+                                    <div className="polluting-impact-values">
+                                        <div className="polluting-impact-percentage">{thirdMaxLandPercentage}%</div>
+                                        <div>&nbsp;- {thirdMaxLandValue} sqm</div>
+                                    </div>
+                                </div>
+                            </div>
                             
-                            <div>Total Land: {totalLand}</div>
-                            <div>Biggest Land impact: {foodWithMaxLandValue} {foodWithMaxLand} with {maxLandValue} {maxLandPercentage}</div>
-                            <div>Second Biggest Land impact: {foodWithSecondMaxLandValue} {foodWithSecondMaxLand} with {secondMaxLandValue} {secondMaxLandPercentage}</div>
-                            <div>Third Biggest Land impact: {foodWithThirdMaxLandValue} {foodWithThirdMaxLand} with {thirdMaxLandValue} {thirdMaxLandPercentage}</div>
+                        </div>
+
+
+
+                        </div>
                             
+
+
+
+
+
+
+
 
                     </div>
 

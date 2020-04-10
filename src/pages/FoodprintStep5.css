@@ -105,6 +105,10 @@
     width: 80%;
 }
 
+.weeklyfoodprint-cards {
+    display: flex;
+}
+
 .weeklyfoodprint-impactcard {
     background: #FFFFFF;
     border: 1px solid #333333;
@@ -112,7 +116,7 @@
     border-radius: 10px;
     color:  #333333;
     text-align: center;
-    width: 25%;
+    width: 50%;
 }
 
     .impactcard {
@@ -127,6 +131,10 @@
 
     .water-color {
         background: #B2EBF2;
+    }
+
+    .land-color {
+        background: #DCEDC8;
     }
 
         .impactcard-title {
