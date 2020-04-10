@@ -77,7 +77,11 @@ class FoodprintStep5 extends Component {
                         "beef", "cheese", "chicken", "crustaceans", "eggs", "fish", "lamb", "milk", "pork",
                         "bread", "corn flour", "oatmeal", "other legumes", "peas", "rice",
                         "tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
-        
+
+        let foodMeasure = ["item", "item", "grams", "grams", "grams", "grams", "grams", "grams", "grams", "grams", "grams", "item", "grams", "grams",
+                        "grams", "grams", "grams", "grams", "item", "grams", "grams", "liters", "grams",
+                        "grams", "grams", "grams", "grams", "grams", "grams",
+                        "grams", "liters", "item", "grams", "liters", "liters", "liters", "liters", "liters", "liters", "liters", "grams", "grams"];
 
         let selected = 0;
         for (let i = 0; i < Foodprint.length; i++) {
@@ -194,6 +198,7 @@ class FoodprintStep5 extends Component {
         let foodWithMaxCo2 = FoodSelectedC02Array[maxCo2Index];
         let foodWithMaxCo2Value = Foodprint[foodData.indexOf(foodWithMaxCo2)];
         let maxCo2Percentage = (maxCo2Value / totalCo2 * 100).toFixed(0);
+        let maxCo2Measure = foodMeasure[foodData.indexOf(foodWithMaxCo2)];
         
         //second max Co2
         Co2Array.splice(maxCo2Index, 1);
@@ -203,6 +208,7 @@ class FoodprintStep5 extends Component {
         let foodWithSecondMaxCo2 = FoodSelectedC02Array[secondMaxCo2Index];
         let foodWithSecondMaxCo2Value = Foodprint[foodData.indexOf(foodWithSecondMaxCo2)];
         let secondMaxCo2Percentage = (secondMaxCo2Value / totalCo2 * 100).toFixed(0);
+        let secondMaxCo2Measure = foodMeasure[foodData.indexOf(foodWithSecondMaxCo2)];
 
         //third max Co2
         Co2Array.splice(secondMaxCo2Index, 1);
@@ -212,6 +218,7 @@ class FoodprintStep5 extends Component {
         let foodWithThirdMaxCo2 = FoodSelectedC02Array[thirdMaxCo2Index];
         let foodWithThirdMaxCo2Value = Foodprint[foodData.indexOf(foodWithThirdMaxCo2)];
         let thirdMaxCo2Percentage = (thirdMaxCo2Value / totalCo2 * 100).toFixed(0);
+        let thirdMaxCo2Measure = foodMeasure[foodData.indexOf(foodWithThirdMaxCo2)];
 
 
         //Water
@@ -223,6 +230,7 @@ class FoodprintStep5 extends Component {
         let foodWithMaxWater = FoodSelectedWaterArray[maxWaterIndex];
         let foodWithMaxWaterValue = Foodprint[foodData.indexOf(foodWithMaxWater)];
         let maxWaterPercentage = (maxWaterValue / totalWater * 100).toFixed(0);
+        let maxWaterMeasure = foodMeasure[foodData.indexOf(foodWithMaxWater)];
 
         //second max Water
         WaterArray.splice(maxWaterIndex, 1);
@@ -232,6 +240,7 @@ class FoodprintStep5 extends Component {
         let foodWithSecondMaxWater = FoodSelectedWaterArray[secondMaxWaterIndex];
         let foodWithSecondMaxWaterValue = Foodprint[foodData.indexOf(foodWithSecondMaxWater)];
         let secondMaxWaterPercentage = (secondMaxWaterValue / totalWater * 100).toFixed(0);
+        let secondMaxWaterMeasure = foodMeasure[foodData.indexOf(foodWithSecondMaxWater)];
 
         //third max Water
         WaterArray.splice(secondMaxWaterIndex, 1);
@@ -241,6 +250,7 @@ class FoodprintStep5 extends Component {
         let foodWithThirdMaxWater = FoodSelectedWaterArray[thirdMaxWaterIndex];
         let foodWithThirdMaxWaterValue = Foodprint[foodData.indexOf(foodWithThirdMaxWater)];
         let thirdMaxWaterPercentage = (thirdMaxWaterValue / totalWater * 100).toFixed(0);
+        let thirdMaxWaterMeasure = foodMeasure[foodData.indexOf(foodWithThirdMaxWater)];
 
 
         //Land
@@ -252,6 +262,7 @@ class FoodprintStep5 extends Component {
         let foodWithMaxLand = FoodSelectedLandArray[maxLandIndex];
         let foodWithMaxLandValue = Foodprint[foodData.indexOf(foodWithMaxLand)];
         let maxLandPercentage = (maxLandValue / totalLand * 100).toFixed(0);
+        let maxLandMeasure = foodMeasure[foodData.indexOf(foodWithMaxLand)];
 
         //second max Land
         LandArray.splice(maxLandIndex, 1);
@@ -261,6 +272,7 @@ class FoodprintStep5 extends Component {
         let foodWithSecondMaxLand = FoodSelectedLandArray[secondMaxLandIndex];
         let foodWithSecondMaxLandValue = Foodprint[foodData.indexOf(foodWithSecondMaxLand)];
         let secondMaxLandPercentage = (secondMaxLandValue / totalLand * 100).toFixed(0);
+        let secondMaxLandMeasure = foodMeasure[foodData.indexOf(foodWithSecondMaxLand)];
 
         //third max Land
         LandArray.splice(secondMaxLandIndex, 1);
@@ -270,6 +282,7 @@ class FoodprintStep5 extends Component {
         let foodWithThirdMaxLand = FoodSelectedLandArray[thirdMaxLandIndex];
         let foodWithThirdMaxLandValue = Foodprint[foodData.indexOf(foodWithThirdMaxLand)];
         let thirdMaxLandPercentage = (thirdMaxLandValue / totalLand * 100).toFixed(0);
+        let thirdMaxLandMeasure = foodMeasure[foodData.indexOf(foodWithThirdMaxLand)];
 
 
         //total nutritional values
@@ -657,6 +670,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxCo2}/> </div> 
                                     <div>&nbsp;- {foodWithMaxCo2Value}</div>
+                                    {maxCo2Measure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {maxCo2Measure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling co2-color" style={{width: maxCo2Percentage+"%"}}></div>
@@ -669,6 +688,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithSecondMaxCo2}/> </div> 
                                     <div>&nbsp;- {foodWithSecondMaxCo2Value}</div>
+                                    {secondMaxCo2Measure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {secondMaxCo2Measure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling co2-color" style={{width: secondMaxCo2Percentage+"%"}}></div>
@@ -681,6 +706,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithThirdMaxCo2}/> </div> 
                                     <div>&nbsp;- {foodWithThirdMaxCo2Value}</div>
+                                    {thirdMaxCo2Measure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {thirdMaxCo2Measure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling co2-color" style={{width: thirdMaxCo2Percentage+"%"}}></div>
@@ -704,6 +735,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxWater}/> </div> 
                                     <div>&nbsp;- {foodWithMaxWaterValue}</div>
+                                    {maxWaterMeasure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {maxWaterMeasure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling water-color" style={{width: maxWaterPercentage+"%"}}></div>
@@ -716,6 +753,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithSecondMaxWater}/> </div> 
                                     <div>&nbsp;- {foodWithSecondMaxWaterValue}</div>
+                                    {secondMaxWaterMeasure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {secondMaxWaterMeasure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling water-color" style={{width: secondMaxWaterPercentage+"%"}}></div>
@@ -728,6 +771,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithThirdMaxWater}/> </div> 
                                     <div>&nbsp;- {foodWithThirdMaxWaterValue}</div>
+                                    {thirdMaxWaterMeasure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {thirdMaxWaterMeasure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling water-color" style={{width: thirdMaxWaterPercentage+"%"}}></div>
@@ -751,6 +800,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxLand}/> </div> 
                                     <div>&nbsp;- {foodWithMaxLandValue}</div>
+                                    {maxLandMeasure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {maxLandMeasure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling land-color" style={{width: maxLandPercentage+"%"}}></div>
@@ -763,6 +818,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithSecondMaxLand}/> </div> 
                                     <div>&nbsp;- {foodWithSecondMaxLandValue}</div>
+                                    {secondMaxLandMeasure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {secondMaxLandMeasure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling land-color" style={{width: secondMaxLandPercentage+"%"}}></div>
@@ -775,6 +836,12 @@ class FoodprintStep5 extends Component {
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithThirdMaxLand}/> </div> 
                                     <div>&nbsp;- {foodWithThirdMaxLandValue}</div>
+                                    {thirdMaxLandMeasure === "grams" &&
+                                        <div>&nbsp;g</div>
+                                    }
+                                    {thirdMaxLandMeasure === "liters" &&
+                                        <div>&nbsp;l</div>
+                                    }
                                 </div>
                                 <div className="polluting-impact">
                                     <div className="pollution-impact-filling land-color" style={{width: thirdMaxLandPercentage+"%"}}></div>
