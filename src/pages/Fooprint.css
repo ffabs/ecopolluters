@@ -28,14 +28,14 @@
 .closewizard {
     height: 36px;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
 }
 
 .foodprint-step0-alignment {
     display: flex;
-    margin-top: 150px;
+    margin-top: 200px;
     justify-content: center;
     flex-wrap: wrap;
 }
