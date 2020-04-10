@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import './About.css';
 import './Fooprint.css';
+import './FoodprintStep5.css';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import closewizard from '../images/closewizard.png';
@@ -68,6 +69,12 @@ class FoodprintStep5 extends Component {
                         bread, cornflour, oatmeal, otherlegumes, peas, rice,
                         tofu, soymilk, coffee, darkchocolate, beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar];
         
+        let foodData = ["apples", "bananas", "berries and grapes", "brassicas", "cassavas", "citrus fruits", "groundnuts", "nuts", "onions", "potatoes", "root vegetables", "tomatoes", "other fruits", "other vegetables",
+                        "beef", "cheese", "chicken", "crustaceans", "eggs", "fish", "lamb", "milk", "pork",
+                        "bread", "corn flour", "oatmeal", "other legumes", "peas", "rice",
+                        "tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
+        
+
         let selected = 0;
         for (let i = 0; i < Foodprint.length; i++) {
             if (Foodprint[i] != "0") {
@@ -155,8 +162,8 @@ class FoodprintStep5 extends Component {
         //otherfood
         let otherfoodData = ["tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
         let otherfoodFoodprint = [tofu, soymilk, coffee, darkchocolate, beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar];
-        for (let p = 0; p < fruitsFoodprint.length; p++) {
-            if (fruitsFoodprint[p] != "0") {
+        for (let p = 0; p < otherfoodFoodprint.length; p++) {
+            if (otherfoodFoodprint[p] != "0") {
                 totalCo2 += Data.otherfood[otherfoodData[p]].co2 * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
                 Co2Array.push(Data.otherfood[otherfoodData[p]].co2 * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit);
                 FoodSelectedC02Array.push(otherfoodData[p]);
@@ -172,6 +179,12 @@ class FoodprintStep5 extends Component {
                 totalFats += Data.otherfood[otherfoodData[p]]['nutritional values'].fats * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
             }
         }
+        
+
+        // let x = foodData.indexOf("berries and grapes");       
+        // console.log(x);
+        // let y = Foodprint[x];
+        // console.log(y);
 
         //Co2
         totalCo2 = Number(totalCo2).toFixed(2);
@@ -180,13 +193,15 @@ class FoodprintStep5 extends Component {
         let maxCo2Index = Co2Array.indexOf(Math.max.apply(Math, Co2Array));
         let maxCo2Value = Number(Co2Array[maxCo2Index]).toFixed(2);
         let foodWithMaxCo2 = FoodSelectedC02Array[maxCo2Index];
-
+        let foodWithMaxCo2Value = Foodprint[foodData.indexOf(foodWithMaxCo2)];
+        
         //second max Co2
         Co2Array.splice(maxCo2Index, 1);
         FoodSelectedC02Array.splice(maxCo2Index, 1);
         let secondMaxCo2Index = Co2Array.indexOf(Math.max.apply(Math, Co2Array));
         let secondMaxCo2Value = Number(Co2Array[secondMaxCo2Index]).toFixed(2);
         let foodWithSecondMaxCo2 = FoodSelectedC02Array[secondMaxCo2Index];
+        let foodWithSecondMaxCo2Value = Foodprint[foodData.indexOf(foodWithSecondMaxCo2)];
 
         //third max Co2
         Co2Array.splice(secondMaxCo2Index, 1);
@@ -194,6 +209,7 @@ class FoodprintStep5 extends Component {
         let thirdMaxCo2Index = Co2Array.indexOf(Math.max.apply(Math, Co2Array));
         let thirdMaxCo2Value = Number(Co2Array[thirdMaxCo2Index]).toFixed(2);
         let foodWithThirdMaxCo2 = FoodSelectedC02Array[thirdMaxCo2Index];
+        let foodWithThirdMaxCo2Value = Foodprint[foodData.indexOf(foodWithThirdMaxCo2)];
 
 
         //Water
@@ -203,6 +219,7 @@ class FoodprintStep5 extends Component {
         let maxWaterIndex = WaterArray.indexOf(Math.max.apply(Math, WaterArray));
         let maxWaterValue = Number(WaterArray[maxWaterIndex]).toFixed(2);
         let foodWithMaxWater = FoodSelectedWaterArray[maxWaterIndex];
+        let foodWithMaxWaterValue = Foodprint[foodData.indexOf(foodWithMaxWater)];
 
         //second max Water
         WaterArray.splice(maxWaterIndex, 1);
@@ -210,6 +227,7 @@ class FoodprintStep5 extends Component {
         let secondMaxWaterIndex = WaterArray.indexOf(Math.max.apply(Math, WaterArray));
         let secondMaxWaterValue = Number(WaterArray[secondMaxWaterIndex]).toFixed(2);
         let foodWithSecondMaxWater = FoodSelectedWaterArray[secondMaxWaterIndex];
+        let foodWithSecondMaxWaterValue = Foodprint[foodData.indexOf(foodWithSecondMaxWater)];
 
         //third max Water
         WaterArray.splice(secondMaxWaterIndex, 1);
@@ -217,6 +235,7 @@ class FoodprintStep5 extends Component {
         let thirdMaxWaterIndex = WaterArray.indexOf(Math.max.apply(Math, WaterArray));
         let thirdMaxWaterValue = Number(WaterArray[thirdMaxWaterIndex]).toFixed(2);
         let foodWithThirdMaxWater = FoodSelectedWaterArray[thirdMaxWaterIndex];
+        let foodWithThirdMaxWaterValue = Foodprint[foodData.indexOf(foodWithThirdMaxWater)];
 
 
         //Land
@@ -226,6 +245,7 @@ class FoodprintStep5 extends Component {
         let maxLandIndex = LandArray.indexOf(Math.max.apply(Math, LandArray));
         let maxLandValue = Number(LandArray[maxLandIndex]).toFixed(2);
         let foodWithMaxLand = FoodSelectedLandArray[maxLandIndex];
+        let foodWithMaxLandValue = Foodprint[foodData.indexOf(foodWithMaxLand)];
 
         //second max Land
         LandArray.splice(maxLandIndex, 1);
@@ -233,6 +253,7 @@ class FoodprintStep5 extends Component {
         let secondMaxLandIndex = LandArray.indexOf(Math.max.apply(Math, LandArray));
         let secondMaxLandValue = Number(LandArray[secondMaxLandIndex]).toFixed(2);
         let foodWithSecondMaxLand = FoodSelectedLandArray[secondMaxLandIndex];
+        let foodWithSecondMaxLandValue = Foodprint[foodData.indexOf(foodWithSecondMaxLand)];
 
         //third max Land
         LandArray.splice(secondMaxLandIndex, 1);
@@ -240,9 +261,10 @@ class FoodprintStep5 extends Component {
         let thirdMaxLandIndex = LandArray.indexOf(Math.max.apply(Math, LandArray));
         let thirdMaxLandValue = Number(LandArray[thirdMaxLandIndex]).toFixed(2);
         let foodWithThirdMaxLand = FoodSelectedLandArray[thirdMaxLandIndex];
+        let foodWithThirdMaxLandValue = Foodprint[foodData.indexOf(foodWithThirdMaxLand)];
+
 
         //total nutritional values
-
         totalCalories = Number(totalCalories).toFixed(0);
         totalProteins = Number(totalProteins).toFixed(0);
         totalCarbs = Number(totalCarbs).toFixed(0);
@@ -251,7 +273,7 @@ class FoodprintStep5 extends Component {
     
         return (        
 
-            <div className="foodprint step5-background">
+            <div className="foodprint step0-background">
                 
                 {this.props.foodprintStep !== 5 &&
                     <Redirect to={"/foodprint/step"+this.props.foodprintStep} />
@@ -264,111 +286,124 @@ class FoodprintStep5 extends Component {
 
                     <div className="foodprint-alignment">
 
-                        <div>✅ Your environmental foodprint is ready!</div> 
+                        <div className="foodprint-ready">✅ Your environmental foodprint is ready!</div> 
 
-                        <div>{selected} Food types selected</div>
+                        <div className="foodselected-and-editbutton">
+                            <div className="food-selected-title">{selected} Food types selected</div>
+
+                            <button 
+                                type="button"
+                                className="edit-foodprint"
+                                value={this.props.foodprintStep}
+                                onClick={this.props.handleBack}
+                            >  
+                                edit
+                            </button>
+                        </div>
 
                         <div className="categories-selected">
 
-                            <div className="category-selected">
+                            <div className="four-categories">
 
-                                <div>Fruits and vegetables</div>                   
+                            <div className="category-selected categories-selected-left">
+
+                                <div className="category-selected-title">Fruits and vegetables</div>                   
                                 
                                 {apples != "0" &&
                                 <div className="food-selected">
-                                    {apples} 
-                                    <Icon icon="apples"/>
+                                    <div><Icon icon="apples"/></div>
+                                    <div>&nbsp;- {apples}</div>
                                 </div>
                                 }
 
                                 {bananas != "0" &&
                                 <div className="food-selected">
-                                    {bananas} 
-                                    <Icon icon="bananas"/>
+                                    <div><Icon icon="bananas"/></div>
+                                    <div>&nbsp;- {bananas} </div>                                    
                                 </div>
                                 }
 
                                 {berriesandgrapes != "0" &&
                                 <div className="food-selected">
-                                    {berriesandgrapes} 
-                                    <Icon icon="berries and grapes"/>
+                                    <div><Icon icon="berries and grapes"/></div>
+                                    <div>&nbsp;- {berriesandgrapes} g</div> 
                                 </div>
                                 }
 
                                 {brassicas != "0" &&
                                 <div className="food-selected">
-                                    {brassicas} 
-                                    <Icon icon="brassicas"/>
+                                    <div><Icon icon="brassicas"/></div>
+                                    <div>&nbsp;- {brassicas} g</div>
                                 </div>
                                 }
 
                                 {cassavas != "0" &&
                                 <div className="food-selected">
-                                    {cassavas} 
-                                    <Icon icon="cassavas"/>
+                                    <div><Icon icon="cassavas"/></div>
+                                    <div>&nbsp;- {cassavas} g</div>                                    
                                 </div>
                                 }
 
                                 {citrusfruits != "0" &&
                                 <div className="food-selected">
-                                    {citrusfruits} 
-                                    <Icon icon="citrus fruits"/>
+                                    <div><Icon icon="citrus fruits"/></div>
+                                    <div>&nbsp;- {citrusfruits} g</div>                                    
                                 </div>
                                 }
 
                                 {groundnuts != "0" &&
                                 <div className="food-selected">
-                                    {groundnuts} 
-                                    <Icon icon="groundnuts"/>
+                                    <div><Icon icon="groundnuts"/></div>
+                                    <div>&nbsp;- {groundnuts} g</div>
                                 </div>
                                 }
 
                                 {nuts != "0" &&
                                 <div className="food-selected">
-                                    {nuts} 
-                                    <Icon icon="nuts"/>
+                                    <div><Icon icon="nuts"/></div>
+                                    <div>&nbsp;- {nuts} g</div>
                                 </div>
                                 }
 
                                 {onions != "0" &&
-                                <div className="food-selected">
-                                    {onions} 
-                                    <Icon icon="onions"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="onions"/></div>
+                                    <div>&nbsp;- {onions} g</div>
                                 </div>
                                 }
 
                                 {potatoes != "0" &&
-                                <div className="food-selected">
-                                    {potatoes} 
-                                    <Icon icon="potatoes"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="potatoes"/></div>
+                                    <div>&nbsp;- {potatoes} g</div>
                                 </div>
                                 }
 
                                 {rootvegetables != "0" &&
-                                <div className="food-selected">
-                                    {rootvegetables} 
-                                    <Icon icon="root vegetables"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="root vegetables"/></div>
+                                    <div>&nbsp;- {rootvegetables} g</div>
                                 </div>
                                 }
 
                                 {tomatoes != "0" &&
-                                <div className="food-selected">
-                                    {tomatoes} 
-                                    <Icon icon="tomatoes"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="tomatoes"/></div>
+                                    <div>&nbsp;- {tomatoes}</div>
                                 </div>
                                 }
 
                                 {otherfruits != "0" &&
-                                <div className="food-selected">
-                                    {otherfruits} 
-                                    <Icon icon="other fruits"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="other fruits"/></div>
+                                    <div>&nbsp;- {otherfruits} g</div>
                                 </div>
                                 }
 
                                 {othervegetables != "0" &&
-                                <div className="food-selected">
-                                    {othervegetables} 
-                                    <Icon icon="other vegetables"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="other vegetables"/></div>
+                                    <div>&nbsp;- {othervegetables} g</div>
                                 </div>
                                 }
 
@@ -376,68 +411,68 @@ class FoodprintStep5 extends Component {
 
                             <div className="category-selected">
 
-                                <div>Animal Products</div>     
+                                <div className="category-selected-title">Animal Products</div>     
 
                                 {beef != "0" &&
-                                <div className="food-selected">
-                                    {beef} 
-                                    <Icon icon="beef"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="beef"/></div>
+                                    <div>&nbsp;- {beef} g</div>
                                 </div>
                                 }
 
                                 {cheese != "0" &&
-                                <div className="food-selected">
-                                    {cheese} 
-                                    <Icon icon="cheese"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="cheese"/></div>
+                                    <div>&nbsp;- {cheese} g</div>
                                 </div>
                                 }
 
                                 {chicken != "0" &&
-                                <div className="food-selected">
-                                    {chicken} 
-                                    <Icon icon="chicken"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="chicken"/></div>
+                                    <div>&nbsp;- {chicken} g</div>
                                 </div>
                                 }
 
                                 {crustaceans != "0" &&
-                                <div className="food-selected">
-                                    {crustaceans} 
-                                    <Icon icon="crustaceans"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="crustaceans"/></div>
+                                    <div>&nbsp;- {crustaceans} g</div>
                                 </div>
                                 }
 
                                 {eggs != "0" &&
-                                <div className="food-selected">
-                                    {eggs} 
-                                    <Icon icon="eggs"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="eggs"/></div>
+                                    <div>&nbsp;- {eggs}</div>
                                 </div>
                                 }
 
                                 {fish != "0" &&
-                                <div className="food-selected">
-                                    {fish} 
-                                    <Icon icon="fish"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="fish"/></div>
+                                    <div>&nbsp;- {fish} g</div>
                                 </div>
                                 }
 
                                 {lamb != "0" &&
-                                <div className="food-selected">
-                                    {lamb} 
-                                    <Icon icon="lamb"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="lamb"/></div>
+                                    <div>&nbsp;- {lamb} g</div>
                                 </div>
                                 }
 
                                 {milk != "0" &&
-                                <div className="food-selected">
-                                    {milk} 
-                                    <Icon icon="milk"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="milk"/></div>
+                                    <div>&nbsp;- {milk} l</div>
                                 </div>
                                 }
 
                                 {pork != "0" &&
-                                <div className="food-selected">
-                                    {pork} 
-                                    <Icon icon="pork"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="pork"/></div>
+                                    <div>&nbsp;- {pork} g</div>
                                 </div>
                                 }
 
@@ -445,180 +480,194 @@ class FoodprintStep5 extends Component {
 
                             <div className="category-selected">
 
-                                <div>Grains and Legumes</div> 
+                                <div className="category-selected-title">Grains and Legumes</div> 
 
                                 {bread != "0" &&
-                                <div className="food-selected">
-                                    {bread} 
-                                    <Icon icon="bread"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="bread"/></div>
+                                    <div>&nbsp;- {bread} g</div>
                                 </div>
                                 }
 
                                 {cornflour != "0" &&
-                                <div className="food-selected">
-                                    {cornflour} 
-                                    <Icon icon="corn flour"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="corn flour"/></div>
+                                    <div>&nbsp;- {cornflour} g</div>
                                 </div>
                                 }
 
                                 {oatmeal != "0" &&
-                                <div className="food-selected">
-                                    {oatmeal} 
-                                    <Icon icon="oatmeal"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="oatmeal"/></div>
+                                    <div>&nbsp;- {oatmeal} g</div>
                                 </div>
                                 }
 
                                 {otherlegumes != "0" &&
-                                <div className="food-selected">
-                                    {otherlegumes} 
-                                    <Icon icon="other legumes"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="other legumes"/></div>
+                                    <div>&nbsp;- {otherlegumes} g</div>
                                 </div>
                                 }
 
                                 {peas != "0" &&
-                                <div className="food-selected">
-                                    {peas} 
-                                    <Icon icon="peas"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="peas"/></div>
+                                    <div>&nbsp;- {peas} g</div>
                                 </div>
                                 }
 
                                 {rice != "0" &&
-                                <div className="food-selected">
-                                    {rice} 
-                                    <Icon icon="rice"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="rice"/></div>
+                                    <div>&nbsp;- {rice} g</div>
                                 </div>
                                 }
 
                             </div>
 
-                            <div className="category-selected">
+                            <div className="category-selected categories-selected-right">
 
-                                <div>Others</div> 
+                                <div className="category-selected-title">Others</div> 
 
                                 {tofu != "0" &&
-                                <div className="food-selected">
-                                    {tofu} 
-                                    <Icon icon="tofu"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="tofu"/></div>
+                                    <div>&nbsp;- {tofu} g</div>
                                 </div>
                                 }
 
                                 {soymilk != "0" &&
-                                <div className="food-selected">
-                                    {soymilk} 
-                                    <Icon icon="soymilk"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="soymilk"/></div>
+                                    <div>&nbsp;- {soymilk} l</div>
                                 </div>
                                 }
 
                                 {coffee != "0" &&
-                                <div className="food-selected">
-                                    {coffee} 
-                                    <Icon icon="coffee"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="coffee"/></div>
+                                    <div>&nbsp;- {coffee}</div>
                                 </div>
                                 }
 
                                 {darkchocolate != "0" &&
-                                <div className="food-selected">
-                                    {darkchocolate} 
-                                    <Icon icon="dark chocolate"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="dark chocolate"/></div>
+                                    <div>&nbsp;- {darkchocolate} g</div>
                                 </div>
                                 }
 
                                 {beer != "0" &&
-                                <div className="food-selected">
-                                    {beer} 
-                                    <Icon icon="beer"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="beer"/></div>
+                                    <div>&nbsp;- {beer} l</div>
                                 </div>
                                 }
 
                                 {wine != "0" &&
-                                <div className="food-selected">
-                                    {wine} 
-                                    <Icon icon="wine"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="wine"/></div>
+                                    <div>&nbsp;- {wine} l</div>
                                 </div>
                                 }
 
                                 {oliveoil != "0" &&
-                                <div className="food-selected">
-                                    {oliveoil} 
-                                    <Icon icon="olive oil"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="olive oil"/></div>
+                                    <div>&nbsp;- {oliveoil} l</div>
                                 </div>
                                 }
 
                                 {palmoil != "0" &&
-                                <div className="food-selected">
-                                    {palmoil} 
-                                    <Icon icon="palm oil"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="palm oil"/></div>
+                                    <div>&nbsp;- {palmoil} l</div>
                                 </div>
                                 }
 
                                 {rapeseedoil != "0" &&
-                                <div className="food-selected">
-                                    {rapeseedoil} 
-                                    <Icon icon="rapeseed oil"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="rapeseed oil"/></div>
+                                    <div>&nbsp;- {rapeseedoil} l</div>
                                 </div>
                                 }
 
                                 {soybeanoil != "0" &&
-                                <div className="food-selected">
-                                    {soybeanoil} 
-                                    <Icon icon="soybean oil"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="soybean oil"/></div>
+                                    <div>&nbsp;- {soybeanoil} l</div>
                                 </div>
                                 }
 
                                 {sunfloweroil != "0" &&
-                                <div className="food-selected">
-                                    {sunfloweroil} 
-                                    <Icon icon="sunflower oil"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="sunflower oil"/></div>
+                                    <div>&nbsp;- {sunfloweroil} l</div>
                                 </div>
                                 }
 
                                 {beetsugar != "0" &&
-                                <div className="food-selected">
-                                    {beetsugar} 
-                                    <Icon icon="beet sugar"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="beet sugar"/></div>
+                                    <div>&nbsp;- {beetsugar} g</div>
                                 </div>
                                 }
 
                                 {canesugar != "0" &&
-                                <div className="food-selected">
-                                    {canesugar} 
-                                    <Icon icon="cane sugar"/>
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="cane sugar"/></div>
+                                    <div>&nbsp;- {canesugar} g</div>
                                 </div>
                                 }
 
+                            </div>
+
+                            </div>
+
+                            <div className="foodprint-nutritionalvalues">
+                                <div className="foodprint-nutritionalvalues-title">Total weekly nutritional values:</div>
+                                <div>
+                                    &nbsp;{totalCalories} Calories | {totalProteins} g Proteins | {totalCarbs} g Carbs | {totalFats} g Fats
+                                </div>
                             </div>
 
                         </div>
 
 
+                        <div className="weeklyfoodprint-title">Your weekly environmental foodprint</div>
 
-                        <button 
-                            type="button"
-                            value={this.props.foodprintStep}
-                            onClick={this.props.handleBack}
-                        >  
-                            edit
-                        </button>
+                        <div className="weeklyfoodprint-impactcard">
+                            <div className="impactcard-firstsection">
+                                <div className="impactcard-title">{totalCo2} kg of CO2</div>
+                                <div className="impactcard-subtitle">Total weekly️ CO2 produced</div>
+                            </div>
+                            <div className="topthree">⚠️ TOP 3</div>
                             
-                            <div>Total Calories: {totalCalories} </div>
-                            <div>Total Proteins: {totalProteins}</div>
-                            <div>Total Carbs: {totalCarbs}</div>
-                            <div>Total Fats: {totalFats}</div>
+                            <div className="first-polluting">
+                                <div> <Icon icon={foodWithMaxCo2}/> </div> 
+                                <div>&nbsp;- {foodWithMaxCo2Value}</div>
+                            </div>
+                            <div className="first-polluting-impact">
+                                <div>percentage</div>
+                                <div>- {maxCo2Value} kg of CO2</div>
+                            </div>
+                            <div>Second Biggest Co2 impact: {foodWithSecondMaxCo2Value} {foodWithSecondMaxCo2} with {secondMaxCo2Value}</div>
+                            <div>Third Biggest Co2 impact: {foodWithThirdMaxCo2Value} {foodWithThirdMaxCo2} with {thirdMaxCo2Value}</div>
+                        </div>    
+
                             
-                            <div>Total Co2: {totalCo2}</div>
-                            <div>Biggest Co2 impact: {foodWithMaxCo2} with {maxCo2Value}</div>
-                            <div>Second Biggest Co2 impact: {foodWithSecondMaxCo2} with {secondMaxCo2Value}</div>
-                            <div>Third Biggest Co2 impact: {foodWithThirdMaxCo2} with {thirdMaxCo2Value}</div>
+                            
 
                             <div>Total Water: {totalWater}</div>
-                            <div>Biggest Water impact: {foodWithMaxWater} with {maxWaterValue}</div>
-                            <div>Second Biggest Water impact: {foodWithSecondMaxWater} with {secondMaxWaterValue}</div>
-                            <div>Third Biggest Water impact: {foodWithThirdMaxWater} with {thirdMaxWaterValue}</div>
+                            <div>Biggest Water impact: {foodWithMaxWaterValue} {foodWithMaxWater} with {maxWaterValue}</div>
+                            <div>Second Biggest Water impact: {foodWithSecondMaxWaterValue} {foodWithSecondMaxWater} with {secondMaxWaterValue}</div>
+                            <div>Third Biggest Water impact: {foodWithThirdMaxWaterValue} {foodWithThirdMaxWater} with {thirdMaxWaterValue}</div>
 
                             <div>Total Land: {totalLand}</div>
-                            <div>Biggest Land impact: {foodWithMaxLand} with {maxLandValue}</div>
-                            <div>Second Biggest Land impact: {foodWithSecondMaxLand} with {secondMaxLandValue}</div>
-                            <div>Third Biggest Land impact: {foodWithThirdMaxLand} with {thirdMaxLandValue}</div>
+                            <div>Biggest Land impact: {foodWithMaxLandValue} {foodWithMaxLand} with {maxLandValue}</div>
+                            <div>Second Biggest Land impact: {foodWithSecondMaxLandValue} {foodWithSecondMaxLand} with {secondMaxLandValue}</div>
+                            <div>Third Biggest Land impact: {foodWithThirdMaxLandValue} {foodWithThirdMaxLand} with {thirdMaxLandValue}</div>
                             
 
                     </div>

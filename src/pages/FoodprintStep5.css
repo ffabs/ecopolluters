@@ -1,0 +1,160 @@
+.foodprint-ready {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    margin-top: 50px;
+}
+
+.foodselected-and-editbutton {
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+    .food-selected-title {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .edit-foodprint {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 35px;
+        color: #F2C94C;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+        .edit-foodprint:hover {
+            box-shadow: none;
+        }
+
+.categories-selected {
+    background: #8435CE;
+    border: 1px solid #333333;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.four-categories {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category-selected {
+    background-color: #BB6BD9;
+    width: 100%;
+    margin: 1px;
+    padding: 20px;
+}
+
+    .categories-selected-left {
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    .categories-selected-right {
+        border-radius: 0px 10px 0px 0px;
+    }
+
+        .category-selected-title {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 5px;
+        }
+
+        .food-selected {
+            display: flex;
+            align-items: baseline;
+        }
+    
+    .foodprint-nutritionalvalues {
+        padding: 20px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        justify-content: center;
+    }
+
+        .foodprint-nutritionalvalues-title {
+            font-weight: bold;
+        }
+
+.weeklyfoodprint-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    margin-top: 40px;
+    width: 80%;
+}
+
+.weeklyfoodprint-impactcard {
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color:  #333333;
+    text-align: center;
+    width: 350px;
+}
+
+    .impactcard-firstsection {
+        background: #FFECB3;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+    }
+
+        .impactcard-title {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        .impactcard-subtitle {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+    .topthree {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #333333;
+        margin-top: 20px;
+    }
+
+        .first-polluting {
+            display: flex;
+            align-items: baseline;
+            padding: 20px 20px 0px 20px;
+        }
+
+        .first-polluting-impact {
+            padding: 20px;
+            display: flex;
+        }

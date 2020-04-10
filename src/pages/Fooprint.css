@@ -5,7 +5,7 @@
 }
 
 .step0-background {
-    background-color: #BB6BD9;
+    background-color: #9B51E0;
 }
 
 .step1-background {
@@ -13,7 +13,7 @@
 }
 
 .step2-background {
-    background-color: #EB5757;
+    background-color: #C64F4F;
 }
 
 .step3-background {
@@ -21,11 +21,7 @@
 }
 
 .step4-background {
-    background-color: #2D9CDB;
-}
-
-.step5-background {
-    background-color: black;
+    background-color: #2F80ED;
 }
 
 
@@ -168,20 +164,6 @@
         padding: 0px 30px 0px 30px;
         height: 44px;
     }
-
-
-
-.categories-selected {
-    display: flex;
-}
-
-    /* .category-selected {
-        display: flex;
-    } */
-
-        .food-selected {
-            display: flex;
-        }
 
 
 
