@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import fruitspng from '../images/fruits.png';
 import FoodprintForm from '../components/FoodprintForm';
-import {Link, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');

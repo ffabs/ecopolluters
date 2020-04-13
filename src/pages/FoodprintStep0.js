@@ -5,7 +5,7 @@ import './Fooprint.css';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import foodprint from '../images/foodprint.png';
-import {Link, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');

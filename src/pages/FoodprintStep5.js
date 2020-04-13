@@ -3,9 +3,10 @@ import '../App.css';
 import './About.css';
 import './Fooprint.css';
 import './FoodprintStep5.css';
+import '../components/Solution.css';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
-import {Link, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import Icon from '../components/Icon';
 import Data from '../impact-data.json';
 import FBShare from '../components/FBShare';
@@ -438,98 +439,98 @@ class FoodprintStep5 extends Component {
                                 {apples != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="apples"/></div>
-                                    <div>&nbsp;- {apples}</div>
+                                    <div>&nbsp;• {apples}</div>
                                 </div>
                                 }
 
                                 {bananas != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="bananas"/></div>
-                                    <div>&nbsp;- {bananas} </div>                                    
+                                    <div>&nbsp;• {bananas} </div>                                    
                                 </div>
                                 }
 
                                 {berriesandgrapes != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="berries and grapes"/></div>
-                                    <div>&nbsp;- {berriesandgrapes} g</div> 
+                                    <div>&nbsp;• {berriesandgrapes} g</div> 
                                 </div>
                                 }
 
                                 {brassicas != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="brassicas"/></div>
-                                    <div>&nbsp;- {brassicas} g</div>
+                                    <div>&nbsp;• {brassicas} g</div>
                                 </div>
                                 }
 
                                 {cassavas != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="cassavas"/></div>
-                                    <div>&nbsp;- {cassavas} g</div>                                    
+                                    <div>&nbsp;• {cassavas} g</div>                                    
                                 </div>
                                 }
 
                                 {citrusfruits != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="citrus fruits"/></div>
-                                    <div>&nbsp;- {citrusfruits} g</div>                                    
+                                    <div>&nbsp;• {citrusfruits} g</div>                                    
                                 </div>
                                 }
 
                                 {groundnuts != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="groundnuts"/></div>
-                                    <div>&nbsp;- {groundnuts} g</div>
+                                    <div>&nbsp;• {groundnuts} g</div>
                                 </div>
                                 }
 
                                 {nuts != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="nuts"/></div>
-                                    <div>&nbsp;- {nuts} g</div>
+                                    <div>&nbsp;• {nuts} g</div>
                                 </div>
                                 }
 
                                 {onions != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="onions"/></div>
-                                    <div>&nbsp;- {onions} g</div>
+                                    <div>&nbsp;• {onions} g</div>
                                 </div>
                                 }
 
                                 {potatoes != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="potatoes"/></div>
-                                    <div>&nbsp;- {potatoes} g</div>
+                                    <div>&nbsp;• {potatoes} g</div>
                                 </div>
                                 }
 
                                 {rootvegetables != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="root vegetables"/></div>
-                                    <div>&nbsp;- {rootvegetables} g</div>
+                                    <div>&nbsp;• {rootvegetables} g</div>
                                 </div>
                                 }
 
                                 {tomatoes != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="tomatoes"/></div>
-                                    <div>&nbsp;- {tomatoes}</div>
+                                    <div>&nbsp;• {tomatoes}</div>
                                 </div>
                                 }
 
                                 {otherfruits != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="other fruits"/></div>
-                                    <div>&nbsp;- {otherfruits} g</div>
+                                    <div>&nbsp;• {otherfruits} g</div>
                                 </div>
                                 }
 
                                 {othervegetables != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="other vegetables"/></div>
-                                    <div>&nbsp;- {othervegetables} g</div>
+                                    <div>&nbsp;• {othervegetables} g</div>
                                 </div>
                                 }
 
@@ -542,63 +543,63 @@ class FoodprintStep5 extends Component {
                                 {beef != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="beef"/></div>
-                                    <div>&nbsp;- {beef} g</div>
+                                    <div>&nbsp;• {beef} g</div>
                                 </div>
                                 }
 
                                 {cheese != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="cheese"/></div>
-                                    <div>&nbsp;- {cheese} g</div>
+                                    <div>&nbsp;• {cheese} g</div>
                                 </div>
                                 }
 
                                 {chicken != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="chicken"/></div>
-                                    <div>&nbsp;- {chicken} g</div>
+                                    <div>&nbsp;• {chicken} g</div>
                                 </div>
                                 }
 
                                 {crustaceans != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="crustaceans"/></div>
-                                    <div>&nbsp;- {crustaceans} g</div>
+                                    <div>&nbsp;• {crustaceans} g</div>
                                 </div>
                                 }
 
                                 {eggs != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="eggs"/></div>
-                                    <div>&nbsp;- {eggs}</div>
+                                    <div>&nbsp;• {eggs}</div>
                                 </div>
                                 }
 
                                 {fish != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="fish"/></div>
-                                    <div>&nbsp;- {fish} g</div>
+                                    <div>&nbsp;• {fish} g</div>
                                 </div>
                                 }
 
                                 {lamb != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="lamb"/></div>
-                                    <div>&nbsp;- {lamb} g</div>
+                                    <div>&nbsp;• {lamb} g</div>
                                 </div>
                                 }
 
                                 {milk != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="milk"/></div>
-                                    <div>&nbsp;- {milk} l</div>
+                                    <div>&nbsp;• {milk} l</div>
                                 </div>
                                 }
 
                                 {pork != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="pork"/></div>
-                                    <div>&nbsp;- {pork} g</div>
+                                    <div>&nbsp;• {pork} g</div>
                                 </div>
                                 }
 
@@ -611,42 +612,42 @@ class FoodprintStep5 extends Component {
                                 {bread != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="bread"/></div>
-                                    <div>&nbsp;- {bread} g</div>
+                                    <div>&nbsp;• {bread} g</div>
                                 </div>
                                 }
 
                                 {cornflour != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="corn flour"/></div>
-                                    <div>&nbsp;- {cornflour} g</div>
+                                    <div>&nbsp;• {cornflour} g</div>
                                 </div>
                                 }
 
                                 {oatmeal != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="oatmeal"/></div>
-                                    <div>&nbsp;- {oatmeal} g</div>
+                                    <div>&nbsp;• {oatmeal} g</div>
                                 </div>
                                 }
 
                                 {otherlegumes != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="other legumes"/></div>
-                                    <div>&nbsp;- {otherlegumes} g</div>
+                                    <div>&nbsp;• {otherlegumes} g</div>
                                 </div>
                                 }
 
                                 {peas != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="peas"/></div>
-                                    <div>&nbsp;- {peas} g</div>
+                                    <div>&nbsp;• {peas} g</div>
                                 </div>
                                 }
 
                                 {rice != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="rice"/></div>
-                                    <div>&nbsp;- {rice} g</div>
+                                    <div>&nbsp;• {rice} g</div>
                                 </div>
                                 }
 
@@ -659,91 +660,91 @@ class FoodprintStep5 extends Component {
                                 {tofu != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="tofu"/></div>
-                                    <div>&nbsp;- {tofu} g</div>
+                                    <div>&nbsp;• {tofu} g</div>
                                 </div>
                                 }
 
                                 {soymilk != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="soymilk"/></div>
-                                    <div>&nbsp;- {soymilk} l</div>
+                                    <div>&nbsp;• {soymilk} l</div>
                                 </div>
                                 }
 
                                 {coffee != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="coffee"/></div>
-                                    <div>&nbsp;- {coffee}</div>
+                                    <div>&nbsp;• {coffee}</div>
                                 </div>
                                 }
 
                                 {darkchocolate != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="dark chocolate"/></div>
-                                    <div>&nbsp;- {darkchocolate} g</div>
+                                    <div>&nbsp;• {darkchocolate} g</div>
                                 </div>
                                 }
 
                                 {beer != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="beer"/></div>
-                                    <div>&nbsp;- {beer} l</div>
+                                    <div>&nbsp;• {beer} l</div>
                                 </div>
                                 }
 
                                 {wine != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="wine"/></div>
-                                    <div>&nbsp;- {wine} l</div>
+                                    <div>&nbsp;• {wine} l</div>
                                 </div>
                                 }
 
                                 {oliveoil != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="olive oil"/></div>
-                                    <div>&nbsp;- {oliveoil} l</div>
+                                    <div>&nbsp;• {oliveoil} l</div>
                                 </div>
                                 }
 
                                 {palmoil != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="palm oil"/></div>
-                                    <div>&nbsp;- {palmoil} l</div>
+                                    <div>&nbsp;• {palmoil} l</div>
                                 </div>
                                 }
 
                                 {rapeseedoil != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="rapeseed oil"/></div>
-                                    <div>&nbsp;- {rapeseedoil} l</div>
+                                    <div>&nbsp;• {rapeseedoil} l</div>
                                 </div>
                                 }
 
                                 {soybeanoil != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="soybean oil"/></div>
-                                    <div>&nbsp;- {soybeanoil} l</div>
+                                    <div>&nbsp;• {soybeanoil} l</div>
                                 </div>
                                 }
 
                                 {sunfloweroil != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="sunflower oil"/></div>
-                                    <div>&nbsp;- {sunfloweroil} l</div>
+                                    <div>&nbsp;• {sunfloweroil} l</div>
                                 </div>
                                 }
 
                                 {beetsugar != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="beet sugar"/></div>
-                                    <div>&nbsp;- {beetsugar} g</div>
+                                    <div>&nbsp;• {beetsugar} g</div>
                                 </div>
                                 }
 
                                 {canesugar != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="cane sugar"/></div>
-                                    <div>&nbsp;- {canesugar} g</div>
+                                    <div>&nbsp;• {canesugar} g</div>
                                 </div>
                                 }
 
@@ -774,7 +775,7 @@ class FoodprintStep5 extends Component {
                                 <div className="topthree-title">💀 TOP 3</div>        
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxCo2}/> </div> 
-                                    <div>&nbsp;- {foodWithMaxCo2Value}</div>
+                                    <div>&nbsp;• {foodWithMaxCo2Value}</div>
                                     {maxCo2Measure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -786,13 +787,13 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling co2-color" style={{width: maxCo2Percentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{maxCo2Percentage}%</div>
-                                        <div>&nbsp;- {maxCo2Value} kg of CO2</div>
+                                        <div>&nbsp;• {maxCo2Value} kg of CO2</div>
                                     </div>
                                 </div>
 
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithSecondMaxCo2}/> </div> 
-                                    <div>&nbsp;- {foodWithSecondMaxCo2Value}</div>
+                                    <div>&nbsp;• {foodWithSecondMaxCo2Value}</div>
                                     {secondMaxCo2Measure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -804,13 +805,13 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling co2-color" style={{width: secondMaxCo2Percentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{secondMaxCo2Percentage}%</div>
-                                        <div>&nbsp;- {secondMaxCo2Value} kg of CO2</div>
+                                        <div>&nbsp;• {secondMaxCo2Value} kg of CO2</div>
                                     </div>
                                 </div>
 
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithThirdMaxCo2}/> </div> 
-                                    <div>&nbsp;- {foodWithThirdMaxCo2Value}</div>
+                                    <div>&nbsp;• {foodWithThirdMaxCo2Value}</div>
                                     {thirdMaxCo2Measure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -822,7 +823,7 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling co2-color" style={{width: thirdMaxCo2Percentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{thirdMaxCo2Percentage}%</div>
-                                        <div>&nbsp;- {thirdMaxCo2Value} kg of CO2</div>
+                                        <div>&nbsp;• {thirdMaxCo2Value} kg of CO2</div>
                                     </div>
                                 </div>
                             </div>
@@ -839,7 +840,7 @@ class FoodprintStep5 extends Component {
                                 <div className="topthree-title">💀 TOP 3</div>        
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxWater}/> </div> 
-                                    <div>&nbsp;- {foodWithMaxWaterValue}</div>
+                                    <div>&nbsp;• {foodWithMaxWaterValue}</div>
                                     {maxWaterMeasure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -851,13 +852,13 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling water-color" style={{width: maxWaterPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{maxWaterPercentage}%</div>
-                                        <div>&nbsp;- {maxWaterValue} l of water</div>
+                                        <div>&nbsp;• {maxWaterValue} l of water</div>
                                     </div>
                                 </div>
                                 
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithSecondMaxWater}/> </div> 
-                                    <div>&nbsp;- {foodWithSecondMaxWaterValue}</div>
+                                    <div>&nbsp;• {foodWithSecondMaxWaterValue}</div>
                                     {secondMaxWaterMeasure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -869,13 +870,13 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling water-color" style={{width: secondMaxWaterPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{secondMaxWaterPercentage}%</div>
-                                        <div>&nbsp;- {secondMaxWaterValue} l of water</div>
+                                        <div>&nbsp;• {secondMaxWaterValue} l of water</div>
                                     </div>
                                 </div>
 
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithThirdMaxWater}/> </div> 
-                                    <div>&nbsp;- {foodWithThirdMaxWaterValue}</div>
+                                    <div>&nbsp;• {foodWithThirdMaxWaterValue}</div>
                                     {thirdMaxWaterMeasure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -887,7 +888,7 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling water-color" style={{width: thirdMaxWaterPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{thirdMaxWaterPercentage}%</div>
-                                        <div>&nbsp;- {thirdMaxWaterValue} l of water</div>
+                                        <div>&nbsp;• {thirdMaxWaterValue} l of water</div>
                                     </div>
                                 </div>
                             </div>
@@ -904,7 +905,7 @@ class FoodprintStep5 extends Component {
                                 <div className="topthree-title">💀 TOP 3</div>        
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxLand}/> </div> 
-                                    <div>&nbsp;- {foodWithMaxLandValue}</div>
+                                    <div>&nbsp;• {foodWithMaxLandValue}</div>
                                     {maxLandMeasure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -916,13 +917,13 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling land-color" style={{width: maxLandPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{maxLandPercentage}%</div>
-                                        <div>&nbsp;- {maxLandValue} sqm</div>
+                                        <div>&nbsp;• {maxLandValue} sqm</div>
                                     </div>
                                 </div>
                                 
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithSecondMaxLand}/> </div> 
-                                    <div>&nbsp;- {foodWithSecondMaxLandValue}</div>
+                                    <div>&nbsp;• {foodWithSecondMaxLandValue}</div>
                                     {secondMaxLandMeasure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -934,13 +935,13 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling land-color" style={{width: secondMaxLandPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{secondMaxLandPercentage}%</div>
-                                        <div>&nbsp;- {secondMaxLandValue} sqm</div>
+                                        <div>&nbsp;• {secondMaxLandValue} sqm</div>
                                     </div>
                                 </div>
 
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithThirdMaxLand}/> </div> 
-                                    <div>&nbsp;- {foodWithThirdMaxLandValue}</div>
+                                    <div>&nbsp;• {foodWithThirdMaxLandValue}</div>
                                     {thirdMaxLandMeasure === "grams" &&
                                         <div>&nbsp;g</div>
                                     }
@@ -952,7 +953,7 @@ class FoodprintStep5 extends Component {
                                     <div className="pollution-impact-filling land-color" style={{width: thirdMaxLandPercentage+"%"}}></div>
                                     <div className="polluting-impact-values">
                                         <div className="polluting-impact-percentage">{thirdMaxLandPercentage}%</div>
-                                        <div>&nbsp;- {thirdMaxLandValue} sqm</div>
+                                        <div>&nbsp;• {thirdMaxLandValue} sqm</div>
                                     </div>
                                 </div>
                             </div>
@@ -966,22 +967,24 @@ class FoodprintStep5 extends Component {
                         <div className="weeklyfoodprint-title">Reduce your weekly foodprint</div>
                         <div className="weeklyfoodprint-support">We show alternatives based on same nutritional values</div>
 
-                        <div className="polluting-impact-selection">
+                        <div className="foodprint-solution">
                             
-                            <div> <Icon icon={foodWithMaxCo2}/> </div> 
-                            <div>&nbsp;- {foodWithMaxCo2Value}</div>
+                            <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxCo2}/> </div> 
+                            <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxCo2Value}</div>
                             {maxCo2Measure === "grams" &&
-                                <div>&nbsp;g</div>
+                                <div className="foodprint-alternative-title">&nbsp;g</div>
                             }
                             {maxCo2Measure === "liters" &&
-                                <div>&nbsp;l</div>
+                                <div className="foodprint-alternative-title">&nbsp;l</div>
                             }
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
                             <div>
 
-                                {maxC02alternativename1 !== "none" &&                         
+                                {maxC02alternativename1 !== "none" &&  
+                                <div className="alternative-recommended"> 
+                                <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div>                       
                                 <Alternative
                                     alternative={'alternative1'}
                                     foodprint="true"
@@ -990,9 +993,11 @@ class FoodprintStep5 extends Component {
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
                                 />
+                                </div>
                                 }
 
-                                {maxC02alternativename2 !== "none" &&                         
+                                {maxC02alternativename2 !== "none" &&    
+                                <div className="alternative-not-rec">                     
                                 <Alternative
                                     alternative={'alternative2'}
                                     foodprint="true"
@@ -1001,9 +1006,11 @@ class FoodprintStep5 extends Component {
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
                                 />
+                                </div>
                                 }
 
-                                {maxC02alternativename3 !== "none" &&                         
+                                {maxC02alternativename3 !== "none" &&  
+                                <div className="alternative-not-rec">                       
                                 <Alternative
                                     alternative={'alternative3'}
                                     foodprint="true"
@@ -1012,9 +1019,11 @@ class FoodprintStep5 extends Component {
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
                                 />
+                                </div>
                                 }
 
-                                {maxC02alternativename4 !== "none" &&                         
+                                {maxC02alternativename4 !== "none" &&   
+                                <div className="alternative-not-rec">                      
                                 <Alternative
                                     alternative={'alternative4'}
                                     foodprint="true"
@@ -1023,6 +1032,7 @@ class FoodprintStep5 extends Component {
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
                                 />
+                                </div>
                                 }
 
                             </div>  
@@ -1032,22 +1042,24 @@ class FoodprintStep5 extends Component {
 
                         {foodWithMaxWater !== foodWithMaxCo2 &&
                                 
-                        <div className="polluting-impact-selection">
+                        <div className="foodprint-solution">
                             
-                            <div> <Icon icon={foodWithMaxWater}/> </div> 
-                            <div>&nbsp;- {foodWithMaxWaterValue}</div>
+                            <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxWater}/> </div> 
+                            <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxWaterValue}</div>
                             {maxWaterMeasure === "grams" &&
-                                <div>&nbsp;g</div>
+                                <div className="foodprint-alternative-title">&nbsp;g</div>
                             }
                             {maxWaterMeasure === "liters" &&
-                                <div>&nbsp;l</div>
+                                <div className="foodprint-alternative-title">&nbsp;l</div>
                             }
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
                             <div>
 
-                                {maxWateralternativename1 !== "none" &&                         
+                                {maxWateralternativename1 !== "none" &&    
+                                <div className="alternative-recommended"> 
+                                <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div>                       
                                 <Alternative
                                     alternative={'alternative1'}
                                     foodprint="true"
@@ -1056,9 +1068,11 @@ class FoodprintStep5 extends Component {
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
                                 />
+                                </div>
                                 }
 
-                                {maxWateralternativename2 !== "none" &&                         
+                                {maxWateralternativename2 !== "none" &&   
+                                <div className="alternative-not-rec">                      
                                 <Alternative
                                     alternative={'alternative2'}
                                     foodprint="true"
@@ -1067,9 +1081,11 @@ class FoodprintStep5 extends Component {
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
                                 />
+                                </div>
                                 }
 
-                                {maxWateralternativename3 !== "none" &&                         
+                                {maxWateralternativename3 !== "none" &&  
+                                <div className="alternative-not-rec">                       
                                 <Alternative
                                     alternative={'alternative3'}
                                     foodprint="true"
@@ -1078,9 +1094,11 @@ class FoodprintStep5 extends Component {
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
                                 />
+                                </div>
                                 }
 
-                                {maxWateralternativename4 !== "none" &&                         
+                                {maxWateralternativename4 !== "none" &&    
+                                <div className="alternative-not-rec">                     
                                 <Alternative
                                     alternative={'alternative4'}
                                     foodprint="true"
@@ -1089,6 +1107,7 @@ class FoodprintStep5 extends Component {
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
                                 />
+                                </div>
                                 }
 
                             </div>  
@@ -1100,22 +1119,24 @@ class FoodprintStep5 extends Component {
 
                         {foodWithMaxLand !== foodWithMaxCo2 && foodWithMaxLand !== foodWithMaxWater &&
 
-                        <div className="polluting-impact-selection">
+                        <div className="foodprint-solution">
                             
-                            <div> <Icon icon={foodWithMaxLand}/> </div> 
-                            <div>&nbsp;- {foodWithMaxLandValue}</div>
+                            <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxLand}/> </div> 
+                            <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxLandValue}</div>
                             {maxLandMeasure === "grams" &&
-                                <div>&nbsp;g</div>
+                                <div className="foodprint-alternative-title">&nbsp;g</div>
                             }
                             {maxLandMeasure === "liters" &&
-                                <div>&nbsp;l</div>
+                                <div className="foodprint-alternative-title">&nbsp;l</div>
                             }
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
                             <div>
 
-                                {maxLandalternativename1 !== "none" &&                         
+                                {maxLandalternativename1 !== "none" &&    
+                                <div className="alternative-recommended"> 
+                                <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div>                       
                                 <Alternative
                                     alternative={'alternative1'}
                                     foodprint="true"
@@ -1124,9 +1145,11 @@ class FoodprintStep5 extends Component {
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
                                 />
+                                </div>
                                 }
 
-                                {maxLandalternativename2 !== "none" &&                         
+                                {maxLandalternativename2 !== "none" &&   
+                                <div className="alternative-not-rec">                      
                                 <Alternative
                                     alternative={'alternative2'}
                                     foodprint="true"
@@ -1135,9 +1158,11 @@ class FoodprintStep5 extends Component {
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
                                 />
+                                </div>
                                 }
 
-                                {maxLandalternativename3 !== "none" &&                         
+                                {maxLandalternativename3 !== "none" && 
+                                <div className="alternative-not-rec">                        
                                 <Alternative
                                     alternative={'alternative3'}
                                     foodprint="true"
@@ -1146,9 +1171,11 @@ class FoodprintStep5 extends Component {
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
                                 />
+                                </div>
                                 }
 
-                                {maxLandalternativename4 !== "none" &&                         
+                                {maxLandalternativename4 !== "none" &&      
+                                <div className="alternative-not-rec">                   
                                 <Alternative
                                     alternative={'alternative4'}
                                     foodprint="true"
@@ -1157,6 +1184,7 @@ class FoodprintStep5 extends Component {
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
                                 />
+                                </div>
                                 }
 
                             </div>  

@@ -3,8 +3,8 @@ import '../App.css';
 import Header from '../components/Header';
 import Categories from '../components/Categories'
 import FBShare from '../components/FBShare';
-import Intro from '../components/Intro';
-import Cover from '../components/Cover';
+// import Intro from '../components/Intro';
+// import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
 import Footer from '../components/Footer';
 import corona from '../images/corona.png';

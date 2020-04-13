@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import animalpng from '../images/animal.png';
 import fruitspng from '../images/fruits.png';
 import grainspng from '../images/grains.png';
-import otherfoodpng from '../images/otherfood.png';
+// import otherfoodpng from '../images/otherfood.png';
 import toiletpaper from '../images/toiletpaper.png';
 
 class Categories extends Component {
@@ -72,7 +72,7 @@ class Categories extends Component {
     let title = 'section-title form-title';
     let support = 'form-support';
     let formimpactsection = "form-input-section";
-    let buttonposition  = "form-button-position-home";
+    // let buttonposition  = "form-button-position-home";
     let alignment = "";
     switch(this.props.page) {
       case "Impact":
@@ -81,7 +81,7 @@ class Categories extends Component {
         title = 'page-title';
         support = 'hide';
         formimpactsection = 'form-input-section-impactpage';
-        buttonposition  = "form-button-position-impact";
+        // buttonposition  = "form-button-position-impact";
         alignment = 'page';
         break;
       default:
@@ -90,7 +90,7 @@ class Categories extends Component {
         title = 'section-title form-title category-titleandsupport-home';
         support = 'form-support category-titleandsupport-home';
         formimpactsection = "form-input-section";
-        buttonposition  = "form-button-position-home";
+        // buttonposition  = "form-button-position-home";
         alignment = 'hide';
     }
 
