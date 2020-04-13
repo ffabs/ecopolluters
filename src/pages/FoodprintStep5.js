@@ -1030,7 +1030,8 @@ class FoodprintStep5 extends Component {
                         </div>
 
 
-
+                        {foodWithMaxWater !== foodWithMaxCo2 &&
+                                
                         <div className="polluting-impact-selection">
                             
                             <div> <Icon icon={foodWithMaxWater}/> </div> 
@@ -1094,8 +1095,10 @@ class FoodprintStep5 extends Component {
 
                         </div>
 
+                        }
 
 
+                        {foodWithMaxLand !== foodWithMaxCo2 && foodWithMaxLand !== foodWithMaxWater &&
 
                         <div className="polluting-impact-selection">
                             
@@ -1159,6 +1162,7 @@ class FoodprintStep5 extends Component {
                             </div>  
 
                         </div>
+                        }
 
 
                         <FBShare />
