@@ -26,9 +26,9 @@ class Header extends Component {
     let science = '';
     let about= '';
     switch(this.props.page) {
-      case "Impact":
-        impact += ' impact-button-impactpage';
-        break;
+      // case "Impact":
+      //   impact += ' impact-button-impactpage';
+      //   break;
       case "Science":
         science += ' current';
         break;
@@ -44,6 +44,7 @@ class Header extends Component {
         // impact += ' white';
         science += ' white';
         about += ' white';
+        impact += ' impact-button-impactpage';
         break;
       default:
         impact = 'impact-button menu-impact-button';
@@ -64,8 +65,8 @@ class Header extends Component {
               </Link>
             </div>
             <div className="menu">
-              <div className="desktop"><Link to="/foodprint/step0"><button className={impact}>FOODPRINT</button></Link></div>
-              <div className="desktop"><Link to="/impact"><button className={impact}>CALCULATE YOUR IMPACT</button></Link></div>
+              <div className="desktop"><Link to="/foodprint/step0"><button className={impact}>FIND OUT YOUR FOODPRINT</button></Link></div>
+              <div className="desktop"><Link to="/impact"><button className={impact}>FOOD DETAILS</button></Link></div>
               <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFIC SOURCES</li></Link></div>
               <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>
             </div>  

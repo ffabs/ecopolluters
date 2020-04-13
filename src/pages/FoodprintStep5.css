@@ -54,7 +54,9 @@
 .category-selected {
     background-color: #BB6BD9;
     width: 100%;
-    margin: 1px;
+    /* margin: 1px; */
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
     padding: 20px;
 }
 
@@ -64,6 +66,7 @@
 
     .categories-selected-right {
         border-radius: 0px 10px 0px 0px;
+        border-right: none;
     }
 
         .category-selected-title {
@@ -174,7 +177,7 @@
         .polluting-impact-selection {
             display: flex;
             align-items: baseline;
-            padding: 20px 20px 0px 20px;
+            padding: 25px 20px 0px 20px;
         }
 
         .polluting-impact {
@@ -192,6 +195,8 @@
                 /* background: #FFECB3; */
                 border-radius: 15px;
                 /* position: absolute; */
+                min-width: 7%;
+                width: 7%;
             }
 
         .polluting-impact-values {
@@ -204,9 +209,23 @@
             color: #666666;
             justify-content: center;
             /* position: relative; */
-            /* margin-top: 2px; */
+            margin-top: 2px;
         }
 
         .polluting-impact-percentage {
             font-weight: bold;
         }
+
+.weeklyfoodprint-support {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+    .arrow-desktop {
+        height: 44px;
+    }

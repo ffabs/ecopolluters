@@ -6,7 +6,6 @@ import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import fruitspng from '../images/fruits.png';
 import FoodprintForm from '../components/FoodprintForm';
-import closewizard from '../images/closewizard.png';
 import {Link, Redirect} from 'react-router-dom';
 
 function initializeReactGA() {
@@ -29,9 +28,6 @@ class FoodprintStep1 extends Component {
                 }
 
                     <Header page={'Foodprint'} logoColor="white"/>
-                    <Link to="/">
-                        <img className="closewizard" src={closewizard} />
-                    </Link>
 
                     <div className="foodprint-alignment">
 

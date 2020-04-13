@@ -5,7 +5,6 @@ import './Fooprint.css';
 import './FoodprintStep5.css';
 import ReactGA from 'react-ga';
 import Header from '../components/Header';
-import closewizard from '../images/closewizard.png';
 import {Link, Redirect} from 'react-router-dom';
 import Icon from '../components/Icon';
 import Data from '../impact-data.json';
@@ -13,6 +12,8 @@ import FBShare from '../components/FBShare';
 import CO2 from '../components/CO2';
 import Land from '../components/Land';
 import Water from '../components/Water';
+import arrowDesktop from '../images/arrowDesktop.png';
+import Alternative from '../components/Alternative';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -20,6 +21,143 @@ function initializeReactGA() {
 }
   
 class FoodprintStep5 extends Component {
+
+    checkCategory(foodName) {
+        switch(foodName) {
+            case "apples":
+                return("fruits");
+            break;
+            case "bananas":
+                return("fruits");
+            break;
+            case "berries and grapes":
+                return("fruits");
+            break;
+            case "brassicas":
+                return("fruits");
+            break;
+            case "cassavas":
+                return("fruits");
+            break;
+            case "citrus fruits":
+                return("fruits");
+            break;
+            case "groundnuts":
+                return("fruits");
+            break;
+            case "nuts":
+                return("fruits");
+            break;
+            case "onions":
+                return("fruits");
+            break;
+            case "potatoes":
+                return("fruits");
+            break;
+            case "root vegetables":
+                return("fruits");
+            break;
+            case "tomatoes":
+                return("fruits");
+            break;
+            case "other fruits":
+                return("fruits");
+            break;
+            case "other vegetables":
+                return("fruits");
+            break;
+
+            case "beef":
+                return("animal");
+            break;
+            case "cheese":
+                return("animal");
+            break;
+            case "chicken":
+                return("animal");
+            break;
+            case "crustaceans":
+                return("animal");
+            break;
+            case "eggs":
+                return("animal");
+            break;
+            case "fish":
+                return("animal");
+            break;
+            case "lamb":
+                return("animal");
+            break;
+            case "milk":
+                return("animal");
+            break;
+            case "pork":
+                return("animal");
+            break;
+
+            case "bread":
+                return("grains");
+            break;
+            case "corn flour":
+                return("grains");
+            break;
+            case "oatmeal":
+                return("grains");
+            break;
+            case "other legumes":
+                return("grains");
+            break;
+            case "peas":
+                return("grains");
+            break;
+            case "rice":
+                return("grains");
+            break;
+
+            case "tofu":
+                return("otherfood");
+            break;
+            case "soymilk":
+                return("otherfood");
+            break;
+            case "coffee":
+                return("otherfood");
+            break;
+            case "dark chocolate":
+                return("otherfood");
+            break;
+            case "beer":
+                return("otherfood");
+            break;
+            case "wine":
+                return("otherfood");
+            break;
+            case "olive oil":
+                return("otherfood");
+            break;
+            case "palm oil":
+                return("otherfood");
+            break;
+            case "rapeseed oil":
+                return("otherfood");
+            break;
+            case "soybean oil":
+                return("otherfood");
+            break;
+            case "sunflower oil":
+                return("otherfood");
+            break;
+            case "beet sugar":
+                return("otherfood");
+            break;
+            case "cane sugar":
+                return("otherfood");
+            break;
+
+            default:
+                return("otherfood");
+          }
+      };
 
 
     render() {
@@ -78,12 +216,8 @@ class FoodprintStep5 extends Component {
                         "bread", "corn flour", "oatmeal", "other legumes", "peas", "rice",
                         "tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
 
-        let foodMeasure = ["item", "item", "grams", "grams", "grams", "grams", "grams", "grams", "grams", "grams", "grams", "item", "grams", "grams",
-                        "grams", "grams", "grams", "grams", "item", "grams", "grams", "liters", "grams",
-                        "grams", "grams", "grams", "grams", "grams", "grams",
-                        "grams", "liters", "item", "grams", "liters", "liters", "liters", "liters", "liters", "liters", "liters", "grams", "grams"];
-
         let selected = 0;
+
         for (let i = 0; i < Foodprint.length; i++) {
             if (Foodprint[i] != "0") {
                 selected += 1;
@@ -104,88 +238,35 @@ class FoodprintStep5 extends Component {
         let totalCarbs = 0;
         let totalFats = 0;
 
-        //fruits
-        let fruitsData = ["apples", "bananas", "berries and grapes", "brassicas", "cassavas", "citrus fruits", "groundnuts", "nuts", "onions", "potatoes", "root vegetables", "tomatoes", "other fruits", "other vegetables"];
-        let fruitsFoodprint = [apples, bananas, berriesandgrapes, brassicas, cassavas, citrusfruits, groundnuts, nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables];
-        for (let j = 0; j < fruitsFoodprint.length; j++) {
-            if (fruitsFoodprint[j] != "0") {
-                totalCo2 += Data.fruits[fruitsData[j]].co2 * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-                Co2Array.push(Data.fruits[fruitsData[j]].co2 * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit);
-                FoodSelectedC02Array.push(fruitsData[j]);
-                totalWater += Data.fruits[fruitsData[j]].water * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-                WaterArray.push(Data.fruits[fruitsData[j]].water * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit);
-                FoodSelectedWaterArray.push(fruitsData[j]);
-                totalLand += Data.fruits[fruitsData[j]].land * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-                LandArray.push(Data.fruits[fruitsData[j]].land * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit);
-                FoodSelectedLandArray.push(fruitsData[j]);
-                totalCalories += Data.fruits[fruitsData[j]]['nutritional values'].calories * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-                totalProteins += Data.fruits[fruitsData[j]]['nutritional values'].proteins * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-                totalCarbs += Data.fruits[fruitsData[j]]['nutritional values'].carbs * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-                totalFats += Data.fruits[fruitsData[j]]['nutritional values'].fats * fruitsFoodprint[j] * Data.fruits[fruitsData[j]].unit;
-            }
-        }
+        for (let a = 0; a < Foodprint.length; a++) {
 
-        //animal
-        let animalData = ["beef", "cheese", "chicken", "crustaceans", "eggs", "fish", "lamb", "milk", "pork"];
-        let animalFoodprint = [beef, cheese, chicken, crustaceans, eggs, fish, lamb, milk, pork];
-        for (let z = 0; z < animalFoodprint.length; z++) {
-            if (animalFoodprint[z] != "0") {
-                totalCo2 += Data.animal[animalData[z]].co2 * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-                Co2Array.push(Data.animal[animalData[z]].co2 * animalFoodprint[z] * Data.animal[animalData[z]].unit);
-                FoodSelectedC02Array.push(animalData[z]);
-                totalWater += Data.animal[animalData[z]].water * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-                WaterArray.push(Data.animal[animalData[z]].water * animalFoodprint[z] * Data.animal[animalData[z]].unit);
-                FoodSelectedWaterArray.push(animalData[z]);
-                totalLand += Data.animal[animalData[z]].land * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-                LandArray.push(Data.animal[animalData[z]].land * animalFoodprint[z] * Data.animal[animalData[z]].unit);
-                FoodSelectedLandArray.push(animalData[z]);
-                totalCalories += Data.animal[animalData[z]]['nutritional values'].calories * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-                totalProteins += Data.animal[animalData[z]]['nutritional values'].proteins * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-                totalCarbs += Data.animal[animalData[z]]['nutritional values'].carbs * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-                totalFats += Data.animal[animalData[z]]['nutritional values'].fats * animalFoodprint[z] * Data.animal[animalData[z]].unit;
-            }
-        }
+            let aCategory = this.checkCategory(foodData[a]);
+            let aGrams = Foodprint[a] * Data[aCategory][foodData[a]].unit;
 
-        //grains
-        let grainsData = ["bread", "corn flour", "oatmeal", "other legumes", "peas", "rice"];
-        let grainsFoodprint = [bread, cornflour, oatmeal, otherlegumes, peas, rice];
-        for (let q = 0; q < grainsFoodprint.length; q++) {
-            if (grainsFoodprint[q] != "0") {
-                totalCo2 += Data.grains[grainsData[q]].co2 * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-                Co2Array.push(Data.grains[grainsData[q]].co2 * grainsFoodprint[q] * Data.grains[grainsData[q]].unit);
-                FoodSelectedC02Array.push(grainsData[q]);
-                totalWater += Data.grains[grainsData[q]].water * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-                WaterArray.push(Data.grains[grainsData[q]].water * grainsFoodprint[q] * Data.grains[grainsData[q]].unit);
-                FoodSelectedWaterArray.push(grainsData[q]);
-                totalLand += Data.grains[grainsData[q]].land * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-                LandArray.push(Data.grains[grainsData[q]].land * grainsFoodprint[q] * Data.grains[grainsData[q]].unit);
-                FoodSelectedLandArray.push(grainsData[q]);
-                totalCalories += Data.grains[grainsData[q]]['nutritional values'].calories * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-                totalProteins += Data.grains[grainsData[q]]['nutritional values'].proteins * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-                totalCarbs += Data.grains[grainsData[q]]['nutritional values'].carbs * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-                totalFats += Data.grains[grainsData[q]]['nutritional values'].fats * grainsFoodprint[q] * Data.grains[grainsData[q]].unit;
-            }
-        }
+            let aCO2 = Data[aCategory][foodData[a]].co2 * aGrams;
+            totalCo2 += aCO2;
+            Co2Array.push(aCO2);
+            FoodSelectedC02Array.push(foodData[a]);
 
-        //otherfood
-        let otherfoodData = ["tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
-        let otherfoodFoodprint = [tofu, soymilk, coffee, darkchocolate, beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar];
-        for (let p = 0; p < otherfoodFoodprint.length; p++) {
-            if (otherfoodFoodprint[p] != "0") {
-                totalCo2 += Data.otherfood[otherfoodData[p]].co2 * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-                Co2Array.push(Data.otherfood[otherfoodData[p]].co2 * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit);
-                FoodSelectedC02Array.push(otherfoodData[p]);
-                totalWater += Data.otherfood[otherfoodData[p]].water * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-                WaterArray.push(Data.otherfood[otherfoodData[p]].water * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit);
-                FoodSelectedWaterArray.push(otherfoodData[p]);
-                totalLand += Data.otherfood[otherfoodData[p]].land * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-                LandArray.push(Data.otherfood[otherfoodData[p]].land * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit);
-                FoodSelectedLandArray.push(otherfoodData[p]);
-                totalCalories += Data.otherfood[otherfoodData[p]]['nutritional values'].calories * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-                totalProteins += Data.otherfood[otherfoodData[p]]['nutritional values'].proteins * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-                totalCarbs += Data.otherfood[otherfoodData[p]]['nutritional values'].carbs * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-                totalFats += Data.otherfood[otherfoodData[p]]['nutritional values'].fats * otherfoodFoodprint[p] * Data.otherfood[otherfoodData[p]].unit;
-            }
+            let aWater = Data[aCategory][foodData[a]].water * aGrams;
+            totalWater += aWater;
+            WaterArray.push(aWater);
+            FoodSelectedWaterArray.push(foodData[a]);
+
+            let aLand = Data[aCategory][foodData[a]].land * aGrams;
+            totalLand += aLand;
+            LandArray.push(aLand);
+            FoodSelectedLandArray.push(foodData[a]);
+
+            let aCalories = Data[aCategory][foodData[a]]['nutritional values'].calories * aGrams;
+            totalCalories += aCalories;
+            let aProteins = Data[aCategory][foodData[a]]['nutritional values'].proteins * aGrams;
+            totalProteins += aProteins;
+            let aCarbs = Data[aCategory][foodData[a]]['nutritional values'].carbs * aGrams;
+            totalCarbs += aCarbs;
+            let aFats = Data[aCategory][foodData[a]]['nutritional values'].fats * aGrams;
+            totalFats += aFats;
+
         }
 
 
@@ -198,7 +279,14 @@ class FoodprintStep5 extends Component {
         let foodWithMaxCo2 = FoodSelectedC02Array[maxCo2Index];
         let foodWithMaxCo2Value = Foodprint[foodData.indexOf(foodWithMaxCo2)];
         let maxCo2Percentage = (maxCo2Value / totalCo2 * 100).toFixed(0);
-        let maxCo2Measure = foodMeasure[foodData.indexOf(foodWithMaxCo2)];
+        let maxCO2Category = this.checkCategory(foodWithMaxCo2);
+        let maxCo2Measure = Data[maxCO2Category][foodWithMaxCo2].measure;
+        let maxCO2Grams = foodWithMaxCo2Value * Data[maxCO2Category][foodWithMaxCo2].unit;
+        let maxCO2Optimise = Data[maxCO2Category][foodWithMaxCo2].optimise;
+        let maxC02alternativename1 = Data[maxCO2Category][foodWithMaxCo2].alternative1.name;
+        let maxC02alternativename2 = Data[maxCO2Category][foodWithMaxCo2].alternative2.name;
+        let maxC02alternativename3 = Data[maxCO2Category][foodWithMaxCo2].alternative3.name;
+        let maxC02alternativename4 = Data[maxCO2Category][foodWithMaxCo2].alternative4.name;
         
         //second max Co2
         Co2Array.splice(maxCo2Index, 1);
@@ -208,7 +296,8 @@ class FoodprintStep5 extends Component {
         let foodWithSecondMaxCo2 = FoodSelectedC02Array[secondMaxCo2Index];
         let foodWithSecondMaxCo2Value = Foodprint[foodData.indexOf(foodWithSecondMaxCo2)];
         let secondMaxCo2Percentage = (secondMaxCo2Value / totalCo2 * 100).toFixed(0);
-        let secondMaxCo2Measure = foodMeasure[foodData.indexOf(foodWithSecondMaxCo2)];
+        let secondMaxCO2Category = this.checkCategory(foodWithSecondMaxCo2);
+        let secondMaxCo2Measure = Data[secondMaxCO2Category][foodWithSecondMaxCo2].measure;
 
         //third max Co2
         Co2Array.splice(secondMaxCo2Index, 1);
@@ -218,7 +307,8 @@ class FoodprintStep5 extends Component {
         let foodWithThirdMaxCo2 = FoodSelectedC02Array[thirdMaxCo2Index];
         let foodWithThirdMaxCo2Value = Foodprint[foodData.indexOf(foodWithThirdMaxCo2)];
         let thirdMaxCo2Percentage = (thirdMaxCo2Value / totalCo2 * 100).toFixed(0);
-        let thirdMaxCo2Measure = foodMeasure[foodData.indexOf(foodWithThirdMaxCo2)];
+        let thirdMaxCO2Category = this.checkCategory(foodWithThirdMaxCo2);
+        let thirdMaxCo2Measure = Data[thirdMaxCO2Category][foodWithThirdMaxCo2].measure;
 
 
         //Water
@@ -230,7 +320,14 @@ class FoodprintStep5 extends Component {
         let foodWithMaxWater = FoodSelectedWaterArray[maxWaterIndex];
         let foodWithMaxWaterValue = Foodprint[foodData.indexOf(foodWithMaxWater)];
         let maxWaterPercentage = (maxWaterValue / totalWater * 100).toFixed(0);
-        let maxWaterMeasure = foodMeasure[foodData.indexOf(foodWithMaxWater)];
+        let maxWaterCategory = this.checkCategory(foodWithMaxWater);
+        let maxWaterMeasure = Data[maxWaterCategory][foodWithMaxWater].measure;
+        let maxWaterGrams = foodWithMaxWaterValue * Data[maxWaterCategory][foodWithMaxWater].unit;
+        let maxWaterOptimise = Data[maxWaterCategory][foodWithMaxWater].optimise;
+        let maxWateralternativename1 = Data[maxWaterCategory][foodWithMaxWater].alternative1.name;
+        let maxWateralternativename2 = Data[maxWaterCategory][foodWithMaxWater].alternative2.name;
+        let maxWateralternativename3 = Data[maxWaterCategory][foodWithMaxWater].alternative3.name;
+        let maxWateralternativename4 = Data[maxWaterCategory][foodWithMaxWater].alternative4.name;
 
         //second max Water
         WaterArray.splice(maxWaterIndex, 1);
@@ -240,7 +337,8 @@ class FoodprintStep5 extends Component {
         let foodWithSecondMaxWater = FoodSelectedWaterArray[secondMaxWaterIndex];
         let foodWithSecondMaxWaterValue = Foodprint[foodData.indexOf(foodWithSecondMaxWater)];
         let secondMaxWaterPercentage = (secondMaxWaterValue / totalWater * 100).toFixed(0);
-        let secondMaxWaterMeasure = foodMeasure[foodData.indexOf(foodWithSecondMaxWater)];
+        let secondMaxWaterCategory = this.checkCategory(foodWithSecondMaxWater);
+        let secondMaxWaterMeasure = Data[secondMaxWaterCategory][foodWithSecondMaxWater].measure;
 
         //third max Water
         WaterArray.splice(secondMaxWaterIndex, 1);
@@ -250,7 +348,8 @@ class FoodprintStep5 extends Component {
         let foodWithThirdMaxWater = FoodSelectedWaterArray[thirdMaxWaterIndex];
         let foodWithThirdMaxWaterValue = Foodprint[foodData.indexOf(foodWithThirdMaxWater)];
         let thirdMaxWaterPercentage = (thirdMaxWaterValue / totalWater * 100).toFixed(0);
-        let thirdMaxWaterMeasure = foodMeasure[foodData.indexOf(foodWithThirdMaxWater)];
+        let thirdMaxWaterCategory = this.checkCategory(foodWithThirdMaxWater);
+        let thirdMaxWaterMeasure = Data[thirdMaxWaterCategory][foodWithThirdMaxWater].measure;
 
 
         //Land
@@ -262,7 +361,14 @@ class FoodprintStep5 extends Component {
         let foodWithMaxLand = FoodSelectedLandArray[maxLandIndex];
         let foodWithMaxLandValue = Foodprint[foodData.indexOf(foodWithMaxLand)];
         let maxLandPercentage = (maxLandValue / totalLand * 100).toFixed(0);
-        let maxLandMeasure = foodMeasure[foodData.indexOf(foodWithMaxLand)];
+        let maxLandCategory = this.checkCategory(foodWithMaxLand);
+        let maxLandMeasure = Data[maxLandCategory][foodWithMaxLand].measure;
+        let maxLandGrams = foodWithMaxLandValue * Data[maxLandCategory][foodWithMaxLand].unit;
+        let maxLandOptimise = Data[maxLandCategory][foodWithMaxLand].optimise;
+        let maxLandalternativename1 = Data[maxLandCategory][foodWithMaxLand].alternative1.name;
+        let maxLandalternativename2 = Data[maxLandCategory][foodWithMaxLand].alternative2.name;
+        let maxLandalternativename3 = Data[maxLandCategory][foodWithMaxLand].alternative3.name;
+        let maxLandalternativename4 = Data[maxLandCategory][foodWithMaxLand].alternative4.name;
 
         //second max Land
         LandArray.splice(maxLandIndex, 1);
@@ -272,7 +378,8 @@ class FoodprintStep5 extends Component {
         let foodWithSecondMaxLand = FoodSelectedLandArray[secondMaxLandIndex];
         let foodWithSecondMaxLandValue = Foodprint[foodData.indexOf(foodWithSecondMaxLand)];
         let secondMaxLandPercentage = (secondMaxLandValue / totalLand * 100).toFixed(0);
-        let secondMaxLandMeasure = foodMeasure[foodData.indexOf(foodWithSecondMaxLand)];
+        let secondMaxLandCategory = this.checkCategory(foodWithSecondMaxLand);
+        let secondMaxLandMeasure = Data[secondMaxLandCategory][foodWithSecondMaxLand].measure;
 
         //third max Land
         LandArray.splice(secondMaxLandIndex, 1);
@@ -282,7 +389,8 @@ class FoodprintStep5 extends Component {
         let foodWithThirdMaxLand = FoodSelectedLandArray[thirdMaxLandIndex];
         let foodWithThirdMaxLandValue = Foodprint[foodData.indexOf(foodWithThirdMaxLand)];
         let thirdMaxLandPercentage = (thirdMaxLandValue / totalLand * 100).toFixed(0);
-        let thirdMaxLandMeasure = foodMeasure[foodData.indexOf(foodWithThirdMaxLand)];
+        let thirdMaxLandCategory = this.checkCategory(foodWithThirdMaxLand);
+        let thirdMaxLandMeasure = Data[thirdMaxLandCategory][foodWithThirdMaxLand].measure;
 
 
         //total nutritional values
@@ -301,9 +409,6 @@ class FoodprintStep5 extends Component {
                 }
 
                     <Header page={'Foodprint'} logoColor="white"/>
-                    <Link to="/">
-                        <img className="closewizard" src={closewizard} />
-                    </Link>
 
                     <div className="foodprint-alignment">
 
@@ -647,7 +752,7 @@ class FoodprintStep5 extends Component {
                             </div>
 
                             <div className="foodprint-nutritionalvalues">
-                                <div className="foodprint-nutritionalvalues-title">Total weekly nutritional values:</div>
+                                <div className="foodprint-nutritionalvalues-title">Total nutritional values:</div>
                                 <div>
                                     &nbsp;{totalCalories} Calories | {totalProteins} g Proteins | {totalCarbs} g Carbs | {totalFats} g Fats
                                 </div>
@@ -666,7 +771,7 @@ class FoodprintStep5 extends Component {
                                 <div className="impactcard-subtitle">Total weekly️ CO2 produced</div>
                             </div>
                             <div className="topthree-section">
-                                <div className="topthree-title">⚠️ TOP 3</div>        
+                                <div className="topthree-title">💀 TOP 3</div>        
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxCo2}/> </div> 
                                     <div>&nbsp;- {foodWithMaxCo2Value}</div>
@@ -731,7 +836,7 @@ class FoodprintStep5 extends Component {
                                 <div className="impactcard-subtitle">Total weekly️ water consumed</div>
                             </div>
                             <div className="topthree-section">
-                                <div className="topthree-title">⚠️ TOP 3</div>        
+                                <div className="topthree-title">💀 TOP 3</div>        
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxWater}/> </div> 
                                     <div>&nbsp;- {foodWithMaxWaterValue}</div>
@@ -796,7 +901,7 @@ class FoodprintStep5 extends Component {
                                 <div className="impactcard-subtitle">Total weekly️ land occupied</div>
                             </div>
                             <div className="topthree-section">
-                                <div className="topthree-title">⚠️ TOP 3</div>        
+                                <div className="topthree-title">💀 TOP 3</div>        
                                 <div className="polluting-impact-selection">
                                     <div> <Icon icon={foodWithMaxLand}/> </div> 
                                     <div>&nbsp;- {foodWithMaxLandValue}</div>
@@ -857,19 +962,211 @@ class FoodprintStep5 extends Component {
 
 
                         </div>
+
+                        <div className="weeklyfoodprint-title">Reduce your weekly foodprint</div>
+                        <div className="weeklyfoodprint-support">We show alternatives based on same nutritional values</div>
+
+                        <div className="polluting-impact-selection">
                             
+                            <div> <Icon icon={foodWithMaxCo2}/> </div> 
+                            <div>&nbsp;- {foodWithMaxCo2Value}</div>
+                            {maxCo2Measure === "grams" &&
+                                <div>&nbsp;g</div>
+                            }
+                            {maxCo2Measure === "liters" &&
+                                <div>&nbsp;l</div>
+                            }
+
+                            <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
+
+                            <div>
+
+                                {maxC02alternativename1 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative1'}
+                                    foodprint="true"
+                                    optimise={maxCO2Optimise}
+                                    type={foodWithMaxCo2}
+                                    category={maxCO2Category}
+                                    grams={maxCO2Grams}
+                                />
+                                }
+
+                                {maxC02alternativename2 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative2'}
+                                    foodprint="true"
+                                    optimise={maxCO2Optimise}
+                                    type={foodWithMaxCo2}
+                                    category={maxCO2Category}
+                                    grams={maxCO2Grams}
+                                />
+                                }
+
+                                {maxC02alternativename3 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative3'}
+                                    foodprint="true"
+                                    optimise={maxCO2Optimise}
+                                    type={foodWithMaxCo2}
+                                    category={maxCO2Category}
+                                    grams={maxCO2Grams}
+                                />
+                                }
+
+                                {maxC02alternativename4 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative4'}
+                                    foodprint="true"
+                                    optimise={maxCO2Optimise}
+                                    type={foodWithMaxCo2}
+                                    category={maxCO2Category}
+                                    grams={maxCO2Grams}
+                                />
+                                }
+
+                            </div>  
+
+                        </div>
+
+
+
+                        <div className="polluting-impact-selection">
+                            
+                            <div> <Icon icon={foodWithMaxWater}/> </div> 
+                            <div>&nbsp;- {foodWithMaxWaterValue}</div>
+                            {maxWaterMeasure === "grams" &&
+                                <div>&nbsp;g</div>
+                            }
+                            {maxWaterMeasure === "liters" &&
+                                <div>&nbsp;l</div>
+                            }
+
+                            <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
+
+                            <div>
+
+                                {maxWateralternativename1 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative1'}
+                                    foodprint="true"
+                                    optimise={maxWaterOptimise}
+                                    type={foodWithMaxWater}
+                                    category={maxWaterCategory}
+                                    grams={maxWaterGrams}
+                                />
+                                }
+
+                                {maxWateralternativename2 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative2'}
+                                    foodprint="true"
+                                    optimise={maxWaterOptimise}
+                                    type={foodWithMaxWater}
+                                    category={maxWaterCategory}
+                                    grams={maxWaterGrams}
+                                />
+                                }
+
+                                {maxWateralternativename3 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative3'}
+                                    foodprint="true"
+                                    optimise={maxWaterOptimise}
+                                    type={foodWithMaxWater}
+                                    category={maxWaterCategory}
+                                    grams={maxWaterGrams}
+                                />
+                                }
+
+                                {maxWateralternativename4 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative4'}
+                                    foodprint="true"
+                                    optimise={maxWaterOptimise}
+                                    type={foodWithMaxWater}
+                                    category={maxWaterCategory}
+                                    grams={maxWaterGrams}
+                                />
+                                }
+
+                            </div>  
+
+                        </div>
+
+
+
+
+                        <div className="polluting-impact-selection">
+                            
+                            <div> <Icon icon={foodWithMaxLand}/> </div> 
+                            <div>&nbsp;- {foodWithMaxLandValue}</div>
+                            {maxLandMeasure === "grams" &&
+                                <div>&nbsp;g</div>
+                            }
+                            {maxLandMeasure === "liters" &&
+                                <div>&nbsp;l</div>
+                            }
+
+                            <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
+
+                            <div>
+
+                                {maxLandalternativename1 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative1'}
+                                    foodprint="true"
+                                    optimise={maxLandOptimise}
+                                    type={foodWithMaxLand}
+                                    category={maxLandCategory}
+                                    grams={maxLandGrams}
+                                />
+                                }
+
+                                {maxLandalternativename2 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative2'}
+                                    foodprint="true"
+                                    optimise={maxLandOptimise}
+                                    type={foodWithMaxLand}
+                                    category={maxLandCategory}
+                                    grams={maxLandGrams}
+                                />
+                                }
+
+                                {maxLandalternativename3 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative3'}
+                                    foodprint="true"
+                                    optimise={maxLandOptimise}
+                                    type={foodWithMaxLand}
+                                    category={maxLandCategory}
+                                    grams={maxLandGrams}
+                                />
+                                }
+
+                                {maxLandalternativename4 !== "none" &&                         
+                                <Alternative
+                                    alternative={'alternative4'}
+                                    foodprint="true"
+                                    optimise={maxLandOptimise}
+                                    type={foodWithMaxLand}
+                                    category={maxLandCategory}
+                                    grams={maxLandGrams}
+                                />
+                                }
+
+                            </div>  
+
+                        </div>
 
 
                         <FBShare />
-
-
-
-
-
-
+                            
+                        
                     </div>
 
-
+                    
 
             </div>
     

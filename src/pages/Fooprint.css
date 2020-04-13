@@ -24,15 +24,6 @@
     background-color: #2F80ED;
 }
 
-
-.closewizard {
-    height: 36px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
 .foodprint-step0-alignment {
     display: flex;
     margin-top: 200px;

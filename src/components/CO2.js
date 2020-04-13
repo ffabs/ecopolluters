@@ -30,7 +30,8 @@ class CO2 extends Component {
               </div>
               <div className="comparison-text">
                 <div className="comparison">Driving for {(this.props.CO2/0.12).toFixed(0)} km</div>
-                <div className="comparison-support">average petrol - 5 liters per 100km</div>
+                {/* <div className="comparison-support">average petrol - 5 liters per 100km</div> */}
+                <div className="comparison-support">average car - 5 l per 100km</div>
               </div>
             </div>
             <div className="comparison-element">

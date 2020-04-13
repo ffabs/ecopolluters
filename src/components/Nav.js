@@ -35,8 +35,11 @@ class Nav extends Component {
                 <Link to="/">
                   <div className={home}>HOME</div>
                 </Link>
+                <Link to="/foodprint/step0">
+                  <div className={impact}>FIND OUT YOUR FOODPRINT</div>
+                </Link>
                 <Link to="/impact">
-                  <div className={impact}>CALCULATE YOUR IMPACT</div>
+                  <div className={impact}>FOOD DETAILS</div>
                 </Link>
                 <Link to="/science">
                   <div className={science}>SCIENTIFIC SOURCES</div>

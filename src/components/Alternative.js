@@ -28,7 +28,7 @@ class Alternative extends Component {
         let alternativegramsneeded = "";
         let hidealternativelink = "false";
         if(alternativename!=="none"){
-            if(alternativename ==="bidet" || alternativename ==="hand"){
+            if(alternativename ==="bidet" || alternativename ==="hand" || this.props.foodprint === "true"){
                 hidealternativelink = "true";
             }
             let alternative = Data[alternativecategory][alternativename];
@@ -44,7 +44,7 @@ class Alternative extends Component {
                 alternativeamountneeded = +(currentnutrvaluetoaimat / alternativeoptimise / alternativeunit).toFixed(1);
             } else {
                 let alternativeamount = type[this.props.alternative].amount;
-                alternativeamountneeded = +(this.props.grams * alternativeamount / alternativeunit ).toFixed(1);      
+                alternativeamountneeded = +(this.props.grams * alternativeamount / alternativeunit ).toFixed(1);
             }
             if(alternativemeasure == "grams"){
                 alternativeamountneeded = alternativeamountneeded.toFixed(0);
@@ -66,7 +66,7 @@ class Alternative extends Component {
         return (
 
             <div className="alternative">
-            <div className="alternative-grams">
+            <div className="alternative-grams">              
                 <Grams measure={alternativemeasure} category={alternativecategory} type={alternativename} grams={alternativegramsneeded} amount={alternativeamountneeded}/>
             </div>
 
