@@ -290,6 +290,10 @@ class FoodprintStep5 extends Component {
         if (maxCO2OptimiseLowercase === "proteins" || maxCO2OptimiseLowercase === "carbs" || maxCO2OptimiseLowercase === "fats") {
             maxCO2Showgrams = true;
         }
+        let maxCO2ShowDetails = false;
+        if (maxCO2OptimiseLowercase === "calories" || maxCO2OptimiseLowercase === "proteins" || maxCO2OptimiseLowercase === "carbs" || maxCO2OptimiseLowercase === "fats") {
+            maxCO2ShowDetails = true;
+        }
         let maxCO2OptimiseNutritionalvalue = (Data[maxCO2Category][foodWithMaxCo2]['nutritional values'][maxCO2OptimiseLowercase] * maxCO2Grams).toFixed(0);
         let maxC02alternativename1 = Data[maxCO2Category][foodWithMaxCo2].alternative1.name;
         let maxC02alternativename2 = Data[maxCO2Category][foodWithMaxCo2].alternative2.name;
@@ -337,6 +341,10 @@ class FoodprintStep5 extends Component {
         if (maxWaterOptimiseLowercase === "proteins" || maxWaterOptimiseLowercase === "carbs" || maxWaterOptimiseLowercase === "fats") {
             maxWaterShowgrams = true;
         }
+        let maxWaterShowDetails = false;
+        if (maxWaterOptimiseLowercase === "calories" || maxWaterOptimiseLowercase === "proteins" || maxWaterOptimiseLowercase === "carbs" || maxWaterOptimiseLowercase === "fats") {
+            maxWaterShowDetails = true;
+        }
         let maxWaterOptimiseNutritionalvalue = (Data[maxWaterCategory][foodWithMaxWater]['nutritional values'][maxWaterOptimiseLowercase] * maxWaterGrams).toFixed(0);
         let maxWateralternativename1 = Data[maxWaterCategory][foodWithMaxWater].alternative1.name;
         let maxWateralternativename2 = Data[maxWaterCategory][foodWithMaxWater].alternative2.name;
@@ -383,6 +391,10 @@ class FoodprintStep5 extends Component {
         let maxLandShowgrams = false;
         if (maxLandOptimiseLowercase === "proteins" || maxLandOptimiseLowercase === "carbs" || maxLandOptimiseLowercase === "fats") {
             maxLandShowgrams = true;
+        }
+        let maxLandShowDetails = false;
+        if (maxLandOptimiseLowercase === "calories" || maxLandOptimiseLowercase === "proteins" || maxLandOptimiseLowercase === "carbs" || maxLandOptimiseLowercase === "fats") {
+            maxLandShowDetails = true;
         }
         let maxLandOptimiseNutritionalvalue = (Data[maxLandCategory][foodWithMaxLand]['nutritional values'][maxLandOptimiseLowercase] * maxLandGrams).toFixed(0);
         let maxLandalternativename1 = Data[maxLandCategory][foodWithMaxLand].alternative1.name;
@@ -999,13 +1011,15 @@ class FoodprintStep5 extends Component {
                                         foodprint="true"
                                     />                             
                                 </div>
+                                {maxCO2ShowDetails === true && 
                                 <div className="foodprint-alternative-optimisenutrvalue">
                                     <div>{maxCO2OptimiseNutritionalvalue}</div>
                                     {maxCO2Showgrams === true && 
-                                        <div>&nbsp;g&nbsp;</div>
+                                        <div>&nbsp;g</div>
                                     }
                                     <div>&nbsp;{maxCO2OptimiseLowercase}</div> 
                                 </div>
+                                }
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
@@ -1022,10 +1036,10 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxCo2}
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
+                                    showGrams={maxCO2Showgrams}
                                 />
                                 </div>
                                 }
-
                                 {maxC02alternativename2 !== "none" &&    
                                 <div className="alternative-not-rec-foodprint">                     
                                 <Alternative
@@ -1035,10 +1049,10 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxCo2}
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
+                                    showGrams={maxCO2Showgrams}
                                 />
                                 </div>
                                 }
-
                                 {maxC02alternativename3 !== "none" &&  
                                 <div className="alternative-not-rec-foodprint">                       
                                 <Alternative
@@ -1048,6 +1062,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxCo2}
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
+                                    showGrams={maxCO2Showgrams}
                                 />
                                 </div>
                                 }
@@ -1061,6 +1076,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxCo2}
                                     category={maxCO2Category}
                                     grams={maxCO2Grams}
+                                    showGrams={maxCO2Showgrams}
                                 />
                                 </div>
                                 }
@@ -1085,13 +1101,15 @@ class FoodprintStep5 extends Component {
                                         foodprint="true"
                                     />                           
                                 </div>
+                                {maxWaterShowDetails === true && 
                                 <div className="foodprint-alternative-optimisenutrvalue">
                                     <div>{maxWaterOptimiseNutritionalvalue}</div>
                                     {maxWaterShowgrams === true && 
-                                        <div>&nbsp;g&nbsp;</div>
+                                        <div>&nbsp;g</div>
                                     }
                                     <div>&nbsp;{maxWaterOptimiseLowercase}</div> 
-                                </div>
+                                </div>                                
+                                }
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
@@ -1108,6 +1126,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxWater}
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
+                                    showGrams={maxWaterShowgrams}
                                 />
                                 </div>
                                 }
@@ -1121,6 +1140,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxWater}
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
+                                    showGrams={maxWaterShowgrams}
                                 />
                                 </div>
                                 }
@@ -1134,6 +1154,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxWater}
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
+                                    showGrams={maxWaterShowgrams}
                                 />
                                 </div>
                                 }
@@ -1147,6 +1168,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxWater}
                                     category={maxWaterCategory}
                                     grams={maxWaterGrams}
+                                    showGrams={maxWaterShowgrams}
                                 />
                                 </div>
                                 }
@@ -1173,13 +1195,15 @@ class FoodprintStep5 extends Component {
                                         foodprint="true"
                                     />                           
                                 </div>
+                                {maxLandShowDetails === true && 
                                 <div className="foodprint-alternative-optimisenutrvalue">
                                     <div>{maxLandOptimiseNutritionalvalue}</div>
                                     {maxLandShowgrams === true && 
-                                        <div>&nbsp;g&nbsp;</div>
+                                        <div>&nbsp;g</div>
                                     }
                                     <div>&nbsp;{maxLandOptimiseLowercase}</div> 
                                 </div>
+                                }
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
@@ -1196,6 +1220,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxLand}
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
+                                    showGrams={maxLandShowgrams}
                                 />
                                 </div>
                                 }
@@ -1209,6 +1234,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxLand}
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
+                                    showGrams={maxLandShowgrams}
                                 />
                                 </div>
                                 }
@@ -1222,6 +1248,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxLand}
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
+                                    showGrams={maxLandShowgrams}
                                 />
                                 </div>
                                 }
@@ -1235,6 +1262,7 @@ class FoodprintStep5 extends Component {
                                     type={foodWithMaxLand}
                                     category={maxLandCategory}
                                     grams={maxLandGrams}
+                                    showGrams={maxLandShowgrams}
                                 />
                                 </div>
                                 }

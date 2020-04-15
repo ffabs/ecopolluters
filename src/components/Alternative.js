@@ -64,25 +64,44 @@ class Alternative extends Component {
         //foodprint style
         let alternative = "alternative";
         let alternativeGrams = "alternative-grams";
+        let alternativeGramsFoodprintNutr = "";
+        let FoodprintAlternativeMainNutritionalvalue = 0;
+        let optimiseLowercase = "";
         if(this.props.foodprint === "true") {
             alternative = "alternative-foodprint";
             alternativeGrams = "alternative-grams-foodprint";
+            alternativeGramsFoodprintNutr = "alternative-grams-foodprint-nutr";
+            optimiseLowercase = this.props.optimise.toLowerCase();
+            FoodprintAlternativeMainNutritionalvalue = (Data[alternativecategory][alternativename]['nutritional values'][this.props.optimise.toLowerCase()] * alternativegramsneeded).toFixed(0)
         }
-
+        
 
         return (
 
             <div className={alternative}>
                 
-                <div className={alternativeGrams}>              
-                    <Grams 
-                        measure={alternativemeasure} 
-                        category={alternativecategory} 
-                        type={alternativename} 
-                        grams={alternativegramsneeded} 
-                        amount={alternativeamountneeded} 
-                        foodprint={this.props.foodprint}
-                    />
+                <div className={alternativeGrams}>    
+                    <div className={alternativeGramsFoodprintNutr}>  
+                        <Grams 
+                            measure={alternativemeasure} 
+                            category={alternativecategory} 
+                            type={alternativename} 
+                            grams={alternativegramsneeded} 
+                            amount={alternativeamountneeded} 
+                            foodprint={this.props.foodprint}
+                        />
+                        <div className="nutrvalue-foodprint-flex">
+                            {this.props.foodprint === "true" &&
+                                <div className="nutrvalue-foodprint">{FoodprintAlternativeMainNutritionalvalue}</div>          
+                            } 
+                            {this.props.showGrams === true && 
+                                <div className="nutrvalue-foodprint">&nbsp;g</div>
+                            }
+                            {this.props.foodprint === "true" &&
+                                <div className="nutrvalue-foodprint">&nbsp;{optimiseLowercase}</div> 
+                            } 
+                        </div>
+                    </div> 
                 </div>
 
                 <div className="alternative-impact">
