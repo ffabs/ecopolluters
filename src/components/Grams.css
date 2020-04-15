@@ -3,7 +3,14 @@
   justify-content: space-between;
 }
 
-.grams-foodprint {
+/* .grams-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+} */
+
+.grams-amount-foodprint {
   display: flex;
 }
 

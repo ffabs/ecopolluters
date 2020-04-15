@@ -47,8 +47,8 @@ class Home extends Component {
           </Link>
         </div>
         <div className="home-note">
-          <div className="home-note-bold">Note:&nbsp;</div>
-          <div className="home-note-content"> deciding not to eat any of them and skip a meal is the most environmental friendly choice</div>
+          <div className="note-bold">Note:&nbsp;</div>
+          <div className="note-content"> deciding not to eat any of them and skip a meal is the most environmental friendly choice</div>
         </div>
         <div className="red-home-background">
           <div className="red-home-text">

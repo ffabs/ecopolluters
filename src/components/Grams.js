@@ -26,10 +26,10 @@ class Grams extends Component {
     }
 
     let alternativeItems = "alternative-items";
-    let gramsAmount = "";
+    let gramsAmount = "grams-amount";
     if(this.props.foodprint === "true"){
       alternativeItems = "alternative-items-foodprint";
-      gramsAmount = "grams-foodprint";
+      gramsAmount = "grams-amount-foodprint";
     }
 
 
@@ -47,12 +47,12 @@ class Grams extends Component {
                   <Icon icon={this.props.type} noImage="true"/>
                 </div>
               }
-              <div className="alternative-amount">&nbsp;• {this.props.amount+" "} </div>
+              <div className="alternative-amount">&nbsp;• {this.props.amount}&nbsp;</div>
               {measure === "grams" &&
-                  <div className="alternative-amount"> g </div>
+                  <div className="alternative-amount">g </div>
               }
               {measure === "liters" &&
-                  <div className="alternative-amount"> l </div>
+                  <div className="alternative-amount">l </div>
               }
             </div>
           </div>

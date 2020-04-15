@@ -46,6 +46,16 @@
     color: #219653;
     margin-top: 40px;
   }
+    .alternative-recommended-foodprint{
+      background-color: #6FCF97;
+      border-radius: 15px;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #219653;
+      margin-top: 20px;
+    }
 
     .alternative-recommended-text {
         padding: 5px;
@@ -84,7 +94,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 28px;
+        font-size: 18px;
         line-height: 35px;
       }
 
@@ -96,6 +106,9 @@
     .alternative-not-rec {
         margin-top: 40px;
     }
+      .alternative-not-rec-foodprint {
+        margin-top: 20px;
+      }
 
     .alternative-grams{
       background-color: #9B51E0;

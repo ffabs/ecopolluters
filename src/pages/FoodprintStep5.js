@@ -285,6 +285,12 @@ class FoodprintStep5 extends Component {
         let maxCo2Measure = Data[maxCO2Category][foodWithMaxCo2].measure;
         let maxCO2Grams = foodWithMaxCo2Value * Data[maxCO2Category][foodWithMaxCo2].unit;
         let maxCO2Optimise = Data[maxCO2Category][foodWithMaxCo2].optimise;
+        let maxCO2OptimiseLowercase = maxCO2Optimise.toLowerCase();
+        let maxCO2Showgrams = false;
+        if (maxCO2OptimiseLowercase === "proteins" || maxCO2OptimiseLowercase === "carbs" || maxCO2OptimiseLowercase === "fats") {
+            maxCO2Showgrams = true;
+        }
+        let maxCO2OptimiseNutritionalvalue = (Data[maxCO2Category][foodWithMaxCo2]['nutritional values'][maxCO2OptimiseLowercase] * maxCO2Grams).toFixed(0);
         let maxC02alternativename1 = Data[maxCO2Category][foodWithMaxCo2].alternative1.name;
         let maxC02alternativename2 = Data[maxCO2Category][foodWithMaxCo2].alternative2.name;
         let maxC02alternativename3 = Data[maxCO2Category][foodWithMaxCo2].alternative3.name;
@@ -326,6 +332,12 @@ class FoodprintStep5 extends Component {
         let maxWaterMeasure = Data[maxWaterCategory][foodWithMaxWater].measure;
         let maxWaterGrams = foodWithMaxWaterValue * Data[maxWaterCategory][foodWithMaxWater].unit;
         let maxWaterOptimise = Data[maxWaterCategory][foodWithMaxWater].optimise;
+        let maxWaterOptimiseLowercase = maxWaterOptimise.toLowerCase();
+        let maxWaterShowgrams = false;
+        if (maxWaterOptimiseLowercase === "proteins" || maxWaterOptimiseLowercase === "carbs" || maxWaterOptimiseLowercase === "fats") {
+            maxWaterShowgrams = true;
+        }
+        let maxWaterOptimiseNutritionalvalue = (Data[maxWaterCategory][foodWithMaxWater]['nutritional values'][maxWaterOptimiseLowercase] * maxWaterGrams).toFixed(0);
         let maxWateralternativename1 = Data[maxWaterCategory][foodWithMaxWater].alternative1.name;
         let maxWateralternativename2 = Data[maxWaterCategory][foodWithMaxWater].alternative2.name;
         let maxWateralternativename3 = Data[maxWaterCategory][foodWithMaxWater].alternative3.name;
@@ -367,6 +379,12 @@ class FoodprintStep5 extends Component {
         let maxLandMeasure = Data[maxLandCategory][foodWithMaxLand].measure;
         let maxLandGrams = foodWithMaxLandValue * Data[maxLandCategory][foodWithMaxLand].unit;
         let maxLandOptimise = Data[maxLandCategory][foodWithMaxLand].optimise;
+        let maxLandOptimiseLowercase = maxLandOptimise.toLowerCase();
+        let maxLandShowgrams = false;
+        if (maxLandOptimiseLowercase === "proteins" || maxLandOptimiseLowercase === "carbs" || maxLandOptimiseLowercase === "fats") {
+            maxLandShowgrams = true;
+        }
+        let maxLandOptimiseNutritionalvalue = (Data[maxLandCategory][foodWithMaxLand]['nutritional values'][maxLandOptimiseLowercase] * maxLandGrams).toFixed(0);
         let maxLandalternativename1 = Data[maxLandCategory][foodWithMaxLand].alternative1.name;
         let maxLandalternativename2 = Data[maxLandCategory][foodWithMaxLand].alternative2.name;
         let maxLandalternativename3 = Data[maxLandCategory][foodWithMaxLand].alternative3.name;
@@ -969,31 +987,33 @@ class FoodprintStep5 extends Component {
                         <div className="weeklyfoodprint-support">We show alternatives based on same nutritional values</div>
 
                         <div className="foodprint-solution">
+                                
                             <div className="foodprint-alternative-title-section">
-                                <Grams 
-                                    measure={maxCo2Measure} 
-                                    category={maxCO2Category} 
-                                    type={foodWithMaxCo2} 
-                                    grams={maxCO2Grams} 
-                                    amount={foodWithMaxCo2Value} 
-                                    foodprint="true"
-                                />
-                                {/* <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxCo2}/> </div> 
-                                <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxCo2Value}</div>
-                                {maxCo2Measure === "grams" &&
-                                    <div className="foodprint-alternative-title">&nbsp;g</div>
-                                }
-                                {maxCo2Measure === "liters" &&
-                                    <div className="foodprint-alternative-title">&nbsp;l</div>
-                                } */}
+                                <div className="foodprint-alternative-titleandimage">
+                                    <Grams 
+                                        measure={maxCo2Measure} 
+                                        category={maxCO2Category} 
+                                        type={foodWithMaxCo2} 
+                                        grams={maxCO2Grams} 
+                                        amount={foodWithMaxCo2Value} 
+                                        foodprint="true"
+                                    />                             
+                                </div>
+                                <div className="foodprint-alternative-optimisenutrvalue">
+                                    <div>{maxCO2OptimiseNutritionalvalue}</div>
+                                    {maxCO2Showgrams === true && 
+                                        <div>&nbsp;g&nbsp;</div>
+                                    }
+                                    <div>&nbsp;{maxCO2OptimiseLowercase}</div> 
+                                </div>
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
-                            <div>
+                            <div className="alternatives-group-foodprint">
 
                                 {maxC02alternativename1 !== "none" &&  
-                                <div className="alternative-recommended"> 
+                                <div className="alternative-recommended-foodprint"> 
                                 <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div>                       
                                 <Alternative
                                     alternative={'alternative1'}
@@ -1007,7 +1027,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxC02alternativename2 !== "none" &&    
-                                <div className="alternative-not-rec">                     
+                                <div className="alternative-not-rec-foodprint">                     
                                 <Alternative
                                     alternative={'alternative2'}
                                     foodprint="true"
@@ -1020,7 +1040,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxC02alternativename3 !== "none" &&  
-                                <div className="alternative-not-rec">                       
+                                <div className="alternative-not-rec-foodprint">                       
                                 <Alternative
                                     alternative={'alternative3'}
                                     foodprint="true"
@@ -1033,7 +1053,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxC02alternativename4 !== "none" &&   
-                                <div className="alternative-not-rec">                      
+                                <div className="alternative-not-rec-foodprint">                      
                                 <Alternative
                                     alternative={'alternative4'}
                                     foodprint="true"
@@ -1053,32 +1073,33 @@ class FoodprintStep5 extends Component {
                         {foodWithMaxWater !== foodWithMaxCo2 &&
                                 
                         <div className="foodprint-solution">
-                            <div className="foodprint-alternative-title-section">   
-                                <Grams 
-                                    measure={maxWaterMeasure} 
-                                    category={maxWaterCategory} 
-                                    type={foodWithMaxWater} 
-                                    grams={maxWaterGrams} 
-                                    amount={foodWithMaxWaterValue} 
-                                    foodprint="true"
-                                />
-                                {/* 
-                                <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxWater}/> </div> 
-                                <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxWaterValue}</div>
-                                {maxWaterMeasure === "grams" &&
-                                    <div className="foodprint-alternative-title">&nbsp;g</div>
-                                }
-                                {maxWaterMeasure === "liters" &&
-                                    <div className="foodprint-alternative-title">&nbsp;l</div>
-                                } */}
+
+                            <div className="foodprint-alternative-title-section">
+                                <div className="foodprint-alternative-titleandimage">
+                                    <Grams 
+                                        measure={maxWaterMeasure} 
+                                        category={maxWaterCategory} 
+                                        type={foodWithMaxWater} 
+                                        grams={maxWaterGrams} 
+                                        amount={foodWithMaxWaterValue} 
+                                        foodprint="true"
+                                    />                           
+                                </div>
+                                <div className="foodprint-alternative-optimisenutrvalue">
+                                    <div>{maxWaterOptimiseNutritionalvalue}</div>
+                                    {maxWaterShowgrams === true && 
+                                        <div>&nbsp;g&nbsp;</div>
+                                    }
+                                    <div>&nbsp;{maxWaterOptimiseLowercase}</div> 
+                                </div>
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
-                            <div>
+                            <div className="alternatives-group-foodprint">
 
                                 {maxWateralternativename1 !== "none" &&    
-                                <div className="alternative-recommended"> 
+                                <div className="alternative-recommended-foodprint"> 
                                 <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div>                       
                                 <Alternative
                                     alternative={'alternative1'}
@@ -1092,7 +1113,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxWateralternativename2 !== "none" &&   
-                                <div className="alternative-not-rec">                      
+                                <div className="alternative-not-rec-foodprint">                      
                                 <Alternative
                                     alternative={'alternative2'}
                                     foodprint="true"
@@ -1105,7 +1126,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxWateralternativename3 !== "none" &&  
-                                <div className="alternative-not-rec">                       
+                                <div className="alternative-not-rec-foodprint">                       
                                 <Alternative
                                     alternative={'alternative3'}
                                     foodprint="true"
@@ -1118,7 +1139,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxWateralternativename4 !== "none" &&    
-                                <div className="alternative-not-rec">                     
+                                <div className="alternative-not-rec-foodprint">                     
                                 <Alternative
                                     alternative={'alternative4'}
                                     foodprint="true"
@@ -1140,31 +1161,33 @@ class FoodprintStep5 extends Component {
                         {foodWithMaxLand !== foodWithMaxCo2 && foodWithMaxLand !== foodWithMaxWater &&
 
                         <div className="foodprint-solution">
+
                             <div className="foodprint-alternative-title-section">
-                                <Grams 
-                                    measure={maxLandMeasure} 
-                                    category={maxLandCategory} 
-                                    type={foodWithMaxLand} 
-                                    grams={maxLandGrams} 
-                                    amount={foodWithMaxLandValue} 
-                                    foodprint="true"
-                                />
-                                {/* <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxLand}/> </div> 
-                                <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxLandValue}</div>
-                                {maxLandMeasure === "grams" &&
-                                    <div className="foodprint-alternative-title">&nbsp;g</div>
-                                }
-                                {maxLandMeasure === "liters" &&
-                                    <div className="foodprint-alternative-title">&nbsp;l</div>
-                                } */}
+                                <div className="foodprint-alternative-titleandimage">
+                                    <Grams 
+                                        measure={maxLandMeasure} 
+                                        category={maxLandCategory} 
+                                        type={foodWithMaxLand} 
+                                        grams={maxLandGrams} 
+                                        amount={foodWithMaxLandValue} 
+                                        foodprint="true"
+                                    />                           
+                                </div>
+                                <div className="foodprint-alternative-optimisenutrvalue">
+                                    <div>{maxLandOptimiseNutritionalvalue}</div>
+                                    {maxLandShowgrams === true && 
+                                        <div>&nbsp;g&nbsp;</div>
+                                    }
+                                    <div>&nbsp;{maxLandOptimiseLowercase}</div> 
+                                </div>
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
-                            <div>
+                            <div className="alternatives-group-foodprint">
 
                                 {maxLandalternativename1 !== "none" &&    
-                                <div className="alternative-recommended"> 
+                                <div className="alternative-recommended-foodprint"> 
                                 <div className="alternative-recommended-text"> LEAST POLLUTING ALTERNATIVE </div>                       
                                 <Alternative
                                     alternative={'alternative1'}
@@ -1178,7 +1201,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxLandalternativename2 !== "none" &&   
-                                <div className="alternative-not-rec">                      
+                                <div className="alternative-not-rec-foodprint">                      
                                 <Alternative
                                     alternative={'alternative2'}
                                     foodprint="true"
@@ -1191,7 +1214,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxLandalternativename3 !== "none" && 
-                                <div className="alternative-not-rec">                        
+                                <div className="alternative-not-rec-foodprint">                        
                                 <Alternative
                                     alternative={'alternative3'}
                                     foodprint="true"
@@ -1204,7 +1227,7 @@ class FoodprintStep5 extends Component {
                                 }
 
                                 {maxLandalternativename4 !== "none" &&      
-                                <div className="alternative-not-rec">                   
+                                <div className="alternative-not-rec-foodprint">                   
                                 <Alternative
                                     alternative={'alternative4'}
                                     foodprint="true"
@@ -1221,9 +1244,17 @@ class FoodprintStep5 extends Component {
                         </div>
                         }
 
+                        <div className="foodprint-note">
+                            <div className="note-bold">Note:&nbsp;</div>
+                            <div className="note-content">we based alternatives on reducing pollution and mantaining similar nutritional values. However we recommend to always refer to professionals to set up healty and balanced diets</div>
+                        </div>
 
-                        <FBShare />
-                            
+                        <FBShare foodprint="true"/>
+
+                        <div className="foodprint-datasource-section">
+
+                        </div>
+
                         
                     </div>
 
