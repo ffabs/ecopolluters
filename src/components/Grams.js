@@ -21,19 +21,32 @@ class Grams extends Component {
     let fats = (grams*nutritionalValues.fats).toFixed(0);
 
     let hidenutritionalvalues = "false";
-    if(this.props.type ==="bidet" || this.props.type ==="hand"){
+    if(this.props.type ==="bidet" || this.props.type ==="hand" || this.props.foodprint === "true"){
       hidenutritionalvalues = "true";
     }
+
+    let alternativeItems = "alternative-items";
+    let gramsAmount = "";
+    if(this.props.foodprint === "true"){
+      alternativeItems = "alternative-items-foodprint";
+      gramsAmount = "grams-foodprint";
+    }
+
 
     return (        
 
       <div className="grams"> 
 
-          <div className="alternative-items"> 
+          <div className={alternativeItems}> 
             <div className="solution-title-bold">
-              <Icon icon={this.props.type}/>
+              <Icon icon={this.props.type} foodprint={this.props.foodprint}/>
             </div>
-            <div>
+            <div className={gramsAmount}>
+              {this.props.foodprint === "true" &&
+                <div className="solution-title-bold"> 
+                  <Icon icon={this.props.type} noImage="true"/>
+                </div>
+              }
               <div className="alternative-amount">&nbsp;• {this.props.amount+" "} </div>
               {measure === "grams" &&
                   <div className="alternative-amount"> g </div>

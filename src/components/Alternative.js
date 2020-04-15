@@ -61,13 +61,29 @@ class Alternative extends Component {
             alternativelanddifference = currentland - alternativeland;
         }
 
+        //foodprint style
+        let alternative = "alternative";
+        let alternativeGrams = "alternative-grams";
+        if(this.props.foodprint === "true") {
+            alternative = "alternative-foodprint";
+            alternativeGrams = "alternative-grams-foodprint";
+        }
+
 
         return (
 
-            <div className="alternative">
-            <div className="alternative-grams">              
-                <Grams measure={alternativemeasure} category={alternativecategory} type={alternativename} grams={alternativegramsneeded} amount={alternativeamountneeded}/>
-            </div>
+            <div className={alternative}>
+                
+                <div className={alternativeGrams}>              
+                    <Grams 
+                        measure={alternativemeasure} 
+                        category={alternativecategory} 
+                        type={alternativename} 
+                        grams={alternativegramsneeded} 
+                        amount={alternativeamountneeded} 
+                        foodprint={this.props.foodprint}
+                    />
+                </div>
 
                 <div className="alternative-impact">
                 

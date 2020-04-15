@@ -15,6 +15,7 @@ import Land from '../components/Land';
 import Water from '../components/Water';
 import arrowDesktop from '../images/arrowDesktop.png';
 import Alternative from '../components/Alternative';
+import Grams from '../components/Grams';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -968,15 +969,24 @@ class FoodprintStep5 extends Component {
                         <div className="weeklyfoodprint-support">We show alternatives based on same nutritional values</div>
 
                         <div className="foodprint-solution">
-                            
-                            <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxCo2}/> </div> 
-                            <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxCo2Value}</div>
-                            {maxCo2Measure === "grams" &&
-                                <div className="foodprint-alternative-title">&nbsp;g</div>
-                            }
-                            {maxCo2Measure === "liters" &&
-                                <div className="foodprint-alternative-title">&nbsp;l</div>
-                            }
+                            <div className="foodprint-alternative-title-section">
+                                <Grams 
+                                    measure={maxCo2Measure} 
+                                    category={maxCO2Category} 
+                                    type={foodWithMaxCo2} 
+                                    grams={maxCO2Grams} 
+                                    amount={foodWithMaxCo2Value} 
+                                    foodprint="true"
+                                />
+                                {/* <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxCo2}/> </div> 
+                                <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxCo2Value}</div>
+                                {maxCo2Measure === "grams" &&
+                                    <div className="foodprint-alternative-title">&nbsp;g</div>
+                                }
+                                {maxCo2Measure === "liters" &&
+                                    <div className="foodprint-alternative-title">&nbsp;l</div>
+                                } */}
+                            </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
@@ -1043,15 +1053,25 @@ class FoodprintStep5 extends Component {
                         {foodWithMaxWater !== foodWithMaxCo2 &&
                                 
                         <div className="foodprint-solution">
-                            
-                            <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxWater}/> </div> 
-                            <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxWaterValue}</div>
-                            {maxWaterMeasure === "grams" &&
-                                <div className="foodprint-alternative-title">&nbsp;g</div>
-                            }
-                            {maxWaterMeasure === "liters" &&
-                                <div className="foodprint-alternative-title">&nbsp;l</div>
-                            }
+                            <div className="foodprint-alternative-title-section">   
+                                <Grams 
+                                    measure={maxWaterMeasure} 
+                                    category={maxWaterCategory} 
+                                    type={foodWithMaxWater} 
+                                    grams={maxWaterGrams} 
+                                    amount={foodWithMaxWaterValue} 
+                                    foodprint="true"
+                                />
+                                {/* 
+                                <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxWater}/> </div> 
+                                <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxWaterValue}</div>
+                                {maxWaterMeasure === "grams" &&
+                                    <div className="foodprint-alternative-title">&nbsp;g</div>
+                                }
+                                {maxWaterMeasure === "liters" &&
+                                    <div className="foodprint-alternative-title">&nbsp;l</div>
+                                } */}
+                            </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 
@@ -1120,15 +1140,24 @@ class FoodprintStep5 extends Component {
                         {foodWithMaxLand !== foodWithMaxCo2 && foodWithMaxLand !== foodWithMaxWater &&
 
                         <div className="foodprint-solution">
-                            
-                            <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxLand}/> </div> 
-                            <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxLandValue}</div>
-                            {maxLandMeasure === "grams" &&
-                                <div className="foodprint-alternative-title">&nbsp;g</div>
-                            }
-                            {maxLandMeasure === "liters" &&
-                                <div className="foodprint-alternative-title">&nbsp;l</div>
-                            }
+                            <div className="foodprint-alternative-title-section">
+                                <Grams 
+                                    measure={maxLandMeasure} 
+                                    category={maxLandCategory} 
+                                    type={foodWithMaxLand} 
+                                    grams={maxLandGrams} 
+                                    amount={foodWithMaxLandValue} 
+                                    foodprint="true"
+                                />
+                                {/* <div className="foodprint-alternative-title"> <Icon icon={foodWithMaxLand}/> </div> 
+                                <div className="foodprint-alternative-title">&nbsp;• {foodWithMaxLandValue}</div>
+                                {maxLandMeasure === "grams" &&
+                                    <div className="foodprint-alternative-title">&nbsp;g</div>
+                                }
+                                {maxLandMeasure === "liters" &&
+                                    <div className="foodprint-alternative-title">&nbsp;l</div>
+                                } */}
+                            </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
 

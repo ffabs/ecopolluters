@@ -44,6 +44,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #219653;
+    margin-top: 40px;
   }
 
     .alternative-recommended-text {
@@ -60,12 +61,32 @@
         line-height: 40px;
         width: 900px;
     }
+      .alternative-foodprint {
+        background-color: #8C3BD9;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
 
     .alternative-items {
         display: flex;
         font-size: 36px;
         line-height: 50px;
     }
+      .alternative-items-foodprint {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 28px;
+        line-height: 35px;
+      }
 
     .alternative-amount {
       font-weight: normal;
@@ -83,6 +104,16 @@
       border-radius: 10px 10px 0px 0px;
       padding: 30px;
     }
+      .alternative-grams-foodprint {
+        background-color: none;
+        font-style: normal;
+        font-weight: normal;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        width: 45%;
+      }
 
         .alternative-impact {
             font-size: 23px;

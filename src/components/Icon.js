@@ -1,148 +1,296 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Icon.css';
 // import './Solution.css';
 
 class Icon extends Component {
 
     render() {
+
+        let icon = "icon-food";
+        let iconImage = "";
+        let iconText = "";
+        if(this.props.foodprint === "true"){
+            iconImage = "icon-food-image-foodprint";
+            iconText = "hide";
+        }
+        if(this.props.noImage === "true"){
+            iconImage = "hide";
+        }
+        
         
         return (
 
             <div>
                 {this.props.icon === "beef" &&
-                    <div> 🐄 Beef </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🐄</div> 
+                        <div className={iconText}>&nbsp;Beef</div> 
+                    </div>     
                 }
                 {this.props.icon === "lamb" &&
-                    <div> 🐑 Lamb </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🐑</div> 
+                        <div className={iconText}>&nbsp;Lamb</div> 
+                    </div>
                 }
                 {this.props.icon === "crustaceans" &&
-                    <div> 🦀 Crustaceans </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🦀</div> 
+                        <div className={iconText}>&nbsp;Crustaceans</div> 
+                    </div>
                 }
                 {this.props.icon === "cheese" &&
-                    <div> 🧀 Cheese </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🧀</div> 
+                        <div className={iconText}>&nbsp;Cheese </div> 
+                    </div>
                 }
                 {this.props.icon === "fish" &&
-                    <div> 🐟 Fish </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🐟</div> 
+                        <div className={iconText}>&nbsp;Fish</div> 
+                    </div>
                 }
                 {this.props.icon === "pork" &&
-                    <div> 🐖 Pork </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🐖</div> 
+                        <div className={iconText}>&nbsp;Pork </div> 
+                    </div>
                 }
                 {this.props.icon === "chicken" &&
-                    <div> 🐓 Chicken </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🐓</div> 
+                        <div className={iconText}>&nbsp;Chicken </div> 
+                    </div>
                 }
                 {this.props.icon === "eggs" &&
-                    <div> 🥚 Eggs </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥚</div> 
+                        <div className={iconText}>&nbsp;Eggs </div> 
+                    </div>
                 }
                 {this.props.icon === "milk" &&
-                    <div> 🥛 Milk </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥛</div> 
+                        <div className={iconText}>&nbsp;Milk</div> 
+                    </div>
                 }
                 {this.props.icon === "groundnuts" &&
-                    <div> 🥜 Groundnuts </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥜</div> 
+                        <div className={iconText}>&nbsp;Groundnuts</div> 
+                    </div>
                 }
                 {this.props.icon === "tomatoes" &&
-                    <div> 🍅 Tomatoes </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍅</div> 
+                        <div className={iconText}>&nbsp;Tomatoes</div> 
+                    </div>
                 }
                 {this.props.icon === "berries and grapes" &&
-                    <div> 🍇 Berries and grapes </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍇</div> 
+                        <div className={iconText}>&nbsp;Berries and grapes</div> 
+                    </div>
                 }
                 {this.props.icon === "cassavas" &&
-                    <div> 🍠 Cassavas </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍠</div> 
+                        <div className={iconText}>&nbsp;Cassavas </div> 
+                    </div>
                 }
                 {this.props.icon === "bananas" &&
-                    <div> 🍌 Bananas </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍌</div> 
+                        <div className={iconText}>&nbsp;Bananas</div> 
+                    </div>
                 }
                 {this.props.icon === "brassicas" &&
-                    <div> 🥦 Brassicas </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥦</div> 
+                        <div className={iconText}>&nbsp;Brassicas </div> 
+                    </div>
                 }
                 {this.props.icon === "onions" &&
-                    <div> ⚪ Onions </div>
+                    <div className={icon}>
+                        <div className={iconImage}>⚪</div> 
+                        <div className={iconText}>&nbsp;Onions</div> 
+                    </div>
                 }
                 {this.props.icon === "potatoes" &&
-                    <div> 🥔 Potatoes </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥔</div> 
+                        <div className={iconText}>&nbsp;Potatoes</div> 
+                    </div>
                 }
                 {this.props.icon === "root vegetables" &&
-                    <div> 🥕 Root vegetables </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥕</div> 
+                        <div className={iconText}>&nbsp;Root vegetables</div> 
+                    </div>
                 }
                 {this.props.icon === "nuts" &&
-                    <div> 🌰 Nuts </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌰</div> 
+                        <div className={iconText}>&nbsp;Nuts </div> 
+                    </div>
                 }
                 {this.props.icon === "apples" &&
-                    <div> 🍏 Apples </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍏</div> 
+                        <div className={iconText}>&nbsp;Apples</div> 
+                    </div>
                 }
                 {this.props.icon === "citrus fruits" &&
-                    <div> 🍋 Citrus fruits </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍋</div> 
+                        <div className={iconText}>&nbsp;Citrus fruits</div> 
+                    </div>
                 }
                 {this.props.icon === "other fruits" &&
-                    <div> 🍓 Other fruits </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍓</div> 
+                        <div className={iconText}>&nbsp;Other fruits</div> 
+                    </div>
                 }
                 {this.props.icon === "other vegetables" &&
-                    <div> 🥗 Other vegetables </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥗</div> 
+                        <div className={iconText}>&nbsp;Other vegetables</div> 
+                    </div>
                 }
                 {this.props.icon === "rice" &&
-                    <div> 🍚 Rice </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍚</div> 
+                        <div className={iconText}>&nbsp;Rice</div> 
+                    </div>
                 }
                 {this.props.icon === "oatmeal" &&
-                    <div> 🥣 Oatmeal </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥣</div> 
+                        <div className={iconText}>&nbsp;Oatmeal</div> 
+                    </div>
                 }
                 {this.props.icon === "corn flour" &&
-                    <div> 🌽 Corn flour </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌽</div> 
+                        <div className={iconText}>&nbsp;Corn flour</div> 
+                    </div>
                 }
                 {this.props.icon === "bread" &&
-                    <div> 🥖 Bread </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥖</div> 
+                        <div className={iconText}>&nbsp;Bread</div> 
+                    </div>
                 }
                 {this.props.icon === "beer" &&
-                    <div> 🍺 Beer </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍺</div> 
+                        <div className={iconText}>&nbsp;Beer</div> 
+                    </div>
                 }
                 {this.props.icon === "peas" &&
-                    <div> 🌱 Peas </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌱</div> 
+                        <div className={iconText}>&nbsp;Peas</div> 
+                    </div>
                 }
                 {this.props.icon === "other legumes" &&
-                    <div> 🍲 Other legumes </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍲</div> 
+                        <div className={iconText}>&nbsp;Other legumes</div> 
+                    </div>
                 }
                 {this.props.icon === "dark chocolate" &&
-                    <div> 🍫 Dark chocolate </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍫</div> 
+                        <div className={iconText}>&nbsp;Dark chocolate</div> 
+                    </div>
                 }
                 {this.props.icon === "coffee" &&
-                    <div> ☕ Coffee </div>
+                    <div className={icon}>
+                        <div className={iconImage}>☕</div> 
+                        <div className={iconText}>&nbsp;Coffee</div> 
+                    </div>
                 }
                 {this.props.icon === "palm oil" &&
-                    <div> 🌴 Palm oil </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌴</div> 
+                        <div className={iconText}>&nbsp;Palm oil</div> 
+                    </div>
                 }
                 {this.props.icon === "soybean oil" &&
-                    <div> 🌿 Soybean oil </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌿</div> 
+                        <div className={iconText}>&nbsp;Soybean oil</div> 
+                    </div>
                 }
                 {this.props.icon === "olive oil" &&
-                    <div> 🌱 Olive oil </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌱</div> 
+                        <div className={iconText}>&nbsp;Olive oil</div> 
+                    </div>
                 }
                 {this.props.icon === "rapeseed oil" &&
-                    <div> 🌼 Rapeseed oil </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌼</div> 
+                        <div className={iconText}>&nbsp;Rapeseed oil </div> 
+                    </div>
                 }
                 {this.props.icon === "sunflower oil" &&
-                    <div> 🌻 Sunflower oil </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🌻</div> 
+                        <div className={iconText}>&nbsp;Sunflower oil</div> 
+                    </div>
                 }
                 {this.props.icon === "tofu" &&
-                    <div> 🍢 Tofu </div>
+                <div className={icon}>
+                    <div className={iconImage}>🍢</div> 
+                    <div className={iconText}>&nbsp;Tofu</div> 
+                </div>
                 }
                 {this.props.icon === "cane sugar" &&
-                    <div> 🍬 Cane sugar </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍬</div> 
+                        <div className={iconText}>&nbsp;Cane sugar</div> 
+                    </div>
                 }
                 {this.props.icon === "beet sugar" &&
-                    <div> 🍬 Beet sugar </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍬</div> 
+                        <div className={iconText}>&nbsp;Beet sugar</div> 
+                    </div>
                 }
                 {this.props.icon === "wine" &&
-                    <div> 🍷 Wine </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🍷</div> 
+                        <div className={iconText}>&nbsp;Wine </div> 
+                    </div>
                 }
                 {this.props.icon === "soymilk" &&
-                    <div> 🥛 Soymilk </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🥛</div> 
+                        <div className={iconText}>&nbsp;Soymilk</div> 
+                    </div>
                 }  
                 {this.props.icon === "rolls" &&
-                    <div> 🧻 Toilet paper </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🧻</div> 
+                        <div className={iconText}>&nbsp;Toilet paper</div> 
+                    </div>
                 }  
                 {this.props.icon === "hand" &&
-                    <div> ✋ Your hand </div>
+                    <div className={icon}>
+                        <div className={iconImage}>✋</div> 
+                        <div className={iconText}>&nbsp;Your hand</div> 
+                    </div>
                 } 
                 {this.props.icon === "bidet" &&
-                    <div> 🚿 Bidet </div>
+                    <div className={icon}>
+                        <div className={iconImage}>🚿</div> 
+                        <div className={iconText}>&nbsp;Bidet </div> 
+                    </div>
                 }     
             </div>
 

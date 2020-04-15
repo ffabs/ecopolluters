@@ -1,0 +1,9 @@
+.icon-food {
+    display: flex;
+}
+
+.icon-food-image-foodprint {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+

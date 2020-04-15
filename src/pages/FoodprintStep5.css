@@ -227,28 +227,32 @@
 }
 
     .arrow-desktop {
-        height: 44px;
-        margin: 30px;
+        height: 60px;
+        margin: 30px 60px 30px 30px;
     }
 
     .foodprint-solution {
-        margin-top: 20px;
-        width: 77%;
+        margin-top: 30px;
+        width: 1070px;
         display: flex;
         align-items: center;
-        padding: 20px;
+        padding: 0px 40px 40px 40px;
         background: #BB6BD9;
         border: 1px solid #333333;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
     }
 
-        .foodprint-alternative-title {
-            font-family: Quicksand;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 36px;
-            text-align: center;
-            margin: 30px;
+        .foodprint-alternative-title-section {
+            width: 300px;
+            display: flex;
         }
+
+            .foodprint-alternative-title {
+                font-family: Quicksand;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 35px;
+                text-align: center;
+            }
