@@ -22,13 +22,15 @@ class Header extends Component {
   }
   
   render() {
-    let impact = 'impact-button menu-impact-button';
+    let impact = '';
     let science = '';
     let about= '';
+    let foodprint= 'impact-button menu-impact-button';
     switch(this.props.page) {
-      // case "Impact":
-      //   impact += ' impact-button-impactpage';
-      //   break;
+      case "Impact":
+        // impact += ' impact-button-impactpage';
+        impact += ' current';
+        break;
       case "Science":
         science += ' current';
         break;
@@ -39,15 +41,16 @@ class Header extends Component {
         impact += ' hide';
         science += ' hide';
         about += ' hide';
+        foodprint += ' hide';
         break;
       case "Home":
-        // impact += ' white';
+        impact += ' white';
         science += ' white';
         about += ' white';
-        impact += ' impact-button-impactpage';
+        foodprint += ' impact-button-impactpage';
         break;
       default:
-        impact = 'impact-button menu-impact-button';
+        foodprint = 'impact-button menu-impact-button';
     }
 
     return (        
@@ -65,8 +68,8 @@ class Header extends Component {
               </Link>
             </div>
             <div className="menu">
-              <div className="desktop"><Link to="/foodprint/step0"><button className={impact}>FIND OUT YOUR FOODPRINT</button></Link></div>
-              <div className="desktop"><Link to="/impact"><button className={impact}>FOOD DETAILS</button></Link></div>
+              <div className="desktop"><Link to="/foodprint/step0"><button className={foodprint}>FIND OUT YOUR FOODPRINT</button></Link></div>
+              <div className="desktop"><Link to="/impact"><li className={impact}>FOOD DETAILS</li></Link></div>
               <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFIC SOURCES</li></Link></div>
               <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>
             </div>  
