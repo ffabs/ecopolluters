@@ -80,7 +80,7 @@
 
         .food-selected {
             display: flex;
-            align-items: baseline;
+            /* align-items: baseline; */
         }
     
     .foodprint-nutritionalvalues {
@@ -176,7 +176,7 @@
 
         .polluting-impact-selection {
             display: flex;
-            align-items: baseline;
+            /* align-items: baseline; */
             padding: 25px 20px 0px 20px;
         }
 
