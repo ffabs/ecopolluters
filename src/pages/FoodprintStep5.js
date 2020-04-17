@@ -864,7 +864,7 @@ class FoodprintStep5 extends Component {
 
                         <div className="weeklyfoodprint-impactcard">
                             <div className="impactcard water-color">
-                                <div className="impactcard-title">{totalWater} liters of water</div>
+                                <div className="impactcard-title">{totalWater} l of water</div>
                                 <div className="impactcard-subtitle">Total weekly️ water consumed</div>
                             </div>
                             <div className="topthree-section">
