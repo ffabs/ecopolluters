@@ -4,7 +4,7 @@
   
   .about-alignment {
     display: flex;
-    margin-top: 100px;
+    margin-top: 160px;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -75,6 +75,10 @@
     .about-alignment {
         margin-top: 70px;
     }
+
+    .napoleon-image {
+      margin-top: 100px;
+    }
     
 }
 
@@ -82,7 +86,7 @@
   
     .napoleon-image {
       height: 250px;
-      margin: 20px;
+      margin-top: 70px;
     }
 
     .about-vision {

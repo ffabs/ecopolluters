@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './Home.css';
 import Header from '../components/Header';
 import Categories from '../components/Categories'
 import FBShare from '../components/FBShare';
@@ -13,6 +14,7 @@ import beefvstofu from '../images/beefvstofu.png';
 import beefvstofumobile from '../images/beefvstofumobile.png';
 import foodcomparisondesktop from '../images/100grfoodcomparisondesktop.png';
 import foodcomparisonmobile from '../images/100grfoodcomparisonmobile.png';
+import mouth from '../images/mouth.png';
 
 
 function initializeReactGA() {
@@ -31,12 +33,20 @@ class Home extends Component {
       <div className="page">
         <div className="pink-cover-background">
           <Header page={'Home'} logoColor="white" />
-          <div className="page-title">
-            <div className="cover-title">Food pollution?</div>
-            <div className="cover-support">Pick a food, we show you its environmental impact and best alternatives</div>
-          </div>
-          <Categories page={'home'} {...this.props}/> 
-          <img className="corona" src={corona} alt="corona feature"/> 
+          <img className="mouth" src={mouth} alt="food mouth"/> 
+          <div className="home-fooddetails-center">
+            <div className="page-title">
+              <div className="cover-title">How big is your environmental Foodprint?</div>
+              <div className="cover-support">Find out how your eating habits are impacting the environment and what you can do</div>
+              <div className=""><Link to="/foodprint/step0"><button className="mouth-foodprint-button">FIND OUT YOUR IMPACT</button></Link></div>
+            </div>
+            <div className="page-title">
+              <div className="cover-title">Food pollution?</div>
+              <div className="cover-support">Pick a food, we show you its environmental impact and best alternatives</div>
+            </div>
+            <Categories page={'home'} {...this.props}/> 
+            <img className="corona" src={corona} alt="corona feature"/>
+          </div> 
         </div>
         {/* <Intro /> */}
         <img className="beefvstofu" src={beefvstofu} alt="beef vs tofu"/>

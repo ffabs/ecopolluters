@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:bold,normal');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:bold,normal');
 
-.pink-cover-background {
-  background: #BB6BD9;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
-}
-
 .red-home-background {
   background: #EB5757;
   width: 100%;
@@ -44,7 +35,7 @@
   display: flex;
   justify-content: center;
   color: #4F4F4F;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .corona {
@@ -81,7 +72,7 @@ body {
     font-size: 60px;
     line-height: 82px;
     color: #333333;
-    margin: 40px 20px 20px 20px;
+    margin: 80px 20px 20px 20px;
     width: 900px;
   }
 
@@ -250,6 +241,7 @@ a:hover {
 
   .nav {
     color: #4F4F4F;
+    margin-top: 70px;
   }
 
   .page-title {

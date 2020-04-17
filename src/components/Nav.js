@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './Nav.css';
+import './Header.css';
 import {Link} from 'react-router-dom';
 
 class Nav extends Component {
@@ -9,8 +10,15 @@ class Nav extends Component {
       let home = 'hide';
       let impact = '';
       let science = '';
-      let about= '';
+      let about = '';
+      let foodprint = '';
       switch(this.props.page) {
+        case "Home":
+          impact += ' white';
+          science += ' white';
+          about += ' white';
+          foodprint += ' white';
+          break;
         case "Impact":
           impact += ' current';
           break;
@@ -36,7 +44,7 @@ class Nav extends Component {
                   <div className={home}>HOME</div>
                 </Link>
                 <Link to="/foodprint/step0">
-                  <div className={impact}>FIND OUT YOUR FOODPRINT</div>
+                  <div className={foodprint}>FIND OUT YOUR FOODPRINT</div>
                 </Link>
                 <Link to="/impact">
                   <div className={impact}>FOOD DETAILS</div>
