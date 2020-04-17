@@ -209,3 +209,49 @@
     margin-bottom: 230px;
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 966px) {
+
+    .foodprint-step0-alignment {
+        margin-top: 120px;
+    }
+
+    .foodprint-start {
+        margin-bottom: 0px;
+    }
+
+    .foodprint-image {
+        margin: 0px 30px 0px 30px;
+    }
+  
+  }
+
+@media only screen and (max-width: 600px) {
+
+    .foodprint-step0-text {
+        margin: 0px 40px 0px 40px;
+    }
+
+    .foodprint-image {
+        margin: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .foodprint-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 45px;
+    }
+    
+    .foodprint-support {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+    }    
+
+}

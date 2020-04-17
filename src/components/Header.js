@@ -26,6 +26,7 @@ class Header extends Component {
     let science = '';
     let about= '';
     let foodprint= 'impact-button menu-impact-button';
+    let hamburger = 'hamburger';
     switch(this.props.page) {
       case "Impact":
         // impact += ' impact-button-impactpage';
@@ -42,6 +43,7 @@ class Header extends Component {
         science += ' hide';
         about += ' hide';
         foodprint += ' hide';
+        hamburger = 'hide';
         break;
       case "Home":
         impact += ' white';
@@ -73,7 +75,7 @@ class Header extends Component {
               <div className="desktop"><Link to="/science"><li className={science}>SCIENTIFIC SOURCES</li></Link></div>
               <div className="desktop"><Link to="/about"><li className={about}>ABOUT US</li></Link></div>
             </div>  
-            <div className="hamburger">
+            <div className={hamburger}>
               <HamburgerMenu
                 isOpen={this.state.open}
                 menuClicked={this.handleClick.bind(this)}
