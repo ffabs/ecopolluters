@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .foodprint-intro {
@@ -253,5 +254,18 @@
         font-size: 20px;
         line-height: 28px;
     }    
+
+    .foodprint-intro {
+        width: 80%;
+    }
+
+    .foodprint-calltoaction {
+        width: auto;
+    }
+
+    .foodprint-calltoaction {
+        font-size: 20px;
+        line-height: 30px;
+    }
 
 }
