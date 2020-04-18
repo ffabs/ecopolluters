@@ -14,6 +14,7 @@ import CO2 from '../components/CO2';
 import Land from '../components/Land';
 import Water from '../components/Water';
 import arrowDesktop from '../images/arrowDesktop.png';
+import arrowMobile from '../images/arrowMobile.png';
 import Alternative from '../components/Alternative';
 import Grams from '../components/Grams';
 
@@ -1023,6 +1024,7 @@ class FoodprintStep5 extends Component {
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
+                            <img className="arrow-mobile" src={arrowMobile} alt="arrowMobile"/>
 
                             <div className="alternatives-group-foodprint">
 

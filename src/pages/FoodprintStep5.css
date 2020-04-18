@@ -230,6 +230,10 @@
         height: 60px;
         margin: 30px 60px 30px 30px;
     }
+    .arrow-mobile {
+        height: 60px;
+        display: none;
+    }
 
     .foodprint-solution {
         margin-top: 30px;
@@ -302,5 +306,24 @@
         margin-top: 20px;
         width: 80%;
     }
+
+    .arrow-desktop {
+        display: none;
+    }
+    .arrow-mobile {
+        display: block;
+    }
+
+    .foodprint-solution {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .foodprint-alternative-title-section {
+        /* width: 20%; */
+        margin: 20px 0px 20px 0px;
+    }
+
+
 
 }
