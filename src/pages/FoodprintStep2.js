@@ -34,7 +34,7 @@ class FoodprintStep2 extends Component {
                         <div className="foodprint-intro">
 
                             <div className="foodprint-intro-title">
-                                FOODPRINT CALCULATOR
+                                FIND OUT YOUR FOODPRINT
                             </div>
                             
                             <div className="progress-overview">
@@ -52,10 +52,17 @@ class FoodprintStep2 extends Component {
                             <img className="step-image" src={animalpng} alt="animals"/>
 
                             <div className="foodprint-calltoaction">
-                                What is your animal products consumption weekly?
+                                What did you eat last week?
                             </div>
 
                             <div className="FoodprintForms">
+
+                                <FoodprintForm 
+                                    foodForm={'eggs'}
+                                    categoryForm="animal"
+                                    foodprintState={'eggs'}
+                                    {...this.props}
+                                />
 
                                 <FoodprintForm 
                                     foodForm={'beef'}
@@ -82,13 +89,6 @@ class FoodprintStep2 extends Component {
                                     foodForm={'crustaceans'}
                                     categoryForm="animal"
                                     foodprintState={'crustaceans'}
-                                    {...this.props}
-                                />
-
-                                <FoodprintForm 
-                                    foodForm={'eggs'}
-                                    categoryForm="animal"
-                                    foodprintState={'eggs'}
                                     {...this.props}
                                 />
 

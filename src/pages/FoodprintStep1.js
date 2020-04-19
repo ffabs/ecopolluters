@@ -34,7 +34,7 @@ class FoodprintStep1 extends Component {
                         <div className="foodprint-intro">
 
                             <div className="foodprint-intro-title">
-                                FOODPRINT CALCULATOR
+                                FIND OUT YOUR FOODPRINT
                             </div>
                             
                             <div className="progress-overview">
@@ -52,7 +52,7 @@ class FoodprintStep1 extends Component {
                             <img className="step-image" src={fruitspng} alt="fruits"/>
 
                             <div className="foodprint-calltoaction">
-                                What is your fruit and vegetables consumption weekly?
+                                What did you eat last week?
                             </div>
 
                             <div className="FoodprintForms">
@@ -68,6 +68,13 @@ class FoodprintStep1 extends Component {
                                     foodForm={'bananas'}
                                     categoryForm="fruits"
                                     foodprintState={'bananas'}
+                                    {...this.props}
+                                />
+
+                                <FoodprintForm 
+                                    foodForm={'tomatoes'}
+                                    categoryForm="fruits"
+                                    foodprintState={'tomatoes'}
                                     {...this.props}
                                 />
 
@@ -131,13 +138,6 @@ class FoodprintStep1 extends Component {
                                     foodForm={'root vegetables'}
                                     categoryForm="fruits"
                                     foodprintState={'rootvegetables'}
-                                    {...this.props}
-                                />
-
-                                <FoodprintForm 
-                                    foodForm={'tomatoes'}
-                                    categoryForm="fruits"
-                                    foodprintState={'tomatoes'}
                                     {...this.props}
                                 />
 

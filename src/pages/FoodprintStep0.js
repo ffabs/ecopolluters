@@ -31,8 +31,8 @@ class FoodprintStep0 extends Component {
                             
                             <div className="foodprint-step0-text">
 
-                                <div className="foodprint-title">How big is your environmental Foodprint?</div>
-                                <div className="foodprint-support">We will ask you what few questions about your weekly food consumption and calculate the relative environmental impact of your consumption choices.</div>
+                                <div className="foodprint-title">What did you eat last week?</div>
+                                <div className="foodprint-support">Select the food you ate last week, and we will give you back your impact plus what you can do to reduce it.</div>
                                 <button 
                                     type="button"
                                     className="foodprint-start"

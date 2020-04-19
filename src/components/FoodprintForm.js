@@ -18,11 +18,25 @@ class FoodprintForm extends Component {
         let currentValue = this.props[foodprintState];
         let measureForm = Data[this.props.categoryForm][this.props.foodForm].measure;
         let newValue = Number(currentValue);
-        if (measureForm !== "grams") {
-            newValue = newValue + 1;
-        } else {
-            newValue = newValue + 50;
+        switch(measureForm) {
+            case "item":     
+                newValue = newValue + 1;
+            break;
+            case "grams":
+                newValue = newValue + 50;
+            break;
+            case "liters":     
+                newValue = (newValue + 0.1).toFixed(1);
+            break;
+            default:
+                newValue = newValue + 50;
+            break;
         }
+        // if (measureForm !== "grams") {
+        //     newValue = newValue + 1;
+        // } else {
+        //     newValue = newValue + 50;
+        // }
         this.props.handleFoodprintInput(newValue, foodprintState);
       }
       
@@ -32,11 +46,25 @@ class FoodprintForm extends Component {
         if (currentValue > 0) {
             let measureForm = Data[this.props.categoryForm][this.props.foodForm].measure;
             let newValue = Number(currentValue);
-            if (measureForm !== "grams") {
-                newValue = newValue - 1;
-            } else {
-                newValue = newValue - 50;
+            switch(measureForm) {
+                case "item":     
+                    newValue = newValue - 1;
+                break;
+                case "grams":
+                    newValue = newValue - 50;
+                break;
+                case "liters":     
+                    newValue = (newValue - 0.1).toFixed(1);
+                break;
+                default:
+                    newValue = newValue - 50;
+                break;
             }
+            // if (measureForm !== "grams") {
+            //     newValue = newValue - 1;
+            // } else {
+            //     newValue = newValue - 50;
+            // }
             this.props.handleFoodprintInput(newValue, foodprintState);
         }
       }

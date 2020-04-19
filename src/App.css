@@ -73,8 +73,8 @@ body {
     font-size: 60px;
     line-height: 82px;
     color: #333333;
-    margin: 80px 20px 20px 20px;
-    /* width: 900px; */
+    /* margin: 80px 20px 20px 20px; */
+    margin: 80px 80px 20px;
   }
 
   .cover-title {
@@ -246,24 +246,12 @@ a:hover {
     margin-top: 70px;
   }
 
-  .page-title {
-    /* width: 800px; */
-  }
-
   .beefvstofu {
     width: 80%;
   }
 
   .red-home-text {
     width: 80%;
-  }
-
-}
-
-@media only screen and (max-width: 790px) {
-
-  .page-title {
-    /* width: 550px; */
   }
 
 }
@@ -291,6 +279,7 @@ a:hover {
     display: block;
     display: initial;
     width: 90%;
+    margin-top: 100px;
   }
 
   .red-home-title {
@@ -326,6 +315,7 @@ a:hover {
   .page-title {
     font-size: 35px;
     line-height: 50px;
+    margin: 80px 20px 20px 20px;
   }
 
   .section-title {

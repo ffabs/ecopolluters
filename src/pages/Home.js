@@ -38,14 +38,12 @@ class Home extends Component {
           <div className="home-fooddetails-center">
             <div className="page-title">
               <div className="cover-title">How big is your environmental Foodprint?</div>
-              <div className="cover-support">Find out how your eating habits are impacting the environment and what you can do</div>
+              <div className="cover-support">Find out how your eating habits are impacting the environment and what you can do about it.</div>
               <div className="">
                 <Link to="/foodprint/step0">
                   <button 
                     type="button" 
-                    className="mouth-foodprint-button" 
-                    value={this.props.foodprintStep}
-                    onClick={this.props.handleNext}
+                    className="mouth-foodprint-button"
                   >FIND OUT YOUR IMPACT
                   </button>
                 </Link>
@@ -68,9 +66,12 @@ class Home extends Component {
         <img className="beefvstofu" src={beefvstofu} alt="beef vs tofu"/>
         <img className="beefvstofumobile" src={beefvstofumobile} alt="beef vs tofu"/>
         <div className="cover-button">
-          <Link to="/impact">
-          <button className="impact-button cover-impact-button">SEE OTHER FOOD</button>
-          </Link>
+        <Link to="/foodprint/step0">
+          <button 
+            className="impact-button cover-impact-button"
+            >FIND OUT YOUR IMPACT
+          </button>
+        </Link>
         </div>
         <div className="home-note">
           <div className="note-bold">Note:&nbsp;</div>

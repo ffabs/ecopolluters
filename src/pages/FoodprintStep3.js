@@ -34,7 +34,7 @@ class FoodprintStep3 extends Component {
                         <div className="foodprint-intro">
 
                             <div className="foodprint-intro-title">
-                                FOODPRINT CALCULATOR
+                                FIND OUT YOUR FOODPRINT
                             </div>
                             
                             <div className="progress-overview">
@@ -52,7 +52,7 @@ class FoodprintStep3 extends Component {
                             <img className="step-image" src={grainspng} alt="grains"/>
 
                             <div className="foodprint-calltoaction">
-                                What is your grains and legumes consumption weekly?
+                                What did you eat last week?
                             </div>
 
                             <div className="FoodprintForms">

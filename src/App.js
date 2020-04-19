@@ -260,8 +260,6 @@ class App extends Component {
                 handleType={this.handleType}
                 handleCalculation={this.handleCalculation}
                 handleCategory={this.handleCategory}
-                foodprintStep={this.state.foodprintStep} 
-                handleNext={this.handleNext}
               />
             )}/>
             <Route exact={true} path='/impact' render={() => (
