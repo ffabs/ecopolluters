@@ -16,8 +16,9 @@
     font-family: 'Quicksand';
     font-weight: 800;
     margin: 70px 20px 20px 20px;
-    width: 70%;
-    max-width: 900px;
+    text-align: center;
+    /* width: 70%;
+    max-width: 900px; */
   }
 
     .red-home-title {
@@ -73,7 +74,7 @@ body {
     line-height: 82px;
     color: #333333;
     margin: 80px 20px 20px 20px;
-    width: 900px;
+    /* width: 900px; */
   }
 
   .cover-title {
@@ -136,7 +137,7 @@ a:hover {
 .beefvstofu {
   width: 60%;
   max-width: 820px;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .foodcomparisondesktop {
@@ -166,6 +167,7 @@ a:hover {
   line-height: 17px;
   text-align: left;
   width: 80%;
+  max-width: 1200px;
 }
 
   .note-bold {
@@ -245,7 +247,7 @@ a:hover {
   }
 
   .page-title {
-    width: 800px;
+    /* width: 800px; */
   }
 
   .beefvstofu {
@@ -261,7 +263,7 @@ a:hover {
 @media only screen and (max-width: 790px) {
 
   .page-title {
-    width: 550px;
+    /* width: 550px; */
   }
 
 }

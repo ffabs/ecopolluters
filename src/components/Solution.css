@@ -79,7 +79,7 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 40px;
-        width: 650px;
+        width: 600px;
         display: flex;
         align-items: center;
         padding: 10px;
@@ -122,10 +122,11 @@
         font-style: normal;
         font-weight: normal;
         border-radius: 10px 10px 0px 0px;
-        padding: 20px;
+        /* padding: 20px; */
+        padding: 20px 0px 20px 0px;
         display: flex;
         justify-content: center;
-        width: 45%;
+        width: 40%;
       }
         .alternative-grams-foodprint-nutr {
           display: flex;
@@ -175,6 +176,19 @@
           cursor: pointer;
         }
 
+@media only screen and (max-width: 1350px) {
+
+  .alternative-foodprint {
+    width: 760px;
+  }
+
+  .alternative-grams-foodprint {
+    width: 50%;
+  }
+
+}
+        
+
 @media only screen and (max-width: 1000px) {
   
   .solution-title-section {
@@ -185,16 +199,13 @@
     width: 750px;
   }
 
-  /* .alternative-foodprint {
-    background-color: #8C3BD9;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    width: 650px;
-  } */
+  .alternative-foodprint {
+    width: 600px;
+  }
+  .alternative-grams-foodprint {
+    width: 40%;
+  }
+
 
 }
 
@@ -226,6 +237,16 @@
   .alternatives {
     font-size: 25px;
     margin-top: 30px;
+  }
+
+  .alternative-foodprint {
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 20px;
+  }
+  .alternative-grams-foodprint {
+    padding-bottom: 0px;
+    width: auto;
   }
   
 }
@@ -304,6 +325,10 @@
     margin-top: 20px;
     line-height: 30px;
   }
+
+  .alternative-foodprint {
+    width: 350px;
+  }
   
 }
 
@@ -357,7 +382,15 @@
     margin-top: 20px;
     line-height: 30px;
   }
-  
+
+  .alternative-foodprint {
+    width: 330px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -386,6 +419,11 @@
     margin-top: 20px;
     line-height: 30px;
   }
+
+  .alternative-foodprint {
+    width: 310px;
+  }
+  
   
 }
 
@@ -415,6 +453,10 @@
     font-size: 14px;
     margin-top: 10px;
   }
+
+  .alternative-foodprint {
+    width: 280px;
+  }
   
 }
 
@@ -441,6 +483,10 @@
 
   .alternative-impact {
     font-size: 12px;
+  }
+
+  .alternative-foodprint {
+    width: 265px;
   }
   
 }

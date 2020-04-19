@@ -10,8 +10,9 @@
 .foodselected-and-editbutton {
     margin-top: 50px;
     display: flex;
-    width: 80%;
     justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
 }
 
     .food-selected-title {
@@ -44,6 +45,7 @@
     border-radius: 10px;
     margin-top: 10px;
     width: 80%;
+    max-width: 1200px;
 }
 
 .four-categories {
@@ -89,7 +91,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 20px;
         display: flex;
         justify-content: center;
     }
@@ -106,6 +108,7 @@
     line-height: 35px;
     margin-top: 60px;
     width: 80%;
+    max-width: 1200px;
 }
 
 .weeklyfoodprint-cards {
@@ -113,6 +116,7 @@
     justify-content: space-between;
     margin-top: 10px;
     width: 80%;
+    max-width: 1200px;
 }
 
 .weeklyfoodprint-impactcard {
@@ -176,7 +180,6 @@
 
         .polluting-impact-selection {
             display: flex;
-            /* align-items: baseline; */
             padding: 25px 20px 0px 20px;
         }
 
@@ -192,9 +195,7 @@
 
             .pollution-impact-filling {
                 height: 20px;
-                /* background: #FFECB3; */
                 border-radius: 15px;
-                /* position: absolute; */
                 min-width: 7%;
                 width: 7%;
             }
@@ -208,7 +209,6 @@
             text-align: center;
             color: #666666;
             justify-content: center;
-            /* position: relative; */
             margin-top: 2px;
         }
 
@@ -223,12 +223,13 @@
     font-size: 14px;
     line-height: 17px;
     width: 80%;
+    max-width: 1200px;
     margin-top: 10px;
 }
 
     .arrow-desktop {
         height: 60px;
-        margin: 30px 60px 30px 30px;
+        margin: 30px;
     }
     .arrow-mobile {
         height: 60px;
@@ -238,6 +239,7 @@
     .foodprint-solution {
         margin-top: 30px;
         width: 77%;
+        max-width: 1165px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -252,11 +254,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* width: 70%; */
     }
 
         .foodprint-alternative-title-section {
-            /* width: 20%; */
             margin-left: 5%;
             display: flex;
             flex-direction: column;
@@ -286,7 +286,7 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1350px) {
     
     .weeklyfoodprint-cards {
         flex-direction: column;
@@ -294,15 +294,28 @@
         width: 100%;
     }
 
+    .four-categories {
+        flex-direction: column;
+    }
+    .categories-selected-left {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .categories-selected-right {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .category-selected {
+        width: auto;
+        border-right: none;
+    }
+    .foodprint-nutritionalvalues {
+        flex-direction: column;
+    }
+    .foodprint-nutritionalvalues-title {
+        margin-bottom: 10px;
+    }
+
+
     .weeklyfoodprint-impactcard {
-        /* background: #FFFFFF;
-        border: 1px solid #333333;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        color:  #333333;
-        text-align: center;
-        width: 30%;
-        margin-top: 10px; */
         margin-top: 20px;
         width: 80%;
     }
@@ -320,10 +333,92 @@
     }
 
     .foodprint-alternative-title-section {
-        /* width: 20%; */
         margin: 20px 0px 20px 0px;
     }
 
+}
 
+@media only screen and (max-width: 700px) { 
 
+    .foodprint-ready {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .food-selected-title {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .edit-foodprint {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .weeklyfoodprint-title {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .weeklyfoodprint-cards {
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) { 
+
+    .foodprint-ready {
+        font-size: 20px;
+    }
+    .food-selected-title {
+        font-size: 20px;
+    }
+    .edit-foodprint {
+        font-size: 20px;
+    }
+    .weeklyfoodprint-title {
+        font-size: 20px;
+    }
+
+    .weeklyfoodprint-impactcard {
+        width: 90%;
+    }
+
+    .foodprint-solution {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+    }
+
+    .foodselected-and-editbutton {
+        width: 90%;
+    }
+    .categories-selected {
+        width: 90%;
+    }
+    .weeklyfoodprint-title {
+        width: 90%;
+    }
+    .weeklyfoodprint-support {
+        width: 90%;
+    }
+    .weeklyfoodprint-impactcard {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+
+    .foodprint-ready {
+        font-size: 16px;
+    }
+    .food-selected-title {
+        font-size: 16px;
+    }
+    .edit-foodprint {
+        font-size: 16px;
+    }
+    .weeklyfoodprint-title {
+        font-size: 16px;
+    }
+    
 }

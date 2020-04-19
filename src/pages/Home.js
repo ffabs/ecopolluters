@@ -8,7 +8,7 @@ import FBShare from '../components/FBShare';
 import Cover from '../components/Cover';
 import ReactGA from 'react-ga';
 import Footer from '../components/Footer';
-import corona from '../images/corona.png';
+import corona from '../images/coronaimpactpage.png';
 import {Link} from 'react-router-dom';
 import beefvstofu from '../images/beefvstofu.png';
 import beefvstofumobile from '../images/beefvstofumobile.png';
@@ -33,7 +33,8 @@ class Home extends Component {
       <div className="page">
         <div className="pink-cover-background">
           <Header page={'Home'} logoColor="white" />
-          <img className="mouth" src={mouth} alt="food mouth"/> 
+          
+
           <div className="home-fooddetails-center">
             <div className="page-title">
               <div className="cover-title">How big is your environmental Foodprint?</div>
@@ -50,13 +51,18 @@ class Home extends Component {
                 </Link>
               </div>
             </div>
-            <div className="page-title">
-              <div className="cover-title">Food pollution?</div>
-              <div className="cover-support">Pick a food, we show you its environmental impact and best alternatives</div>
-            </div>
-            <Categories page={'home'} {...this.props}/> 
-            <img className="corona" src={corona} alt="corona feature"/>
           </div> 
+
+          <img className="mouth" src={mouth} alt="food mouth"/> 
+
+        </div>
+        <div className="grey-foodselection-background">
+          <div className="page-title">
+                {/* <div className="cover-title">Food pollution?</div> */}
+                <div className="cover-support-black">Pick a food, we show you its environmental impact and best alternatives</div>
+              </div>
+              <Categories page={'home'} {...this.props}/> 
+          <img className="corona" src={corona} alt="corona feature"/>
         </div>
         {/* <Intro /> */}
         <img className="beefvstofu" src={beefvstofu} alt="beef vs tofu"/>

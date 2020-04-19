@@ -1,18 +1,7 @@
 .pink-cover-background {
     background: #BB6BD9;
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    margin-bottom: 100px;
   }
-
-    .mouth {
-        width: 90%;
-        float: right;
-        margin-top: 20px;
-        margin-bottom: -70px;
-    }
 
     .mouth-foodprint-button {
         background: #FFFFFF;
@@ -31,11 +20,45 @@
         cursor: pointer;
     }
 
-    .home-fooddetails-center {
-        /* background: #BB6BD9; */
+    .mouth {
+        width: 100%;
+        float: right;
+        margin-top: -130px;
+        margin-bottom: 50px;
+    }
+
+    .grey-foodselection-background {
+        background-color: #F2F2F2;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* margin-bottom: 100px; */
     }
+
+        .cover-support-black {
+            color: #444444;
+            font-family: 'Quicksand';
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+    .home-fooddetails-center {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* margin-left: 30px; */
+    }
+
+@media only screen and (max-width: 1000px) { 
+    
+    .mouth {
+        margin-top: 0px;
+    }
+
+    .home-fooddetails-center {
+        margin-left: 0px;
+    }
+    
+}
