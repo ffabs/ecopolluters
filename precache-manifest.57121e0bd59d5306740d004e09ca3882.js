@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f8b15ae38410aa00c309f33df6442cc",
+    "revision": "546687eef5a45e57b86cbec6bb6c1a7c",
     "url": "/index.html"
   },
   {
-    "revision": "3017c825c00e807deadb",
-    "url": "/static/css/main.8fb48fc8.chunk.css"
+    "revision": "33a553cbd57fdec2dfde",
+    "url": "/static/css/main.237ae332.chunk.css"
   },
   {
-    "revision": "724141f67b773ede5181",
-    "url": "/static/js/2.717c2ef6.chunk.js"
+    "revision": "dd492e2027ec56dc6a22",
+    "url": "/static/js/2.c1d7ded4.chunk.js"
   },
   {
     "revision": "4cbe2726fb66bcef66051a0d56105b42",
-    "url": "/static/js/2.717c2ef6.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c1d7ded4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3017c825c00e807deadb",
-    "url": "/static/js/main.2ed02283.chunk.js"
+    "revision": "33a553cbd57fdec2dfde",
+    "url": "/static/js/main.36d206b9.chunk.js"
   },
   {
     "revision": "335164574068ec67ef11",
@@ -52,16 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/co2-impact.4525979c.png"
   },
   {
-    "revision": "1675cbd9b7d55bcf8b55eac827b5428c",
-    "url": "/static/media/co2.1675cbd9.svg"
-  },
-  {
     "revision": "046a19b0a69b763fa717bdb08a3fc524",
     "url": "/static/media/cover.046a19b0.svg"
-  },
-  {
-    "revision": "cea02c7c6cbd272ef9e493017bfd077f",
-    "url": "/static/media/cow.cea02c7c.svg"
   },
   {
     "revision": "1c1636d92496a097c3bc97b452c69158",
@@ -76,6 +68,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ecopolluters.a6fc8e23.svg"
   },
   {
+    "revision": "57c5df9961c31c5ef89112e0e434363c",
+    "url": "/static/media/ecopollutersWhite.57c5df99.svg"
+  },
+  {
     "revision": "a5ac667a630f26eff8e2abe687adc72f",
     "url": "/static/media/fabio.a5ac667a.png"
   },
@@ -86,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c6270aaf51b6edcc75547d9ddf9ee4f",
     "url": "/static/media/flat.4c6270aa.png"
+  },
+  {
+    "revision": "ee186f038b1e47f68713d688f95fe5b6",
+    "url": "/static/media/foodprint.ee186f03.png"
   },
   {
     "revision": "70fa5b65f72eb11aeac45107c5359a53",
@@ -104,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/land-impact.a19612d6.png"
   },
   {
-    "revision": "d7af5675798b0d8a85c3e3b8b2c0ca36",
-    "url": "/static/media/land.d7af5675.svg"
+    "revision": "9e749ace2e09c9d56425f06d78f008d6",
+    "url": "/static/media/mouth.9e749ace.png"
   },
   {
     "revision": "f2bce955f03cc34869ddc48fce966203",
@@ -126,9 +126,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "df8622f9ce9049ee06c3fcc04c8c6194",
     "url": "/static/media/water-impact.df8622f9.png"
-  },
-  {
-    "revision": "f8a4135da60bc9ff4b73eaad9e1bdf9e",
-    "url": "/static/media/water.f8a4135d.svg"
   }
 ]);
