@@ -1116,6 +1116,7 @@ class FoodprintStep5 extends Component {
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
+                            <img className="arrow-mobile" src={arrowMobile} alt="arrowMobile"/>
 
                             <div className="alternatives-group-foodprint">
 
@@ -1210,6 +1211,7 @@ class FoodprintStep5 extends Component {
                             </div>
 
                             <img className="arrow-desktop" src={arrowDesktop} alt="arrowDesktop"/>
+                            <img className="arrow-mobile" src={arrowMobile} alt="arrowMobile"/>
 
                             <div className="alternatives-group-foodprint">
 
