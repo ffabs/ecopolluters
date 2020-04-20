@@ -99,7 +99,7 @@
         .foodprint-nutritionalvalues-title {
             font-weight: bold;
         }
-
+        
 .weeklyfoodprint-title {
     font-family: Quicksand;
     font-style: normal;
@@ -286,7 +286,7 @@
 }
 
 
-@media only screen and (max-width: 1350px) {
+/* @media only screen and (max-width: 1350px) {
 
     .arrow-desktop {
         display: none;
@@ -304,7 +304,7 @@
         margin: 20px 0px 20px 0px;
     }
 
-}
+} */
 
 @media only screen and (max-width: 1300px) { 
 
@@ -328,6 +328,50 @@
         margin-bottom: 10px;
     }
 
+    .weeklyfoodprint-impactcard {
+        margin-top: 20px;
+        width: 32%;
+    }
+    .foodselected-and-editbutton{
+        width: 90%;
+    }
+    .categories-selected {
+        width: 90%;
+    }
+    .weeklyfoodprint-title {
+        width: 90%;
+    }
+    .weeklyfoodprint-cards {
+        width: 90%;
+    }
+    .weeklyfoodprint-support {
+        width: 90%;
+    }
+    .foodprint-solution {
+        margin-top: 30px;
+        width: 87%;
+        max-width: 1165px;
+    }
+}
+
+@media only screen and (max-width: 1100px) { 
+
+    .arrow-desktop {
+        display: none;
+    }
+    .arrow-mobile {
+        display: block;
+    }
+
+    .foodprint-solution {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .foodprint-alternative-title-section {
+        margin: 20px 0px 20px 0px;
+    }
+
 }
 
 @media only screen and (max-width: 950px) { 
@@ -340,7 +384,7 @@
 
     .weeklyfoodprint-impactcard {
         margin-top: 20px;
-        width: 80%;
+        width: 90%;
     }
 
 }

@@ -231,6 +231,14 @@ a:hover {
         color: #828282;
       }
 
+@media only screen and (max-width: 1300px) {
+
+  .foodprint-note {
+    width: 90%;
+  }
+  
+}
+
 @media only screen and (max-width: 1000px) {
 
   .header {
