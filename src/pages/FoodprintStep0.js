@@ -18,7 +18,8 @@ class FoodprintStep0 extends Component {
         initializeReactGA()
     
         return (        
-            
+
+            <div className="page">
                 <div className="foodprint step0-background">
 
                     {this.props.foodprintStep !== 0 &&
@@ -51,6 +52,7 @@ class FoodprintStep0 extends Component {
                         </div>
    
                 </div>
+            </div>
 
         );
         

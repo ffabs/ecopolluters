@@ -7,22 +7,27 @@
 .step0-background {
     background-color: #9B51E0;
     padding-bottom: 200px;
+    width: 100%;
 }
 
 .step1-background {
     background-color: #27AE60;
+    width: 100%;
 }
 
 .step2-background {
     background-color: #C64F4F;
+    width: 100%;
 }
 
 .step3-background {
     background-color: #F2994A;
+    width: 100%;
 }
 
 .step4-background {
     background-color: #2F80ED;
+    width: 100%;
 }
 
 .foodprint-step0-alignment {

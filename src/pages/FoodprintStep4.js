@@ -21,6 +21,8 @@ class FoodprintStep4 extends Component {
     
         return (        
 
+            <div className="page">
+
             <div className="foodprint step4-background">
                 
                 {this.props.foodprintStep !== 4 &&
@@ -175,6 +177,8 @@ class FoodprintStep4 extends Component {
                         </div>
                         
                 </div>
+
+            </div>
 
             </div>
     

@@ -435,6 +435,8 @@ class FoodprintStep5 extends Component {
     
         return (        
 
+            <div className="page">
+
             <div className="foodprint step0-background">
                 
                 {this.props.foodprintStep !== 5 &&
@@ -1292,6 +1294,8 @@ class FoodprintStep5 extends Component {
                     </div>
 
                     
+
+            </div>
 
             </div>
     
