@@ -287,12 +287,26 @@
 
 
 @media only screen and (max-width: 1350px) {
-    
-    .weeklyfoodprint-cards {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+
+    .arrow-desktop {
+        display: none;
     }
+    .arrow-mobile {
+        display: block;
+    }
+
+    .foodprint-solution {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .foodprint-alternative-title-section {
+        margin: 20px 0px 20px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) { 
 
     .four-categories {
         flex-direction: column;
@@ -314,26 +328,19 @@
         margin-bottom: 10px;
     }
 
+}
+
+@media only screen and (max-width: 950px) { 
+
+    .weeklyfoodprint-cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
     .weeklyfoodprint-impactcard {
         margin-top: 20px;
         width: 80%;
-    }
-
-    .arrow-desktop {
-        display: none;
-    }
-    .arrow-mobile {
-        display: block;
-    }
-
-    .foodprint-solution {
-        flex-direction: column;
-        padding-bottom: 30px;
-    }
-
-    .foodprint-alternative-title-section {
-        margin: 20px 0px 20px 0px;
     }
 
 }
