@@ -4,7 +4,7 @@
   
   .about-alignment {
     display: flex;
-    margin-top: 160px;
+    padding-top: 160px;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -73,7 +73,7 @@
 @media only screen and (max-width: 877px) {
     
     .about-alignment {
-        margin-top: 70px;
+        padding-top: 70px;
     }
 
     .napoleon-image {
