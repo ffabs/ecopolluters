@@ -111,21 +111,20 @@
         font-size: 16px;
         line-height: 20px;
         border-radius: 0px 0px 0px 0px;
-        height: 46px;  /* should be 46px remove this line if it doesn't solve the safari issue */ 
+        margin: 0px;
+        padding: 1px;
     }
 
     .foodprint-input-more {
         width: 40px;
         font-size: 16px;
         line-height: 20px;
-        height: 48px;
     }
 
     .foodprint-input-less {
         width: 40px;
         font-size: 16px;
         line-height: 20px;
-        height: 48px;
     }
     
     .foodprint-measure{
