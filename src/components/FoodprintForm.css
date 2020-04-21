@@ -110,6 +110,8 @@
         width: 50px;
         font-size: 16px;
         line-height: 20px;
+        border-radius: 0px 0px 0px 0px;
+        height: 46px;
     }
 
     .foodprint-input-more {
@@ -140,6 +142,5 @@
         margin-top: 12px;
         margin-bottom: 0px;
     }
-
 
 }
