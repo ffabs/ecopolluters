@@ -17,7 +17,7 @@
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
         border: 0px;
-        margin: 0; 
+        margin: 0px; 
     }
 
     /* removing the input number default increment buttons from Chrome */
@@ -107,7 +107,7 @@
 @media only screen and (max-width: 600px) {
 
     .foodprint-input{
-        width: 49px;
+        width: 50px;
         font-size: 16px;
         line-height: 20px;
         border-radius: 0px 0px 0px 0px;
