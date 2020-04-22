@@ -27,6 +27,7 @@ class Header extends Component {
     let about= '';
     let foodprint= 'impact-button menu-impact-button';
     let hamburger = 'hamburger';
+    let hamburgerColor = '';
     switch(this.props.page) {
       case "Impact":
         // impact += ' impact-button-impactpage';
@@ -49,6 +50,7 @@ class Header extends Component {
         impact += ' white';
         science += ' white';
         about += ' white';
+        hamburgerColor += ' white';
         foodprint += ' impact-button-impactpage';
         break;
       default:
@@ -79,6 +81,7 @@ class Header extends Component {
               <HamburgerMenu
                 isOpen={this.state.open}
                 menuClicked={this.handleClick.bind(this)}
+                color= {hamburgerColor}
                 // width={18}
                 // height={15}
                 // strokeWidth={1}
