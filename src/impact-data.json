@@ -1527,7 +1527,7 @@
 
         "hand": {
             "co2": 0,
-            "water": 25.5,
+            "water": 2.1,
             "land": 0,
             "defaultAmount": 1,
             "unit": 1,
@@ -1542,7 +1542,7 @@
 
         "bidet": {
             "co2": 0,
-            "water": 0.473,
+            "water": 0.5,
             "land": 0,
             "defaultAmount": 1,
             "unit": 1,

@@ -6,9 +6,11 @@
 
 .step0-background {
     background-color: #9B51E0;
-    padding-bottom: 200px;
     width: 100%;
 }
+    .step0-background-padding {
+        padding-bottom: 200px;
+    }
 
 .step1-background {
     background-color: #27AE60;

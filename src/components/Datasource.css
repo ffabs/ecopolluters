@@ -1,0 +1,77 @@
+.background-datasource {
+    background: #222222;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin-top: 50px;
+    color: #EBECED;
+    flex-wrap: wrap;
+}
+
+.img-datasource {
+    /* height: 350px; */
+    width: 450px;
+    margin: 0px 50px 0px 50px;
+}
+
+.text-datasource {
+    width: 450px;
+    margin: 0px 50px 0px 20px;
+}
+
+.datasource-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.datasource-support {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.datasource-article {
+    background: #828282;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px dotted #828282;
+    width: 400px;
+}
+
+.datasource-article-text {
+    color: #EBECED;
+}
+
+.datasource-linksciencepage {
+    color: white;
+    margin: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .img-datasource {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .text-datasource {
+        width: 90%;
+        margin: 0px;
+    }
+
+    .datasource-article {
+        width: 85%;
+    }
+
+}

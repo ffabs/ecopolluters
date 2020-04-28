@@ -17,6 +17,7 @@ import arrowDesktop from '../images/arrowDesktop.png';
 import arrowMobile from '../images/arrowMobile.png';
 import Alternative from '../components/Alternative';
 import Grams from '../components/Grams';
+import Datasource from '../components/Datasource';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-150607597-1');
@@ -1287,6 +1288,8 @@ class FoodprintStep5 extends Component {
                         <FBShare foodprint="true"/>
 
                         <div className="foodprint-datasource-section">
+
+                            <Datasource />
 
                         </div>
 
