@@ -40,7 +40,7 @@
 }
 
 .datasource-article {
-    background: #828282;
+    background: #444444;
     border-radius: 10px;
     padding: 20px;
     margin-top: 10px;
@@ -60,9 +60,12 @@
 
 @media only screen and (max-width: 550px) {
 
+    .background-datasource {
+        padding: 50px 0px 50px 0px;
+    }
+
     .img-datasource {
         width: 80%;
-        margin-top: 30px;
     }
 
     .text-datasource {
