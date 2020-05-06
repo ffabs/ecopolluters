@@ -8,9 +8,6 @@
     background-color: #9B51E0;
     width: 100%;
 }
-    .step0-background-padding {
-        padding-bottom: 200px;
-    }
 
 .step1-background {
     background-color: #27AE60;
@@ -116,6 +113,7 @@
 
 .FoodprintForms {
     margin-bottom: 120px;
+    /* margin-bottom: 75%; */
 }
 
 .wizard-buttons {
@@ -215,6 +213,47 @@
     margin-top: 30px;
     margin-bottom: 230px;
     cursor: pointer;
+}
+
+.step0-background-padding {
+    padding-bottom: 30%;
+}
+.step2-background-heightresponsive {
+    padding-bottom: 10px;
+}
+.step3-background-heightresponsive {
+    padding-bottom: 15%;
+}
+
+@media screen and (max-height: 900px) {  
+
+    .step0-background-padding {
+        padding-bottom: 15%;
+    }
+    .step2-background-heightresponsive {
+        padding-bottom: 0px;
+    }
+    .step3-background-heightresponsive {
+        padding-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-height: 770px) {  
+
+    .step0-background-padding {
+        padding-bottom: 5%;
+    }
+
+}
+
+
+@media screen and (max-height: 600px) {  
+
+    .step0-background-padding {
+        padding-bottom: 0%;
+    }
+
 }
 
 

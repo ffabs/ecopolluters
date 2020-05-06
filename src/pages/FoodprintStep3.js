@@ -23,7 +23,7 @@ class FoodprintStep3 extends Component {
 
             <div className="page">
 
-            <div className="foodprint step3-background">
+            <div className="foodprint step3-background step3-background-heightresponsive">
                 
                 {this.props.foodprintStep !== 3 &&
                     <Redirect to={"/foodprint/step"+this.props.foodprintStep} />
