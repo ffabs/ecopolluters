@@ -41,7 +41,7 @@ class Form extends Component {
                       <option value="apples"> 🍏 Apples </option>
                       <option value="bananas"> 🍌 Bananas </option>
                       <option value="berries and grapes"> 🍇 Berries and grapes </option>
-                      <option value="brassicas"> 🥦 Brassicas </option>
+                      <option value="broccolis"> 🥦 Broccolis </option>
                       <option value="cassavas"> 🍠 Cassavas </option>
                       {/* <option value="citrus fruits"> 🍋 Citrus fruits </option> */}
                       <option value="lemons"> 🍋 Lemons </option>

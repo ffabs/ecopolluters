@@ -517,7 +517,7 @@
             }
         },
 
-        "brassicas": {
+        "broccolis": {
             "co2": 0.00051,
             "water": 0.11940,
             "land": 0.00055,
@@ -1035,7 +1035,7 @@
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "brassicas"
+                "name": "broccolis"
             }
         },
         
@@ -1067,7 +1067,7 @@
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "brassicas"
+                "name": "broccolis"
             }
         },
         

@@ -39,7 +39,7 @@ class App extends Component {
       apples: '0',
       bananas: '0',
       berriesandgrapes: '0',
-      brassicas: '0',
+      broccolis: '0',
       cassavas: '0',
       citrusfruits: '0',
       lemons: '0',
@@ -309,7 +309,7 @@ class App extends Component {
                 apples={this.state.apples} 
                 bananas={this.state.bananas}
                 berriesandgrapes = {this.state.berriesandgrapes}
-                brassicas={this.state.brassicas}
+                broccolis={this.state.broccolis}
                 cassavas={this.state.cassavas}
                 citrusfruits = {this.state.citrusfruits}
                 lemons = {this.state.lemons}
@@ -386,7 +386,7 @@ class App extends Component {
                 apples={this.state.apples} 
                 bananas={this.state.bananas}
                 berriesandgrapes = {this.state.berriesandgrapes}
-                brassicas={this.state.brassicas}
+                broccolis={this.state.broccolis}
                 cassavas={this.state.cassavas}
                 citrusfruits = {this.state.citrusfruits}
                 lemons = {this.state.lemons}

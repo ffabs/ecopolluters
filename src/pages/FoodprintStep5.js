@@ -37,7 +37,7 @@ class FoodprintStep5 extends Component {
             case "berries and grapes":
                 return("fruits");
             break;
-            case "brassicas":
+            case "broccolis":
                 return("fruits");
             break;
             case "cassavas":
@@ -176,7 +176,7 @@ class FoodprintStep5 extends Component {
         let apples = this.props.apples
         let bananas = this.props.bananas
         let berriesandgrapes = this.props.berriesandgrapes
-        let brassicas = this.props.brassicas
+        let broccolis = this.props.broccolis
         let cassavas = this.props.cassavas
         let citrusfruits = this.props.citrusfruits
         let lemons = this.props.lemons
@@ -218,12 +218,12 @@ class FoodprintStep5 extends Component {
         let beetsugar = this.props.beetsugar
         let canesugar = this.props.canesugar
 
-        let Foodprint = [apples, bananas, berriesandgrapes, brassicas, cassavas, citrusfruits, lemons, oranges, groundnuts, nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables, 
+        let Foodprint = [apples, bananas, berriesandgrapes, broccolis, cassavas, citrusfruits, lemons, oranges, groundnuts, nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables, 
                         beef, cheese, chicken, crustaceans, eggs, fish, lamb, milk, pork, 
                         bread, cornflour, oatmeal, otherlegumes, peas, rice,
                         tofu, soymilk, coffee, darkchocolate, beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar];
         
-        let foodData = ["apples", "bananas", "berries and grapes", "brassicas", "cassavas", "citrus fruits", "lemons", "oranges", "groundnuts", "nuts", "onions", "potatoes", "root vegetables", "tomatoes", "other fruits", "other vegetables",
+        let foodData = ["apples", "bananas", "berries and grapes", "broccolis", "cassavas", "citrus fruits", "lemons", "oranges", "groundnuts", "nuts", "onions", "potatoes", "root vegetables", "tomatoes", "other fruits", "other vegetables",
                         "beef", "cheese", "chicken", "crustaceans", "eggs", "fish", "lamb", "milk", "pork",
                         "bread", "corn flour", "oatmeal", "other legumes", "peas", "rice",
                         "tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
@@ -508,10 +508,10 @@ class FoodprintStep5 extends Component {
                                 </div>
                                 }
 
-                                {brassicas != "0" &&
+                                {broccolis != "0" &&
                                 <div className="food-selected">
-                                    <div><Icon icon="brassicas"/></div>
-                                    <div>&nbsp;• {brassicas} g</div>
+                                    <div><Icon icon="broccolis"/></div>
+                                    <div>&nbsp;• {broccolis} g</div>
                                 </div>
                                 }
 

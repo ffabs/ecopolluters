@@ -106,10 +106,10 @@ class Icon extends Component {
                         <div className={iconText}>&nbsp;Bananas</div> 
                     </div>
                 }
-                {this.props.icon === "brassicas" &&
+                {this.props.icon === "broccolis" &&
                     <div className={icon}>
                         <div className={iconImage}>🥦</div> 
-                        <div className={iconText}>&nbsp;Brassicas </div> 
+                        <div className={iconText}>&nbsp;Broccolis </div> 
                     </div>
                 }
                 {this.props.icon === "onions" &&
