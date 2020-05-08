@@ -42,6 +42,8 @@ class App extends Component {
       brassicas: '0',
       cassavas: '0',
       citrusfruits: '0',
+      lemons: '0',
+      oranges: '0',
       groundnuts: '0',
       nuts: '0',
       onions: '0',
@@ -310,6 +312,8 @@ class App extends Component {
                 brassicas={this.state.brassicas}
                 cassavas={this.state.cassavas}
                 citrusfruits = {this.state.citrusfruits}
+                lemons = {this.state.lemons}
+                oranges = {this.state.oranges}
                 groundnuts={this.state.groundnuts}
                 nuts={this.state.nuts}
                 onions={this.state.onions}
@@ -385,6 +389,8 @@ class App extends Component {
                 brassicas={this.state.brassicas}
                 cassavas={this.state.cassavas}
                 citrusfruits = {this.state.citrusfruits}
+                lemons = {this.state.lemons}
+                oranges = {this.state.oranges}
                 groundnuts={this.state.groundnuts}
                 nuts={this.state.nuts}
                 onions={this.state.onions}

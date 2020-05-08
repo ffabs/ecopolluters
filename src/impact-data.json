@@ -17,23 +17,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.375
+                "name": "tofu"
             },
             "alternative2": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 1.117647059
+                "name": "chicken"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.8260869565
+                "name": "other legumes"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 1.461538462
+                "name": "eggs"
             }
         },
 
@@ -53,23 +49,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.125
+                "name": "tofu"
             },
             "alternative2": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 1
+                "name": "chicken"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.7391304348
+                "name": "other legumes"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 1.307692308
+                "name": "eggs"
             }
         },
 
@@ -89,23 +81,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 1.7
+                "name": "tofu"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.5913043478
+                "name": "other legumes"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "peas",
-                "amount": 2.518518519
+                "name": "peas"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 0.8
+                "name": "chicken"
             }
         },
 
@@ -125,23 +113,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 3.1125
+                "name": "tofu"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 1.082608696
+                "name": "other legumes"
             },
             "alternative3": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 1.915384615
+                "name": "eggs"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 1.464705882
+                "name": "chicken"
             }
         },
 
@@ -161,23 +145,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.5
+                "name": "tofu"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.8695652174
+                "name": "other legumes"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 1.538461538
+                "name": "eggs"
             }
         },
 
@@ -197,23 +177,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.1125
+                "name": "tofu"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.9285714286
+                "name": "other legumes"
             },
             "alternative3": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 0.9941176471
+                "name": "chicken"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 0.7347826087
+                "name": "nuts"
             }
         },
 
@@ -233,23 +209,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.125
+                "name": "tofu"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.7391304348
+                "name": "other legumes"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 0.9340659341
+                "name": "nuts"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 1.307692308
+                "name": "eggs"
             }
         },
 
@@ -269,23 +241,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.004364906155
+                "name": "soymilk"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 1.625
+                "name": "tofu"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 0.7142857143
+                "name": "nuts"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "chicken",
-                "amount": 0.7647058824
+                "name": "chicken"
             }
         },
 
@@ -305,23 +273,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 1.319917776
+                "name": "soymilk"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "bananas",
-                "amount": 685.3932584
+                "name": "bananas"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "oatmeal",
-                "amount": 203.3333333
+                "name": "oatmeal"
             },
             "alternative4": {
                 "category": "animal",
-                "name": "eggs",
-                "amount": 426.5734266
+                "name": "eggs"
             }
         }
         
@@ -345,23 +309,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "onions",
-                "amount": 0.4193548387
+                "name": "onions"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "root vegetables",
-                "amount": 0.40625
+                "name": "root vegetables"
             },
             "alternative4": {
                 "category": "grains",
-                "name": "peas",
-                "amount": 0.2785714286
+                "name": "peas"
             }
         },
 
@@ -381,23 +341,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 0.2440944882
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "root vegetables",
-                "amount": 0.96875
+                "name": "root vegetables"
             },
             "alternative4": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 0.121887287
+                "name": "bread"
             }
         },
 
@@ -417,23 +373,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.006110868616
+                "name": "soymilk"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.275
+                "name": "tofu"
             },
             "alternative4": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             }
         },
 
@@ -453,23 +405,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 1.130434783
+                "name": "other legumes"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 3.25
+                "name": "tofu"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 1.428571429
+                "name": "nuts"
             }
         },
 
@@ -489,23 +437,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 0.2519685039
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "potatoes",
-                "amount": 0.8
+                "name": "potatoes"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "onions",
-                "amount": 1.032258065
+                "name": "onions"
             }
         },
 
@@ -525,23 +469,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 0.3149606299
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 0.1643835616
+                "name": "corn flour"
             },
             "alternative4": {
                 "category": "grains",
-                "name": "rice",
-                "amount": 0.1518987342
+                "name": "rice"
             }
         },
 
@@ -561,23 +501,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 0.5219178082
+                "name": "corn flour"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 0.499344692
+                "name": "bread"
             },
             "alternative4": {
                 "category": "grains",
-                "name": "rice",
-                "amount": 0.482278481
+                "name": "rice"
             }
         },
 
@@ -597,23 +533,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "onions",
-                "amount": 0.7096774194
+                "name": "onions"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 0.0904109589
+                "name": "corn flour"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "root vegetables",
-                "amount": 0.6875
+                "name": "root vegetables"
             }
         },
 
@@ -633,23 +565,85 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "onions",
-                "amount": 0.3870967742
+                "name": "onions"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "root vegetables",
-                "amount": 0.375
+                "name": "root vegetables"
+            }
+        },
+
+
+        "lemons": {
+            "co2": 0.00039,
+            "water": 0.08270,
+            "land": 0.00086,
+            "defaultAmount": 1,
+            "unit": 100,
+            "measure": "item",
+            "nutritional values": {
+                "calories": 0.29,
+                "proteins": 0.011,
+                "carbs": 0.093,
+                "fats": 0.003
+            },
+            "optimise": "CARBS",
+            "alternative1": {
+                "category": "",
+                "name": "none"
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "oranges"
+            },
+            "alternative3": {
+                "category": "otherfood",
+                "name": "beet sugar"
+            },
+            "alternative4": {
+                "category": "fruits",
+                "name": "bananas"
+            }
+        },
+
+
+        "oranges": {
+            "co2": 0.00039,
+            "water": 0.08270,
+            "land": 0.00086,
+            "defaultAmount": 1,
+            "unit": 140,
+            "measure": "item",
+            "nutritional values": {
+                "calories": 0.66,
+                "proteins": 0.013,
+                "carbs": 0.168,
+                "fats": 0.001
+            },
+            "optimise": "CARBS",
+            "alternative1": {
+                "category": "",
+                "name": "none"
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "apples"
+            },
+            "alternative3": {
+                "category": "otherfood",
+                "name": "beet sugar"
+            },
+            "alternative4": {
+                "category": "",
+                "name": "none"
             }
         },
 
@@ -669,23 +663,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "apples",
-                "amount": 1.014492754
+                "name": "apples"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "beet sugar",
-                "amount": 0.14
+                "name": "beet sugar"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "bananas",
-                "amount": 0.6140350877
+                "name": "bananas"
             }
         },
 
@@ -705,23 +695,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "citrus fruits",
-                "amount": 1.628571429
+                "name": "oranges"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "cane sugar",
-                "amount": 0.228
+                "name": "cane sugar"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "apples",
-                "amount": 1.652173913
+                "name": "apples"
             }
         },
 
@@ -741,23 +727,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "citrus fruits",
-                "amount": 0.9857142857
+                "name": "oranges"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "bananas",
-                "amount": 0.6052631579
+                "name": "bananas"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.003839198776
+                "name": "soymilk"
             }
         },
 
@@ -777,23 +759,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "citrus fruits",
-                "amount": 1.214285714
+                "name": "oranges"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "apples",
-                "amount": 1.231884058
+                "name": "apples"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "bananas",
-                "amount": 0.7456140351
+                "name": "bananas"
             }
         },
 
@@ -813,23 +791,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "citrus fruits",
-                "amount": 0.6808510638
+                "name": "oranges"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "bananas",
-                "amount": 0.3595505618
+                "name": "bananas"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "apples",
-                "amount": 0.6153846154
+                "name": "apples"
             }
         }
 
@@ -853,23 +827,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 1.045205479
+                "name": "corn flour"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 2.002624672
+                "name": "cassavas"
             },
             "alternative4": {
                 "category": "grains",
-                "name": "rice",
-                "amount": 0.9658227848
+                "name": "rice"
             }
         },
 
@@ -889,23 +859,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 1.916010499
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 0.9567496723
+                "name": "bread"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "root vegetables",
-                "amount": 7.604166667
+                "name": "root vegetables"
             }
         },
 
@@ -925,23 +891,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 0.5774278215
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 0.2883355177
+                "name": "bread"
             },
             "alternative4": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 0.301369863
+                "name": "corn flour"
             }
         },
         
@@ -961,23 +923,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 1.035386632
+                "name": "bread"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": 1.082191781
+                "name": "corn flour"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "potatoes",
-                "amount": 6.583333333
+                "name": "potatoes"
             }
         },
         
@@ -997,23 +955,19 @@
             "optimise": "PROTEIN",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.007722526273
+                "name": "soymilk"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 1.263736264
+                "name": "nuts"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "tofu",
-                "amount": 2.875
+                "name": "tofu"
             }
         },
 
@@ -1033,23 +987,19 @@
             "optimise": "CARBS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 0.3674540682
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes",
-                "amount": 0.2295081967
+                "name": "other legumes"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "root vegetables",
-                "amount": 1.458333333
+                "name": "root vegetables"
             }
         }
 
@@ -1073,23 +1023,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.002686096095
+                "name": "soymilk"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 0.4395604396
+                "name": "nuts"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "brassicas",
-                "amount": 2.857142857
+                "name": "brassicas"
             }
         },
         
@@ -1109,23 +1055,19 @@
             "optimise": "PROTEINS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "oatmeal",
-                "amount": 290
+                "name": "oatmeal"
             },
             "alternative3": {
                 "category": "fruits",
-                "name": "nuts",
-                "amount": 159.3406593
+                "name": "nuts"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "brassicas",
-                "amount": 1035.714286
+                "name": "brassicas"
             }
         },
         
@@ -1145,23 +1087,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "otherfood",
-                "name": "beet sugar",
-                "amount": 1
+                "name": "beet sugar"
             },
             "alternative2": {
                 "category": "grains",
-                "name": "corn flour",
-                "amount": "1.25"
+                "name": "corn flour"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 1.098901099
+                "name": "bread"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "beer",
-                "amount": 0.01379310345
+                "name": "beer"
             }
         },
         
@@ -1181,23 +1119,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "fruits",
-                "name": "cassavas",
-                "amount": 2.5
+                "name": "cassavas"
             },
             "alternative3": {
                 "category": "grains",
-                "name": "bread",
-                "amount": 1.098901099
+                "name": "bread"
             },
             "alternative4": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             }
         },
         
@@ -1217,23 +1151,19 @@
             "optimise": "FATS",
             "alternative1": {
                 "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 0.1348
+                "name": "sunflower oil"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "rapeseed oil",
-                "amount": 0.1495
+                "name": "rapeseed oil"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "palm oil",
-                "amount": 0.1370
+                "name": "palm oil"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "olive oil",
-                "amount": 0.1375
+                "name": "olive oil"
             }
         },
         
@@ -1253,23 +1183,19 @@
             "optimise": "FATS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 0.9838
+                "name": "sunflower oil"
             },
             "alternative3": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative4": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             }
         },
         
@@ -1289,23 +1215,19 @@
             "optimise": "FATS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "rapeseed oil",
-                "amount": 1.1085
+                "name": "rapeseed oil"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "palm oil",
-                "amount": 1.0165
+                "name": "palm oil"
             }
         },
         
@@ -1325,23 +1247,19 @@
             "optimise": "FATS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 0.9022
+                "name": "sunflower oil"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "palm oil",
-                "amount": 0.9170
+                "name": "palm oil"
             }
         },
         
@@ -1361,23 +1279,19 @@
             "optimise": "FATS",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "sunflower oil",
-                "amount": 0.9806
+                "name": "sunflower oil"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "rapeseed oil",
-                "amount": 1.0870
+                "name": "rapeseed oil"
             },
             "alternative4": {
                 "category": "otherfood",
-                "name": "palm oil",
-                "amount": 0.9967
+                "name": "palm oil"
             }
         },
 
@@ -1397,23 +1311,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "wine",
-                "amount": 0.3493975904
+                "name": "wine"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "soymilk",
-                "amount": 0.6275018933
+                "name": "soymilk"
             },
             "alternative4": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             }
         },
         
@@ -1433,23 +1343,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "beer",
-                "amount": 2.862068966
+                "name": "beer"
             },
             "alternative4": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             }
         },
         
@@ -1469,8 +1375,7 @@
             "optimise": "FUN",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
@@ -1505,8 +1410,7 @@
             "optimise": "WIPES",
             "alternative1": {
                 "category": "",
-                "name": "none",
-                "amount": ""
+                "name": "none"
             },
             "alternative2": {
                 "category": "otherfood",
@@ -1571,23 +1475,19 @@
             "optimise": "CALORIES",
             "alternative1": {
                 "category": "otherfood",
-                "name": "beet sugar",
-                "amount": 1.375
+                "name": "beet sugar"
             },
             "alternative2": {
                 "category": "otherfood",
-                "name": "cane sugar",
-                "amount": 1.375
+                "name": "cane sugar"
             },
             "alternative3": {
                 "category": "otherfood",
-                "name": "beer",
-                "amount": 0.01896551724
+                "name": "beer"
             },
             "alternative4": {
                 "category": "fruits",
-                "name": "apples",
-                "amount": 10.57692308
+                "name": "apples"
             }
         }
     }
