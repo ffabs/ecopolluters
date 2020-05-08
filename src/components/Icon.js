@@ -112,6 +112,12 @@ class Icon extends Component {
                         <div className={iconText}>&nbsp;Broccolis </div> 
                     </div>
                 }
+                {this.props.icon === "cabbage" &&
+                    <div className={icon}>
+                        <div className={iconImage}>🥬</div> 
+                        <div className={iconText}>&nbsp;Cabbage </div> 
+                    </div>
+                }
                 {this.props.icon === "onions" &&
                     <div className={icon}>
                         <div className={iconImage}>⚪</div> 

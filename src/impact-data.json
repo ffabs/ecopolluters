@@ -549,6 +549,38 @@
             }
         },
 
+        "cabbage": {
+            "co2": 0.00051,
+            "water": 0.11940,
+            "land": 0.00055,
+            "defaultAmount": 100,
+            "unit": 1,
+            "measure": "grams",
+            "nutritional values": {
+                "calories": 0.34,
+                "proteins": 0.028,
+                "carbs": 0.066,
+                "fats": 0.004
+            },
+            "optimise": "CARBS",
+            "alternative1": {
+                "category": "",
+                "name": "none"
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "onions"
+            },
+            "alternative3": {
+                "category": "grains",
+                "name": "corn flour"
+            },
+            "alternative4": {
+                "category": "fruits",
+                "name": "root vegetables"
+            }
+        },
+
         "other vegetables": {
             "co2": 0.00053,
             "water": 0.10250,
