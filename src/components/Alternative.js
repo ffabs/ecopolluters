@@ -34,7 +34,7 @@ class Alternative extends Component {
             alternativemeasure = Data[alternativecategory][alternativename].measure;
             let alternativeunit = Data[alternativecategory][alternativename].unit;       
             // alternativeamountneeded
-            if(this.props.optimise === "CALORIES" || this.props.optimise === "PROTEINS" || this.props.optimise === "CARBS" || this.props.optimise === "FAT" ) {
+            if(this.props.optimise === "CALORIES" || this.props.optimise === "PROTEINS" || this.props.optimise === "CARBS" || this.props.optimise === "FATS" ) {
                 let optimise = this.props.optimise.toLowerCase();
                 let alternativeoptimise = Data[alternativecategory][alternativename]["nutritional values"][optimise];
                 //current nutritional value to optimise
