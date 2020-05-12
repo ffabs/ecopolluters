@@ -984,7 +984,7 @@
                 "carbs": 0.61,
                 "fats": 0.011
             },
-            "optimise": "PROTEIN",
+            "optimise": "PROTEINS",
             "alternative1": {
                 "category": "",
                 "name": "none"
