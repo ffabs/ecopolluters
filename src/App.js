@@ -140,7 +140,7 @@ class App extends Component {
     let measure = Data[category][type].measure;
     let optimise = Data[this.state.category][this.state.type].optimise;
     let amount = 1;
-    if(optimise === "CALORIES" || optimise === "PROTEINS" || optimise === "CARBS" || optimise === "FAT" ) {
+    if(optimise === "CALORIES" || optimise === "PROTEINS" || optimise === "CARBS" || optimise === "FATS" ) {
       optimise = optimise.toLowerCase();
       let alternativeoptimise = Data[category][type]["nutritional values"][optimise];
       let currentnutrvaluetoaimat = ((this.state.grams * Data[this.state.category][this.state.type]["nutritional values"][optimise]).toFixed(0));
