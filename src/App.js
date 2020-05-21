@@ -65,7 +65,7 @@ class App extends Component {
       bread: '0',
       cornflour: '0',
       oatmeal: '0',
-      otherlegumes: '0',
+      legumes: '0',
       peas: '0',
       rice: '0',
       tofu: '0',
@@ -354,7 +354,7 @@ class App extends Component {
                 bread={this.state.bread}
                 cornflour={this.state.cornflour}
                 oatmeal={this.state.oatmeal}
-                otherlegumes={this.state.otherlegumes}
+                legumes={this.state.legumes}
                 peas={this.state.peas}
                 rice={this.state.rice}
               />
@@ -414,7 +414,7 @@ class App extends Component {
                 bread={this.state.bread}
                 cornflour={this.state.cornflour}
                 oatmeal={this.state.oatmeal}
-                otherlegumes={this.state.otherlegumes}
+                legumes={this.state.legumes}
                 peas={this.state.peas}
                 rice={this.state.rice}
                 tofu={this.state.tofu}

@@ -62,8 +62,8 @@ class Form extends Component {
                       <option value="bread"> 🥖 Bread </option>
                       <option value="corn flour"> 🌽 Corn flour </option>
                       <option value="oatmeal"> 🥣 Oatmeal </option>
-                      <option value="other legumes"> 🍲 Other legumes </option>
                       <option value="peas"> 🌱 Peas </option>
+                      <option value="legumes"> 🍲 Legumes </option>
                       <option value="rice"> 🍚 Rice </option>
                 </select>
               }

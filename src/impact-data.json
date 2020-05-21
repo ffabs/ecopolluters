@@ -25,7 +25,7 @@
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative4": {
                 "category": "animal",
@@ -57,7 +57,7 @@
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative4": {
                 "category": "animal",
@@ -85,7 +85,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative3": {
                 "category": "grains",
@@ -117,7 +117,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative3": {
                 "category": "animal",
@@ -153,7 +153,7 @@
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative4": {
                 "category": "animal",
@@ -181,7 +181,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative3": {
                 "category": "animal",
@@ -213,7 +213,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative3": {
                 "category": "fruits",
@@ -409,7 +409,7 @@
             },
             "alternative2": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative3": {
                 "category": "otherfood",
@@ -971,7 +971,7 @@
             }
         },
         
-        "other legumes": {
+        "legumes": {
             "co2": 0.00179,
             "water": 0.43570,
             "land": 0.01557,
@@ -1027,7 +1027,7 @@
             },
             "alternative3": {
                 "category": "grains",
-                "name": "other legumes"
+                "name": "legumes"
             },
             "alternative4": {
                 "category": "fruits",

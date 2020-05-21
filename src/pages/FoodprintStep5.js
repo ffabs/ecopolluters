@@ -117,7 +117,7 @@ class FoodprintStep5 extends Component {
             case "oatmeal":
                 return("grains");
             break;
-            case "other legumes":
+            case "legumes":
                 return("grains");
             break;
             case "peas":
@@ -205,7 +205,7 @@ class FoodprintStep5 extends Component {
         let bread = this.props.bread
         let cornflour = this.props.cornflour
         let oatmeal = this.props.oatmeal
-        let otherlegumes = this.props.otherlegumes
+        let legumes = this.props.legumes
         let peas = this.props.peas
         let rice = this.props.rice
         let tofu = this.props.tofu
@@ -224,12 +224,12 @@ class FoodprintStep5 extends Component {
 
         let Foodprint = [apples, bananas, berriesandgrapes, broccolis, cabbage, cassavas, citrusfruits, lemons, oranges, groundnuts, nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables, 
                         beef, cheese, chicken, crustaceans, eggs, fish, lamb, milk, pork, 
-                        bread, cornflour, oatmeal, otherlegumes, peas, rice,
+                        bread, cornflour, oatmeal, legumes, peas, rice,
                         tofu, soymilk, coffee, darkchocolate, beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar];
         
         let foodData = ["apples", "bananas", "berries and grapes", "broccolis", "cabbage", "cassavas", "citrus fruits", "lemons", "oranges", "groundnuts", "nuts", "onions", "potatoes", "root vegetables", "tomatoes", "other fruits", "other vegetables",
                         "beef", "cheese", "chicken", "crustaceans", "eggs", "fish", "lamb", "milk", "pork",
-                        "bread", "corn flour", "oatmeal", "other legumes", "peas", "rice",
+                        "bread", "corn flour", "oatmeal", "legumes", "peas", "rice",
                         "tofu", "soymilk", "coffee", "dark chocolate", "beer", "wine", "olive oil", "palm oil", "rapeseed oil", "soybean oil", "sunflower oil", "beet sugar", "cane sugar"];
 
         let selected = 0;
@@ -699,17 +699,17 @@ class FoodprintStep5 extends Component {
                                 </div>
                                 }
 
-                                {otherlegumes != "0" &&
-                                <div className="food-selected">                                    
-                                    <div><Icon icon="other legumes"/></div>
-                                    <div>&nbsp;• {otherlegumes} g</div>
-                                </div>
-                                }
-
                                 {peas != "0" &&
                                 <div className="food-selected">                                    
                                     <div><Icon icon="peas"/></div>
                                     <div>&nbsp;• {peas} g</div>
+                                </div>
+                                }
+
+                                {legumes != "0" &&
+                                <div className="food-selected">                                    
+                                    <div><Icon icon="legumes"/></div>
+                                    <div>&nbsp;• {legumes} g</div>
                                 </div>
                                 }
 

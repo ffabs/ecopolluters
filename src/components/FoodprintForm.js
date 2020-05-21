@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './FoodprintForm.css';
+import ReactGA from 'react-ga';
 import Data from '../impact-data.json';
 import Icon from '../components/Icon';
 
+function GAFoodSelected(foodprintState) {
+    ReactGA.event({
+        category: "Foodprint Food selection",
+        action: foodprintState,
+    });
+  }
   
 class FoodprintForm extends Component {
 
@@ -11,6 +18,7 @@ class FoodprintForm extends Component {
         let foodprintInput = Number(event.target.value);
         let foodprintState = this.props.foodprintState;
         this.props.handleFoodprintInput(foodprintInput, foodprintState);
+        GAFoodSelected(foodprintState);
       }
 
       morefood = event => {
@@ -38,6 +46,7 @@ class FoodprintForm extends Component {
         //     newValue = newValue + 50;
         // }
         this.props.handleFoodprintInput(newValue, foodprintState);
+        GAFoodSelected(foodprintState);
       }
       
       lessfood = event => {
@@ -66,6 +75,7 @@ class FoodprintForm extends Component {
             //     newValue = newValue - 50;
             // }
             this.props.handleFoodprintInput(newValue, foodprintState);
+            GAFoodSelected(foodprintState);
         }
       }
 

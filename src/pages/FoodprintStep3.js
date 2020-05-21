@@ -81,16 +81,16 @@ class FoodprintStep3 extends Component {
                                 />
                                 
                                 <FoodprintForm 
-                                    foodForm={'other legumes'}
+                                    foodForm={'peas'}
                                     categoryForm="grains"
-                                    foodprintState={'otherlegumes'}
+                                    foodprintState={'peas'}
                                     {...this.props}
                                 />
                                 
                                 <FoodprintForm 
-                                    foodForm={'peas'}
+                                    foodForm={'legumes'}
                                     categoryForm="grains"
-                                    foodprintState={'peas'}
+                                    foodprintState={'legumes'}
                                     {...this.props}
                                 />
                                 
