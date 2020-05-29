@@ -55,7 +55,7 @@ class Science extends Component {
 
                         <a style={{display: "table-cell"}} href="https://dialogochino.net/en/agriculture/12287-avocado-boom-wreaks-havoc-on-latin-americas-environment/" target="_blank">
                             <div className="science-article">
-                                <div className="science-article-title">Life Cycle Assessment of Three Tropical Fruits (Avocado, Banana, Pineapple)</div>
+                                <div className="science-article-title">Avocado boom wreaks havoc on Latin America's environment</div>
                                 <div className="science-article-support">A. Cuéllar - dialogochino.net</div>
                                 <div className="science-article-date">13 Nov, 2018</div>
                             </div>
