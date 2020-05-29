@@ -45,6 +45,7 @@ class App extends Component {
       citrusfruits: '0',
       lemons: '0',
       oranges: '0',
+      avocados: '0',
       groundnuts: '0',
       nuts: '0',
       onions: '0',
@@ -316,6 +317,7 @@ class App extends Component {
                 citrusfruits = {this.state.citrusfruits}
                 lemons = {this.state.lemons}
                 oranges = {this.state.oranges}
+                avocados = {this.state.avocados}
                 groundnuts={this.state.groundnuts}
                 nuts={this.state.nuts}
                 onions={this.state.onions}
@@ -394,6 +396,7 @@ class App extends Component {
                 citrusfruits = {this.state.citrusfruits}
                 lemons = {this.state.lemons}
                 oranges = {this.state.oranges}
+                avocados = {this.state.avocados}
                 groundnuts={this.state.groundnuts}
                 nuts={this.state.nuts}
                 onions={this.state.onions}

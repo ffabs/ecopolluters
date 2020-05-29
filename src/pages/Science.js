@@ -25,7 +25,7 @@ class Science extends Component {
                         
                         <div className="page-title">Scientific sources</div>
 
-                        <div className="science-section-title">Main research article</div>
+                        <div className="science-section-title">Main research articles</div>
                         
                         <a style={{display: "table-cell"}} href="https://science.sciencemag.org/content/360/6392/987" target="_blank">
                             <div className="science-article">
@@ -35,7 +35,31 @@ class Science extends Component {
                             </div>
                         </a>
 
+                        <a style={{display: "table-cell"}} href="https://waterfootprint.org/media/downloads/Report47-WaterFootprintCrops-Vol1.pdf" target="_blank">
+                            <div className="science-article">
+                                <div className="science-article-title">The green, blue and grey water footprint of crops and derived crop products, Value of Water Research Report Series No. 47</div>
+                                <div className="science-article-support">M.M. Mekonnen, A.Y. Hoekstra - UNESCO-IHE Institute for Water Education</div>
+                                <div className="science-article-date">December, 2010</div>
+                            </div>
+                        </a>
+
                         <div className="science-section-title">Supplementary research articles</div>
+
+                        <a style={{display: "table-cell"}} href="http://www.blog.industrialecology.uni-freiburg.de/wp-content/uploads/2019/03/LCA_tropical_fruits_Julian_Egle_Tobias_Bahmer_Peiman_Hadjian.pdf" target="_blank">
+                            <div className="science-article">
+                                <div className="science-article-title">Life Cycle Assessment of Three Tropical Fruits (Avocado, Banana, Pineapple)</div>
+                                <div className="science-article-support">P. Hadjian, T. Bahmer, J. Egle - Life Cycle Management 2019</div>
+                                <div className="science-article-date">2019</div>
+                            </div>
+                        </a>
+
+                        <a style={{display: "table-cell"}} href="https://dialogochino.net/en/agriculture/12287-avocado-boom-wreaks-havoc-on-latin-americas-environment/" target="_blank">
+                            <div className="science-article">
+                                <div className="science-article-title">Life Cycle Assessment of Three Tropical Fruits (Avocado, Banana, Pineapple)</div>
+                                <div className="science-article-support">A. Cuéllar - dialogochino.net</div>
+                                <div className="science-article-date">13 Nov, 2018</div>
+                            </div>
+                        </a>
 
                         <a style={{display: "table-cell"}} href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DB40E5C12D662913CC342D3C19F85F7D/S1368980014002377a.pdf/environmental_cost_of_protein_food_choices.pdf" target="_blank">
                             <div className="science-article">

@@ -837,6 +837,38 @@
                 "category": "fruits",
                 "name": "apples"
             }
+        },
+
+        "avocados": {
+            "co2": 0.00138,
+            "water": 0.31195,
+            "land": 0.0011,
+            "defaultAmount": 1,
+            "unit": 150,
+            "measure": "item",
+            "nutritional values": {
+                "calories": 1.6,
+                "proteins": 0.02,
+                "carbs": 0.09,
+                "fats": 0.15
+            },
+            "optimise": "FATS",
+            "alternative1": {
+                "category": "",
+                "name": "none"
+            },
+            "alternative2": {
+                "category": "fruits",
+                "name": "nuts"
+            },
+            "alternative3": {
+                "category": "fruits",
+                "name": "groundnuts"
+            },
+            "alternative4": {
+                "category": "",
+                "name": "none"
+            }
         }
 
     },
