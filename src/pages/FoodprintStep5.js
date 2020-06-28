@@ -449,6 +449,12 @@ class FoodprintStep5 extends Component {
         totalCarbs = Number(totalCarbs).toFixed(0);
         totalFats = Number(totalFats).toFixed(0);
 
+
+        // save foodprint data
+        if (this.props.foodprintStep === 5) {
+            this.props.saveFoodprintData(totalCo2, totalWater, totalLand, totalCalories, totalProteins, totalCarbs, totalFats);
+        }
+
     
         return (        
 

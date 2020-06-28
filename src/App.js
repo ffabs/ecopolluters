@@ -244,6 +244,11 @@ class App extends Component {
     });
   }
 
+  saveFoodprintData(totalCo2, totalWater, totalLand, totalCalories, totalProteins, totalCarbs, totalFats) {
+    // fetch(`http://localhost:4000/foodprints/add?co2=${totalCo2}&water=${totalWater}&land=${totalLand}&calories=${totalCalories}&proteins=${totalProteins}&carbs=${totalCarbs}&fats=${totalFats}`)
+    fetch(`https://ecopolluters-server.herokuapp.com/foodprints/add?co2=${totalCo2}&water=${totalWater}&land=${totalLand}&calories=${totalCalories}&proteins=${totalProteins}&carbs=${totalCarbs}&fats=${totalFats}`)
+            .catch(err => console.error(err))
+  }
   
 
   render() {
@@ -385,6 +390,7 @@ class App extends Component {
             )}/>
             <Route exact={true} path='/foodprint/step5' render={() => (
               <FoodprintStep5
+                saveFoodprintData={this.saveFoodprintData}
                 foodprintStep={this.state.foodprintStep}
                 handleBack={this.handleBack}
                 apples={this.state.apples} 
