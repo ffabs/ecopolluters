@@ -244,10 +244,22 @@ class App extends Component {
     });
   }
 
-  saveFoodprintData(totalCo2, totalWater, totalLand, totalCalories, totalProteins, totalCarbs, totalFats) {
-    // fetch(`http://localhost:4000/foodprints/add?co2=${totalCo2}&water=${totalWater}&land=${totalLand}&calories=${totalCalories}&proteins=${totalProteins}&carbs=${totalCarbs}&fats=${totalFats}`)
-    fetch(`https://ecopolluters-server.herokuapp.com/foodprints/add?co2=${totalCo2}&water=${totalWater}&land=${totalLand}&calories=${totalCalories}&proteins=${totalProteins}&carbs=${totalCarbs}&fats=${totalFats}`)
-            .catch(err => console.error(err))
+  saveFoodprintData(totalCo2, totalWater, totalLand, totalCalories, totalProteins, totalCarbs, totalFats, 
+    apples, bananas, berriesandgrapes, broccolis, cabbage, cassavas, lemons, oranges, avocados, 
+    groundnuts, nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables, beef, cheese, 
+    chicken, crustaceans, eggs, fish, lamb, milk, pork, bread, cornflour, oatmeal, legumes, peas, rice, tofu, 
+    soymilk, coffee, darkchocolate, beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar) {
+    // fetch(`http://localhost:4000/foodprints/add?host=${window.location.hostname}&co2=${totalCo2}&water=${totalWater}&land=${totalLand}&calories=${totalCalories}&proteins=${totalProteins}&carbs=${totalCarbs}&fats=${totalFats}
+    //       &apples=${apples}&bananas=${bananas}&berriesandgrapes=${berriesandgrapes}&broccolis=${broccolis}&cabbage=${cabbage}&cassavas=${cassavas}&lemons=${lemons}&oranges=${oranges}&avocados=${avocados}
+    //       &groundnuts=${groundnuts}&nuts=${nuts}&onions=${onions}&potatoes=${potatoes}&rootvegetables=${rootvegetables}&tomatoes=${tomatoes}&otherfruits=${otherfruits}&othervegetables=${othervegetables}&beef=${beef}&cheese=${cheese}
+    //       &chicken=${chicken}&crustaceans=${crustaceans}&eggs=${eggs}&fish=${fish}&lamb=${lamb}&milk=${milk}&pork=${pork}&bread=${bread}&cornflour=${cornflour}&oatmeal=${oatmeal}&legumes=${legumes}&peas=${peas}&rice=${rice}&tofu=${tofu}
+    //       &soymilk=${soymilk}&coffee=${coffee}&darkchocolate=${darkchocolate}&beer=${beer}&wine=${wine}&oliveoil=${oliveoil}&palmoil=${palmoil}&rapeseedoil=${rapeseedoil}&soybeanoil=${soybeanoil}&sunfloweroil=${sunfloweroil}&beetsugar=${beetsugar}&canesugar=${canesugar}`)
+    fetch(`https://ecopolluters-server.herokuapp.com/foodprints/add?host=${window.location.hostname}&co2=${totalCo2}&water=${totalWater}&land=${totalLand}&calories=${totalCalories}&proteins=${totalProteins}&carbs=${totalCarbs}&fats=${totalFats}
+          &apples=${apples}&bananas=${bananas}&berriesandgrapes=${berriesandgrapes}&broccolis=${broccolis}&cabbage=${cabbage}&cassavas=${cassavas}&lemons=${lemons}&oranges=${oranges}&avocados=${avocados}
+          &groundnuts=${groundnuts}&nuts=${nuts}&onions=${onions}&potatoes=${potatoes}&rootvegetables=${rootvegetables}&tomatoes=${tomatoes}&otherfruits=${otherfruits}&othervegetables=${othervegetables}&beef=${beef}&cheese=${cheese}
+          &chicken=${chicken}&crustaceans=${crustaceans}&eggs=${eggs}&fish=${fish}&lamb=${lamb}&milk=${milk}&pork=${pork}&bread=${bread}&cornflour=${cornflour}&oatmeal=${oatmeal}&legumes=${legumes}&peas=${peas}&rice=${rice}&tofu=${tofu}
+          &soymilk=${soymilk}&coffee=${coffee}&darkchocolate=${darkchocolate}&beer=${beer}&wine=${wine}&oliveoil=${oliveoil}&palmoil=${palmoil}&rapeseedoil=${rapeseedoil}&soybeanoil=${soybeanoil}&sunfloweroil=${sunfloweroil}&beetsugar=${beetsugar}&canesugar=${canesugar}`)
+    .catch(err => console.error(err))
   }
   
 
