@@ -558,21 +558,21 @@ class FoodprintStep5 extends Component {
                                 {lemons != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="lemons"/></div>
-                                    <div>&nbsp;• {lemons} g</div>                                    
+                                    <div>&nbsp;• {lemons}</div>                                    
                                 </div>
                                 }
 
                                 {oranges != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="oranges"/></div>
-                                    <div>&nbsp;• {oranges} g</div>                                    
+                                    <div>&nbsp;• {oranges}</div>                                    
                                 </div>
                                 }
 
                                 {avocados != "0" &&
                                 <div className="food-selected">
                                     <div><Icon icon="avocados"/></div>
-                                    <div>&nbsp;• {avocados} g</div>                                    
+                                    <div>&nbsp;• {avocados}</div>                                    
                                 </div>
                                 }
 
