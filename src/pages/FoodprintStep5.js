@@ -178,7 +178,7 @@ class FoodprintStep5 extends Component {
 
     render() {
         initializeReactGA()
-        
+
         let apples = this.props.apples
         let bananas = this.props.bananas
         let berriesandgrapes = this.props.berriesandgrapes
@@ -452,11 +452,16 @@ class FoodprintStep5 extends Component {
 
         // save foodprint data
         if (this.props.foodprintStep === 5) {
-            this.props.saveFoodprintData(totalCo2, totalWater, totalLand, totalCalories, totalProteins, totalCarbs, totalFats, 
-                apples, bananas, berriesandgrapes, broccolis, cabbage, cassavas, lemons, oranges, avocados, groundnuts,
-                nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables, beef, cheese, chicken, crustaceans, 
-                eggs, fish, lamb, milk, pork, bread, cornflour, oatmeal, legumes, peas, rice, tofu, soymilk, coffee, darkchocolate,
-                beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar);
+            ReactGA.ga((tracker) => {
+                let clientId = tracker.get('clientId');
+              
+                this.props.saveFoodprintData(clientId, totalCo2, totalWater, totalLand, totalCalories, totalProteins, totalCarbs, totalFats, 
+                    apples, bananas, berriesandgrapes, broccolis, cabbage, cassavas, lemons, oranges, avocados, groundnuts,
+                    nuts, onions, potatoes, rootvegetables, tomatoes, otherfruits, othervegetables, beef, cheese, chicken, crustaceans, 
+                    eggs, fish, lamb, milk, pork, bread, cornflour, oatmeal, legumes, peas, rice, tofu, soymilk, coffee, darkchocolate,
+                    beer, wine, oliveoil, palmoil, rapeseedoil, soybeanoil, sunfloweroil, beetsugar, canesugar);
+                    
+            });
         }
 
 
