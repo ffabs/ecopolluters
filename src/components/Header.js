@@ -46,6 +46,13 @@ class Header extends Component {
         foodprint += ' hide';
         hamburger = 'hide';
         break;
+      case "ProtectLand":
+        impact += ' hide';
+        science += ' hide';
+        about += ' hide';
+        foodprint += ' hide';
+        hamburger = 'hide';
+        break;
       case "Home":
         impact += ' white';
         science += ' white';

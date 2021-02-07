@@ -9,6 +9,7 @@ import FoodprintStep2 from './pages/FoodprintStep2';
 import FoodprintStep3 from './pages/FoodprintStep3';
 import FoodprintStep4 from './pages/FoodprintStep4';
 import FoodprintStep5 from './pages/FoodprintStep5';
+import ProtectLand from './pages/ProtectLand';
 import Data from './impact-data.json';
 import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
@@ -452,6 +453,9 @@ class App extends Component {
                 beetsugar={this.state.beetsugar}
                 canesugar={this.state.canesugar}
               />
+            )}/>
+            <Route exact={true} path='/protect-land' render={() => (
+              <ProtectLand />
             )}/>
             <Route render={() => (
               <Redirect to="/" />

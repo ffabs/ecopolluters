@@ -31,6 +31,12 @@ class Nav extends Component {
         case "Footer":
           home -= ' hide';
           break;
+        case "ProtectLand":
+          home += ' hide';
+          impact += ' hide';
+          science += ' hide';
+          foodprint += ' hide';
+          break;
         default:
           home = 'hide';
       }

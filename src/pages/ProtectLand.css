@@ -1,0 +1,212 @@
+.home-sections {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 300px;
+}
+
+.home-first-section {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.home-first-section-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.home-text {
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.protectland-button {
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #00BFA6;
+    margin: 20px 0px 0px 0px;
+    border-radius: 4px;
+    border: 2px solid #000000;
+    padding: 10px 5px;
+    width: 380px;
+    cursor: pointer;
+}
+
+.home-supporting-text {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282;
+}
+
+.home-first-image {
+    height: 180px;
+    margin-left: 100px;
+}
+
+
+.home-goal-section {
+    background-color: rgba(0, 191, 166, 0.1);
+    margin-top: 30px;
+    padding: 30px 70px;
+}
+.goal-status {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.goal-stauts-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+    .goal-status-content-left {
+        display: flex;
+        align-items: flex-end;
+    }
+    .current-number {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 22px;
+        color: #007767;
+        margin-right: 6px;
+    }
+    .goal-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .goal-reference {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        margin-right: -40px;
+    }
+
+    .goal-bar-background {
+        width: 740px;
+        height: 32px;
+        background: #17E8CC;
+        border-radius: 50px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .goal-bar-progress {
+        width: 182px;
+        height: 24px;
+        background: #007767;
+        border-radius: 50px;
+        margin-left: 5px;
+    }
+
+.section-separation {
+    max-width: 1000px;
+    margin: 80px 0px;
+}
+
+.home-second-section-groups {
+    display: flex;
+    justify-content: space-between;
+}
+.second-section-group {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.second-section-image {
+    height: 180px;
+}
+.home-second-section-belowgroups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.third-section-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.third-section-group-image {
+    height: 230px;
+}
+.third-section-group-text {
+    margin-left: 50px;
+    width: 100%;
+}
+
+.third-section-googlemaps-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-googlemaps-image {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.howitworks-section {
+    display: flex;
+    justify-content: space-between;
+}
+.howitworks-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 200px;
+}
+.howitworks-image {
+    height: 100px;
+}
+
+.money-explenation {
+    display: flex;
+    margin-top: 50px;
+}
+.onedaycost{
+    border-radius: 4px;
+    border: 2px solid #000000;
+    width: 400px;
+    margin-top: 20px;
+}
+    .onedaycost-text {
+        padding: 20px;
+    }
+    .one-day-price {
+        font-size: 36px;
+        line-height: 49px;
+        text-align: center;
+        background: #E3F8F5;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+    .onedaycost-button {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: white;
+        background-color: #00BFA6;
+        margin: 10px 0px 0px 0px;
+        border-radius: 4px;
+        border-top: 2px solid #000000;
+        padding: 10px 5px;
+        width: 390px;
+    }
+    .oneday-space {
+        margin-top: 20px;
+    }

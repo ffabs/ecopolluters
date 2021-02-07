@@ -25,6 +25,12 @@ class Footer extends Component {
 
     const { open } = this.state;
 
+    let navAttribute = this.props.page;
+    if (navAttribute !== "ProtectLand") {
+      navAttribute = "Footer";
+    }
+    console.log(navAttribute);
+
     return (        
 
         <div className="footer">
@@ -44,7 +50,7 @@ class Footer extends Component {
             </div>
           </div>
           <div>
-            <Nav page={'Footer'}/>
+            <Nav page={navAttribute}/>
           </div>
           <div>
             <div className="rights">All Rights Reserved • <Link onClick={this.onOpenModal}>Privacy Policy</Link> </div>
