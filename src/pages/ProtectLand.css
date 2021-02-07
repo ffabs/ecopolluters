@@ -2,12 +2,16 @@
     display: flex;
     flex-direction: column;
     padding: 0px 300px;
+    align-items: center;
 }
 
 .home-first-section {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    width: 850px;
     margin-top: 50px;
+    justify-content: space-between;
 }
 
 .home-first-section-text{
@@ -51,7 +55,6 @@
 
 .home-first-image {
     height: 180px;
-    margin-left: 100px;
 }
 
 
@@ -65,6 +68,7 @@
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 15px;
+    width: 700px;
 }
 .goal-stauts-content {
     display: flex;
@@ -119,6 +123,9 @@
 .home-second-section-groups {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 850px;
 }
 .second-section-group {
     width: 300px;
@@ -140,13 +147,16 @@
     display: flex;
     align-items: center;
     margin-bottom: 100px;
+    flex-wrap: wrap;
+    width: 850px;
 }
 .third-section-group-image {
     height: 230px;
 }
 .third-section-group-text {
     margin-left: 50px;
-    width: 100%;
+    max-width: 430px;
+    /* width: 100%; */
 }
 
 .third-section-googlemaps-group {
@@ -154,14 +164,24 @@
     flex-direction: column;
     align-items: center;
 }
+.googlemapsaddress {
+    display: flex;
+}
+.viewinmaps {
+    margin-left: 10px;
+}
 .home-googlemaps-image {
     height: 100px;
     margin-bottom: 10px;
 }
 
+
 .howitworks-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 850px;
 }
 .howitworks-group {
     display: flex;
@@ -176,11 +196,15 @@
 .money-explenation {
     display: flex;
     margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 850px;
 }
 .onedaycost{
     border-radius: 4px;
     border: 2px solid #000000;
-    width: 400px;
+    width: 350px;
     margin-top: 20px;
 }
     .onedaycost-text {
@@ -195,17 +219,17 @@
         margin-top: 20px;
     }
     .onedaycost-button {
+        color: white;
         font-weight: 800;
         font-size: 24px;
         line-height: 33px;
         text-align: center;
-        color: white;
         background-color: #00BFA6;
         margin: 10px 0px 0px 0px;
         border-radius: 4px;
         border-top: 2px solid #000000;
         padding: 10px 5px;
-        width: 390px;
+        cursor: pointer;
     }
     .oneday-space {
         margin-top: 20px;

@@ -10,9 +10,16 @@ import how2 from '../images/ProtectLandImages/how2.png';
 import how3 from '../images/ProtectLandImages/how3.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ReactGA from 'react-ga';
 import './ProtectLand.css';
 
+function initializeReactGA() {
+    ReactGA.initialize('UA-150607597-1');
+    ReactGA.pageview('/protect-land');
+}
+
 function ProtectLand() {
+initializeReactGA()
   return ( 
     <div>
         <Header page={'ProtectLand'}/> 
@@ -84,11 +91,15 @@ function ProtectLand() {
             </div>
             <div className="third-section-googlemaps-group">
                 <img src={googlemaps} className="home-googlemaps-image"/>
-                <div className="home-text">📍 Address, location, State, Continent | View in maps</div>
+                <div className="home-text googlemapsaddress">📍 3°01'51.1"S 54°53'29.5"W, Belterra - State of Pará, Brazil | 
+                    <a style={{display: "table-cell"}} href="https://www.google.com/maps/d/u/0/viewer?mid=1FWH6do8nJMC_ylc5njlSrhHFR6_nScKI&ll=-3.0360008274823027%2C-54.92188263773776&z=13" target="_blank" rel="noopener noreferrer">
+                        <div className="viewinmaps"> <u>View in maps </u> </div>
+                    </a>
+                </div>
                 <div className="home-text">50 acres</div>
-                <div className="home-text">$30 daily cost</div>
+                <div className="home-text">€30 daily cost</div>
+                <img src={sectionSeparation} className="section-separation" alt="sectionSeparation" />
             </div>
-            <img src={sectionSeparation} className="section-separation" alt="sectionSeparation" />
             
             <div className="home-title">How does it work?</div>
             <div className="howitworks-section">
@@ -121,7 +132,7 @@ function ProtectLand() {
                             <div className="one-day-price oneday-space">€30</div>
                         </div>
                         <a style={{display: "table-cell"}} href="https://eepurl.com/hpXOy1" target="_blank" rel="noopener noreferrer">
-                            <div className="protectland-button">
+                            <div className="onedaycost-button">
                                 Protect the Brazilian Rainforest
                             </div>
                         </a>
