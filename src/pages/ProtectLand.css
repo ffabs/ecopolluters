@@ -94,7 +94,6 @@
         font-size: 16px;
         line-height: 22px;
         text-align: right;
-        margin-right: -40px;
     }
 
     .goal-bar-background {
@@ -156,7 +155,6 @@
 .third-section-group-text {
     margin-left: 50px;
     max-width: 430px;
-    /* width: 100%; */
 }
 
 .third-section-googlemaps-group {
@@ -166,6 +164,10 @@
 }
 .googlemapsaddress {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
 }
 .viewinmaps {
     margin-left: 10px;
@@ -234,3 +236,112 @@
     .oneday-space {
         margin-top: 20px;
     }
+
+@media only screen and (max-width: 1000px) {
+
+    .home-sections {
+        padding: 0px;
+    }
+    .home-title {
+        margin-top: 20px;
+    }
+    .home-first-section, .home-second-section-groups,
+    .third-section-group, .howitworks-section, .money-explenation{
+        max-width: 450px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-goal-section {
+        padding: 30px 30px;
+    }
+    .protectland-button {
+        width: 380px;
+    }
+    .goal-status {
+        width: 400px;
+    }
+    .goal-bar-background {
+        width: 480px;
+    }
+    .goal-bar-progress {
+        width: 182px;
+    }
+    .section-separation {
+        max-width: 100%;
+    }
+
+    .second-section-group {
+        width: 300px;
+    }
+    .third-section-group-image {
+        height: 230px;
+    }
+    .third-section-group-text {
+        margin-left: 50px;
+        max-width: 430px;
+    }
+    .howitworks-group {
+        width: 200px;
+    }
+    .howitworks-image {
+        height: 100px;
+    }
+    .onedaycost{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .home-first-section, .home-second-section-groups,
+    .third-section-group, .howitworks-section, 
+    .money-explenation, .onedaycost{
+        max-width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-goal-section {
+        padding: 10px 10px;
+        max-width: 300px;
+    }
+    .goal-status-content {
+        flex-direction: column;
+    }
+    .goal-stauts-content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .goal-status-content-left {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 50px;
+    }
+
+    .goal-status {
+        width: 300px;
+    }
+    .goal-bar-background {
+        width: 300px;
+    }
+    .goal-bar-progress {
+        width: 100px;
+    }
+    .protectland-button {
+        width: 300px;
+    }
+    /* .goal-reference {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+    } */
+    .home-supporting-text {
+        font-size: 15px;
+    }
+    .third-section-group-image {
+        height: 130px;
+    }
+
+}
