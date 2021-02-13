@@ -34,7 +34,7 @@ initializeReactGA()
                             Protect the Brazilian Rainforest
                         </div>
                     </a>
-                    <div className="home-supporting-text">You can protect the land with as little as €4</div>
+                    <div className="home-supporting-text">You can protect the land with as little as €35</div>
                 </div>
                 <div>
                     <img src={firstImage} className="home-first-image" alt="trees" />
@@ -46,9 +46,9 @@ initializeReactGA()
                 <div className="goal-stauts-content">
                     <div className="goal-status-content-left">
                         <div className="current-number">322</div>
-                        <div className="goal-description">out of 3650 days of forest protection</div>
+                        <div className="goal-description">out of 5475 days (15 years) of forest protection</div>
                     </div>
-                    <div className="goal-reference">10 acres of land 🌳</div>
+                    <div className="goal-reference">40.5 hectares of land 🌳</div>
                 </div>
                 <div className="goal-bar-background">
                     <div className="goal-bar-progress"></div>
@@ -96,8 +96,8 @@ initializeReactGA()
                         <div className="viewinmaps"> <u>View in maps </u> </div>
                     </a>
                 </div>
-                <div className="home-text">50 acres</div>
-                <div className="home-text">€30 daily cost</div>
+                <div className="home-text">40.5 hectares</div>
+                <div className="home-text">€35 daily cost</div>
                 <img src={sectionSeparation} className="section-separation" alt="sectionSeparation" />
             </div>
             
@@ -129,7 +129,7 @@ initializeReactGA()
                             <div className="home-title">1 DAY</div>
                             <div className="home-text">of protection</div>
                             <div className="home-text oneday-space">What users would get when purchasing</div>
-                            <div className="one-day-price oneday-space">€30</div>
+                            <div className="one-day-price oneday-space">€35</div>
                         </div>
                         <a style={{display: "table-cell"}} href="https://eepurl.com/hpXOy1" target="_blank" rel="noopener noreferrer">
                             <div className="onedaycost-button">
