@@ -167,7 +167,6 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-
 }
 .viewinmaps {
     margin-left: 10px;
@@ -236,6 +235,15 @@
     .oneday-space {
         margin-top: 20px;
     }
+.money-spending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pie-image {
+    margin-top: 70px;
+    height: 200px;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -244,6 +252,9 @@
     }
     .home-title {
         margin-top: 20px;
+    }
+    .money-spending-text {
+        margin-top: 60px;
     }
     .home-first-section, .home-second-section-groups,
     .third-section-group, .howitworks-section, .money-explenation{
@@ -257,6 +268,13 @@
     }
     .protectland-button {
         width: 380px;
+    }
+    .goal-stauts-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .goal-reference {
+        margin-top: 25px;
     }
     .goal-status {
         width: 400px;
@@ -306,14 +324,11 @@
         padding: 10px 10px;
         max-width: 300px;
     }
-    .goal-status-content {
-        flex-direction: column;
-    }
-    .goal-stauts-content {
+    /* .goal-stauts-content {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-    }
+    } */
     .goal-status-content-left {
         flex-direction: column;
         align-items: flex-start;
@@ -330,13 +345,8 @@
         width: 100px;
     } */
     .protectland-button {
-        width: 300px;
+        width: 290px;
     }
-    /* .goal-reference {
-        font-size: 16px;
-        line-height: 22px;
-        text-align: left;
-    } */
     .home-supporting-text {
         font-size: 15px;
     }

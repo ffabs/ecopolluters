@@ -5,6 +5,7 @@ import thirdImage from '../images/ProtectLandImages/treeimage3.png';
 import sectionSeparation from '../images/ProtectLandImages/sectionseparation.png';
 import brazilforest from '../images/ProtectLandImages/brazilforest.png';
 import googlemaps from '../images/ProtectLandImages/googlemaps.png';
+import pie from '../images/ProtectLandImages/pie.png';
 import how1 from '../images/ProtectLandImages/how1.png';
 import how2 from '../images/ProtectLandImages/how2.png';
 import how3 from '../images/ProtectLandImages/how3.png';
@@ -142,8 +143,9 @@ console.log(ProgressOutOfGoal)
                         </a>
                     </div>
                 </div>
-                <div>
-                    <div className="home-title">How the money are spent</div>
+                <div className="money-spending">
+                    <div className="home-title money-spending-text">How the money are spent</div>
+                    <div><img src={pie} className="pie-image" alt="pie" /></div>
                 </div>
             </div>
 
