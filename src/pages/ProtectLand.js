@@ -74,7 +74,7 @@ console.log(ProgressOutOfGoal)
                 <div className="second-section-group">
                     <img src={thirdImage} className="second-section-image" alt="trees" />
                     <div className="home-text"><b>Stronger together</b></div>
-                    <div className="home-text">Together we can make an impact together. We buy the land and invest to protect it long term.</div>
+                    <div className="home-text">Together we can make an impact. We buy the land and invest to protect it long term.</div>
                 </div>
             </div>
             <div className="home-second-section-belowgroups">
