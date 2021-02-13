@@ -91,7 +91,7 @@ console.log(ProgressOutOfGoal)
                 <div className="third-section-group-text">
                     <div className="home-text"><b>Rainforest in Brazil</b></div>
                     <div className="home-text">As the home to approximately 13% of all known species, Brazil has one of the most diverse collections of flora and fauna on the planet.</div>
-                    <div className="home-text">However, this biodiversity is threaten by many environmental issues, including deforestation, illegal wildlife trade, air and land degradation, water pollution caused by caused by an expanding agriculture and mining among others.</div>
+                    <div className="home-text">However, this biodiversity is threaten by many environmental issues, including deforestation, illegal wildlife trade, air and land degradation, water pollution caused by an expanding agriculture and mining among others.</div>
                 </div>
             </div>
             <div className="third-section-googlemaps-group">
