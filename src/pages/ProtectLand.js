@@ -20,6 +20,10 @@ function initializeReactGA() {
 
 function ProtectLand() {
 initializeReactGA()
+let Progress = 158;
+let ProgressOutOfGoal = Progress / 5475;
+console.log(ProgressOutOfGoal)
+
   return ( 
     <div>
         <Header page={'ProtectLand'}/> 
@@ -45,13 +49,13 @@ initializeReactGA()
                 <div className="goal-status">Goal status:</div>
                 <div className="goal-stauts-content">
                     <div className="goal-status-content-left">
-                        <div className="current-number">322</div>
-                        <div className="goal-description">out of 5475 days (15 years) of forest protection</div>
+                        <div className="current-number">{Progress}</div>
+                        <div className="goal-description" >out of 5475 days (15 years) of forest protection</div>
                     </div>
                     <div className="goal-reference">40.5 hectares of land 🌳</div>
                 </div>
                 <div className="goal-bar-background">
-                    <div className="goal-bar-progress"></div>
+                    <div className="goal-bar-progress" style={{width: ProgressOutOfGoal*100+"%"}}></div>
                 </div>
                     <div className="home-supporting-text">Last updated date: 10/02/2021</div>
             </div>
@@ -92,7 +96,7 @@ initializeReactGA()
             <div className="third-section-googlemaps-group">
                 <img src={googlemaps} className="home-googlemaps-image"/>
                 <div className="home-text googlemapsaddress">📍 3°01'51.1"S 54°53'29.5"W, Belterra - State of Pará, Brazil | 
-                    <a style={{display: "table-cell"}} href="https://www.google.com/maps/d/u/0/viewer?mid=1FWH6do8nJMC_ylc5njlSrhHFR6_nScKI&ll=-3.0360008274823027%2C-54.92188263773776&z=13" target="_blank" rel="noopener noreferrer">
+                    <a style={{display: "table-cell"}} href="https://www.google.com/maps/d/u/0/viewer?ll=-3.03614712320434%2C-54.90970394496307&z=14&mid=12Z1nqebx1L0IqPDdtd-Qx9cG06x15A1m" target="_blank" rel="noopener noreferrer">
                         <div className="viewinmaps"> <u>View in maps </u> </div>
                     </a>
                 </div>

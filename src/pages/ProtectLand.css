@@ -264,9 +264,9 @@
     .goal-bar-background {
         width: 480px;
     }
-    .goal-bar-progress {
+    /* .goal-bar-progress {
         width: 182px;
-    }
+    } */
     .section-separation {
         max-width: 100%;
     }
@@ -326,9 +326,9 @@
     .goal-bar-background {
         width: 300px;
     }
-    .goal-bar-progress {
+    /* .goal-bar-progress {
         width: 100px;
-    }
+    } */
     .protectland-button {
         width: 300px;
     }
