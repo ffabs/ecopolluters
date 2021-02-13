@@ -58,7 +58,7 @@ console.log(ProgressOutOfGoal)
                 <div className="goal-bar-background">
                     <div className="goal-bar-progress" style={{width: ProgressOutOfGoal*100+"%"}}></div>
                 </div>
-                    <div className="home-supporting-text">Last updated date: 10/02/2021</div>
+                    <div className="home-supporting-text">Last updated date: 14/02/2021</div>
             </div>
 
             <img src={sectionSeparation} className="section-separation" alt="sectionSeparation" />
