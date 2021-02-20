@@ -211,6 +211,13 @@
     .onedaycost-text {
         padding: 20px;
     }
+    .day-title {
+        margin-right: 10px;
+    }
+    .onedaycost-text-title {
+        display: flex;
+        align-items: baseline;
+    }
     .one-day-price {
         font-size: 36px;
         line-height: 49px;

@@ -68,13 +68,13 @@ console.log(ProgressOutOfGoal)
             <div className="home-second-section-groups">
                 <div className="second-section-group">
                     <div><img src={secondImage} className="second-section-image" alt="trees" /></div>
-                    <div className="home-text"><b>World is failing</b></div>
+                    <div className="home-text"><b>Nature is in danger</b></div>
                     <div className="home-text">Institutions fail to protect habitats effectively leading to land degraditon.</div>
                 </div>
                 <div className="second-section-group">
                     <img src={thirdImage} className="second-section-image" alt="trees" />
                     <div className="home-text"><b>Stronger together</b></div>
-                    <div className="home-text">Together we can make an impact. We buy the land and invest to protect it long term.</div>
+                    <div className="home-text">Together we can make an impact. We buy endangered land and invest in protecting it.</div>
                 </div>
             </div>
             <div className="home-second-section-belowgroups">
@@ -91,7 +91,7 @@ console.log(ProgressOutOfGoal)
                 <div className="third-section-group-text">
                     <div className="home-text"><b>Rainforest in Brazil</b></div>
                     <div className="home-text">As the home to approximately 13% of all known species, Brazil has one of the most diverse collections of flora and fauna on the planet.</div>
-                    <div className="home-text">However, this biodiversity is threaten by many environmental issues, including deforestation, illegal wildlife trade, air and land degradation, water pollution caused by an expanding agriculture and mining among others.</div>
+                    <div className="home-text">However, this biodiversity is threaten by many environmental issues. Deforestation, illegal wildlife trade, air and land degradation and water pollution are the most common ones, usually caused by an expanding agriculture and mining.</div>
                 </div>
             </div>
             <div className="third-section-googlemaps-group">
@@ -116,7 +116,7 @@ console.log(ProgressOutOfGoal)
 
                 <div className="howitworks-group">
                     <div><img src={how2} className="howitworks-image"/></div>
-                    <div className="home-text">2. Once the minimum amount of days is reached, the payment is processed and the land is bought</div>
+                    <div className="home-text">2. Once the target is reached, the payment is processed and the land is bought</div>
                 </div>
 
                 <div className="howitworks-group">
@@ -131,9 +131,18 @@ console.log(ProgressOutOfGoal)
                     <div className="home-title">Peer contribution</div>
                     <div className="onedaycost">
                         <div className="onedaycost-text">
-                            <div className="home-title">1 DAY</div>
-                            <div className="home-text">of protection</div>
-                            <div className="home-text oneday-space">What users would get when purchasing</div>
+                            <div className="onedaycost-text-title">
+                                <div className="home-title day-title">1 DAY</div>
+                                <div className="home-text">of protection</div>
+                            </div>
+                            <div className="home-text">On top you will get:</div>
+                            <div className="home-text oneday-space">
+                                <ul>
+                                    <li>A tax deductable certificate for your contribution</li> 
+                                    <li>Monthly updates on the regeneration of theland</li>
+                                    <li>The possibility to visit the land protected any time</li>
+                                </ul>
+                            </div>
                             <div className="one-day-price oneday-space">€35</div>
                         </div>
                         <a style={{display: "table-cell"}} href="https://eepurl.com/hpXOy1" target="_blank" rel="noopener noreferrer">
@@ -144,7 +153,7 @@ console.log(ProgressOutOfGoal)
                     </div>
                 </div>
                 <div className="money-spending">
-                    <div className="home-title money-spending-text">How the money are spent</div>
+                    <div className="home-title money-spending-text">How the money is spent</div>
                     <div><img src={pie} className="pie-image" alt="pie" /></div>
                 </div>
             </div>
