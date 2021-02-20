@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1f55d5dfe6e38f614e0c13db8bdc194",
+    "revision": "a0db3b67f89a83dc1a33b59f17ee7f60",
     "url": "/index.html"
   },
   {
-    "revision": "03a7a52a2190a4798a37",
-    "url": "/static/css/main.0e0d3518.chunk.css"
+    "revision": "af2e1696207d82958927",
+    "url": "/static/css/main.7a974b2d.chunk.css"
   },
   {
-    "revision": "2ef5916f50ef56ca8fa4",
-    "url": "/static/js/2.ce5c7d73.chunk.js"
+    "revision": "c88efd7371763aebe41b",
+    "url": "/static/js/2.76b8c85e.chunk.js"
   },
   {
     "revision": "4cbe2726fb66bcef66051a0d56105b42",
-    "url": "/static/js/2.ce5c7d73.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.76b8c85e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03a7a52a2190a4798a37",
-    "url": "/static/js/main.f6c16eed.chunk.js"
+    "revision": "af2e1696207d82958927",
+    "url": "/static/js/main.ca01dd20.chunk.js"
   },
   {
     "revision": "335164574068ec67ef11",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/beefvstofumobile.4dfffc92.png"
   },
   {
+    "revision": "a546a4ccdb118647712c72d9c218c083",
+    "url": "/static/media/brazilforest.a546a4cc.png"
+  },
+  {
     "revision": "4525979c35648e372966bb06fc825e44",
     "url": "/static/media/co2-impact.4525979c.png"
   },
@@ -76,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fabio.a5ac667a.png"
   },
   {
-    "revision": "6f7e49bdf911a44da6227a9d46b59a8d",
-    "url": "/static/media/filippo.6f7e49bd.png"
+    "revision": "5d07830993295de42f0a600f43774e7d",
+    "url": "/static/media/filippo.5d078309.png"
   },
   {
     "revision": "4c6270aaf51b6edcc75547d9ddf9ee4f",
@@ -92,8 +96,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fruits.70fa5b65.png"
   },
   {
+    "revision": "ec90f8a24c34bb78e25874bf58fdeb84",
+    "url": "/static/media/googlemaps.ec90f8a2.png"
+  },
+  {
     "revision": "74f69abd54ae7ed7f77446bca5a44a37",
     "url": "/static/media/grains.74f69abd.png"
+  },
+  {
+    "revision": "7c5990c3d117db8056bcaaa7d4d59b51",
+    "url": "/static/media/how1.7c5990c3.png"
+  },
+  {
+    "revision": "cc69eb1954ac0d46d0b4034b435ecfb7",
+    "url": "/static/media/how2.cc69eb19.png"
+  },
+  {
+    "revision": "8b9681b1b8110d24772155ad72b9cb7e",
+    "url": "/static/media/how3.8b9681b1.png"
   },
   {
     "revision": "bfc6970494c4bc6f09a81b19efb4527b",
@@ -116,12 +136,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/otherfood.f9c7ab3b.png"
   },
   {
+    "revision": "0e16ddb4c3f96dcb63dd7046a3a83d56",
+    "url": "/static/media/pie.0e16ddb4.png"
+  },
+  {
+    "revision": "2eb61bece2f668dfab7007179cef6c8d",
+    "url": "/static/media/sectionseparation.2eb61bec.png"
+  },
+  {
     "revision": "24c8aa295c3808f0582895274a125296",
     "url": "/static/media/toiletpaper.24c8aa29.png"
   },
   {
     "revision": "adaf2f37d525e111d2801409e9472617",
     "url": "/static/media/toilets.adaf2f37.png"
+  },
+  {
+    "revision": "ede9ad01f2b4890022d47739223cbc7e",
+    "url": "/static/media/treeimage2.ede9ad01.png"
+  },
+  {
+    "revision": "741c64221e8f2a5073ce1b2914861bfe",
+    "url": "/static/media/treeimage3.741c6422.png"
+  },
+  {
+    "revision": "83dccd58a5e0653454eeb7ae676485f5",
+    "url": "/static/media/undraw_festivities_tvvj.83dccd58.png"
   },
   {
     "revision": "0ec7f86d48f768f5ca887a77b017b5d9",
